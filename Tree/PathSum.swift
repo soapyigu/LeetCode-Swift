@@ -1,9 +1,7 @@
 /**
- * Question Link: https://leetcode.com/problems/same-tree/
+ * Question Link: https://leetcode.com/problems/path-sum/
  * Primary idea: recursion
  * Time Complexity: O(n), Space Complexity: O(1)
- *
- * Copyright © 2016 YiGu. All rights reserved.
  *
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -18,15 +16,15 @@
  * }
  */
 
-class SameTree {
-    func isSameTree(p: TreeNode?, _ q: TreeNode?) -> Bool {
-        if p == nil && q == nil {
-            return true
-        }
-        if p == nil || q == nil || p!.val != q!.val {
+class PathSum {
+    func hasPathSum(root: TreeNode?, _ sum: Int) -> Bool {
+        if root == nil {
             return false
         }
-    
-        return isSameTree(p!.left, q!.left) && isSameTree(p!.right, q!.right)
+        if sum == root!.val && root!.left == nil && root!.right == nil {
+            return true
+        }
+        
+        return hasPathSum(root!.left, sum - root!.val) || hasPathSum(root!.right, sum - root!.val)
     }
 }

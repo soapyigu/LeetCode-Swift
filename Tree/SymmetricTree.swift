@@ -1,10 +1,8 @@
 /**
- * Question Link: https://leetcode.com/problems/same-tree/
+ * Question Link: https://leetcode.com/problems/symmetric-tree/
  * Primary idea: recursion
  * Time Complexity: O(n), Space Complexity: O(1)
- *
- * Copyright © 2016 YiGu. All rights reserved.
- *
+ * 
  * Definition for a binary tree node.
  * public class TreeNode {
  *     public var val: Int
@@ -16,17 +14,24 @@
  *         self.right = nil
  *     }
  * }
+ *
  */
-
-class SameTree {
-    func isSameTree(p: TreeNode?, _ q: TreeNode?) -> Bool {
+ 
+class SymmetricTree {
+    func isSymmetric(root: TreeNode?) -> Bool {
+        if root == nil {
+            return true
+        }
+        return helper(root!.left, root!.right)
+    }
+    
+    func helper(p: TreeNode?, _ q:TreeNode?) -> Bool {
         if p == nil && q == nil {
             return true
         }
         if p == nil || q == nil || p!.val != q!.val {
             return false
         }
-    
-        return isSameTree(p!.left, q!.left) && isSameTree(p!.right, q!.right)
+        return helper(p!.left, q!.right) && helper(p!.right, q!.left)
     }
 }

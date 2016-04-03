@@ -22,16 +22,16 @@ class SymmetricTree {
         if root == nil {
             return true
         }
-        return helper(root!.left, root!.right)
+        return _helper(root!.left, root!.right)
     }
     
-    func helper(p: TreeNode?, _ q:TreeNode?) -> Bool {
+    func _helper(p: TreeNode?, _ q:TreeNode?) -> Bool {
         if p == nil && q == nil {
             return true
         }
         if p == nil || q == nil || p!.val != q!.val {
             return false
         }
-        return helper(p!.left, q!.right) && helper(p!.right, q!.left)
+        return _helper(p!.left, q!.right) && _helper(p!.right, q!.left)
     }
 }

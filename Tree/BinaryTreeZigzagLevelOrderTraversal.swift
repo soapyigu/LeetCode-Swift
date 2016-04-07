@@ -1,8 +1,9 @@
 /**
- * Question Link: https://leetcode.com/problems/binary-tree-level-order-traversal/
+ * Question Link: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
  * Primary idea: use a queue to help hold TreeNode, and for each level add a new Int array
- * Time Complexity: O(n), Space Complexity: O(n)
- * 
+ *
+ * Note: use a boolean value to determine if needs to be added reversely
+ *
  * Definition for a binary tree node.
  * public class TreeNode {
  *     public var val: Int
@@ -14,12 +15,14 @@
  *         self.right = nil
  *     }
  * }
+ *
  */
- 
-class BinaryTreeLevelOrderTraversal {
-    func levelOrder(root: TreeNode?) -> [[Int]] {
+
+class BinaryTreeZigzagLevelOrderTraversal {
+    func zigzagLevelOrder(root: TreeNode?) -> [[Int]] {
         var res: [[Int]] = []
-        var queue:[TreeNode] = []
+        var queue: [TreeNode] = []
+        var isOdd: Bool = false
         
         if let root = root {
             queue.append(root)
@@ -34,17 +37,23 @@ class BinaryTreeLevelOrderTraversal {
                 queue.removeAtIndex(0)
                 
                 // add val
-                level.append(node.val)
-
+                if isOdd {
+                    level.insert(node.val, atIndex: 0) 
+                } else {
+                    level.append(node.val)
+                }
+                
                 // add TreeNodes in next level
                 if let left = node.left {
                     queue.append(left)
-                }
+                } 
                 if let right = node.right {
                     queue.append(right)
                 }
             }
+            
             res.append(level)
+            isOdd = !isOdd
         }
         
         return res

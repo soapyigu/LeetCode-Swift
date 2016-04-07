@@ -24,11 +24,9 @@ class BinaryTreeLevelOrderTraversalII {
         var res: [[Int]] = []
         var queue: [TreeNode] = []
         
-        if root == nil {
-            return res
+        if let root = root {
+            queue.append(root)
         }
-        
-        queue.append(root!)
         
         while queue.count > 0 {
             var size: Int = queue.count
@@ -37,8 +35,11 @@ class BinaryTreeLevelOrderTraversalII {
             for i in 1...size {
                 let node: TreeNode = queue[0]
                 queue.removeAtIndex(0)
-                
+
+                // add val
                 level.append(node.val)
+
+                // add TreeNodes in next level
                 if let left = node.left {
                     queue.append(left)
                 }

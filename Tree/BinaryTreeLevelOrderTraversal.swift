@@ -29,7 +29,7 @@ class BinaryTreeLevelOrderTraversal {
             var size: Int = queue.count
             var level: [Int] = []
             
-            for i in 1...size {
+            for _ in 1...size {
                 let node: TreeNode = queue[0]
                 queue.removeAtIndex(0)
                 

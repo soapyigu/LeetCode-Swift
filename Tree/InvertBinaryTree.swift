@@ -22,7 +22,7 @@ class InvertBinaryTree {
             return root
         }
         
-        var temp: TreeNode? = root!.left 
+        var temp = root!.left 
         root!.left = root!.right
         root!.right = temp
         

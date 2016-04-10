@@ -20,20 +20,20 @@
 
 class BinaryTreeZigzagLevelOrderTraversal {
     func zigzagLevelOrder(root: TreeNode?) -> [[Int]] {
-        var res: [[Int]] = []
-        var queue: [TreeNode] = []
-        var isOdd: Bool = false
+        var res = [[Int]]()
+        var queue = [TreeNode]()
+        var isOdd = false
         
         if let root = root {
             queue.append(root)
         }
         
         while queue.count > 0 {
-            var size: Int = queue.count
-            var level: [Int] = []
+            var size = queue.count
+            var level = [Int]()
             
             for _ in 1...size {
-                let node: TreeNode = queue[0]
+                let node = queue[0]
                 queue.removeAtIndex(0)
                 
                 // add val

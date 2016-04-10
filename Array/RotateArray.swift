@@ -34,7 +34,7 @@ class RotateArray {
     }
     
     private func _swap(inout nums: [Int], _ p: Int, _ q: Int) {
-        var temp: Int = nums[p]
+        var temp = nums[p]
         nums[p] = nums[q]
         nums[q] = temp
     }

@@ -8,9 +8,9 @@
 
 class MoveZeroes {
     func moveZeroes(inout nums: [Int]) {
-        var zeroIndex: Int = 0
-        var left: Int = 0
-        let right: Int = nums.count
+        var zeroIndex = 0
+        var left = 0
+        let right = nums.count
         
         while left < right {
             if nums[left] != 0 {
@@ -22,7 +22,7 @@ class MoveZeroes {
     }
     
     private func _swap(inout nums: [Int], _ p: Int, _ q: Int) {
-        let temp: Int = nums[p]
+        let temp = nums[p]
         nums[p] = nums[q]
         nums[q] = temp
     }

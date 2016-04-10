@@ -1,5 +1,5 @@
 # LeetCode by Swift
-[LeetCode Online Judge] (https://leetcode.com/) is a website contains huge number of algorithm questions. This repo shows my solutions written by Swift. Please feel free to check and if you like it, please STAR to support this repo, thank you!
+[LeetCode Online Judge] (https://leetcode.com/) is a website containing many algorithm questions. Most of them are real interview questions of Google, Facebook, LinkedIn, Apple, etc. This repo shows my solutions by Swift and the code style is strictly follow [RayWenderlich Swift Style Guide](https://github.com/raywenderlich/swift-style-guide). Please feel free to reference and STAR to support this repo if you like it, thank you!
 
 ## Contents
 * [Array](#array)

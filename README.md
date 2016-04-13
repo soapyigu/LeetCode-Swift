@@ -5,6 +5,17 @@
 * [Array](#array)
 * [Tree](#tree)
 
+## Array
+| Title | Solution | Difficulty |
+| ----- | -------- | ---------- |
+[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)| [Swift](./Array/ContainsDuplicate.swift)| Easy|
+[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)| [Swift](./Array/ContainsDuplicateII.swift)| Easy|
+[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| [Swift](./Array/RemoveDuplicatesFromSortedArray.swift)| Easy|
+[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [Swift](./Array/RemoveDuplicatesFromSortedArrayII.swift)| Medium|
+[Move Zeroes](https://leetcode.com/problems/move-zeroes/)| [Swift](./Array/MoveZeros.swift)| Easy|
+[Remove Element](https://leetcode.com/problems/remove-element/)| [Swift](./Array/RemoveElement.swift)| Easy|
+[Rotate Array](https://leetcode.com/problems/rotate-array/)| [Swift](./Array/RotateArray.swift)| Easy|
+
 ## Tree
 | Title | Solution | Difficulty |
 | ----- | -------- | ---------- |

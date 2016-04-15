@@ -18,13 +18,13 @@
 
 class PathSum {
     func hasPathSum(root: TreeNode?, _ sum: Int) -> Bool {
-        if root == nil {
+        guard let root = root else {
             return false
         }
-        if sum == root!.val && root!.left == nil && root!.right == nil {
+        if sum == root.val && root.left == nil && root.right == nil {
             return true
         }
         
-        return hasPathSum(root!.left, sum - root!.val) || hasPathSum(root!.right, sum - root!.val)
+        return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val)
     }
 }

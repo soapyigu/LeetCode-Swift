@@ -21,11 +21,11 @@
 
 class ClosestBinarySearchTreeValue {
     func closestValue(root: TreeNode?, _ target: Double) -> Int {
-        if let root = root {
-            return _helper(root, target, root.val)
+        guard let root = root else {
+            return Int(target)
         }
         
-        return Int(target)
+        return _helper(root, target, root.val)
     }
     
     private func _helper(node: TreeNode?, _ target: Double, _ closest: Int) -> Int {

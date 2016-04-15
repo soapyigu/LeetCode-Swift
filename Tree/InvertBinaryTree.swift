@@ -18,16 +18,16 @@
 
 class InvertBinaryTree {
     func invertTree(root: TreeNode?) -> TreeNode? {
-        if root == nil {
-            return root
+        guard let root = root else {
+            return nil
         }
         
-        var temp = root!.left 
-        root!.left = root!.right
-        root!.right = temp
+        var temp = root.left 
+        root.left = root.right
+        root.right = temp
         
-        invertTree(root!.left)
-        invertTree(root!.right)
+        invertTree(root.left)
+        invertTree(root.right)
         
         return root
     }

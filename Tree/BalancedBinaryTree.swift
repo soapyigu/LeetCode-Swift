@@ -18,7 +18,7 @@
 
 class BalancedBinaryTree {
     func isBalanced(root: TreeNode?) -> Bool {
-        if root == nil {
+        guard let root = root else {
             return true
         }
         
@@ -30,16 +30,16 @@ class BalancedBinaryTree {
     }
     
     private func _checkHeight(root: TreeNode?) -> Int {
-        if root == nil {
+        guard let root = root else {
             return 0
         }
         
         // check left and right subtree
-        var leftHeight = _checkHeight(root!.left)
+        var leftHeight = _checkHeight(root.left)
         if leftHeight == -1 {
             return -1
         }
-        var rightHeight = _checkHeight(root!.right)
+        var rightHeight = _checkHeight(root.right)
         if rightHeight == -1 {
             return -1
         }

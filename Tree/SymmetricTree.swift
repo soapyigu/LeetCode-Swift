@@ -19,10 +19,10 @@
  
 class SymmetricTree {
     func isSymmetric(root: TreeNode?) -> Bool {
-        if root == nil {
+        guard let root = root else {
             return true
         }
-        return _helper(root!.left, root!.right)
+        return _helper(root.left, root.right)
     }
     
     func _helper(p: TreeNode?, _ q:TreeNode?) -> Bool {

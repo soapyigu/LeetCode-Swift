@@ -18,7 +18,7 @@
  
 class MinimumDepthOfBinaryTree {
     func minDepth(root: TreeNode?) -> Int {
-        if root == nil {
+        guard let root = root else {
             return 0
         }
         
@@ -26,13 +26,14 @@ class MinimumDepthOfBinaryTree {
     }
     
     private func _helper(root: TreeNode?) -> Int {
-        if root == nil {
+        guard let root = root else {
             return Int.max
         }
-        if root!.left == nil && root!.right == nil {
+        
+        if root.left == nil && root.right == nil {
             return 1
         }
         
-        return min(_helper(root!.left), _helper(root!.right)) + 1
+        return min(_helper(root.left), _helper(root.right)) + 1
     }
 }

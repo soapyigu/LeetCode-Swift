@@ -6,7 +6,7 @@
  * Note: please use (right - left) / 2 + left to get mid in case of integer overflow
  *
  * Time Complexity: O(logn), Space Complexity: O(1)
- *
+ */
 
 class Sqrtx {
     func mySqrt(x: Int) -> Int {

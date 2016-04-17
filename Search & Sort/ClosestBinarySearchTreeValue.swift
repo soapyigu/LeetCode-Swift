@@ -1,6 +1,6 @@
 /**
  * Question Link: https://leetcode.com/problems/closest-binary-search-tree-value/
- * Primary idea: update closest value, and choose to go left or right depends on 
+ * Primary idea: Binary Search, update closest value, and choose to go left or right depends on 
  *               the comparation between node.val and target
  *
  * Note: different data types of vars cannot operate together, e.g. Int and Double 

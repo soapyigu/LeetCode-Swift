@@ -17,13 +17,12 @@ class ContainsDuplicateII {
         var dict = [Int: Int]()
         
         for i in 0...nums.count - 1 {
-            if let index = dict[nums[i]] {
-                if i - index <= k {
-                    return true
-                }
+            guard let index = dict[nums[i]] where i - index <= k else {
+                dict[nums[i]] = i
+                continue
             } 
             
-            dict[nums[i]] = i
+            return true
         }
         
         return false

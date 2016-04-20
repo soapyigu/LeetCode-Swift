@@ -24,10 +24,10 @@ class CountAndSay {
         for _ in 1..<n{
             temp = ""
             count = 1
-            chars = _strToChars(res)
+            chars = [Character](res.characters)
             current = chars[0]
     
-            for i in 1..<res.characters.count {
+            for i in 1..<chars.count {
                 if chars[i] == current {
                     count += 1
                 } else {
@@ -44,15 +44,5 @@ class CountAndSay {
         }
   
         return res
-    }
-
-    private func _strToChars(str: String) -> [Character] {
-        var chars = [Character]()
-        
-        for character in str.characters {
-            chars.append(character)
-        }
-        
-        return chars
     }
 }

@@ -1,6 +1,6 @@
 /**
  * Question Link: https://leetcode.com/problems/add-binary/
- * Primary idea: use Carry and iterative from last to start
+ * Primary idea: use Carry and iterate from last to start
  * 
  * Note: Swift does not have a way to access a character in a string with O(1), 
  *       thus we have to first transfer the string to a character array

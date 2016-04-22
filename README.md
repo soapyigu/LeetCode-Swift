@@ -3,7 +3,10 @@
 
 ## Contents
 * [Array](#array)
+* [String](#string)
 * [Tree](#tree)
+* [Math](#math)
+* [Search](#search)
 
 ## Array
 | Title | Solution | Difficulty |
@@ -15,6 +18,12 @@
 [Move Zeroes](https://leetcode.com/problems/move-zeroes/)| [Swift](./Array/MoveZeroes.swift)| Easy|
 [Remove Element](https://leetcode.com/problems/remove-element/)| [Swift](./Array/RemoveElement.swift)| Easy|
 [Rotate Array](https://leetcode.com/problems/rotate-array/)| [Swift](./Array/RotateArray.swift)| Easy|
+[Two Sum](https://leetcode.com/problems/two-sum/)| [Swift](./Array/TwoSum.swift)| Easy|
+
+## String
+| Title | Solution | Difficulty |
+| ----- | -------- | ---------- |
+[Count and Say](https://leetcode.com/problems/count-and-say/)| [Swift](./Array/CountAndSay.swift)| Easy|
 
 ## Tree
 | Title | Solution | Difficulty |
@@ -31,4 +40,23 @@
 [Path Sum](https://leetcode.com/problems/path-sum/)| [Swift](./Tree/PathSum.swift)| Easy|
 [Path Sum II](https://leetcode.com/problems/path-sum-ii/)| [Swift](./Tree/PathSumII.swift)| Medium|
 
+## Math
+| Title | Solution | Difficulty |
+| ----- | -------- | ---------- |
+[Add Binary](https://leetcode.com/problems/add-binary/)| [Swift](./Math/AddBinary.swift)| Easy|
+[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)| [Swift](./Math/AddTwoNumbers.swift)| Medium|
+[Integer Break](https://leetcode.com/problems/integer-break/)| [Swift](./Math/IntegerBreak.swift)| Medium|
+
+## Search
+| Title | Solution | Difficulty |
+| ----- | -------- | ---------- |
+[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/)| [Swift](./Search/ClosestBinarySearchTreeValue.swift)| Easy|
+[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)| [Swift](./Search/SearchInRotatedSortedArray.swift)| Hard|
+[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)| [Swift](./Search/SearchInRotatedSortedArrayII.swift)| Medium|
+[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [Swift](./Search/Sqrtx.swift)| Medium|
+
+## Sort
+| Title | Solution | Difficulty |
+| ----- | -------- | ---------- |
+[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)| [Swift](./Sort/MeetingRooms.swift)| Easy|
 

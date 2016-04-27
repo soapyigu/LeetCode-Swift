@@ -20,6 +20,7 @@
 [Remove Element](https://leetcode.com/problems/remove-element/)| [Swift](./Array/RemoveElement.swift)| Easy|
 [Rotate Array](https://leetcode.com/problems/rotate-array/)| [Swift](./Array/RotateArray.swift)| Easy|
 [Two Sum](https://leetcode.com/problems/two-sum/)| [Swift](./Array/TwoSum.swift)| Easy|
+[3Sum](https://leetcode.com/problems/3sum/)| [Swift](./Array/ThreeSum.swift)| Medium|
 
 ## String
 | Title | Solution | Difficulty |
@@ -59,5 +60,7 @@
 ## Sort
 | Title | Solution | Difficulty |
 | ----- | -------- | ---------- |
+[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [Swift](./Sort/ValidAnagram.swift)| Easy|
 [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)| [Swift](./Sort/MeetingRooms.swift)| Easy|
-
+[Sort Colors](https://leetcode.com/problems/sort-colors/)| [Swift](./Sort/SortColors.swift)| Medium|
+[Merge Intervals](https://leetcode.com/problems/merge-intervals/)| [Swift](./Sort/MergeIntervals.swift)| Hard|

@@ -25,7 +25,7 @@ class MergeIntervals {
         var res = [Interval]()
         res.append(intervals[0])
         
-        for i in 1..<intervals.count {
+        for i in 1 ..< intervals.count {
             var last = res[res.count - 1]
             var current = intervals[i]
             if current.start > last.end {

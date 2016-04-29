@@ -14,7 +14,7 @@ class ThreeSum {
             return res
         }
         
-        for i in 0...nums.count - 3 {
+        for i in 0 ... nums.count - 3 {
             if i == 0 || nums[i] != nums[i - 1] {
                 var remain = -nums[i]
                 var left = i + 1

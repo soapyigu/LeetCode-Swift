@@ -13,7 +13,7 @@ class RemoveElement {
             return lastIndex
         }
         
-        for i in 0...nums.count - 1 {
+        for i in 0 ..< nums.count {
             if nums[i] != val {
                 nums[lastIndex] = nums[i]
                 lastIndex += 1

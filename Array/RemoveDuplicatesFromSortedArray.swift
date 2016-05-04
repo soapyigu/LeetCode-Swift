@@ -13,7 +13,7 @@ class RemoveDuplicatesFromSortedArray {
     
         var lastIndex = 0
         
-        for i in 1...nums.count - 1 {
+        for i in 1 ..< nums.count {
             if nums[i] != nums[lastIndex] {
                 lastIndex += 1
                 nums[lastIndex] = nums[i]

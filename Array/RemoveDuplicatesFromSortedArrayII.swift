@@ -14,7 +14,7 @@ class RemoveDuplicatesFromSortedArrayII {
         }
         
         var lastIndex = 1
-        for i in 2...nums.count - 1 {
+        for i in 2 ..< nums.count {
             if nums[lastIndex] != nums[i] || nums[lastIndex] != nums[lastIndex - 1] {
                 lastIndex += 1
                 nums[lastIndex] = nums[i]

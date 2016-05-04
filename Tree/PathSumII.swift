@@ -36,8 +36,7 @@ class PathSumII {
         
         if root.left == nil && root.right == nil && root.val == sum {
             list.append(root.val)
-            let dupList = list
-            res.append(dupList)
+            res.append(list)
             return
         }
     

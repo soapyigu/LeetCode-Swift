@@ -4,7 +4,7 @@
 ## Data Structures
 * [Array](#array)
 * [String](#string)
-* [LinkedList](#LinkedList)
+* [Linked List](#Linked List)
 * [Tree](#tree)
 * [Math](#math)
 * [Search](#search)
@@ -37,7 +37,7 @@
 [Group Anagrams](https://leetcode.com/problems/anagrams/)| [Swift](./String/GroupAnagrams.swift)| Medium|
 [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)| [Swift](./String/LongestSubstringWithoutRepeatingCharacters.swift)| Medium|
 
-## LinkedList
+## Linked List
 | Title | Solution | Difficulty |
 | ----- | -------- | ---------- |
 [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [Swift](./Tree/ReverseLinkedList.swift)| Easy|

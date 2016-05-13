@@ -4,7 +4,7 @@
 ## Data Structures
 * [Array](#array)
 * [String](#string)
-* [Linked List](#Linked List)
+* [Linked List](#linked-list)
 * [Tree](#tree)
 * [Math](#math)
 * [Search](#search)

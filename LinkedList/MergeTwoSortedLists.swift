@@ -14,7 +14,7 @@
  * }
  */
 
-class Solution {
+class MergeTwoSortedLists {
     func mergeTwoLists(l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         let dummy = ListNode(0)
         var node = dummy

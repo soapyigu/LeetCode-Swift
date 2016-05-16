@@ -13,10 +13,10 @@
  *     }
  * }
  */
- 
+
 class RemoveLinkedListElements {
     func removeElements(head: ListNode?, _ val: Int) -> ListNode? {
-        var dummy = ListNode(0)
+        let dummy = ListNode(0)
         dummy.next = head
         
         var prev = dummy

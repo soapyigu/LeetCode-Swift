@@ -18,7 +18,7 @@
  * }
  */
 
- class RemoveLinkedListElementsII {
+ class RemoveDuplicatesfromSortedListII {
     func deleteDuplicates(head: ListNode?) -> ListNode? {
         if head == nil || head!.next == nil {
             return head

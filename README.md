@@ -5,6 +5,7 @@
 * [Array](#array)
 * [String](#string)
 * [Linked List](#linked-list)
+* [Stack](#stack)
 * [Tree](#tree)
 * [Depth-first search](#depth-first-search)
 * [Math](#math)
@@ -53,6 +54,12 @@
 [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [Swift](./LinkedList/MergeTwoSortedLists.swift)| Easy|
 [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)| [Swift](./LinkedList/MergeKSortedLists.swift)| Hard|
 [Partition List](https://leetcode.com/problems/partition-list/)| [Swift](./LinkedList/PartitionList.swift)| Medium|
+
+## Stack
+| Title | Solution | Difficulty |
+| ----- | -------- | ---------- |
+[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [Swift](./Stack/ValidParentheses.swift)| Easy|
+[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)| [Swift](./Stack/EvaluateReversePolishNotation.swift)| Medium|
 
 ## Tree
 | Title | Solution | Difficulty |

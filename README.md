@@ -6,6 +6,7 @@
 * [String](#string)
 * [Linked List](#linked-list)
 * [Tree](#tree)
+* [Depth-first search](#depth-first-search)
 * [Math](#math)
 * [Search](#search)
 * [Sort](#sort)
@@ -53,7 +54,6 @@
 [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)| [Swift](./LinkedList/MergeKSortedLists.swift)| Hard|
 [Partition List](https://leetcode.com/problems/partition-list/)| [Swift](./LinkedList/PartitionList.swift)| Medium|
 
-
 ## Tree
 | Title | Solution | Difficulty |
 | ----- | -------- | ---------- |
@@ -68,6 +68,12 @@
 [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)| [Swift](./Tree/BinaryTreeZigzagLevelOrderTraversal.swift)| Medium|
 [Path Sum](https://leetcode.com/problems/path-sum/)| [Swift](./Tree/PathSum.swift)| Easy|
 [Path Sum II](https://leetcode.com/problems/path-sum-ii/)| [Swift](./Tree/PathSumII.swift)| Medium|
+
+## Depth-first search
+[Permutations](https://leetcode.com/problems/permutations/)| [Swift](./DFS/Permutations.swift)| Medium|
+[Permutations II](https://leetcode.com/problems/permutations-ii/)| [Swift](./DFS/PermutationsII.swift)| Medium|
+[Subsets](https://leetcode.com/problems/subsets/)| [Swift](./DFS/Subsets.swift)| Medium|
+[Subsets II](https://leetcode.com/problems/subsets-ii/)| [Swift](./DFS/SubsetsII.swift)| Medium|
 
 ## Math
 | Title | Solution | Difficulty |

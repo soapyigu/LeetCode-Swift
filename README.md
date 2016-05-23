@@ -7,6 +7,7 @@
 * [Linked List](#linked-list)
 * [Stack](#stack)
 * [Tree](#tree)
+* [Dynamic programming](#dynamic-programming)
 * [Depth-first search](#depth-first-search)
 * [Math](#math)
 * [Search](#search)
@@ -79,6 +80,11 @@
 [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)| [Swift](./Tree/BinaryTreeZigzagLevelOrderTraversal.swift)| Medium|
 [Path Sum](https://leetcode.com/problems/path-sum/)| [Swift](./Tree/PathSum.swift)| Easy|
 [Path Sum II](https://leetcode.com/problems/path-sum-ii/)| [Swift](./Tree/PathSumII.swift)| Medium|
+
+## Dynamic programming
+[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)| [Swift](./DP/NestedListWeightSum.swift)| Easy|
+[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Swift](./DP/ClimbingStairs.swift)| Easy|
+[Unique Paths](https://leetcode.com/problems/unique-paths/)| [Swift](./DP/UniquePaths.swift)| Medium|
 
 ## Depth-first search
 | Title | Solution | Difficulty |

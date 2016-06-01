@@ -10,6 +10,8 @@ class Atoi {
         var res = 0
         var flag = 1
         var index = 0
+        let int_max = 2147483647
+        let int_min = -2147483648
         
         // trim
         let content = [Character](str.characters)
@@ -36,15 +38,16 @@ class Atoi {
                 break
             }
             
-            if res >= Int.max / 10 {
+            res = res * 10 + Int(String(content[index]))!
+            
+            if res >= int_max {
                 if flag == 1 {
-                    return Int.max
-                } else {
-                    return Int.min
+                    return int_max
+                } else if res > int_max && flag == -1 {
+                    return int_min
                 }
             }
         
-            res = res * 10 + Int(String(content[index]))!
             index += 1
         }
         

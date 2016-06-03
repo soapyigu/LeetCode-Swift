@@ -1,28 +1,29 @@
 /**
- * Question Link: https://leetcode.com/problems/combination-sum/
+ * Question Link: https://leetcode.com/problems/combination-sum-ii/
  * Primary idea: Classic Depth-first Search
  * 
- * Time Complexity: O(n^n)
+ * Time Complexity: O(n!)
  *
  */
 
-class CombinationSum {
-    func combinationSum(candidates: [Int], _ target: Int) -> [[Int]] {
+class combinationSumII {
+    func combinationSum2(candidates: [Int], _ target: Int) -> [[Int]] {
         var res = [[Int]]()
         
+        // edge case
         guard candidates.count > 0 else {
             return res
         }
-    
+        
         var path = [Int]()
         let candidates = candidates.sort({$0 < $1})
         
-        _dfs(candidates, target, &res, &path, 0)
+        _dfs(&res, &path, target, candidates, 0)
         
         return res
     }
     
-    private func _dfs(candidates: [Int], _ target: Int, inout _ res: [[Int]], inout _ path: [Int], _ index: Int) {
+    private func _dfs(inout res: [[Int]], inout _ path: [Int], _ target: Int, _ candidates: [Int], _ index: Int) {
         if target == 0 {
             res.append([Int](path))
             return
@@ -33,8 +34,12 @@ class CombinationSum {
                 break
             }
             
+            if i > 0 && candidates[i] == candidates[i - 1] && i != index {
+                continue
+            }
+            
             path.append(candidates[i])
-            _dfs(candidates, target - candidates[i], &res, &path, i)
+            _dfs(&res, &path, target - candidates[i], candidates, i + 1)
             path.removeLast()
         }
     }

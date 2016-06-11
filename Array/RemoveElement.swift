@@ -9,9 +9,9 @@ class RemoveElement {
     func removeElement(inout nums: [Int], _ val: Int) -> Int {
         var lastIndex = 0
         
-        for i in 0 ..< nums.count {
-            if nums[i] != val {
-                nums[lastIndex] = nums[i]
+        for num in nums {
+            if num != val {
+                nums[lastIndex] = num
                 lastIndex += 1
             }
         }

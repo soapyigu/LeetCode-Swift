@@ -16,13 +16,13 @@
  
 class MeetingRooms {
     func canAttendMeetings(intervals: [Interval]) -> Bool {
-        if intervals.count < 2 {
+        guard intervals.count > 1 else {
             return true
         }
         
         var intervals = intervals.sort({$0.start < $1.start})
         
-        for i in 0...intervals.count - 2 {
+        for i in 0 ..< intervals.count - 1 {
             if intervals[i].end > intervals[i + 1].start {
                 return false
             }

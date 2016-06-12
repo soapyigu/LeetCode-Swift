@@ -9,15 +9,12 @@
 class MoveZeroes {
     func moveZeroes(inout nums: [Int]) {
         var zeroIndex = 0
-        var left = 0
-        let right = nums.count
         
-        while left < right {
-            if nums[left] != 0 {
-                _swap(&nums, zeroIndex, left)
+        for i in 0 ..< nums.count {
+            if nums[i] != 0 {
+                _swap(&nums, zeroIndex, i)
                 zeroIndex += 1
             }
-            left += 1
         }
     }
     

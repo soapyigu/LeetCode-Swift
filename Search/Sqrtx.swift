@@ -16,9 +16,10 @@ class Sqrtx {
         
         var left = 0
         var right = x / 2 + 1
-        
+        var mid = 0
+
         while left <= right {
-            var mid = (right - left) / 2 + left
+            mid = (right - left) / 2 + left
             
             if mid * mid == x {
                 return mid

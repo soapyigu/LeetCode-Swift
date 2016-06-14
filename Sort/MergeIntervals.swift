@@ -16,18 +16,24 @@
 
 class MergeIntervals {
     func merge(intervals: [Interval]) -> [Interval] {
-        if intervals.count <= 1 {
+        guard intervals.count > 1 else {
             return intervals
         }
     
-        var intervals = intervals.sort(sortIntervals)
+        var intervals = intervals.sort() {
+            if $0.start != $1.start {
+                return $0.start < $1.start
+            } else {
+                return $0.end < $1.end
+            }
+        }
 
         var res = [Interval]()
         res.append(intervals[0])
         
         for i in 1 ..< intervals.count {
-            var last = res[res.count - 1]
-            var current = intervals[i]
+            let last = res[res.count - 1]
+            let current = intervals[i]
             if current.start > last.end {
                 res.append(current)
             } else {
@@ -36,13 +42,5 @@ class MergeIntervals {
         }
         
         return res
-    }
-    
-    private func sortIntervals(p: Interval, q: Interval) -> Bool {
-        if p.start != q.start {
-            return p.start < q.start
-        } else {
-            return p.end < q.end
-        }
     }
 }

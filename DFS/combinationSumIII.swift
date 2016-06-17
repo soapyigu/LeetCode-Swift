@@ -27,7 +27,7 @@ class combinationSumIII {
     
     private func _dfs(inout res: [[Int]], inout _ path: [Int], _ candidates: [Int], _ target: Int, _ index: Int, _ size: Int) {
         if target == 0 && path.count == size{
-            res.append([Int](path))
+            res.append(Array(path))
             return
         }       
         

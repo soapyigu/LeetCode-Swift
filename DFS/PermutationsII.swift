@@ -22,8 +22,7 @@ class PermutationsII {
     private func _dfs(inout res: [[Int]], inout _ path: [Int], _ nums: [Int], inout _ visited: [Bool]) {
         // termination case
         if path.count == nums.count {
-            let path = path
-            res.append(path)
+            res.append(Array(path))
             return
         }
         

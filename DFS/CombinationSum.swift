@@ -9,22 +9,16 @@
 class CombinationSum {
     func combinationSum(candidates: [Int], _ target: Int) -> [[Int]] {
         var res = [[Int]]()
-        
-        guard candidates.count > 0 else {
-            return res
-        }
-    
         var path = [Int]()
-        let candidates = candidates.sort({$0 < $1})
         
-        _dfs(candidates, target, &res, &path, 0)
+        _dfs(candidates.sort({$0 < $1}), target, &res, &path, 0)
         
         return res
     }
     
     private func _dfs(candidates: [Int], _ target: Int, inout _ res: [[Int]], inout _ path: [Int], _ index: Int) {
         if target == 0 {
-            res.append([Int](path))
+            res.append(Array(path))
             return
         }
         

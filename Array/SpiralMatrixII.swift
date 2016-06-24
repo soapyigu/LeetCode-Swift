@@ -1,5 +1,5 @@
 /**
- * Question Link: https://leetcode.com/problems/spiral-matrix/
+ * Question Link: https://leetcode.com/problems/spiral-matrix-ii/
  * Primary idea: Go from clockwise and populate number, remember to handle the center one
  *
  * Time Complexity: O(n^2), Space Complexity: O(1)

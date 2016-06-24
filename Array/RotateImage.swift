@@ -1,5 +1,5 @@
 /**
- * Question Link: https://leetcode.com/problems/spiral-matrix/
+ * Question Link: https://leetcode.com/problems/rotate-image/
  * Primary idea: Go from clockwise and from outside to inside, use offset for convenience
  *
  * Time Complexity: O(n^2), Space Complexity: O(1)

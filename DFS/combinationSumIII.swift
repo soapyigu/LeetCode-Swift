@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/combination-sum-iii/
  * Primary idea: Classic Depth-first Search
  * 
- * Time Complexity: O(n!)
+ * Time Complexity: O(n!), Space Complexity: O(n!)
  *
  */
 

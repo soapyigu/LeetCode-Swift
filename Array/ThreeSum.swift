@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/3sum/
  * Primary idea: Sort the array, and traverse it, increment left or decrease right 
  *               predicated on their sum is greater or not than the target
- * Time Complexity: O(n^2), Space Complexity: O(n)
+ * Time Complexity: O(n^2), Space Complexity: O(nC3)
  */
 
 class ThreeSum {

@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/power-of-two/
  * Primary idea: Use and to solve the problem
- * Time Complexity: O(n), Space Complexity: O(1)
+ * Time Complexity: O(1), Space Complexity: O(1)
  *
  */
 

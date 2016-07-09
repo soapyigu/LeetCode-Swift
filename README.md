@@ -18,7 +18,7 @@
 ## Companies
 * [Google](#google)
 * [Facebook](#facebook)
-* [Linkedin](#linkedin)
+* [LinkedIn](#linkedin)
 * [Microsoft](#microsoft)
 
 ## Array

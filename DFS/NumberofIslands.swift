@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/number-of-islands/
  * Primary idea: Classic Depth-first Search, go up, down, left, right four directions
  * 
- * Time Complexity: O((n^2)!), Space Complexity: O(1)
+ * Time Complexity: O(mn), Space Complexity: O(1)
  *
  */
 

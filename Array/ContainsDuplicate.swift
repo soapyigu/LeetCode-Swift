@@ -8,20 +8,6 @@
 
 class ContainsDuplicate {
     func containsDuplicate(nums: [Int]) -> Bool {
-        if nums.count <= 1 {
-            return false
-        }
-    
-        var set = Set<Int>()
-        
-        for i in 0 ..< nums.count {
-            if set.contains(nums[i]) {
-                return true
-            } else {
-                set.insert(nums[i])
-            }
-        }
-        
-        return false
+        return nums.count > Set(nums).count
     }
 }

@@ -623,4 +623,4 @@
 |		|	4	|	Median of Two Sorted Arrays	|	Hard	|
 |	[Swift](./String/LongestSubstringWithoutRepeatingCharacters.swift)	|	3	|	Longest Substring Without Repeating Characters	|	Medium	|
 |	[Swift](./Math/AddTwoNumbers.swift)	|	2	|	Add Two Numbers	|	Medium	|
-|	[Swift](./Array/TwoSum.swift)	|	1	|	Two Sum	|	Easy	|
+|	[Swift](./Array/TwoSum.swift)	|	1	|	[Two Sum](https://leetcode.com/problems/two-sum/)	|	Easy	|

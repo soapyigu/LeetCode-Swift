@@ -623,7 +623,7 @@
 |		|	7	|	[Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)	|	&hearts;	|
 |		|	6	|	[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)	|	&hearts;	|
 |	[Swift](./DP/LongestPalindromicSubstring.swift)	|	5	|	[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)	|	&hearts;    &hearts;	|
-|		|	4	|	[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)	|	&hearts;    &hearts;    &hearts;	|
+|	[Swift](./Search/MedianOfTwoSortedArrays.swift)	|	4	|	[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)	|	&hearts;    &hearts;    &hearts;	|
 |	[Swift](./String/LongestSubstringWithoutRepeatingCharacters.swift)	|	3	|	[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)	|	&hearts;    &hearts;	|
 |	[Swift](./Math/AddTwoNumbers.swift)	|	2	|	[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)	|	&hearts;    &hearts;	|
 |	[Swift](./Array/TwoSum.swift)	|	1	|	[Two Sum](https://leetcode.com/problems/two-sum/)	|	&hearts;	|

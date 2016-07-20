@@ -261,3 +261,10 @@
 [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)| [Swift](./Math/ExcelSheetColumnNumber.swift)| Easy| ★★★★|
 [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [Swift](./Tree/ValidateBinarySearchTree.swift)| Medium| ★★★|
 [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [Swift](./LinkedList/MergeTwoSortedLists.swift)| Easy| ★★★|
+
+| Finished | Number | Title | Difficulty |
+| -------- | ------ | ----- | ---------- |
+| | 375|	Guess Number Higher or Lower II| Medium|
+| YES| 374|	Guess Number Higher or Lower|  Easy|
+| | 373|	Find K Pairs with Smallest Sums| Medium|
+| | 372|	Super Pow |Medium|

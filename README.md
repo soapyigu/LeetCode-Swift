@@ -264,20 +264,20 @@
 
 
 # Problem Status
-| Finished | Number | Title | Difficulty |
+| Solution | Number | Title | Difficulty |
 | -------- | ------ | ----- | ---------- |
 |		|	375	|	Guess Number Higher or Lower II	|	Medium	|
 |	YES	|	374	|	Guess Number Higher or Lower	|	Easy	|
 |		|	373	|	Find K Pairs with Smallest Sums	|	Medium	|
-|		|	372	|	Super Pow	|	Medium	|
-|		|	371	|	Sum of Two Integers	|	Easy	|
+|	[Swift](./Math/SuperPow.swift)	|	372	|	Super Pow	|	Medium	|
+|	[Swift](./Math/SumTwoIntegers.swift)	|	371	|	Sum of Two Integers	|	Easy	|
 |		|	370	|	Range Addition	|	Medium	|
 |		|	369	|	Plus One Linked List	|	Medium	|
 |		|	368	|	Largest Divisible Subset	|	Medium	|
 |		|	367	|	Valid Perfect Square	|	Medium	|
 |		|	366	|	Find Leaves of Binary Tree	|	Medium	|
 |		|	365	|	Water and Jug Problem	|	Medium	|
-|		|	364	|	Nested List Weight Sum II	|	Medium	|
+|	[Swift](./DP/NestedListWeightSum.swift)	|	364	|	Nested List Weight Sum II	|	Medium	|
 |		|	363	|	Max Sum of Rectangle No Larger Than K	|	Hard	|
 |		|	362	|	Design Hit Counter	|	Medium	|
 |		|	361	|	Bomb Enemy	|	Medium	|
@@ -319,7 +319,7 @@
 |		|	325	|	Maximum Size Subarray Sum Equals k	|	Medium	|
 |		|	324	|	Wiggle Sort II	|	Medium	|
 |		|	323	|	Number of Connected Components in an Undirected Graph	|	Medium	|
-|		|	322	|	Coin Change	|	Medium	|
+|	[Swift](./DP/CoinChange.swift)	|	322	|	Coin Change	|	Medium	|
 |		|	321	|	Create Maximum Number	|	Hard	|
 |		|	320	|	Generalized Abbreviation	|	Medium	|
 |		|	319	|	Bulb Switcher	|	Medium	|
@@ -341,7 +341,7 @@
 |		|	303	|	Range Sum Query - Immutable	|	Easy	|
 |		|	302	|	Smallest Rectangle Enclosing Black Pixels	|	Hard	|
 |		|	301	|	Remove Invalid Parentheses	|	Hard	|
-|		|	300	|	Longest Increasing Subsequence	|	Medium	|
+|	[Swift](./DP/LongestIncreasingSubsequence.swift)	|	300	|	Longest Increasing Subsequence	|	Medium	|
 |		|	299	|	Bulls and Cows	|	Easy	|
 |		|	298	|	Binary Tree Longest Consecutive Sequence	|	Medium	|
 |		|	297	|	Serialize and Deserialize Binary Tree	|	Hard	|
@@ -362,7 +362,7 @@
 |		|	282	|	Expression Add Operators	|	Hard	|
 |		|	281	|	Zigzag Iterator	|	Medium	|
 |		|	280	|	Wiggle Sort	|	Medium	|
-|		|	279	|	Perfect Squares	|	Medium	|
+|	[Swift](./DP/PerfectSquares.swift)	|	279	|	Perfect Squares	|	Medium	|
 |		|	278	|	First Bad Version	|	Easy	|
 |		|	277	|	Find the Celebrity	|	Medium	|
 |		|	276	|	Paint Fence	|	Easy	|
@@ -419,15 +419,15 @@
 |		|	224	|	Basic Calculator	|	Hard	|
 |		|	223	|	Rectangle Area	|	Easy	|
 |		|	222	|	Count Complete Tree Nodes	|	Medium	|
-|		|	221	|	Maximal Square	|	Medium	|
+|	[Swift](./DP/MaximalSquare.swift)	|	221	|	Maximal Square	|	Medium	|
 |		|	220	|	Contains Duplicate III	|	Medium	|
 |		|	219	|	Contains Duplicate II	|	Easy	|
 |		|	218	|	The Skyline Problem	|	Hard	|
 |		|	217	|	Contains Duplicate	|	Easy	|
-|		|	216	|	Combination Sum III	|	Medium	|
+|	[Swift](./DFS/combinationSumIII.swift)	|	216	|	Combination Sum III	|	Medium	|
 |		|	215	|	Kth Largest Element in an Array	|	Medium	|
 |		|	214	|	Shortest Palindrome	|	Hard	|
-|		|	213	|	House Robber II	|	Medium	|
+|	[Swift](./DP/HouseRobberII.swift)	|	213	|	House Robber II	|	Medium	|
 |		|	212	|	Word Search II	|	Hard	|
 |		|	211	|	Add and Search Word - Data structure design	|	Medium	|
 |		|	210	|	Course Schedule II	|	Medium	|
@@ -440,9 +440,9 @@
 |		|	203	|	Remove Linked List Elements	|	Easy	|
 |		|	202	|	Happy Number	|	Easy	|
 |		|	201	|	Bitwise AND of Numbers Range	|	Medium	|
-|		|	200	|	Number of Islands	|	Medium	|
+|	[Swift](./DFS/NumberofIslands.swift)	|	200	|	Number of Islands	|	Medium	|
 |		|	199	|	Binary Tree Right Side View	|	Medium	|
-|		|	198	|	House Robber	|	Easy	|
+|	[Swift](./DP/HouseRobber.swift)	|	198	|	House Robber	|	Easy	|
 |		|	191	|	Number of 1 Bits	|	Easy	|
 |		|	190	|	Reverse Bits	|	Easy	|
 |		|	189	|	Rotate Array	|	Easy	|
@@ -472,7 +472,7 @@
 |		|	155	|	Min Stack	|	Easy	|
 |		|	154	|	Find Minimum in Rotated Sorted Array II	|	Hard	|
 |		|	153	|	Find Minimum in Rotated Sorted Array	|	Medium	|
-|		|	152	|	Maximum Product Subarray	|	Medium	|
+|	[Swift](./DP/MaximumProductSubarray.swift)	|	152	|	Maximum Product Subarray	|	Medium	|
 |		|	151	|	Reverse Words in a String	|	Medium	|
 |		|	150	|	Evaluate Reverse Polish Notation	|	Medium	|
 |		|	149	|	Max Points on a Line	|	Hard	|
@@ -503,7 +503,7 @@
 |		|	124	|	Binary Tree Maximum Path Sum	|	Hard	|
 |		|	123	|	Best Time to Buy and Sell Stock III	|	Hard	|
 |		|	122	|	Best Time to Buy and Sell Stock II	|	Medium	|
-|		|	121	|	Best Time to Buy and Sell Stock	|	Easy	|
+|	[Swift](./DP/BestTimeBuySellStock.swift)	|	121	|	Best Time to Buy and Sell Stock	|	Easy	|
 |		|	120	|	Triangle	|	Medium	|
 |		|	119	|	Pascal's Triangle II	|	Easy	|
 |		|	118	|	Pascal's Triangle	|	Easy	|
@@ -534,7 +534,7 @@
 |		|	93	|	Restore IP Addresses	|	Medium	|
 |		|	92	|	Reverse Linked List II	|	Medium	|
 |		|	91	|	Decode Ways	|	Medium	|
-|		|	90	|	Subsets II	|	Medium	|
+|	[Swift](./DFS/SubsetsII.swift)	|	90	|	Subsets II	|	Medium	|
 |		|	89	|	Gray Code	|	Medium	|
 |		|	88	|	Merge Sorted Array	|	Easy	|
 |		|	87	|	Scramble String	|	Hard	|
@@ -545,24 +545,24 @@
 |		|	82	|	Remove Duplicates from Sorted List II	|	Medium	|
 |		|	81	|	Search in Rotated Sorted Array II	|	Medium	|
 |		|	80	|	Remove Duplicates from Sorted Array II	|	Medium	|
-|		|	79	|	Word Search	|	Medium	|
-|		|	78	|	Subsets	|	Medium	|
-|		|	77	|	Combinations	|	Medium	|
+|	[Swift](./DFS/WordSearch.swift)	|	79	|	Word Search	|	Medium	|
+|	[Swfit](./DFS/Subsets.swift)	|	78	|	Subsets	|	Medium	|
+|	[Swift](./DFS/combinations.swift)	|	77	|	Combinations	|	Medium	|
 |		|	76	|	Minimum Window Substring	|	Hard	|
 |		|	75	|	Sort Colors	|	Medium	|
 |		|	74	|	Search a 2D Matrix	|	Medium	|
 |		|	73	|	Set Matrix Zeroes	|	Medium	|
-|		|	72	|	Edit Distance	|	Hard	|
+|	[Swift](./DP/EditDistance.swift)	|	72	|	Edit Distance	|	Hard	|
 |		|	71	|	Simplify Path	|	Medium	|
-|		|	70	|	Climbing Stairs	|	Easy	|
+|	[Swift](./DP/ClimbingStairs.swift)	|	70	|	Climbing Stairs	|	Easy	|
 |		|	69	|	Sqrt(x)	|	Medium	|
 |		|	68	|	Text Justification	|	Hard	|
 |		|	67	|	Add Binary	|	Easy	|
 |		|	66	|	Plus One	|	Easy	|
 |		|	65	|	Valid Number	|	Hard	|
 |		|	64	|	Minimum Path Sum	|	Medium	|
-|		|	63	|	Unique Paths II	|	Medium	|
-|		|	62	|	Unique Paths	|	Medium	|
+|	[Swift](./DP/UniquePathsII.swift)	|	63	|	Unique Paths II	|	Medium	|
+|	[Swift](./DP/UniquePaths.swift)	|	62	|	Unique Paths	|	Medium	|
 |		|	61	|	Rotate List	|	Medium	|
 |		|	60	|	Permutation Sequence	|	Medium	|
 |		|	59	|	Spiral Matrix II	|	Medium	|
@@ -571,21 +571,21 @@
 |		|	56	|	Merge Intervals	|	Hard	|
 |		|	55	|	Jump Game	|	Medium	|
 |		|	54	|	Spiral Matrix	|	Medium	|
-|		|	53	|	Maximum Subarray	|	Medium	|
+|	[Swift](./DP/MaximumSubarray.swift)	|	53	|	Maximum Subarray	|	Medium	|
 |		|	52	|	N-Queens II	|	Hard	|
 |		|	51	|	N-Queens	|	Hard	|
 |		|	50	|	Pow(x, n)	|	Medium	|
 |		|	49	|	Group Anagrams	|	Medium	|
 |		|	48	|	Rotate Image	|	Medium	|
-|		|	47	|	Permutations II	|	Medium	|
-|		|	46	|	Permutations	|	Medium	|
+|	[Swift](./DFS/PermutationsII.swift)	|	47	|	Permutations II	|	Medium	|
+|	[Swift](./DFS/Permutations.swift)	|	46	|	Permutations	|	Medium	|
 |		|	45	|	Jump Game II	|	Hard	|
 |		|	44	|	Wildcard Matching	|	Hard	|
 |		|	43	|	Multiply Strings	|	Medium	|
 |		|	42	|	Trapping Rain Water	|	Hard	|
 |		|	41	|	First Missing Positive	|	Hard	|
-|		|	40	|	Combination Sum II	|	Medium	|
-|		|	39	|	Combination Sum	|	Medium	|
+|	[Swift](./DFS/combinationSumII.swiftc)	|	40	|	Combination Sum II	|	Medium	|
+|	[Swift](./DFS/CombinationSum.swift)	|	39	|	Combination Sum	|	Medium	|
 |		|	38	|	Count and Say	|	Easy	|
 |		|	37	|	Sudoku Solver	|	Hard	|
 |		|	36	|	Valid Sudoku	|	Easy	|
@@ -607,7 +607,7 @@
 |		|	20	|	Valid Parentheses	|	Easy	|
 |		|	19	|	Remove Nth Node From End of List	|	Easy	|
 |		|	18	|	4Sum	|	Medium	|
-|		|	17	|	Letter Combinations of a Phone Number	|	Medium	|
+|	[Swift](./DFS/LetterCombinationsPhoneNumber.swift)	|	17	|	Letter Combinations of a Phone Number	|	Medium	|
 |		|	16	|	3Sum Closest	|	Medium	|
 |		|	15	|	3Sum	|	Medium	|
 |		|	14	|	Longest Common Prefix	|	Easy	|
@@ -619,8 +619,8 @@
 |		|	8	|	String to Integer (atoi)	|	Easy	|
 |		|	7	|	Reverse Integer	|	Easy	|
 |		|	6	|	ZigZag Conversion	|	Easy	|
-|		|	5	|	Longest Palindromic Substring	|	Medium	|
+|	[Swift](./DP/LongestPalindromicSubstring.swift)	|	5	|	Longest Palindromic Substring	|	Medium	|
 |		|	4	|	Median of Two Sorted Arrays	|	Hard	|
-|		|	3	|	Longest Substring Without Repeating Characters	|	Medium	|
-|		|	2	|	Add Two Numbers	|	Medium	|
-|		|	1	|	Two Sum	|	Easy	|
+|	[Swift](./String/LongestSubstringWithoutRepeatingCharacters.swift)	|	3	|	Longest Substring Without Repeating Characters	|	Medium	|
+|	[Swift](./Math/AddTwoNumbers.swift)	|	2	|	Add Two Numbers	|	Medium	|
+|	[Swift](./Array/TwoSum.swift)	|	1	|	Two Sum	|	Easy	|

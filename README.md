@@ -262,9 +262,32 @@
 [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [Swift](./Tree/ValidateBinarySearchTree.swift)| Medium| ★★★|
 [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [Swift](./LinkedList/MergeTwoSortedLists.swift)| Easy| ★★★|
 
+
+### Problem Status
 | Finished | Number | Title | Difficulty |
 | -------- | ------ | ----- | ---------- |
-| | 375|	Guess Number Higher or Lower II| Medium|
-| YES| 374|	Guess Number Higher or Lower|  Easy|
-| | 373|	Find K Pairs with Smallest Sums| Medium|
-| | 372|	Super Pow |Medium|
+|		|	375	|	Guess Number Higher or Lower II	|	Medium	|
+|	YES	|	374	|	Guess Number Higher or Lower	|	Easy	|
+|		|	373	|	Find K Pairs with Smallest Sums	|	Medium	|
+|		|	372	|	Super Pow	|	Medium	|
+|		|	371	|	Sum of Two Integers	|	Easy	|
+|		|	370	|	Range Addition	|	Medium	|
+|		|	369	|	Plus One Linked List	|	Medium	|
+|		|	368	|	Largest Divisible Subset	|	Medium	|
+|		|	367	|	Valid Perfect Square	|	Medium	|
+|		|	366	|	Find Leaves of Binary Tree	|	Medium	|
+|		|	365	|	Water and Jug Problem	|	Medium	|
+|		|	364	|	Nested List Weight Sum II	|	Medium	|
+|		|	363	|	Max Sum of Rectangle No Larger Than K	|	Hard	|
+|		|	362	|	Design Hit Counter	|	Medium	|
+|		|	361	|	Bomb Enemy	|	Medium	|
+|		|	360	|	Sort Transformed Array	|	Medium	|
+|		|	359	|	Logger Rate Limiter	|	Easy	|
+|		|	358	|	Rearrange String k Distance Apart	|	Hard	|
+|		|	357	|	Count Numbers with Unique Digits	|	Medium	|
+|		|	356	|	Line Reflection	|	Medium	|
+|		|	355	|	Design Twitter	|	Medium	|
+|		|	354	|	Russian Doll Envelopes	|	Hard	|
+|		|	353	|	Design Snake Game	|	Medium	|
+|		|	352	|	Data Stream as Disjoint Intervals	|	Hard	|
+|		|	351	|	Android Unlock Patterns	|	Medium	|

@@ -342,48 +342,48 @@
 |		|	302	|	Smallest Rectangle Enclosing Black Pixels	|	Hard	|
 |		|	301	|	[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)	|	Hard	|
 |	[Swift](./DP/LongestIncreasingSubsequence.swift)	|	300	|	[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)	|	Medium	|
-|		|	299	|	Bulls and Cows	|	Easy	|
+|		|	299	|	[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)	|	Easy	|
 |		|	298	|	Binary Tree Longest Consecutive Sequence	|	Medium	|
-|		|	297	|	Serialize and Deserialize Binary Tree	|	Hard	|
+|		|	297	|	[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)	|	Hard	|
 |		|	296	|	Best Meeting Point	|	Hard	|
-|		|	295	|	Find Median from Data Stream	|	Hard	|
+|		|	295	|	[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)	|	Hard	|
 |		|	294	|	Flip Game II	|	Medium	|
 |	[Swift](./String/FlipGame.swift)	|	293	|	Flip Game	|	Easy	|
-|		|	292	|	Nim Game	|	Easy	|
+|		|	292	|	[Nim Game](https://leetcode.com/problems/nim-game/)	|	Easy	|
 |		|	291	|	Word Pattern II	|	Hard	|
-|	[Swift](./String/WordPattern.swift)	|	290	|	Word Pattern	|	Easy	|
-|		|	289	|	Game of Life	|	Medium	|
+|	[Swift](./String/WordPattern.swift)	|	290	|	[Word Pattern](https://leetcode.com/problems/word-pattern/)	|	Easy	|
+|		|	289	|	[Game of Life](https://leetcode.com/problems/game-of-life/)	|	Medium	|
 |		|	288	|	Unique Word Abbreviation	|	Easy	|
-|		|	287	|	Find the Duplicate Number	|	Hard	|
+|		|	287	|	[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)	|	Hard	|
 |		|	286	|	Walls and Gates	|	Medium	|
 |		|	285	|	Inorder Successor in BST	|	Medium	|
-|		|	284	|	Peeking Iterator	|	Medium	|
-|	[Swift](./Array/MoveZeroes.swift)	|	283	|	Move Zeroes	|	Easy	|
-|		|	282	|	Expression Add Operators	|	Hard	|
+|		|	284	|	[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)	|	Medium	|
+|	[Swift](./Array/MoveZeroes.swift)	|	283	|	[Move Zeroes](https://leetcode.com/problems/move-zeroes/)	|	Easy	|
+|		|	282	|	[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)	|	Hard	|
 |		|	281	|	Zigzag Iterator	|	Medium	|
 |	[Swift](./Sort/WiggleSort.swift)	|	280	|	Wiggle Sort	|	Medium	|
-|	[Swift](./DP/PerfectSquares.swift)	|	279	|	Perfect Squares	|	Medium	|
-|		|	278	|	First Bad Version	|	Easy	|
+|	[Swift](./DP/PerfectSquares.swift)	|	279	|	[Perfect Squares](https://leetcode.com/problems/perfect-squares/)	|	Medium	|
+|		|	278	|	[First Bad Version](https://leetcode.com/problems/first-bad-version/)	|	Easy	|
 |		|	277	|	Find the Celebrity	|	Medium	|
 |		|	276	|	Paint Fence	|	Easy	|
-|		|	275	|	H-Index II	|	Medium	|
-|		|	274	|	H-Index	|	Medium	|
-|		|	273	|	Integer to English Words	|	Hard	|
+|		|	275	|	[H-Index II](https://leetcode.com/problems/h-index-ii/)	|	Medium	|
+|		|	274	|	[H-Index](https://leetcode.com/problems/h-index/)	|	Medium	|
+|		|	273	|	[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)	|	Hard	|
 |	  |	272	|	Closest Binary Search Tree Value II	|	Hard	|
 |		|	271	|	Encode and Decode Strings	|	Medium	|
 |	[Swift](./Search/ClosestBinarySearchTreeValue.swift)	|	270	|	Closest Binary Search Tree Value	|	Easy	|
 |		|	269	|	Alien Dictionary	|	Hard	|
-|		|	268	|	Missing Number	|	Medium	|
+|		|	268	|	[Missing Number](https://leetcode.com/problems/missing-number/)	|	Medium	|
 |		|	267	|	Palindrome Permutation II	|	Medium	|
 |	[Swift](./String/PalindromePermutation.swift)	|	266	|	Palindrome Permutation	|	Easy	|
 |		|	265	|	Paint House II	|	Hard	|
-|	[Swift](./Math/UglyNumberII.swift)	|	264	|	Ugly Number II	|	Medium	|
-|	[Swift](./Math/UglyNumber.swift)	|	263	|	Ugly Number	|	Easy	|
+|	[Swift](./Math/UglyNumberII.swift)	|	264	|	[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)	|	Medium	|
+|	[Swift](./Math/UglyNumber.swift)	|	263	|	[Ugly Number](https://leetcode.com/problems/ugly-number/)	|	Easy	|
 |		|	261	|	Graph Valid Tree	|	Medium	|
-|		|	260	|	Single Number III	|	Medium	|
+|		|	260	|	[Single Number III](https://leetcode.com/problems/single-number-iii/)	|	Medium	|
 |		|	259	|	3Sum Smaller	|	Medium	|
-|		|	258	|	Add Digits	|	Easy	|
-|		|	257	|	Binary Tree Paths	|	Easy	|
+|		|	258	|	[Add Digits](https://leetcode.com/problems/add-digits/)	|	Easy	|
+|		|	257	|	[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)	|	Easy	|
 |		|	256	|	Paint House	|	Medium	|
 |		|	255	|	Verify Preorder Sequence in Binary Search Tree	|	Medium	|
 |		|	254	|	Factor Combinations	|	Medium	|
@@ -398,49 +398,49 @@
 |		|	245	|	Shortest Word Distance III	|	Medium	|
 |		|	244	|	Shortest Word Distance II	|	Medium	|
 |		|	243	|	Shortest Word Distance	|	Easy	|
-|	[Swift](./String/ValidAnagram.swift)	|	242	|	Valid Anagram	|	Easy	|
-|		|	241	|	Different Ways to Add Parentheses	|	Medium	|
-|		|	240	|	Search a 2D Matrix II	|	Medium	|
-|	[Swift](./Array/SlidingWindowMaximum.swift)	|	239	|	Sliding Window Maximum	|	Hard	|
-|	[Swift](./Array/ProductExceptSelf.swift)	|	238	|	Product of Array Except Self	|	Medium	|
-|		|	237	|	Delete Node in a Linked List	|	Easy	|
-|		|	236	|	Lowest Common Ancestor of a Binary Tree	|	Medium	|
-|		|	235	|	Lowest Common Ancestor of a Binary Search Tree	|	Easy	|
-|	[Swift](./LinkedList/PalindromeLinkedList.swift)	|	234	|	Palindrome Linked List	|	Easy	|
-|		|	233	|	Number of Digit One	|	Hard	|
-|		|	232	|	Implement Queue using Stacks	|	Easy	|
-|	[Swift](./Math/PowerTwo.swift)	|	231	|	Power of Two	|	Easy	|
-|		|	230	|	Kth Smallest Element in a BST	|	Medium	|
-|		|	229	|	Majority Element II	|	Medium	|
-|	[Swift](./Array/SummaryRanges.swift)	|	228	|	Summary Ranges	|	Medium	|
-|		|	227	|	Basic Calculator II	|	Medium	|
-|	[Swift](./Tree/InvertBinaryTree.swift)	|	226	|	Invert Binary Tree	|	Easy	|
-|		|	225	|	Implement Stack using Queues	|	Easy	|
-|		|	224	|	Basic Calculator	|	Hard	|
-|		|	223	|	Rectangle Area	|	Easy	|
-|		|	222	|	Count Complete Tree Nodes	|	Medium	|
-|	[Swift](./DP/MaximalSquare.swift)	|	221	|	Maximal Square	|	Medium	|
-|		|	220	|	Contains Duplicate III	|	Medium	|
-|	[Swift](./Array/ContainsDuplicateII.swift)	|	219	|	Contains Duplicate II	|	Easy	|
-|		|	218	|	The Skyline Problem	|	Hard	|
-|	[Swift](./Array/ContainsDuplicate.swift)	|	217	|	Contains Duplicate	|	Easy	|
-|	[Swift](./DFS/combinationSumIII.swift)	|	216	|	Combination Sum III	|	Medium	|
-|		|	215	|	Kth Largest Element in an Array	|	Medium	|
-|		|	214	|	Shortest Palindrome	|	Hard	|
-|	[Swift](./DP/HouseRobberII.swift)	|	213	|	House Robber II	|	Medium	|
-|		|	212	|	Word Search II	|	Hard	|
-|		|	211	|	Add and Search Word - Data structure design	|	Medium	|
-|		|	210	|	Course Schedule II	|	Medium	|
-|		|	209	|	Minimum Size Subarray Sum	|	Medium	|
-|		|	208	|	Implement Trie (Prefix Tree)	|	Medium	|
-|		|	207	|	Course Schedule	|	Medium	|
-|	[Swift](./LinkedList/ReverseLinkedList.swift)	|	206	|	Reverse Linked List	|	Easy	|
-|	[Swift](./String/IsomorphicStrings.swift)	|	205	|	Isomorphic Strings	|	Easy	|
-|		|	204	|	Count Primes	|	Easy	|
-|	[Swift](./LinkedList/RemoveLinkedListElements.swift)	|	203	|	Remove Linked List Elements	|	Easy	|
-|	[Swift](./Math/HappyNumber.swift)	|	202	|	Happy Number	|	Easy	|
-|		|	201	|	Bitwise AND of Numbers Range	|	Medium	|
-|	[Swift](./DFS/NumberofIslands.swift)	|	200	|	Number of Islands	|	Medium	|
+|	[Swift](./String/ValidAnagram.swift)	|	242	|	[Valid Anagram](https://leetcode.com/problems/valid-anagram/)	|	Easy	|
+|		|	241	|	[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)	|	Medium	|
+|		|	240	|	[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)	|	Medium	|
+|	[Swift](./Array/SlidingWindowMaximum.swift)	|	239	|	[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)	|	Hard	|
+|	[Swift](./Array/ProductExceptSelf.swift)	|	238	|	[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)	|	Medium	|
+|		|	237	|	[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)	|	Easy	|
+|		|	236	|	[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)	|	Medium	|
+|		|	235	|	[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)	|	Easy	|
+|	[Swift](./LinkedList/PalindromeLinkedList.swift)	|	234	|	[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)	|	Easy	|
+|		|	233	|	[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)	|	Hard	|
+|		|	232	|	[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)	|	Easy	|
+|	[Swift](./Math/PowerTwo.swift)	|	231	|	[Power of Two](https://leetcode.com/problems/power-of-two/)	|	Easy	|
+|		|	230	|	[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)	|	Medium	|
+|		|	229	|	[Majority Element II](https://leetcode.com/problems/majority-element-ii/)	|	Medium	|
+|	[Swift](./Array/SummaryRanges.swift)	|	228	|	[Summary Ranges](https://leetcode.com/problems/summary-ranges/)	|	Medium	|
+|		|	227	|	[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)	|	Medium	|
+|	[Swift](./Tree/InvertBinaryTree.swift)	|	226	|	[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)	|	Easy	|
+|		|	225	|	[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)	|	Easy	|
+|		|	224	|	[Basic Calculator](https://leetcode.com/problems/basic-calculator/)	|	Hard	|
+|		|	223	|	[Rectangle Area](https://leetcode.com/problems/rectangle-area/)	|	Easy	|
+|		|	222	|	[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)	|	Medium	|
+|	[Swift](./DP/MaximalSquare.swift)	|	221	|	[Maximal Square](https://leetcode.com/problems/maximal-square/)	|	Medium	|
+|		|	220	|	[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)	|	Medium	|
+|	[Swift](./Array/ContainsDuplicateII.swift)	|	219	|	[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)	|	Easy	|
+|		|	218	|	[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)	|	Hard	|
+|	[Swift](./Array/ContainsDuplicate.swift)	|	217	|	[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)	|	Easy	|
+|	[Swift](./DFS/combinationSumIII.swift)	|	216	|	[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)	|	Medium	|
+|		|	215	|	[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)	|	Medium	|
+|		|	214	|	[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)	|	Hard	|
+|	[Swift](./DP/HouseRobberII.swift)	|	213	|	[House Robber II](https://leetcode.com/problems/house-robber-ii/)	|	Medium	|
+|		|	212	|	[Word Search II](https://leetcode.com/problems/word-search-ii/)	|	Hard	|
+|		|	211	|	[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)	|	Medium	|
+|		|	210	|	[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)	|	Medium	|
+|		|	209	|	[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)	|	Medium	|
+|		|	208	|	[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)	|	Medium	|
+|		|	207	|	[Course Schedule](https://leetcode.com/problems/course-schedule/)	|	Medium	|
+|	[Swift](./LinkedList/ReverseLinkedList.swift)	|	206	|	[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)	|	Easy	|
+|	[Swift](./String/IsomorphicStrings.swift)	|	205	|	[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)	|	Easy	|
+|		|	204	|	[Count Primes](https://leetcode.com/problems/count-primes/)	|	Easy	|
+|	[Swift](./LinkedList/RemoveLinkedListElements.swift)	|	203	|	[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)	|	Easy	|
+|	[Swift](./Math/HappyNumber.swift)	|	202	|	[Happy Number](https://leetcode.com/problems/happy-number/)	|	Easy	|
+|		|	201	|	[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)	|	Medium	|
+|	[Swift](./DFS/NumberofIslands.swift)	|	200	|	[Number of Islands](https://leetcode.com/problems/number-of-islands/)	|	Medium	|
 |		|	199	|	Binary Tree Right Side View	|	Medium	|
 |	[Swift](./DP/HouseRobber.swift)	|	198	|	House Robber	|	Easy	|
 |		|	191	|	Number of 1 Bits	|	Easy	|

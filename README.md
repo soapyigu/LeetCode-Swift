@@ -22,8 +22,8 @@
 * [Amazon](#amazon)
 * [Microsoft](#microsoft)
 
-## Problem Status
-[Problem Status](#problem-status) shows the latest progress of solutions to all 375 questions. The questions with &hearts; mark means that you have to Subscript to premium membership of LeetCode to unlock them.
+## Progress
+[Problem Status](#problem-status) shows the latest progress of solutions to all 300+ questions. The questions with &hearts; mark means that you have to Subscript to premium membership of LeetCode to unlock them.
 
 ## Array
 | Title | Solution | Difficulty | Time | Space |

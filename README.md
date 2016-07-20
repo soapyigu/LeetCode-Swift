@@ -621,7 +621,7 @@
 |		|	9	|	[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)	|	&hearts;	|
 |	[Swift](./Math/Atoi.swift)	|	8	|	[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)	|	&hearts;	|
 |		|	7	|	[Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)	|	&hearts;	|
-|		|	6	|	[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)	|	&hearts;	|
+|	[Swift](./String/ZigZagConversion.swift)	|	6	|	[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)	|	&hearts;	|
 |	[Swift](./DP/LongestPalindromicSubstring.swift)	|	5	|	[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)	|	&hearts;    &hearts;	|
 |	[Swift](./Search/MedianOfTwoSortedArrays.swift)	|	4	|	[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)	|	&hearts;    &hearts;    &hearts;	|
 |	[Swift](./String/LongestSubstringWithoutRepeatingCharacters.swift)	|	3	|	[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)	|	&hearts;    &hearts;	|

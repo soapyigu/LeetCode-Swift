@@ -618,9 +618,9 @@
 |		|	12	|	[Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)	|	&hearts;    &hearts;	|
 |		|	11	|	[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)	|	&hearts;    &hearts;	|
 |		|	10	|	[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	9	|	[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)	|	&hearts;	|
+|	[Swift](./Math/PalindromeNumber.swift)	|	9	|	[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)	|	&hearts;	|
 |	[Swift](./Math/Atoi.swift)	|	8	|	[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)	|	&hearts;	|
-|		|	7	|	[Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)	|	&hearts;	|
+|	[Swift](./Math/ReverseInteger.swift)	|	7	|	[Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)	|	&hearts;	|
 |	[Swift](./String/ZigZagConversion.swift)	|	6	|	[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)	|	&hearts;	|
 |	[Swift](./DP/LongestPalindromicSubstring.swift)	|	5	|	[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)	|	&hearts;    &hearts;	|
 |	[Swift](./Search/MedianOfTwoSortedArrays.swift)	|	4	|	[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)	|	&hearts;    &hearts;    &hearts;	|

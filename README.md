@@ -269,361 +269,361 @@
 ## Problem Status
 | Solution | Number | Title | Difficulty |
 | -------- | ------ | ----- | ---------- |
-|		|	375	|	[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)	|	&hearts;   &hearts;
-|		|	374	|	[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)	|	&hearts;
-|		|	373	|	[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)	|	&hearts;   &hearts;
-|	[Swift](./Math/SuperPow.swift)	|	372	|	[Super Pow](https://leetcode.com/problems/super-pow/)	|	&hearts;   &hearts;
-|	[Swift](./Math/SumTwoIntegers.swift)	|	371	|	[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)	|	&hearts;
-|		|	370	|	[Range Addition](https://leetcode.com/problems/range-addition/) &hearts;	|	&hearts;   &hearts;
-|		|	369	|	[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/) &hearts;	|	&hearts;   &hearts;
-|		|	368	|	[Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/)	|	&hearts;   &hearts;
-|		|	367	|	[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)	|	&hearts;   &hearts;
-|		|	366	|	[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) &hearts;	|	&hearts;   &hearts;
-|		|	365	|	[Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/)	|	&hearts;   &hearts;
-|		|	364	|	[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/) &hearts;	|	&hearts;   &hearts;
-|		|	363	|	[Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-sub-matrix-no-larger-than-k/)	|	&hearts;   &hearts;   &hearts;
-|		|	362	|	[Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) &hearts;	|	&hearts;   &hearts;
-|		|	361	|	[Bomb Enemy](https://leetcode.com/problems/bomb-enemy/) &hearts;	|	&hearts;   &hearts;
-|		|	360	|	[Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array/) &hearts;	|	&hearts;   &hearts;
-|		|	359	|	[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/) &hearts;	|	&hearts;
-|		|	358	|	[Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/) &hearts;	|	&hearts;   &hearts;   &hearts;
-|		|	357	|	[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)	|	&hearts;   &hearts;
-|		|	356	|	[Line Reflection](https://leetcode.com/problems/line-reflection/) &hearts;	|	&hearts;   &hearts;
-|		|	355	|	[Design Twitter](https://leetcode.com/problems/design-twitter/)	|	&hearts;   &hearts;
-|		|	354	|	[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/)	|	&hearts;   &hearts;   &hearts;
-|		|	353	|	[Design Snake Game](https://leetcode.com/problems/design-snake-game/) &hearts;	|	&hearts;   &hearts;
-|		|	352	|	[Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)	|	&hearts;   &hearts;   &hearts;
-|		|	351	|	[Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts;	|	&hearts;   &hearts;
-|	[Swift](./Array/IntersectionTwoArraysII.swift)	|	350	|	[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)	|	&hearts;
-|	[Swift](./Array/IntersectionTwoArrays.swift)	|	349	|	[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)	|	&hearts;
-|		|	348	|	[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) &hearts;	|	&hearts;   &hearts;
-|	[Swift](./Sort/TopKFrequentElements.swift)	|	347	|	[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)	|	&hearts;   &hearts;
-|		|	346	|	[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) &hearts;	|	&hearts;
-|	[Swift](./String/ReverseVowelsOfAString.swift)	|	345	|	[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)	|	&hearts;
-|	[Swift](./String/ReverseString.swift)	|	344	|	[Reverse String](https://leetcode.com/problems/reverse-string/)	|	&hearts;
-|	[Swift](./Math/IntegerBreak.swift)	|	343	|	[Integer Break](https://leetcode.com/problems/integer-break/)	|	&hearts;   &hearts;
-|		|	342	|	[Power of Four](https://leetcode.com/problems/power-of-four/)	|	&hearts;
-|		|	341	|	[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)	|	&hearts;   &hearts;
-|		|	340	|	[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)  &hearts;	|	&hearts;   &hearts;   &hearts;
-|	[Swift](./DP/NestedListWeightSum.swift)	|	339	|	[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)  &hearts;	|	&hearts;
-|		|	338	|	[Counting Bits](https://leetcode.com/problems/counting-bits/)	|	&hearts;   &hearts;
-|		|	337	|	[House Robber III](https://leetcode.com/problems/house-robber-iii/)	|	&hearts;   &hearts;
-|		|	336	|	[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)	|	&hearts;   &hearts;   &hearts;
-|		|	335	|	[Self Crossing](https://leetcode.com/problems/self-crossing/)	|	&hearts;   &hearts;   &hearts;
-|		|	334	|	[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)	|	&hearts;   &hearts;
-|		|	333	|	[Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree/)  &hearts;	|	&hearts;   &hearts;
-|		|	332	|	[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)	|	&hearts;   &hearts;
-|		|	331	|	[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)	|	&hearts;   &hearts;
-|		|	330	|	[Patching Array](https://leetcode.com/problems/patching-array/)	|	&hearts;   &hearts;   &hearts;
-|		|	329	|	[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)	|	&hearts;   &hearts;   &hearts;
-|		|	328	|	[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)	|	&hearts;   &hearts;
-|		|	327	|	[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)	|	&hearts;   &hearts;   &hearts;
-|	[Swift](./Math/PowerThree.swift)	|	326	|	[Power of Three](https://leetcode.com/problems/power-of-three/)	|	&hearts;
-|	[Swift](./Array/MaximumSizeSubarraySumEqualsK.swift)	|	325	|	[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)  &hearts;	|	&hearts;   &hearts;
-|	[Swift](./Sort/WiggleSortII.swift)	|	324	|	[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/)	|	&hearts;   &hearts;
-|		|	323	|	[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)  &hearts;	|	&hearts;   &hearts;
-|	[Swift](./DP/CoinChange.swift)	|	322	|	[Coin Change](https://leetcode.com/problems/coin-change/)	|	&hearts;   &hearts;
-|		|	321	|	[Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)	|	&hearts;   &hearts;   &hearts;
-|		|	320	|	[Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/)  &hearts;	|	&hearts;   &hearts;
-|		|	319	|	[Bulb Switcher](https://leetcode.com/problems/bulb-switcher/)	|	&hearts;   &hearts;
-|		|	318	|	[Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/)	|	&hearts;   &hearts;
-|		|	317	|	[Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)  &hearts;	|	&hearts;   &hearts;   &hearts;
-|		|	316	|	[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)	|	&hearts;   &hearts;   &hearts;
-|		|	315	|	[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)	|	&hearts;   &hearts;   &hearts;
-|		|	314	|	[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/) &hearts;	|	&hearts;   &hearts;
-|	[Swift](./Math/SuperUglyNumber.swift)	|	313	|	[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/)	|	&hearts;   &hearts;
-|		|	312	|	[Burst Balloons](https://leetcode.com/problems/burst-balloons/)	|	&hearts;   &hearts;   &hearts;
-|		|	311	|	[Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/)  &hearts;	|	&hearts;   &hearts;
-|		|	310	|	[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)	|	&hearts;   &hearts;
-|		|	309	|	[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)	|	&hearts;   &hearts;
-|		|	308	|	[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/) &hearts;	|	&hearts;   &hearts;   &hearts;
-|		|	307	|	[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)	|	&hearts;   &hearts;
-|		|	306	|	[Additive Number](https://leetcode.com/problems/additive-number/)	|	&hearts;   &hearts;
-|		|	305	|	[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)  &hearts;	|	&hearts;   &hearts;   &hearts;
-|		|	304	|	[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)	|	&hearts;   &hearts;
-|		|	303	|	[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)	|	&hearts;
-|		|	302	|	[Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/)  &hearts;	|	&hearts;   &hearts;   &hearts;
-|		|	301	|	[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)	|	&hearts;   &hearts;   &hearts;
-|	[Swift](./DP/LongestIncreasingSubsequence.swift)	|	300	|	[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)	|	&hearts;   &hearts;
-|		|	299	|	[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)	|	&hearts;	|
-|		|	298	|	[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) &hearts;	|	&hearts;   &hearts;	|
-|		|	297	|	[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)	|	&hearts;   &hearts;   &hearts;	|
-|		|	296	|	[Best Meeting Point](https://leetcode.com/problems/best-meeting-point/) &hearts;	|	&hearts;   &hearts;   &hearts;	|
-|		|	295	|	[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)	|	&hearts;   &hearts;   &hearts;	|
-|		|	294	|	[Flip Game II](https://leetcode.com/problems/flip-game-ii/) &hearts;	|	&hearts;   &hearts;	|
-|	[Swift](./String/FlipGame.swift)	|	293	|	[Flip Game](https://leetcode.com/problems/flip-game/) &hearts;	|	&hearts;	|
-|		|	292	|	[Nim Game](https://leetcode.com/problems/nim-game/)	|	&hearts;	|
-|		|	291	|	[Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) &hearts;	|	&hearts;   &hearts;   &hearts;	|
-|	[Swift](./String/WordPattern.swift)	|	290	|	[Word Pattern](https://leetcode.com/problems/word-pattern/)	|	&hearts;	|
-|		|	289	|	[Game of Life](https://leetcode.com/problems/game-of-life/)	|	&hearts;   &hearts;	|
-|		|	288	|	[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/) &hearts;	|	&hearts;	|
-|		|	287	|	[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)	|	&hearts;   &hearts;   &hearts;	|
-|		|	286	|	[Walls and Gates](https://leetcode.com/problems/walls-and-gates/) &hearts;	|	&hearts;   &hearts;	|
-|		|	285	|	[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) &hearts;	|	&hearts;   &hearts;	|
-|		|	284	|	[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)	|	&hearts;   &hearts;	|
-|	[Swift](./Array/MoveZeroes.swift)	|	283	|	[Move Zeroes](https://leetcode.com/problems/move-zeroes/)	|	&hearts;	|
-|		|	282	|	[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)	|	&hearts;   &hearts;   &hearts;	|
-|		|	281	|	[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) &hearts;	|	&hearts;   &hearts;	|
-|	[Swift](./Sort/WiggleSort.swift)	|	280	|	[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/) &hearts;	|	&hearts;   &hearts;	|
-|	[Swift](./DP/PerfectSquares.swift)	|	279	|	[Perfect Squares](https://leetcode.com/problems/perfect-squares/)	|	&hearts;   &hearts;	|
-|		|	278	|	[First Bad Version](https://leetcode.com/problems/first-bad-version/)	|	&hearts;	|
-|		|	277	|	[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) &hearts;	|	&hearts;   &hearts;	|
-|		|	276	|	[Paint Fence](https://leetcode.com/problems/paint-fence/) &hearts;	|	&hearts;	|
-|		|	275	|	[H-Index II](https://leetcode.com/problems/h-index-ii/)	|	&hearts;   &hearts;	|
-|		|	274	|	[H-Index](https://leetcode.com/problems/h-index/)	|	&hearts;   &hearts;	|
-|		|	273	|	[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)	|	&hearts;   &hearts;   &hearts;	|
-|		|	272	|	[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) &hearts;	|	&hearts;   &hearts;   &hearts;	|
-|		|	271	|	[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) &hearts;	|	&hearts;   &hearts;	|
-|	[Swift](./Search/ClosestBinarySearchTreeValue.swift)	|	270	|	[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/) &hearts;	|	&hearts;	|
-|		|	269	|	[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) &hearts;	|	&hearts;   &hearts;   &hearts;	|
-|		|	268	|	[Missing Number](https://leetcode.com/problems/missing-number/)	|	&hearts;   &hearts;	|
-|		|	267	|	[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) &hearts;	|	&hearts;   &hearts;	|
-|	[Swift](./String/PalindromePermutation.swift)	|	266	|	[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) &hearts;	|	&hearts;	|
-|		|	265	|	[Paint House II](https://leetcode.com/problems/paint-house-ii/) &hearts;	|	&hearts;   &hearts;   &hearts;	|
-|	[Swift](./Math/UglyNumberII.swift)	|	264	|	[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)	|	&hearts;   &hearts;	|
-|	[Swift](./Math/UglyNumber.swift)	|	263	|	[Ugly Number](https://leetcode.com/problems/ugly-number/)	|	&hearts;	|
-|		|	261	|	[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) &hearts;	|	&hearts;   &hearts;	|
-|		|	260	|	[Single Number III](https://leetcode.com/problems/single-number-iii/)	|	&hearts;   &hearts;	|
-|		|	259	|	[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) &hearts;	|	&hearts;   &hearts;	|
-|		|	258	|	[Add Digits](https://leetcode.com/problems/add-digits/)	|	&hearts;	|
-|		|	257	|	[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)	|	&hearts;	|
-|		|	256	|	[Paint House](https://leetcode.com/problems/paint-house/) &hearts;	|	&hearts;   &hearts;	|
-|		|	255	|	[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/) &hearts;	|	&hearts;   &hearts;	|
-|		|	254	|	[Factor Combinations](https://leetcode.com/problems/factor-combinations/) &hearts;	|	&hearts;   &hearts;	|
-|		|	253	|	[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) &hearts;	|	&hearts;   &hearts;	|
-|	[Swift](./Sort/MeetingRooms.swift)	|	252	|	[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) &hearts;	|	&hearts;	|
-|		|	251	|	[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/) &hearts;	|	&hearts;   &hearts;	|
-|		|	250	|	[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/) &hearts;	|	&hearts;   &hearts;	|
-|		|	249	|	[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/) &hearts;	|	&hearts;	|
-|		|	248	|	[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii/) &hearts;	|	&hearts;   &hearts;   &hearts;	|
-|		|	247	|	[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/) &hearts;	|	&hearts;   &hearts;	|
-|		|	246	|	[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/) &hearts;	|	&hearts;	|
-|		|	245	|	[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/) &hearts;	|	&hearts;   &hearts;	|
-|		|	244	|	[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/) &hearts;	|	&hearts;   &hearts;	|
-|		|	243	|	[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/) &hearts;	|	&hearts;	|
-|	[Swift](./String/ValidAnagram.swift)	|	242	|	[Valid Anagram](https://leetcode.com/problems/valid-anagram/)	|	&hearts;	|
-|		|	241	|	[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)	|	&hearts;   &hearts;	|
-|		|	240	|	[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)	|	&hearts;   &hearts;	|
-|	[Swift](./Array/SlidingWindowMaximum.swift)	|	239	|	[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)	|	&hearts;   &hearts;   &hearts;	|
-|	[Swift](./Array/ProductExceptSelf.swift)	|	238	|	[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)	|	&hearts;   &hearts;	|
-|		|	237	|	[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)	|	&hearts;	|
-|		|	236	|	[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)	|	&hearts;   &hearts;	|
-|		|	235	|	[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)	|	&hearts;	|
-|	[Swift](./LinkedList/PalindromeLinkedList.swift)	|	234	|	[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)	|	&hearts;	|
-|		|	233	|	[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)	|	&hearts;   &hearts;   &hearts;	|
-|		|	232	|	[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)	|	&hearts;	|
-|	[Swift](./Math/PowerTwo.swift)	|	231	|	[Power of Two](https://leetcode.com/problems/power-of-two/)	|	&hearts;	|
-|		|	230	|	[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)	|	&hearts;   &hearts;	|
-|		|	229	|	[Majority Element II](https://leetcode.com/problems/majority-element-ii/)	|	&hearts;   &hearts;	|
-|	[Swift](./Array/SummaryRanges.swift)	|	228	|	[Summary Ranges](https://leetcode.com/problems/summary-ranges/)	|	&hearts;   &hearts;	|
-|		|	227	|	[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)	|	&hearts;   &hearts;	|
-|	[Swift](./Tree/InvertBinaryTree.swift)	|	226	|	[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)	|	&hearts;	|
-|		|	225	|	[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)	|	&hearts;	|
-|		|	224	|	[Basic Calculator](https://leetcode.com/problems/basic-calculator/)	|	&hearts;   &hearts;   &hearts;	|
-|		|	223	|	[Rectangle Area](https://leetcode.com/problems/rectangle-area/)	|	&hearts;	|
-|		|	222	|	[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)	|	&hearts;   &hearts;	|
-|	[Swift](./DP/MaximalSquare.swift)	|	221	|	[Maximal Square](https://leetcode.com/problems/maximal-square/)	|	&hearts;   &hearts;	|
-|		|	220	|	[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)	|	&hearts;   &hearts;	|
-|	[Swift](./Array/ContainsDuplicateII.swift)	|	219	|	[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)	|	&hearts;	|
-|		|	218	|	[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)	|	&hearts;   &hearts;   &hearts;	|
-|	[Swift](./Array/ContainsDuplicate.swift)	|	217	|	[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)	|	&hearts;	|
-|	[Swift](./DFS/combinationSumIII.swift)	|	216	|	[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)	|	&hearts;   &hearts;	|
-|		|	215	|	[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)	|	&hearts;   &hearts;	|
-|		|	214	|	[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)	|	&hearts;   &hearts;   &hearts;	|
-|	[Swift](./DP/HouseRobberII.swift)	|	213	|	[House Robber II](https://leetcode.com/problems/house-robber-ii/)	|	&hearts;   &hearts;	|
-|		|	212	|	[Word Search II](https://leetcode.com/problems/word-search-ii/)	|	&hearts;   &hearts;   &hearts;	|
-|		|	211	|	[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)	|	&hearts;   &hearts;	|
-|		|	210	|	[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)	|	&hearts;   &hearts;	|
-|		|	209	|	[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)	|	&hearts;   &hearts;	|
-|		|	208	|	[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)	|	&hearts;   &hearts;	|
-|		|	207	|	[Course Schedule](https://leetcode.com/problems/course-schedule/)	|	&hearts;   &hearts;	|
-|	[Swift](./LinkedList/ReverseLinkedList.swift)	|	206	|	[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)	|	&hearts;	|
-|	[Swift](./String/IsomorphicStrings.swift)	|	205	|	[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)	|	&hearts;	|
-|		|	204	|	[Count Primes](https://leetcode.com/problems/count-primes/)	|	&hearts;	|
-|	[Swift](./LinkedList/RemoveLinkedListElements.swift)	|	203	|	[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)	|	&hearts;	|
-|	[Swift](./Math/HappyNumber.swift)	|	202	|	[Happy Number](https://leetcode.com/problems/happy-number/)	|	&hearts;	|
-|		|	201	|	[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)	|	&hearts;   &hearts;	|
-|	[Swift](./DFS/NumberofIslands.swift)	|	200	|	[Number of Islands](https://leetcode.com/problems/number-of-islands/)	|	&hearts;   &hearts;	|
-|		|	199	|	[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)	|	&hearts;    &hearts;	|
-|	[Swift](./DP/HouseRobber.swift)	|	198	|	[House Robber](https://leetcode.com/problems/house-robber/)	|	&hearts;	|
-|		|	191	|	[Number of 1 Bits](https://oj.leetcode.com/problems/number-of-1-bits/)	|	&hearts;	|
-|		|	190	|	[Reverse Bits](https://oj.leetcode.com/problems/reverse-bits/)	|	&hearts;	|
-|	[Swift](./Array/RotateArray.swift)	|	189	|	[Rotate Array](https://oj.leetcode.com/problems/rotate-array/)	|	&hearts;	|
-|		|	188	|	[Best Time to Buy and Sell Stock IV](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	187	|	[Repeated DNA Sequences](https://oj.leetcode.com/problems/repeated-dna-sequences/)	|	&hearts;    &hearts;	|
-|		|	186	|	[Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/) &hearts;	|	&hearts;    &hearts;	|
-|		|	179	|	[Largest Number](https://oj.leetcode.com/problems/largest-number/)	|	&hearts;    &hearts;	|
-|		|	174	|	[Dungeon Game](https://oj.leetcode.com/problems/dungeon-game/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	173	|	[Binary Search Tree Iterator](https://oj.leetcode.com/problems/binary-search-tree-iterator/)	|	&hearts;    &hearts;	|
-|		|	172	|	[Factorial Trailing Zeroes](https://oj.leetcode.com/problems/factorial-trailing-zeroes/)	|	&hearts;	|
-|	[Swift](./Math/ExcelSheetColumnNumber.swift)	|	171	|	[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)	|	&hearts;	|
-|		|	170	|	[Two Sum III - Data structure design](https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/) &hearts;	|	&hearts;	|
-|		|	169	|	[Majority Element](https://oj.leetcode.com/problems/majority-element/)	|	&hearts;	|
-|		|	168	|	[Excel Sheet Column Title](https://oj.leetcode.com/problems/excel-sheet-column-title/)	|	&hearts;	|
-|		|	167	|	[Two Sum II - Input array is sorted](https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/) &hearts;	|	&hearts;    &hearts;	|
-|		|	166	|	[Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/)	|	&hearts;    &hearts;	|
-|		|	165	|	[Compare Version Numbers](https://oj.leetcode.com/problems/compare-version-numbers/)	|	&hearts;	|
-|		|	164	|	[Maximum Gap](https://oj.leetcode.com/problems/maximum-gap/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	163	|	[Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/) &hearts;	|	&hearts;    &hearts;	|
-|	[Swift](./Search/FindPeakElement.swift)	|	162	|	[Find Peak Element](https://oj.leetcode.com/problems/find-peak-element/)	|	&hearts;    &hearts;	|
-|	[Swift](./String/OneEditDistance.swift)	|	161	|	[One Edit Distance](https://oj.leetcode.com/problems/one-edit-distance/)&hearts;	|	&hearts;    &hearts;	|
-|		|	160	|	[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)	|	&hearts;	|
-|		|	159	|	[Longest Substring with At Most Two Distinct Characters](https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) &hearts;	|	&hearts;    &hearts;    &hearts;	|
-|		|	158	|	[Read N Characters Given Read4 II - Call multiple times](https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) &hearts;	|	&hearts;    &hearts;    &hearts;	|
-|		|	157	|	[Read N Characters Given Read4](https://oj.leetcode.com/problems/read-n-characters-given-read4/) &hearts;	|	&hearts;	|
-|		|	156	|	[Binary Tree Upside Down](https://oj.leetcode.com/problems/binary-tree-upside-down/) &hearts;	|	&hearts;    &hearts;	|
-|		|	155	|	[Min Stack](https://oj.leetcode.com/problems/min-stack/)	|	&hearts;	|
-|	[Swift](./Search/FindMinimumRotatedSortedArrayII.swift)	|	154	|	[Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Search/FindMinimumRotatedSortedArray.swift)	|	153	|	[Find Minimum in Rotated Sorted Array](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/)	|	&hearts;    &hearts;	|
-|	[Swift](./DP/MaximumProductSubarray.swift)	|	152	|	[Maximum Product Subarray](https://oj.leetcode.com/problems/maximum-product-subarray/)	|	&hearts;    &hearts;	|
-|		|	151	|	[Reverse Words in a String](https://oj.leetcode.com/problems/reverse-words-in-a-string/)	|	&hearts;    &hearts;	|
-|	[Swift](./Stack/EvaluateReversePolishNotation.swift)	|	150	|	[Evaluate Reverse Polish Notation](https://oj.leetcode.com/problems/evaluate-reverse-polish-notation/)	|	&hearts;    &hearts;	|
-|		|	149	|	[Max Points on a Line](https://oj.leetcode.com/problems/max-points-on-a-line/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	148	|	[Sort List](https://oj.leetcode.com/problems/sort-list/)	|	&hearts;    &hearts;	|
-|		|	147	|	[Insertion Sort List](https://oj.leetcode.com/problems/insertion-sort-list/)	|	&hearts;    &hearts;	|
-|		|	146	|	[LRU Cache](https://oj.leetcode.com/problems/lru-cache/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Stack/PostorderTraversal.swift)	|	145	|	[Binary Tree Postorder Traversal](https://oj.leetcode.com/problems/binary-tree-postorder-traversal/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Stack/PreorderTraversal.swift)	|	144	|	[Binary Tree Preorder Traversal](https://oj.leetcode.com/problems/binary-tree-preorder-traversal/)	|	&hearts;    &hearts;	|
-|	[Swift](./LinkedList/ReorderList.swift)	|	143	|	[Reorder List](https://oj.leetcode.com/problems/reorder-list/)	|	&hearts;    &hearts;	|
-|		|	142	|	[Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/)	|	&hearts;    &hearts;	|
-|		|	141	|	[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)	|	&hearts;	|
-|		|	140	|	[Word Break II](https://oj.leetcode.com/problems/word-break-ii/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	139	|	[Word Break](https://oj.leetcode.com/problems/word-break/)	|	&hearts;    &hearts;	|
-|		|	138	|	[Copy List with Random Pointer](https://oj.leetcode.com/problems/copy-list-with-random-pointer/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Math/SingleNumberII.swift)	|	137	|	[Single Number II](https://oj.leetcode.com/problems/single-number-ii/)	|	&hearts;    &hearts;	|
-|	[Swift](./Math/SingleNumber.swift)	|	136	|	[Single Number](https://oj.leetcode.com/problems/single-number/)	|	&hearts;    &hearts;	|
-|		|	135	|	[Candy](https://oj.leetcode.com/problems/candy/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	134	|	[Gas Station](https://oj.leetcode.com/problems/gas-station/)	|	&hearts;    &hearts;	|
-|		|	133	|	[Clone Graph](https://oj.leetcode.com/problems/clone-graph/)	|	&hearts;    &hearts;	|
-|		|	132	|	[Palindrome Partitioning II](https://oj.leetcode.com/problems/palindrome-partitioning-ii/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	131	|	[Palindrome Partitioning](https://oj.leetcode.com/problems/palindrome-partitioning/)	|	&hearts;    &hearts;	|
-|		|	130	|	[Surrounded Regions](https://oj.leetcode.com/problems/surrounded-regions/)	|	&hearts;    &hearts;	|
-|		|	129	|	[Sum Root to Leaf Numbers](https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/)	|	&hearts;    &hearts;	|
-|		|	128	|	[Longest Consecutive Sequence](https://oj.leetcode.com/problems/longest-consecutive-sequence/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	127	|	[Word Ladder](https://oj.leetcode.com/problems/word-ladder/)	|	&hearts;    &hearts;	|
-|		|	126	|	[Word Ladder II](https://oj.leetcode.com/problems/word-ladder-ii/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	125	|	[Valid Palindrome](https://oj.leetcode.com/problems/valid-palindrome/)	|	&hearts;	|
-|		|	124	|	[Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	123	|	[Best Time to Buy and Sell Stock III](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	122	|	[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)	|	&hearts;    &hearts;	|
-|	[Swift](./DP/BestTimeBuySellStock.swift)	|	121	|	[Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)	|	&hearts;	|
-|		|	120	|	[Triangle](https://oj.leetcode.com/problems/triangle/)	|	&hearts;    &hearts;	|
-|		|	119	|	[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)	|	&hearts;	|
-|		|	118	|	[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)	|	&hearts;	|
-|		|	117	|	[Populating Next Right Pointers in Each Node II](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	116	|	[Populating Next Right Pointers in Each Node](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/)	|	&hearts;    &hearts;	|
-|		|	115	|	[Distinct Subsequences](https://oj.leetcode.com/problems/distinct-subsequences/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	114	|	[Flatten Binary Tree to Linked List](https://oj.leetcode.com/problems/flatten-binary-tree-to-linked-list/)	|	&hearts;    &hearts;	|
-|	[Swift](./Tree/PathSumII.swift)	|	113	|	[Path Sum II](https://oj.leetcode.com/problems/path-sum-ii/)	|	&hearts;    &hearts;	|
-|	[Swift](./Tree/PathSum.swift)	|	112	|	[Path Sum](https://oj.leetcode.com/problems/path-sum/)	|	&hearts;	|
-|	[Swift](./Tree/MinimumDepthOfBinaryTree.swift)	|	111	|	[Minimum Depth of Binary Tree](https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/)	|	&hearts;	|
-|	[Swift](./Tree/BalancedBinaryTree.swift)	|	110	|	[Balanced Binary Tree](https://oj.leetcode.com/problems/balanced-binary-tree/)	|	&hearts;	|
-|		|	109	|	[Convert Sorted List to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)	|	&hearts;    &hearts;	|
-|		|	108	|	[Convert Sorted Array to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)	|	&hearts;    &hearts;	|
-|	[Swift](./Tree/BinaryTreeLevelOrderTraversalII.swift)	|	107	|	[Binary Tree Level Order Traversal II](https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/)	|	&hearts;	|
-|	[Swift](./Tree/ConstructBinaryTreeInorderPostorder.swift)	|	106	|	[Construct Binary Tree from Inorder and Postorder Traversal](https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)	|	&hearts;    &hearts;	|
-|	[Swift](./Tree/ConstructBinaryTreePreorderInorder.swift)	|	105	|	[Construct Binary Tree from Preorder and Inorder Traversal](https://oj.leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)	|	&hearts;    &hearts;	|
-|	[Swift](./Tree/MaximumDepthOfBinaryTree.swift)	|	104	|	[Maximum Depth of Binary Tree](https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/)	|	&hearts;	|
-|	[Swift](./Tree/BinaryTreeZigzagLevelOrderTraversal.swift)	|	103	|	[Binary Tree Zigzag Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)	|	&hearts;    &hearts;	|
-|	[Swift](./Tree/BinaryTreeLevelOrderTraversal.swift)	|	102	|	[Binary Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/)	|	&hearts;	|
-|	[Swift](./Tree/SymmetricTree.swift)	|	101	|	[Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)	|	&hearts;	|
-|	[Swift](./Tree/SameTree.swift)	|	100	|	[Same Tree](https://oj.leetcode.com/problems/same-tree/)	|	&hearts;	|
-|		|	99	|	[Recover Binary Search Tree](https://oj.leetcode.com/problems/recover-binary-search-tree/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Tree/ValidateBinarySearchTree.swift)	|	98	|	[Validate Binary Search Tree](https://oj.leetcode.com/problems/validate-binary-search-tree/)	|	&hearts;    &hearts;	|
-|		|	97	|	[Interleaving String](https://oj.leetcode.com/problems/interleaving-string/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	96	|	[Unique Binary Search Trees](https://oj.leetcode.com/problems/unique-binary-search-trees/)	|	&hearts;    &hearts;	|
-|		|	95	|	[Unique Binary Search Trees II](https://oj.leetcode.com/problems/unique-binary-search-trees-ii/)	|	&hearts;    &hearts;	|
-|	[Swift](./Stack/InorderTraversal.swift)	|	94	|	[Binary Tree Inorder Traversal](https://oj.leetcode.com/problems/binary-tree-inorder-traversal/)	|	&hearts;    &hearts;	|
-|		|	93	|	[Restore IP Addresses](https://oj.leetcode.com/problems/restore-ip-addresses/)	|	&hearts;    &hearts;	|
-|		|	92	|	[Reverse Linked List II](https://oj.leetcode.com/problems/reverse-linked-list-ii/)	|	&hearts;    &hearts;	|
-|		|	91	|	[Decode Ways](https://oj.leetcode.com/problems/decode-ways/)	|	&hearts;    &hearts;	|
-|	[Swift](./DFS/SubsetsII.swift)	|	90	|	[Subsets II](https://oj.leetcode.com/problems/subsets-ii/)	|	&hearts;    &hearts;	|
-|		|	89	|	[Gray Code](https://oj.leetcode.com/problems/gray-code/)	|	&hearts;    &hearts;	|
-|		|	88	|	[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)	|	&hearts;	|
-|		|	87	|	[Scramble String](https://oj.leetcode.com/problems/scramble-string/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./LinkedList/PartitionList.swift)	|	86	|	[Partition List](https://oj.leetcode.com/problems/partition-list/)	|	&hearts;    &hearts;	|
-|		|	85	|	[Maximal Rectangle](https://oj.leetcode.com/problems/maximal-rectangle/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	84	|	[Largest Rectangle in Histogram](https://oj.leetcode.com/problems/largest-rectangle-in-histogram/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./LinkedList/RemoveDuplicatesFromSortedList.swift)	|	83	|	[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)	|	&hearts;	|
-|	[Swift](./LinkedList/RemoveDuplicatesFromSortedListII.swift)	|	82	|	[Remove Duplicates from Sorted List II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)	|	&hearts;    &hearts;	|
-|	[Swift](./Search/SearchInRotatedSortedArrayII.swift)	|	81	|	[Search in Rotated Sorted Array II](https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/)	|	&hearts;    &hearts;	|
-|	[Swift](./Array/RemoveDuplicatesFromSortedArrayII.swift)	|	80	|	[Remove Duplicates from Sorted Array II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)	|	&hearts;    &hearts;	|
-|	[Swift](./DFS/WordSearch.swift)	|	79	|	[Word Search](https://oj.leetcode.com/problems/word-search/)	|	&hearts;    &hearts;	|
-|	[Swfit](./DFS/Subsets.swift)	|	78	|	[Subsets](https://oj.leetcode.com/problems/subsets/)	|	&hearts;    &hearts;	|
-|	[Swift](./DFS/combinations.swift)	|	77	|	[Combinations](https://oj.leetcode.com/problems/combinations/)	|	&hearts;    &hearts;	|
-|		|	76	|	[Minimum Window Substring](https://oj.leetcode.com/problems/minimum-window-substring/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Sort/SortColors.swift)	|	75	|	[Sort Colors](https://oj.leetcode.com/problems/sort-colors/)	|	&hearts;    &hearts;	|
-|		|	74	|	[Search a 2D Matrix](https://oj.leetcode.com/problems/search-a-2d-matrix/)	|	&hearts;    &hearts;	|
-|		|	73	|	[Set Matrix Zeroes](https://oj.leetcode.com/problems/set-matrix-zeroes/)	|	&hearts;    &hearts;	|
-|	[Swift](./DP/EditDistance.swift)	|	72	|	[Edit Distance](https://oj.leetcode.com/problems/edit-distance/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Stack/SimplifyPath.swift)	|	71	|	[Simplify Path](https://oj.leetcode.com/problems/simplify-path/)	|	&hearts;    &hearts;	|
-|	[Swift](./DP/ClimbingStairs.swift)	|	70	|	[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)	|	&hearts;	|
-|	[Swift](./Search/Sqrtx.swift)	|	69	|	[Sqrt(x)](https://oj.leetcode.com/problems/sqrtx/)	|	&hearts;    &hearts;	|
-|	[Swift](./String/TextJustification.swift)	|	68	|	[Text Justification](https://oj.leetcode.com/problems/text-justification/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Math/AddBinary.swift)	|	67	|	[Add Binary](https://oj.leetcode.com/problems/add-binary/)	|	&hearts;	|
-|	[Swift](./Math/PlusOne.swift)	|	66	|	[Plus One](https://oj.leetcode.com/problems/plus-one/)	|	&hearts;	|
-|		|	65	|	[Valid Number](https://oj.leetcode.com/problems/valid-number/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	64	|	[Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)	|	&hearts;    &hearts;	|
-|	[Swift](./DP/UniquePathsII.swift)	|	63	|	[Unique Paths II](https://oj.leetcode.com/problems/unique-paths-ii/)	|	&hearts;    &hearts;	|
-|	[Swift](./DP/UniquePaths.swift)	|	62	|	[Unique Paths](https://oj.leetcode.com/problems/unique-paths/)	|	&hearts;    &hearts;	|
-|	[Swift](./LinkedList/RotateList.swift)	|	61	|	[Rotate List](https://oj.leetcode.com/problems/rotate-list/)	|	&hearts;    &hearts;	|
-|		|	60	|	[Permutation Sequence](https://oj.leetcode.com/problems/permutation-sequence/)	|	&hearts;    &hearts;	|
-|	[Swift](./Array/SpiralMatrixII.swift)	|	59	|	[Spiral Matrix II](https://oj.leetcode.com/problems/spiral-matrix-ii/)	|	&hearts;    &hearts;	|
-|	[Swift](./String/LengthLastWord.swift)	|	58	|	[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)	|	&hearts;	|
-|		|	57	|	[Insert Interval](https://oj.leetcode.com/problems/insert-interval/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Sort/MergeIntervals.swift)	|	56	|	[Merge Intervals](https://oj.leetcode.com/problems/merge-intervals/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	55	|	[Jump Game](https://oj.leetcode.com/problems/jump-game/)	|	&hearts;    &hearts;	|
-|	[Swift](./Array/SpiralMatrix.swift)	|	54	|	[Spiral Matrix](https://oj.leetcode.com/problems/spiral-matrix/)	|	&hearts;    &hearts;	|
-|	[Swift](./DP/MaximumSubarray.swift)	|	53	|	[Maximum Subarray](https://oj.leetcode.com/problems/maximum-subarray/)	|	&hearts;    &hearts;	|
-|		|	52	|	[N-Queens II](https://oj.leetcode.com/problems/n-queens-ii/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	51	|	[N-Queens](https://oj.leetcode.com/problems/n-queens/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Math/Pow.swift)	|	50	|	["Pow(x, n)"](https://oj.leetcode.com/problems/powx-n/)	|	&hearts;    &hearts;	|
-|	[Swift](./String/GroupAnagrams.swift)	|	49	|	[Group Anagrams](https://oj.leetcode.com/problems/anagrams/)	|	&hearts;    &hearts;	|
-|	[Swift](./Array/RotateImage.swift)	|	48	|	[Rotate Image](https://oj.leetcode.com/problems/rotate-image/)	|	&hearts;    &hearts;	|
-|	[Swift](./DFS/PermutationsII.swift)	|	47	|	[Permutations II](https://oj.leetcode.com/problems/permutations-ii/)	|	&hearts;    &hearts;	|
-|	[Swift](./DFS/Permutations.swift)	|	46	|	[Permutations](https://oj.leetcode.com/problems/permutations/)	|	&hearts;    &hearts;	|
-|		|	45	|	[Jump Game II](https://oj.leetcode.com/problems/jump-game-ii/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	44	|	[Wildcard Matching](https://oj.leetcode.com/problems/wildcard-matching/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	43	|	[Multiply Strings](https://oj.leetcode.com/problems/multiply-strings/)	|	&hearts;    &hearts;	|
-|	[Swift](./Math/TrappingRainWater.swift)	|	42	|	[Trapping Rain Water](https://oj.leetcode.com/problems/trapping-rain-water/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	41	|	[First Missing Positive](https://oj.leetcode.com/problems/first-missing-positive/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./DFS/combinationSumII.swiftc)	|	40	|	[Combination Sum II](https://oj.leetcode.com/problems/combination-sum-ii/)	|	&hearts;    &hearts;	|
-|	[Swift](./DFS/CombinationSum.swift)	|	39	|	[Combination Sum](https://oj.leetcode.com/problems/combination-sum/)	|	&hearts;    &hearts;	|
-|	[Swift](./String/CountAndSay.swift)	|	38	|	[Count and Say](https://oj.leetcode.com/problems/count-and-say/)	|	&hearts;	|
-|		|	37	|	[Sudoku Solver](https://oj.leetcode.com/problems/sudoku-solver/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Array/ValidSudoku.swift)	|	36	|	[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)	|	&hearts;	|
-|	[Swift](./Search/SearchInsertPosition.swift)	|	35	|	[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)	|	&hearts;    &hearts;	|
-|	[Swift](./Search/SearchForARange.swift)	|	34	|	[Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/)	|	&hearts;    &hearts;	|
-|	[Swift](./Search/SearchInRotatedSortedArray.swift)	|	33	|	[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	32	|	[Longest Valid Parentheses](https://oj.leetcode.com/problems/longest-valid-parentheses/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	31	|	[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)	|	&hearts;    &hearts;	|
-|		|	30	|	[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)	|	&hearts;    &hearts;    &hearts;	|
-|		|	29	|	[Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/)	|	&hearts;    &hearts;	|
-|	[Swift](./String/StrStr.swift)	|	28	|	[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)	|	&hearts;	|
-|	[Swfit](./Array/RemoveElement.swift)	|	27	|	[Remove Element](https://oj.leetcode.com/problems/remove-element/)	|	&hearts;	|
-|	[Swift](./Array/RemoveDuplicatesFromSortedArray.swift)	|	26	|	[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)	|	&hearts;	|
-|		|	25	|	[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./LinkedList/SwapNodesInPairs.swift)	|	24	|	[Swap Nodes in Pairs](https://oj.leetcode.com/problems/swap-nodes-in-pairs/)	|	&hearts;	|
-|	[Swift](./LinkedList/MergeKSortedLists.swift)	|	23	|	[Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Math/GenerateParentheses.swift)	|	22	|	[Generate Parentheses](https://oj.leetcode.com/problems/generate-parentheses/)	|	&hearts;    &hearts;	|
-|	[Swift](./LinkedList/MergeTwoSortedLists.swift)	|	21	|	[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)	|	&hearts;	|
-|	[Swift](./Stack/ValidParentheses.swift)	|	20	|	[Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)	|	&hearts;	|
-|	[Swift](./LinkedList/RemoveNthFromEnd.swift)	|	19	|	[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)	|	&hearts;	|
-|	[Swift](./Array/FourSum.swift)	|	18	|	[4Sum](https://oj.leetcode.com/problems/4sum/)	|	&hearts;    &hearts;	|
-|	[Swift](./DFS/LetterCombinationsPhoneNumber.swift)	|	17	|	[Letter Combinations of a Phone Number](https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/)	|	&hearts;    &hearts;	|
-|		|	16	|	[3Sum Closest](https://oj.leetcode.com/problems/3sum-closest/)	|	&hearts;    &hearts;	|
-|	[Swift](./Array/ThreeSum.swift)	|	15	|	[3Sum](https://oj.leetcode.com/problems/3sum/)	|	&hearts;    &hearts;	|
-|	[Swift](./String/LongestCommonPrefix.swift)	|	14	|	[Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)	|	&hearts;	|
-|	[Swift](./Math/RomanToInteger.swift)	|	13	|	[Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)	|	&hearts;	|
-|		|	12	|	[Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)	|	&hearts;    &hearts;	|
-|		|	11	|	[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)	|	&hearts;    &hearts;	|
-|		|	10	|	[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./Math/PalindromeNumber.swift)	|	9	|	[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)	|	&hearts;	|
-|	[Swift](./Math/Atoi.swift)	|	8	|	[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)	|	&hearts;	|
-|	[Swift](./Math/ReverseInteger.swift)	|	7	|	[Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)	|	&hearts;	|
-|	[Swift](./String/ZigZagConversion.swift)	|	6	|	[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)	|	&hearts;	|
-|	[Swift](./DP/LongestPalindromicSubstring.swift)	|	5	|	[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)	|	&hearts;    &hearts;	|
-|	[Swift](./Search/MedianOfTwoSortedArrays.swift)	|	4	|	[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)	|	&hearts;    &hearts;    &hearts;	|
-|	[Swift](./String/LongestSubstringWithoutRepeatingCharacters.swift)	|	3	|	[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)	|	&hearts;    &hearts;	|
-|	[Swift](./Math/AddTwoNumbers.swift)	|	2	|	[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)	|	&hearts;    &hearts;	|
-|	[Swift](./Array/TwoSum.swift)	|	1	|	[Two Sum](https://leetcode.com/problems/two-sum/)	|	&hearts;	|
+|		|	375	|	[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)	|	Medium
+|		|	374	|	[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)	| Easy
+|		|	373	|	[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)	|	Medium
+|	[Swift](./Math/SuperPow.swift)	|	372	|	[Super Pow](https://leetcode.com/problems/super-pow/)	|	Medium
+|	[Swift](./Math/SumTwoIntegers.swift)	|	371	|	[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)	| Easy
+|		|	370	|	[Range Addition](https://leetcode.com/problems/range-addition/) &hearts;	|	Medium
+|		|	369	|	[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/) &hearts;	|	Medium
+|		|	368	|	[Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/)	|	Medium
+|		|	367	|	[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)	|	Medium
+|		|	366	|	[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) &hearts;	|	Medium
+|		|	365	|	[Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/)	|	Medium
+|		|	364	|	[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/) &hearts;	|	Medium
+|		|	363	|	[Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-sub-matrix-no-larger-than-k/)	|	Hard
+|		|	362	|	[Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) &hearts;	|	Medium
+|		|	361	|	[Bomb Enemy](https://leetcode.com/problems/bomb-enemy/) &hearts;	|	Medium
+|		|	360	|	[Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array/) &hearts;	|	Medium
+|		|	359	|	[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/) &hearts;	| Easy
+|		|	358	|	[Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/) &hearts;	|	Hard
+|		|	357	|	[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)	|	Medium
+|		|	356	|	[Line Reflection](https://leetcode.com/problems/line-reflection/) &hearts;	|	Medium
+|		|	355	|	[Design Twitter](https://leetcode.com/problems/design-twitter/)	|	Medium
+|		|	354	|	[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/)	|	Hard
+|		|	353	|	[Design Snake Game](https://leetcode.com/problems/design-snake-game/) &hearts;	|	Medium
+|		|	352	|	[Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)	|	Hard
+|		|	351	|	[Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts;	|	Medium
+|	[Swift](./Array/IntersectionTwoArraysII.swift)	|	350	|	[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)	| Easy
+|	[Swift](./Array/IntersectionTwoArrays.swift)	|	349	|	[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)	| Easy
+|		|	348	|	[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) &hearts;	|	Medium
+|	[Swift](./Sort/TopKFrequentElements.swift)	|	347	|	[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)	|	Medium
+|		|	346	|	[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) &hearts;	| Easy
+|	[Swift](./String/ReverseVowelsOfAString.swift)	|	345	|	[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)	| Easy
+|	[Swift](./String/ReverseString.swift)	|	344	|	[Reverse String](https://leetcode.com/problems/reverse-string/)	| Easy
+|	[Swift](./Math/IntegerBreak.swift)	|	343	|	[Integer Break](https://leetcode.com/problems/integer-break/)	|	Medium
+|		|	342	|	[Power of Four](https://leetcode.com/problems/power-of-four/)	| Easy
+|		|	341	|	[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)	|	Medium
+|		|	340	|	[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)  &hearts;	|	Hard
+|	[Swift](./DP/NestedListWeightSum.swift)	|	339	|	[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)  &hearts;	| Easy
+|		|	338	|	[Counting Bits](https://leetcode.com/problems/counting-bits/)	|	Medium
+|		|	337	|	[House Robber III](https://leetcode.com/problems/house-robber-iii/)	|	Medium
+|		|	336	|	[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)	|	Hard
+|		|	335	|	[Self Crossing](https://leetcode.com/problems/self-crossing/)	|	Hard
+|		|	334	|	[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)	|	Medium
+|		|	333	|	[Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree/)  &hearts;	|	Medium
+|		|	332	|	[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)	|	Medium
+|		|	331	|	[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)	|	Medium
+|		|	330	|	[Patching Array](https://leetcode.com/problems/patching-array/)	|	Hard
+|		|	329	|	[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)	|	Hard
+|		|	328	|	[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)	|	Medium
+|		|	327	|	[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)	|	Hard
+|	[Swift](./Math/PowerThree.swift)	|	326	|	[Power of Three](https://leetcode.com/problems/power-of-three/)	| Easy
+|	[Swift](./Array/MaximumSizeSubarraySumEqualsK.swift)	|	325	|	[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)  &hearts;	|	Medium
+|	[Swift](./Sort/WiggleSortII.swift)	|	324	|	[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/)	|	Medium
+|		|	323	|	[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)  &hearts;	|	Medium
+|	[Swift](./DP/CoinChange.swift)	|	322	|	[Coin Change](https://leetcode.com/problems/coin-change/)	|	Medium
+|		|	321	|	[Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)	|	Hard
+|		|	320	|	[Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/)  &hearts;	|	Medium
+|		|	319	|	[Bulb Switcher](https://leetcode.com/problems/bulb-switcher/)	|	Medium
+|		|	318	|	[Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/)	|	Medium
+|		|	317	|	[Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)  &hearts;	|	Hard
+|		|	316	|	[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)	|	Hard
+|		|	315	|	[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)	|	Hard
+|		|	314	|	[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/) &hearts;	|	Medium
+|	[Swift](./Math/SuperUglyNumber.swift)	|	313	|	[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/)	|	Medium
+|		|	312	|	[Burst Balloons](https://leetcode.com/problems/burst-balloons/)	|	Hard
+|		|	311	|	[Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/)  &hearts;	|	Medium
+|		|	310	|	[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)	|	Medium
+|		|	309	|	[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)	|	Medium
+|		|	308	|	[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/) &hearts;	|	Hard
+|		|	307	|	[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)	|	Medium
+|		|	306	|	[Additive Number](https://leetcode.com/problems/additive-number/)	|	Medium
+|		|	305	|	[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)  &hearts;	|	Hard
+|		|	304	|	[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)	|	Medium
+|		|	303	|	[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)	| Easy
+|		|	302	|	[Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/)  &hearts;	|	Hard
+|		|	301	|	[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)	|	Hard
+|	[Swift](./DP/LongestIncreasingSubsequence.swift)	|	300	|	[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)	|	Medium
+|		|	299	|	[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)	| Easy	|
+|		|	298	|	[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) &hearts;	|	Medium	|
+|		|	297	|	[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)	|	Hard	|
+|		|	296	|	[Best Meeting Point](https://leetcode.com/problems/best-meeting-point/) &hearts;	|	Hard	|
+|		|	295	|	[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)	|	Hard	|
+|		|	294	|	[Flip Game II](https://leetcode.com/problems/flip-game-ii/) &hearts;	|	Medium	|
+|	[Swift](./String/FlipGame.swift)	|	293	|	[Flip Game](https://leetcode.com/problems/flip-game/) &hearts;	| Easy	|
+|		|	292	|	[Nim Game](https://leetcode.com/problems/nim-game/)	| Easy	|
+|		|	291	|	[Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) &hearts;	|	Hard	|
+|	[Swift](./String/WordPattern.swift)	|	290	|	[Word Pattern](https://leetcode.com/problems/word-pattern/)	| Easy	|
+|		|	289	|	[Game of Life](https://leetcode.com/problems/game-of-life/)	|	Medium	|
+|		|	288	|	[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/) &hearts;	| Easy	|
+|		|	287	|	[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)	|	Hard	|
+|		|	286	|	[Walls and Gates](https://leetcode.com/problems/walls-and-gates/) &hearts;	|	Medium	|
+|		|	285	|	[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) &hearts;	|	Medium	|
+|		|	284	|	[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)	|	Medium	|
+|	[Swift](./Array/MoveZeroes.swift)	|	283	|	[Move Zeroes](https://leetcode.com/problems/move-zeroes/)	| Easy	|
+|		|	282	|	[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)	|	Hard	|
+|		|	281	|	[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) &hearts;	|	Medium	|
+|	[Swift](./Sort/WiggleSort.swift)	|	280	|	[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/) &hearts;	|	Medium	|
+|	[Swift](./DP/PerfectSquares.swift)	|	279	|	[Perfect Squares](https://leetcode.com/problems/perfect-squares/)	|	Medium	|
+|		|	278	|	[First Bad Version](https://leetcode.com/problems/first-bad-version/)	| Easy	|
+|		|	277	|	[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) &hearts;	|	Medium	|
+|		|	276	|	[Paint Fence](https://leetcode.com/problems/paint-fence/) &hearts;	| Easy	|
+|		|	275	|	[H-Index II](https://leetcode.com/problems/h-index-ii/)	|	Medium	|
+|		|	274	|	[H-Index](https://leetcode.com/problems/h-index/)	|	Medium	|
+|		|	273	|	[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)	|	Hard	|
+|		|	272	|	[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) &hearts;	|	Hard	|
+|		|	271	|	[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) &hearts;	|	Medium	|
+|	[Swift](./Search/ClosestBinarySearchTreeValue.swift)	|	270	|	[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/) &hearts;	| Easy	|
+|		|	269	|	[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) &hearts;	|	Hard	|
+|		|	268	|	[Missing Number](https://leetcode.com/problems/missing-number/)	|	Medium	|
+|		|	267	|	[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) &hearts;	|	Medium	|
+|	[Swift](./String/PalindromePermutation.swift)	|	266	|	[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) &hearts;	| Easy	|
+|		|	265	|	[Paint House II](https://leetcode.com/problems/paint-house-ii/) &hearts;	|	Hard	|
+|	[Swift](./Math/UglyNumberII.swift)	|	264	|	[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)	|	Medium	|
+|	[Swift](./Math/UglyNumber.swift)	|	263	|	[Ugly Number](https://leetcode.com/problems/ugly-number/)	| Easy	|
+|		|	261	|	[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) &hearts;	|	Medium	|
+|		|	260	|	[Single Number III](https://leetcode.com/problems/single-number-iii/)	|	Medium	|
+|		|	259	|	[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) &hearts;	|	Medium	|
+|		|	258	|	[Add Digits](https://leetcode.com/problems/add-digits/)	| Easy	|
+|		|	257	|	[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)	| Easy	|
+|		|	256	|	[Paint House](https://leetcode.com/problems/paint-house/) &hearts;	|	Medium	|
+|		|	255	|	[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/) &hearts;	|	Medium	|
+|		|	254	|	[Factor Combinations](https://leetcode.com/problems/factor-combinations/) &hearts;	|	Medium	|
+|		|	253	|	[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) &hearts;	|	Medium	|
+|	[Swift](./Sort/MeetingRooms.swift)	|	252	|	[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) &hearts;	| Easy	|
+|		|	251	|	[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/) &hearts;	|	Medium	|
+|		|	250	|	[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/) &hearts;	|	Medium	|
+|		|	249	|	[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/) &hearts;	| Easy	|
+|		|	248	|	[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii/) &hearts;	|	Hard	|
+|		|	247	|	[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/) &hearts;	|	Medium	|
+|		|	246	|	[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/) &hearts;	| Easy	|
+|		|	245	|	[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/) &hearts;	|	Medium	|
+|		|	244	|	[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/) &hearts;	|	Medium	|
+|		|	243	|	[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/) &hearts;	| Easy	|
+|	[Swift](./String/ValidAnagram.swift)	|	242	|	[Valid Anagram](https://leetcode.com/problems/valid-anagram/)	| Easy	|
+|		|	241	|	[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)	|	Medium	|
+|		|	240	|	[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)	|	Medium	|
+|	[Swift](./Array/SlidingWindowMaximum.swift)	|	239	|	[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)	|	Hard	|
+|	[Swift](./Array/ProductExceptSelf.swift)	|	238	|	[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)	|	Medium	|
+|		|	237	|	[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)	| Easy	|
+|		|	236	|	[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)	|	Medium	|
+|		|	235	|	[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)	| Easy	|
+|	[Swift](./LinkedList/PalindromeLinkedList.swift)	|	234	|	[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)	| Easy	|
+|		|	233	|	[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)	|	Hard	|
+|		|	232	|	[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)	| Easy	|
+|	[Swift](./Math/PowerTwo.swift)	|	231	|	[Power of Two](https://leetcode.com/problems/power-of-two/)	| Easy	|
+|		|	230	|	[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)	|	Medium	|
+|		|	229	|	[Majority Element II](https://leetcode.com/problems/majority-element-ii/)	|	Medium	|
+|	[Swift](./Array/SummaryRanges.swift)	|	228	|	[Summary Ranges](https://leetcode.com/problems/summary-ranges/)	|	Medium	|
+|		|	227	|	[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)	|	Medium	|
+|	[Swift](./Tree/InvertBinaryTree.swift)	|	226	|	[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)	| Easy	|
+|		|	225	|	[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)	| Easy	|
+|		|	224	|	[Basic Calculator](https://leetcode.com/problems/basic-calculator/)	|	Hard	|
+|		|	223	|	[Rectangle Area](https://leetcode.com/problems/rectangle-area/)	| Easy	|
+|		|	222	|	[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)	|	Medium	|
+|	[Swift](./DP/MaximalSquare.swift)	|	221	|	[Maximal Square](https://leetcode.com/problems/maximal-square/)	|	Medium	|
+|		|	220	|	[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)	|	Medium	|
+|	[Swift](./Array/ContainsDuplicateII.swift)	|	219	|	[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)	| Easy	|
+|		|	218	|	[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)	|	Hard	|
+|	[Swift](./Array/ContainsDuplicate.swift)	|	217	|	[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)	| Easy	|
+|	[Swift](./DFS/combinationSumIII.swift)	|	216	|	[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)	|	Medium	|
+|		|	215	|	[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)	|	Medium	|
+|		|	214	|	[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)	|	Hard	|
+|	[Swift](./DP/HouseRobberII.swift)	|	213	|	[House Robber II](https://leetcode.com/problems/house-robber-ii/)	|	Medium	|
+|		|	212	|	[Word Search II](https://leetcode.com/problems/word-search-ii/)	|	Hard	|
+|		|	211	|	[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)	|	Medium	|
+|		|	210	|	[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)	|	Medium	|
+|		|	209	|	[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)	|	Medium	|
+|		|	208	|	[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)	|	Medium	|
+|		|	207	|	[Course Schedule](https://leetcode.com/problems/course-schedule/)	|	Medium	|
+|	[Swift](./LinkedList/ReverseLinkedList.swift)	|	206	|	[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)	| Easy	|
+|	[Swift](./String/IsomorphicStrings.swift)	|	205	|	[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)	| Easy	|
+|		|	204	|	[Count Primes](https://leetcode.com/problems/count-primes/)	| Easy	|
+|	[Swift](./LinkedList/RemoveLinkedListElements.swift)	|	203	|	[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)	| Easy	|
+|	[Swift](./Math/HappyNumber.swift)	|	202	|	[Happy Number](https://leetcode.com/problems/happy-number/)	| Easy	|
+|		|	201	|	[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)	|	Medium	|
+|	[Swift](./DFS/NumberofIslands.swift)	|	200	|	[Number of Islands](https://leetcode.com/problems/number-of-islands/)	|	Medium	|
+|		|	199	|	[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)	| Easy    &hearts;	|
+|	[Swift](./DP/HouseRobber.swift)	|	198	|	[House Robber](https://leetcode.com/problems/house-robber/)	| Easy	|
+|		|	191	|	[Number of 1 Bits](https://oj.leetcode.com/problems/number-of-1-bits/)	| Easy	|
+|		|	190	|	[Reverse Bits](https://oj.leetcode.com/problems/reverse-bits/)	| Easy	|
+|	[Swift](./Array/RotateArray.swift)	|	189	|	[Rotate Array](https://oj.leetcode.com/problems/rotate-array/)	| Easy	|
+|		|	188	|	[Best Time to Buy and Sell Stock IV](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)	| Easy    &hearts;    &hearts;	|
+|		|	187	|	[Repeated DNA Sequences](https://oj.leetcode.com/problems/repeated-dna-sequences/)	| Easy    &hearts;	|
+|		|	186	|	[Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/) &hearts;	| Easy    &hearts;	|
+|		|	179	|	[Largest Number](https://oj.leetcode.com/problems/largest-number/)	| Easy    &hearts;	|
+|		|	174	|	[Dungeon Game](https://oj.leetcode.com/problems/dungeon-game/)	| Easy    &hearts;    &hearts;	|
+|		|	173	|	[Binary Search Tree Iterator](https://oj.leetcode.com/problems/binary-search-tree-iterator/)	| Easy    &hearts;	|
+|		|	172	|	[Factorial Trailing Zeroes](https://oj.leetcode.com/problems/factorial-trailing-zeroes/)	| Easy	|
+|	[Swift](./Math/ExcelSheetColumnNumber.swift)	|	171	|	[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)	| Easy	|
+|		|	170	|	[Two Sum III - Data structure design](https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/) &hearts;	| Easy	|
+|		|	169	|	[Majority Element](https://oj.leetcode.com/problems/majority-element/)	| Easy	|
+|		|	168	|	[Excel Sheet Column Title](https://oj.leetcode.com/problems/excel-sheet-column-title/)	| Easy	|
+|		|	167	|	[Two Sum II - Input array is sorted](https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/) &hearts;	| Easy    &hearts;	|
+|		|	166	|	[Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/)	| Easy    &hearts;	|
+|		|	165	|	[Compare Version Numbers](https://oj.leetcode.com/problems/compare-version-numbers/)	| Easy	|
+|		|	164	|	[Maximum Gap](https://oj.leetcode.com/problems/maximum-gap/)	| Easy    &hearts;    &hearts;	|
+|		|	163	|	[Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/) &hearts;	| Easy    &hearts;	|
+|	[Swift](./Search/FindPeakElement.swift)	|	162	|	[Find Peak Element](https://oj.leetcode.com/problems/find-peak-element/)	| Easy    &hearts;	|
+|	[Swift](./String/OneEditDistance.swift)	|	161	|	[One Edit Distance](https://oj.leetcode.com/problems/one-edit-distance/)&hearts;	| Easy    &hearts;	|
+|		|	160	|	[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)	| Easy	|
+|		|	159	|	[Longest Substring with At Most Two Distinct Characters](https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) &hearts;	| Easy    &hearts;    &hearts;	|
+|		|	158	|	[Read N Characters Given Read4 II - Call multiple times](https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) &hearts;	| Easy    &hearts;    &hearts;	|
+|		|	157	|	[Read N Characters Given Read4](https://oj.leetcode.com/problems/read-n-characters-given-read4/) &hearts;	| Easy	|
+|		|	156	|	[Binary Tree Upside Down](https://oj.leetcode.com/problems/binary-tree-upside-down/) &hearts;	| Easy    &hearts;	|
+|		|	155	|	[Min Stack](https://oj.leetcode.com/problems/min-stack/)	| Easy	|
+|	[Swift](./Search/FindMinimumRotatedSortedArrayII.swift)	|	154	|	[Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Search/FindMinimumRotatedSortedArray.swift)	|	153	|	[Find Minimum in Rotated Sorted Array](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/)	| Easy    &hearts;	|
+|	[Swift](./DP/MaximumProductSubarray.swift)	|	152	|	[Maximum Product Subarray](https://oj.leetcode.com/problems/maximum-product-subarray/)	| Easy    &hearts;	|
+|		|	151	|	[Reverse Words in a String](https://oj.leetcode.com/problems/reverse-words-in-a-string/)	| Easy    &hearts;	|
+|	[Swift](./Stack/EvaluateReversePolishNotation.swift)	|	150	|	[Evaluate Reverse Polish Notation](https://oj.leetcode.com/problems/evaluate-reverse-polish-notation/)	| Easy    &hearts;	|
+|		|	149	|	[Max Points on a Line](https://oj.leetcode.com/problems/max-points-on-a-line/)	| Easy    &hearts;    &hearts;	|
+|		|	148	|	[Sort List](https://oj.leetcode.com/problems/sort-list/)	| Easy    &hearts;	|
+|		|	147	|	[Insertion Sort List](https://oj.leetcode.com/problems/insertion-sort-list/)	| Easy    &hearts;	|
+|		|	146	|	[LRU Cache](https://oj.leetcode.com/problems/lru-cache/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Stack/PostorderTraversal.swift)	|	145	|	[Binary Tree Postorder Traversal](https://oj.leetcode.com/problems/binary-tree-postorder-traversal/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Stack/PreorderTraversal.swift)	|	144	|	[Binary Tree Preorder Traversal](https://oj.leetcode.com/problems/binary-tree-preorder-traversal/)	| Easy    &hearts;	|
+|	[Swift](./LinkedList/ReorderList.swift)	|	143	|	[Reorder List](https://oj.leetcode.com/problems/reorder-list/)	| Easy    &hearts;	|
+|		|	142	|	[Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/)	| Easy    &hearts;	|
+|		|	141	|	[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)	| Easy	|
+|		|	140	|	[Word Break II](https://oj.leetcode.com/problems/word-break-ii/)	| Easy    &hearts;    &hearts;	|
+|		|	139	|	[Word Break](https://oj.leetcode.com/problems/word-break/)	| Easy    &hearts;	|
+|		|	138	|	[Copy List with Random Pointer](https://oj.leetcode.com/problems/copy-list-with-random-pointer/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Math/SingleNumberII.swift)	|	137	|	[Single Number II](https://oj.leetcode.com/problems/single-number-ii/)	| Easy    &hearts;	|
+|	[Swift](./Math/SingleNumber.swift)	|	136	|	[Single Number](https://oj.leetcode.com/problems/single-number/)	| Easy    &hearts;	|
+|		|	135	|	[Candy](https://oj.leetcode.com/problems/candy/)	| Easy    &hearts;    &hearts;	|
+|		|	134	|	[Gas Station](https://oj.leetcode.com/problems/gas-station/)	| Easy    &hearts;	|
+|		|	133	|	[Clone Graph](https://oj.leetcode.com/problems/clone-graph/)	| Easy    &hearts;	|
+|		|	132	|	[Palindrome Partitioning II](https://oj.leetcode.com/problems/palindrome-partitioning-ii/)	| Easy    &hearts;    &hearts;	|
+|		|	131	|	[Palindrome Partitioning](https://oj.leetcode.com/problems/palindrome-partitioning/)	| Easy    &hearts;	|
+|		|	130	|	[Surrounded Regions](https://oj.leetcode.com/problems/surrounded-regions/)	| Easy    &hearts;	|
+|		|	129	|	[Sum Root to Leaf Numbers](https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/)	| Easy    &hearts;	|
+|		|	128	|	[Longest Consecutive Sequence](https://oj.leetcode.com/problems/longest-consecutive-sequence/)	| Easy    &hearts;    &hearts;	|
+|		|	127	|	[Word Ladder](https://oj.leetcode.com/problems/word-ladder/)	| Easy    &hearts;	|
+|		|	126	|	[Word Ladder II](https://oj.leetcode.com/problems/word-ladder-ii/)	| Easy    &hearts;    &hearts;	|
+|		|	125	|	[Valid Palindrome](https://oj.leetcode.com/problems/valid-palindrome/)	| Easy	|
+|		|	124	|	[Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)	| Easy    &hearts;    &hearts;	|
+|		|	123	|	[Best Time to Buy and Sell Stock III](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)	| Easy    &hearts;    &hearts;	|
+|		|	122	|	[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)	| Easy    &hearts;	|
+|	[Swift](./DP/BestTimeBuySellStock.swift)	|	121	|	[Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)	| Easy	|
+|		|	120	|	[Triangle](https://oj.leetcode.com/problems/triangle/)	| Easy    &hearts;	|
+|		|	119	|	[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)	| Easy	|
+|		|	118	|	[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)	| Easy	|
+|		|	117	|	[Populating Next Right Pointers in Each Node II](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)	| Easy    &hearts;    &hearts;	|
+|		|	116	|	[Populating Next Right Pointers in Each Node](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/)	| Easy    &hearts;	|
+|		|	115	|	[Distinct Subsequences](https://oj.leetcode.com/problems/distinct-subsequences/)	| Easy    &hearts;    &hearts;	|
+|		|	114	|	[Flatten Binary Tree to Linked List](https://oj.leetcode.com/problems/flatten-binary-tree-to-linked-list/)	| Easy    &hearts;	|
+|	[Swift](./Tree/PathSumII.swift)	|	113	|	[Path Sum II](https://oj.leetcode.com/problems/path-sum-ii/)	| Easy    &hearts;	|
+|	[Swift](./Tree/PathSum.swift)	|	112	|	[Path Sum](https://oj.leetcode.com/problems/path-sum/)	| Easy	|
+|	[Swift](./Tree/MinimumDepthOfBinaryTree.swift)	|	111	|	[Minimum Depth of Binary Tree](https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/)	| Easy	|
+|	[Swift](./Tree/BalancedBinaryTree.swift)	|	110	|	[Balanced Binary Tree](https://oj.leetcode.com/problems/balanced-binary-tree/)	| Easy	|
+|		|	109	|	[Convert Sorted List to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)	| Easy    &hearts;	|
+|		|	108	|	[Convert Sorted Array to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)	| Easy    &hearts;	|
+|	[Swift](./Tree/BinaryTreeLevelOrderTraversalII.swift)	|	107	|	[Binary Tree Level Order Traversal II](https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/)	| Easy	|
+|	[Swift](./Tree/ConstructBinaryTreeInorderPostorder.swift)	|	106	|	[Construct Binary Tree from Inorder and Postorder Traversal](https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)	| Easy    &hearts;	|
+|	[Swift](./Tree/ConstructBinaryTreePreorderInorder.swift)	|	105	|	[Construct Binary Tree from Preorder and Inorder Traversal](https://oj.leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)	| Easy    &hearts;	|
+|	[Swift](./Tree/MaximumDepthOfBinaryTree.swift)	|	104	|	[Maximum Depth of Binary Tree](https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/)	| Easy	|
+|	[Swift](./Tree/BinaryTreeZigzagLevelOrderTraversal.swift)	|	103	|	[Binary Tree Zigzag Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)	| Easy    &hearts;	|
+|	[Swift](./Tree/BinaryTreeLevelOrderTraversal.swift)	|	102	|	[Binary Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/)	| Easy	|
+|	[Swift](./Tree/SymmetricTree.swift)	|	101	|	[Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)	| Easy	|
+|	[Swift](./Tree/SameTree.swift)	|	100	|	[Same Tree](https://oj.leetcode.com/problems/same-tree/)	| Easy	|
+|		|	99	|	[Recover Binary Search Tree](https://oj.leetcode.com/problems/recover-binary-search-tree/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Tree/ValidateBinarySearchTree.swift)	|	98	|	[Validate Binary Search Tree](https://oj.leetcode.com/problems/validate-binary-search-tree/)	| Easy    &hearts;	|
+|		|	97	|	[Interleaving String](https://oj.leetcode.com/problems/interleaving-string/)	| Easy    &hearts;    &hearts;	|
+|		|	96	|	[Unique Binary Search Trees](https://oj.leetcode.com/problems/unique-binary-search-trees/)	| Easy    &hearts;	|
+|		|	95	|	[Unique Binary Search Trees II](https://oj.leetcode.com/problems/unique-binary-search-trees-ii/)	| Easy    &hearts;	|
+|	[Swift](./Stack/InorderTraversal.swift)	|	94	|	[Binary Tree Inorder Traversal](https://oj.leetcode.com/problems/binary-tree-inorder-traversal/)	| Easy    &hearts;	|
+|		|	93	|	[Restore IP Addresses](https://oj.leetcode.com/problems/restore-ip-addresses/)	| Easy    &hearts;	|
+|		|	92	|	[Reverse Linked List II](https://oj.leetcode.com/problems/reverse-linked-list-ii/)	| Easy    &hearts;	|
+|		|	91	|	[Decode Ways](https://oj.leetcode.com/problems/decode-ways/)	| Easy    &hearts;	|
+|	[Swift](./DFS/SubsetsII.swift)	|	90	|	[Subsets II](https://oj.leetcode.com/problems/subsets-ii/)	| Easy    &hearts;	|
+|		|	89	|	[Gray Code](https://oj.leetcode.com/problems/gray-code/)	| Easy    &hearts;	|
+|		|	88	|	[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)	| Easy	|
+|		|	87	|	[Scramble String](https://oj.leetcode.com/problems/scramble-string/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./LinkedList/PartitionList.swift)	|	86	|	[Partition List](https://oj.leetcode.com/problems/partition-list/)	| Easy    &hearts;	|
+|		|	85	|	[Maximal Rectangle](https://oj.leetcode.com/problems/maximal-rectangle/)	| Easy    &hearts;    &hearts;	|
+|		|	84	|	[Largest Rectangle in Histogram](https://oj.leetcode.com/problems/largest-rectangle-in-histogram/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./LinkedList/RemoveDuplicatesFromSortedList.swift)	|	83	|	[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)	| Easy	|
+|	[Swift](./LinkedList/RemoveDuplicatesFromSortedListII.swift)	|	82	|	[Remove Duplicates from Sorted List II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)	| Easy    &hearts;	|
+|	[Swift](./Search/SearchInRotatedSortedArrayII.swift)	|	81	|	[Search in Rotated Sorted Array II](https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/)	| Easy    &hearts;	|
+|	[Swift](./Array/RemoveDuplicatesFromSortedArrayII.swift)	|	80	|	[Remove Duplicates from Sorted Array II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)	| Easy    &hearts;	|
+|	[Swift](./DFS/WordSearch.swift)	|	79	|	[Word Search](https://oj.leetcode.com/problems/word-search/)	| Easy    &hearts;	|
+|	[Swfit](./DFS/Subsets.swift)	|	78	|	[Subsets](https://oj.leetcode.com/problems/subsets/)	| Easy    &hearts;	|
+|	[Swift](./DFS/combinations.swift)	|	77	|	[Combinations](https://oj.leetcode.com/problems/combinations/)	| Easy    &hearts;	|
+|		|	76	|	[Minimum Window Substring](https://oj.leetcode.com/problems/minimum-window-substring/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Sort/SortColors.swift)	|	75	|	[Sort Colors](https://oj.leetcode.com/problems/sort-colors/)	| Easy    &hearts;	|
+|		|	74	|	[Search a 2D Matrix](https://oj.leetcode.com/problems/search-a-2d-matrix/)	| Easy    &hearts;	|
+|		|	73	|	[Set Matrix Zeroes](https://oj.leetcode.com/problems/set-matrix-zeroes/)	| Easy    &hearts;	|
+|	[Swift](./DP/EditDistance.swift)	|	72	|	[Edit Distance](https://oj.leetcode.com/problems/edit-distance/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Stack/SimplifyPath.swift)	|	71	|	[Simplify Path](https://oj.leetcode.com/problems/simplify-path/)	| Easy    &hearts;	|
+|	[Swift](./DP/ClimbingStairs.swift)	|	70	|	[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)	| Easy	|
+|	[Swift](./Search/Sqrtx.swift)	|	69	|	[Sqrt(x)](https://oj.leetcode.com/problems/sqrtx/)	| Easy    &hearts;	|
+|	[Swift](./String/TextJustification.swift)	|	68	|	[Text Justification](https://oj.leetcode.com/problems/text-justification/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Math/AddBinary.swift)	|	67	|	[Add Binary](https://oj.leetcode.com/problems/add-binary/)	| Easy	|
+|	[Swift](./Math/PlusOne.swift)	|	66	|	[Plus One](https://oj.leetcode.com/problems/plus-one/)	| Easy	|
+|		|	65	|	[Valid Number](https://oj.leetcode.com/problems/valid-number/)	| Easy    &hearts;    &hearts;	|
+|		|	64	|	[Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)	| Easy    &hearts;	|
+|	[Swift](./DP/UniquePathsII.swift)	|	63	|	[Unique Paths II](https://oj.leetcode.com/problems/unique-paths-ii/)	| Easy    &hearts;	|
+|	[Swift](./DP/UniquePaths.swift)	|	62	|	[Unique Paths](https://oj.leetcode.com/problems/unique-paths/)	| Easy    &hearts;	|
+|	[Swift](./LinkedList/RotateList.swift)	|	61	|	[Rotate List](https://oj.leetcode.com/problems/rotate-list/)	| Easy    &hearts;	|
+|		|	60	|	[Permutation Sequence](https://oj.leetcode.com/problems/permutation-sequence/)	| Easy    &hearts;	|
+|	[Swift](./Array/SpiralMatrixII.swift)	|	59	|	[Spiral Matrix II](https://oj.leetcode.com/problems/spiral-matrix-ii/)	| Easy    &hearts;	|
+|	[Swift](./String/LengthLastWord.swift)	|	58	|	[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)	| Easy	|
+|		|	57	|	[Insert Interval](https://oj.leetcode.com/problems/insert-interval/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Sort/MergeIntervals.swift)	|	56	|	[Merge Intervals](https://oj.leetcode.com/problems/merge-intervals/)	| Easy    &hearts;    &hearts;	|
+|		|	55	|	[Jump Game](https://oj.leetcode.com/problems/jump-game/)	| Easy    &hearts;	|
+|	[Swift](./Array/SpiralMatrix.swift)	|	54	|	[Spiral Matrix](https://oj.leetcode.com/problems/spiral-matrix/)	| Easy    &hearts;	|
+|	[Swift](./DP/MaximumSubarray.swift)	|	53	|	[Maximum Subarray](https://oj.leetcode.com/problems/maximum-subarray/)	| Easy    &hearts;	|
+|		|	52	|	[N-Queens II](https://oj.leetcode.com/problems/n-queens-ii/)	| Easy    &hearts;    &hearts;	|
+|		|	51	|	[N-Queens](https://oj.leetcode.com/problems/n-queens/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Math/Pow.swift)	|	50	|	["Pow(x, n)"](https://oj.leetcode.com/problems/powx-n/)	| Easy    &hearts;	|
+|	[Swift](./String/GroupAnagrams.swift)	|	49	|	[Group Anagrams](https://oj.leetcode.com/problems/anagrams/)	| Easy    &hearts;	|
+|	[Swift](./Array/RotateImage.swift)	|	48	|	[Rotate Image](https://oj.leetcode.com/problems/rotate-image/)	| Easy    &hearts;	|
+|	[Swift](./DFS/PermutationsII.swift)	|	47	|	[Permutations II](https://oj.leetcode.com/problems/permutations-ii/)	| Easy    &hearts;	|
+|	[Swift](./DFS/Permutations.swift)	|	46	|	[Permutations](https://oj.leetcode.com/problems/permutations/)	| Easy    &hearts;	|
+|		|	45	|	[Jump Game II](https://oj.leetcode.com/problems/jump-game-ii/)	| Easy    &hearts;    &hearts;	|
+|		|	44	|	[Wildcard Matching](https://oj.leetcode.com/problems/wildcard-matching/)	| Easy    &hearts;    &hearts;	|
+|		|	43	|	[Multiply Strings](https://oj.leetcode.com/problems/multiply-strings/)	| Easy    &hearts;	|
+|	[Swift](./Math/TrappingRainWater.swift)	|	42	|	[Trapping Rain Water](https://oj.leetcode.com/problems/trapping-rain-water/)	| Easy    &hearts;    &hearts;	|
+|		|	41	|	[First Missing Positive](https://oj.leetcode.com/problems/first-missing-positive/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./DFS/combinationSumII.swiftc)	|	40	|	[Combination Sum II](https://oj.leetcode.com/problems/combination-sum-ii/)	| Easy    &hearts;	|
+|	[Swift](./DFS/CombinationSum.swift)	|	39	|	[Combination Sum](https://oj.leetcode.com/problems/combination-sum/)	| Easy    &hearts;	|
+|	[Swift](./String/CountAndSay.swift)	|	38	|	[Count and Say](https://oj.leetcode.com/problems/count-and-say/)	| Easy	|
+|		|	37	|	[Sudoku Solver](https://oj.leetcode.com/problems/sudoku-solver/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Array/ValidSudoku.swift)	|	36	|	[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)	| Easy	|
+|	[Swift](./Search/SearchInsertPosition.swift)	|	35	|	[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)	| Easy    &hearts;	|
+|	[Swift](./Search/SearchForARange.swift)	|	34	|	[Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/)	| Easy    &hearts;	|
+|	[Swift](./Search/SearchInRotatedSortedArray.swift)	|	33	|	[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)	| Easy    &hearts;    &hearts;	|
+|		|	32	|	[Longest Valid Parentheses](https://oj.leetcode.com/problems/longest-valid-parentheses/)	| Easy    &hearts;    &hearts;	|
+|		|	31	|	[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)	| Easy    &hearts;	|
+|		|	30	|	[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)	| Easy    &hearts;    &hearts;	|
+|		|	29	|	[Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/)	| Easy    &hearts;	|
+|	[Swift](./String/StrStr.swift)	|	28	|	[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)	| Easy	|
+|	[Swfit](./Array/RemoveElement.swift)	|	27	|	[Remove Element](https://oj.leetcode.com/problems/remove-element/)	| Easy	|
+|	[Swift](./Array/RemoveDuplicatesFromSortedArray.swift)	|	26	|	[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)	| Easy	|
+|		|	25	|	[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./LinkedList/SwapNodesInPairs.swift)	|	24	|	[Swap Nodes in Pairs](https://oj.leetcode.com/problems/swap-nodes-in-pairs/)	| Easy	|
+|	[Swift](./LinkedList/MergeKSortedLists.swift)	|	23	|	[Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Math/GenerateParentheses.swift)	|	22	|	[Generate Parentheses](https://oj.leetcode.com/problems/generate-parentheses/)	| Easy    &hearts;	|
+|	[Swift](./LinkedList/MergeTwoSortedLists.swift)	|	21	|	[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)	| Easy	|
+|	[Swift](./Stack/ValidParentheses.swift)	|	20	|	[Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)	| Easy	|
+|	[Swift](./LinkedList/RemoveNthFromEnd.swift)	|	19	|	[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)	| Easy	|
+|	[Swift](./Array/FourSum.swift)	|	18	|	[4Sum](https://oj.leetcode.com/problems/4sum/)	| Easy    &hearts;	|
+|	[Swift](./DFS/LetterCombinationsPhoneNumber.swift)	|	17	|	[Letter Combinations of a Phone Number](https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/)	| Easy    &hearts;	|
+|		|	16	|	[3Sum Closest](https://oj.leetcode.com/problems/3sum-closest/)	| Easy    &hearts;	|
+|	[Swift](./Array/ThreeSum.swift)	|	15	|	[3Sum](https://oj.leetcode.com/problems/3sum/)	| Easy    &hearts;	|
+|	[Swift](./String/LongestCommonPrefix.swift)	|	14	|	[Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)	| Easy	|
+|	[Swift](./Math/RomanToInteger.swift)	|	13	|	[Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)	| Easy	|
+|		|	12	|	[Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)	| Easy    &hearts;	|
+|		|	11	|	[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)	| Easy    &hearts;	|
+|		|	10	|	[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./Math/PalindromeNumber.swift)	|	9	|	[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)	| Easy	|
+|	[Swift](./Math/Atoi.swift)	|	8	|	[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)	| Easy	|
+|	[Swift](./Math/ReverseInteger.swift)	|	7	|	[Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)	| Easy	|
+|	[Swift](./String/ZigZagConversion.swift)	|	6	|	[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)	| Easy	|
+|	[Swift](./DP/LongestPalindromicSubstring.swift)	|	5	|	[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)	| Easy    &hearts;	|
+|	[Swift](./Search/MedianOfTwoSortedArrays.swift)	|	4	|	[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)	| Easy    &hearts;    &hearts;	|
+|	[Swift](./String/LongestSubstringWithoutRepeatingCharacters.swift)	|	3	|	[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)	| Easy    &hearts;	|
+|	[Swift](./Math/AddTwoNumbers.swift)	|	2	|	[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)	| Easy    &hearts;	|
+|	[Swift](./Array/TwoSum.swift)	|	1	|	[Two Sum](https://leetcode.com/problems/two-sum/)	| Easy	|

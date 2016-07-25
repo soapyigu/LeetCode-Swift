@@ -15,7 +15,7 @@ class SuperPow {
       return _superPowHelper(a, b, b.count - 1)
     }
 
-    func _pow(a: Int, _ b: Int) -> Int {
+    private func _pow(a: Int, _ b: Int) -> Int {
       var ret = 1
       for _ in 0 ..< b {
         ret = ret * a % base
@@ -23,7 +23,7 @@ class SuperPow {
       return ret
     }
     
-    func _superPowHelper(a: Int, _ b: [Int], _ idx: Int) -> Int {
+    private func _superPowHelper(a: Int, _ b: [Int], _ idx: Int) -> Int {
       guard idx >= 0 else {
         return 1
       }

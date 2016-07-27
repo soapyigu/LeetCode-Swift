@@ -3,7 +3,7 @@
  * Primary idea: Using % 10 to reversely iterate through digits of the number, 
  *               and use * 10 to update the result accordingly
  * Note: Handle integer overflow at proper time
- * Time Complexity: O(1)
+ * Time Complexity: O(n), Space Complexity: O(1)
  */
  
  class ReverseInteger {

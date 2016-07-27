@@ -5,7 +5,7 @@
  *               f(a, b) = f(a, b / 10 * 10) * f(a, b % 10) % k
  *                       = f(f(a, b / 10), 10) * f(a, b % 10) % k
  *
- * Time Complexity: O(n), Space Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(1)
  */
 
 class SuperPow {

@@ -5,27 +5,28 @@
  *               f(a, b) = f(a, b / 10 * 10) * f(a, b % 10) % k
  *                       = f(f(a, b / 10), 10) * f(a, b % 10) % k
  *
- * Time Complexity: O(n), Space Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(1)
  */
 
-class Solution {
-    var base = 1337        
-    func pow(a: Int, _ b: Int) -> Int {
-        var ret = 1
-        for i in 0 ..< b {
-            ret = ret * a % base
-        }
-        return ret
-    }
-
-    func superPowHelper(a: Int, _ b: [Int], _ idx: Int) -> Int {
-        if (idx < 0) {
-            return 1
-        }
-        return pow(superPowHelper(a, b, idx - 1), 10) * pow(a, b[idx]) % base
-    }
-
+class SuperPow {
+    let base = 1337
+    
     func superPow(a: Int, _ b: [Int]) -> Int {
-        return superPowHelper(a, b, b.count - 1)
+      return _superPowHelper(a, b, b.count - 1)
+    }
+
+    private func _pow(a: Int, _ b: Int) -> Int {
+      var ret = 1
+      for _ in 0 ..< b {
+        ret = ret * a % base
+      }
+      return ret
+    }
+    
+    private func _superPowHelper(a: Int, _ b: [Int], _ idx: Int) -> Int {
+      guard idx >= 0 else {
+        return 1
+      }
+      return _pow(_superPowHelper(a, b, idx - 1), 10) * _pow(a, b[idx]) % base
     }
 }

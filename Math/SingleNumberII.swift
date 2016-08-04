@@ -10,10 +10,11 @@
  *
  */
 
-class Solution {
+class SingleNumberII {
     func singleNumber(nums: [Int]) -> Int {
         var ans = 0
         var sum = 0
+        
         for i in 0 ..< 64 {
             sum = 0
             let tmp = (1 << i)

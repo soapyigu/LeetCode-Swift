@@ -4,23 +4,30 @@
  *
  * Time Complexity: O(1), Space Complexity: O(1)
  */
- class Solution {
+
+ class PalindromeNumber {
     func isPalindrome(x: Int) -> Bool {
-        if x < 0 {
+        guard x >= 0 else {
             return false
         }
         
-        var chars: [Character] = [Character](String(x).characters)
-        var b = 0
-        var e = chars.count - 1
+        var x = x
+        var div = 1
         
-        while b < e {
-            if chars[b] != chars[e] {
+        while (x / div >= 10) {
+            div = div * 10
+        }
+        
+        while (x > 0) {
+            var left = x / div
+            var right = x % 10
+            
+            if (left != right) {
                 return false
             }
             
-            b += 1
-            e -= 1
+            x = (x % div) / 10
+            div = div / 100
         }
         
         return true

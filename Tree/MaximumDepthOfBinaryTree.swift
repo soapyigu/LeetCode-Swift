@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/maximum-depth-of-binary-tree/
  * Primary idea: recursion, return 0 when it is a leaf node
- * Time Complexity: O(n), Space Complexity: O(1)
+ * Time Complexity: O(n), Space Complexity: O(n)
  * 
  * Definition for a binary tree node.
  * public class TreeNode {

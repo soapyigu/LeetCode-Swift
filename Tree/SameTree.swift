@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/same-tree/
  * Primary idea: recursion
- * Time Complexity: O(n), Space Complexity: O(1)
+ * Time Complexity: O(n), Space Complexity: O(n)
  *
  * Copyright © 2016 YiGu. All rights reserved.
  *

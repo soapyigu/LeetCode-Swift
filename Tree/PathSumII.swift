@@ -4,7 +4,7 @@
  *
  * Note: Structs in Swift are passed by value. Classes are passed by reference. Array and Dictionaryin Swift * are implemented as structs. In order to pass the array by reference, use inout to declare the variable.
  *
- * Time Complexity: O(n), Space Complexity: O(1)
+ * Time Complexity: O(n), Space Complexity: O(n)
  *
  * Definition for a binary tree node.
  * public class TreeNode {

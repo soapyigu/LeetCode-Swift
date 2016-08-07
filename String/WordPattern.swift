@@ -22,10 +22,8 @@ class WordPattern {
             if wordDict[currentWord] == nil && charDict[currentChar] == nil{
                 wordDict[currentWord] = currentChar
                 charDict[currentChar] = currentWord
-            } else {
-                if wordDict[currentWord] != currentChar {
-                    return false
-                }
+            } else if wordDict[currentWord] != currentChar {
+                return false
             }
         }
         

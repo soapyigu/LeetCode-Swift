@@ -29,18 +29,19 @@ class ClosestBinarySearchTreeValue {
     }
     
     private func _helper(node: TreeNode?, _ target: Double, _ closest: Int) -> Int {
-        if let node = node {
-            var closest = closest
-            if abs(target - Double(node.val)) < abs(target - Double(closest)) {
-                closest = node.val
-            }
-            if Double(node.val) < target {
-                return _helper(node.right, target, closest)
-            } else {
-                return _helper(node.left, target, closest)
-            }
+        guard let node = node else {
+            return closest
+        }
+    
+        var closest = closest
+        if abs(target - Double(node.val)) < abs(target - Double(closest)) {
+            closest = node.val
         }
         
-        return closest
+        if Double(node.val) < target {
+            return _helper(node.right, target, closest)
+        } else {
+            return _helper(node.left, target, closest)
+        }
     }
 }

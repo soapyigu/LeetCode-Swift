@@ -7,15 +7,7 @@
 
 class RemoveElement {
     func removeElement(inout nums: [Int], _ val: Int) -> Int {
-        var lastIndex = 0
-        
-        for num in nums {
-            if num != val {
-                nums[lastIndex] = num
-                lastIndex += 1
-            }
-        }
-        
-        return lastIndex
+        nums = nums.filter { (num) in num != val }
+        return nums.count
     }
 }

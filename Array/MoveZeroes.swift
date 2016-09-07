@@ -18,7 +18,7 @@ class MoveZeroes {
         }
     }
     
-    private func _swap(inout nums: [Int], _ p: Int, _ q: Int) {
+    private func _swap<T>(inout nums: Array<T>, _ p: Int, _ q: Int) {
         let temp = nums[p]
         nums[p] = nums[q]
         nums[q] = temp

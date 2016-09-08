@@ -33,7 +33,7 @@ class RotateArray {
         }
     }
     
-    private func _swap(inout nums: [Int], _ p: Int, _ q: Int) {
+    private func _swap<T>(inout nums: Array<T>, _ p: Int, _ q: Int) {
         var temp = nums[p]
         nums[p] = nums[q]
         nums[q] = temp

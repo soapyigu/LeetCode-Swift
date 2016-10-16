@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/two-sum/
  * Primary idea: Traverse the array and store target - nums[i] in a dict
  *
- * Time Complexity: O(n), Space Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(nC2)
  */
 
 class TwoSum {

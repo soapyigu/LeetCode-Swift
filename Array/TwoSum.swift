@@ -10,9 +10,9 @@ class TwoSum {
         var res = [Int]()
         var dict = [Int: Int]()
         
-        for i in 0 ..< nums.count {
-            guard let lastIndex = dict[target - nums[i]] else {
-                dict[nums[i]] = i
+        for (i, num) in nums.enumerated() {
+            guard let lastIndex = dict[target - num] else {
+                dict[num] = i
                 continue
             }
             

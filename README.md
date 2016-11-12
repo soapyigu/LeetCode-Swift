@@ -25,7 +25,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 300+ questions. Currently we have 153 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 300+ questions. Currently we have 154 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), and [jindulys](https://github.com/jindulys).
 
 ## Array
 | Title | Solution | Difficulty | Time | Space |
@@ -86,6 +86,7 @@
 [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)| [Swift](./LinkedList/RemoveDuplicatesFromSortedList.swift)| Easy| O(n)| O(1)|
 [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)| [Swift](./LinkedList/RemoveDuplicatesFromSortedListII.swift)| Medium| O(n)| O(1)|
 [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)| [Swift](./LinkedList/RemoveNthFromEnd.swift)| Easy| O(n)| O(1)|
+[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)| [Swift](./LinkedList/OddEvenLinkedList.swift)| Medium| O(n)| O(1)|
 [Rotate List](https://leetcode.com/problems/rotate-list/)| [Swift](./LinkedList/RotateList.swift)| Medium| O(n)| O(1)|
 [Reorder List](https://leetcode.com/problems/reorder-list/)| [Swift](./LinkedList/ReorderList.swift)| Medium| O(n)| O(1)|
 [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [Swift](./LinkedList/MergeTwoSortedLists.swift)| Easy| O(n)| O(1)|
@@ -360,7 +361,7 @@
 |		|	331	|	[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)	|	Medium
 |		|	330	|	[Patching Array](https://leetcode.com/problems/patching-array/)	|	Hard
 |		|	329	|	[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)	|	Hard
-|		|	328	|	[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)	|	Medium
+| [Swift](./LinkedList/OddEvenLinkedList.swift)	|	328	|	[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)	|	Medium
 |		|	327	|	[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)	|	Hard
 |	[Swift](./Math/PowerThree.swift)	|	326	|	[Power of Three](https://leetcode.com/problems/power-of-three/)	| Easy
 |	[Swift](./Array/MaximumSizeSubarraySumEqualsK.swift)	|	325	|	[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)  &hearts;	|	Medium

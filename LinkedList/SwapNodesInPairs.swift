@@ -16,29 +16,22 @@
 
 class SwapNodesInPairs {
     func swapPairs(head: ListNode?) -> ListNode? {
-        if head == nil || head!.next == nil {
-            return head
-        }
-    
         let dummy = ListNode(0)
         dummy.next = head
-        var prev = dummy
-        var fir = dummy.next
-        var sec = fir!.next
         
-        while sec != nil {
-            let next = sec!.next
+        var prev: ListNode? = dummy
+        var current = dummy.next
+        
+        while current != nil && current!.next != nil {
+            let next = current!.next
+            let post = current!.next!.next
             
-            prev.next = sec
-            sec!.next = fir
-            fir!.next = next
+            prev!.next = next
+            next!.next = current
+            current!.next = post
            
-            if next == nil {
-                break
-            }
-            prev = fir!
-            fir = next
-            sec = next!.next
+            prev = current
+            current = post
         }
         
         return dummy.next

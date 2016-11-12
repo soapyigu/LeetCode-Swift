@@ -33,11 +33,7 @@ class MergeTwoSortedLists {
             node = node.next!
         }
         
-        if l1 != nil {
-            node.next = l1
-        } else if l2 != nil {
-            node.next = l2
-        }
+        node.next = l1 ?? l2
         
         return dummy.next
     }

@@ -172,6 +172,7 @@
 [Ugly Number](https://leetcode.com/problems/ugly-number/)| [Swift](./Math/UglyNumber.swift)| Easy| O(logn)| O(1)|
 [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)| [Swift](./Math/UglyNumberII.swift)| Medium| O(n)| O(n)|
 [Super Ugly Number](https://leetcode.com/problems/super-ugly-number/)| [Swift](./Math/SuperUglyNumber.swift)| Medium| O(n^2)| O(n)|
+[Count Primes](https://leetcode.com/problems/count-primes/)| [Swift](./Math/CountPrimes.swift)| Easy| O(n)| O(n)|
 [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)| [Swift](./Math/Atoi.swift)| Easy| O(n)| O(1)|
 [Pow(x, n)](https://leetcode.com/problems/isomorphic-strings/)| [Swift](./Math/Pow.swift)| Medium| O(logn)| O(1)|
 [Power of Two](https://leetcode.com/problems/power-of-two/)| [Swift](./Math/PowerTwo.swift)| Easy| O(1)| O(1)|
@@ -486,7 +487,7 @@
 |		|	207	|	[Course Schedule](https://leetcode.com/problems/course-schedule/)	|	Medium	|
 |	[Swift](./LinkedList/ReverseLinkedList.swift)	|	206	|	[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)	| Easy	|
 |	[Swift](./String/IsomorphicStrings.swift)	|	205	|	[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)	| Easy	|
-|		|	204	|	[Count Primes](https://leetcode.com/problems/count-primes/)	| Easy	|
+|	[Swift](./Math/CountPrimes.swift)	|	204	|	[Count Primes](https://leetcode.com/problems/count-primes/)	| Easy	|
 |	[Swift](./LinkedList/RemoveLinkedListElements.swift)	|	203	|	[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)	| Easy	|
 |	[Swift](./Math/HappyNumber.swift)	|	202	|	[Happy Number](https://leetcode.com/problems/happy-number/)	| Easy	|
 |		|	201	|	[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)	|	Medium	|

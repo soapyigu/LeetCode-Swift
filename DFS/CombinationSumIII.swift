@@ -6,7 +6,7 @@
  *
  */
 
-class combinationSumIII {
+class CombinationSumIII {
     func combinationSum3(k: Int, _ n: Int) -> [[Int]] {
         let candidates = [Int](1 ... 9)
         var res = [[Int]]()

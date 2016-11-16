@@ -6,7 +6,7 @@
  *
  */
 
-class combinationSumII {
+class CombinationSumII {
     func combinationSum2(candidates: [Int], _ target: Int) -> [[Int]] {
         var res = [[Int]]()
         var path = [Int]()

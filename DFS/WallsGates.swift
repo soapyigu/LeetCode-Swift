@@ -3,7 +3,7 @@
  * Primary idea: Classic Depth-first Search, go up, down, left, right four directions
  * 
  * Note: Start from gate to ease complexity, update distance correspondingly
- * Time Complexity: O(mn), Space Complexity: O(1)
+ * Time Complexity: O((mn)^2), Space Complexity: O(1)
  *
  */
 

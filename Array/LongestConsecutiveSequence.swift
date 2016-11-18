@@ -1,48 +1,34 @@
 /**
  * Question Link: https://leetcode.com/problems/longest-consecutive-sequence/
- * Primary idea: Iterate the array and check all neighbor numbers with the help of two sets
+ * Primary idea: Iterate the array and check all neighbor numbers with the help of set
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  *
  */
 
 class LongestConsecutiveSequence {
-    func longestConsecutive(nums: [Int]) -> Int {
-        guard nums.count > 0 else {
-            return 0
-        }
-        
-        var setNums = Set<Int>(nums)
-        var setDups = Set<Int>()
-        var longest = 1
+    func longestConsecutive(_ nums: [Int]) -> Int {
+        var set = Set(nums)
+        var longest = 0
         
         for num in nums {
-            guard !setDups.contains(num) else {
-                continue
-            }
-            
-            setDups.insert(num)
-            var len = 1
-            
-            len += _helper(&setDups, &setNums, num, 1);
-            len += _helper(&setDups, &setNums, num, -1);
-                
-            if (len > longest) {
-                longest = len;
+            if set.contains(num) {
+                set.remove(num)
+                longest = max(1 + findConsecutive(&set, num, 1) + findConsecutive(&set, num, -1), longest)
             }
         }
         
         return longest
     }
     
-    private func _helper(inout setDups: Set<Int>, inout _ setNums: Set<Int>, _ num: Int, _ step: Int) -> Int {
+    private func findConsecutive(_ set: inout Set<Int>, _ num: Int, _ step: Int) -> Int {
         var len = 0
-        var num = num
-        
-        while setNums.contains(num + step) {
-            num += step
-            setDups.insert(num)
+        var num = num + step
+    
+        while set.contains(num) {
+            set.remove(num)
             len += 1
+            num += step
         }
         
         return len

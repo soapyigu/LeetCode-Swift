@@ -14,6 +14,7 @@
 * [Math](#math)
 * [Search](#search)
 * [Sort](#sort)
+* [Union Find](#union-find)
 
 ## Companies
 * [Google](#google)
@@ -25,7 +26,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 300+ questions. Currently we have 157 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 300+ questions. Currently we have 159 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), and [jindulys](https://github.com/jindulys).
 
 ## Array
 | Title | Solution | Difficulty | Time | Space |
@@ -211,6 +212,12 @@
 [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)| [Swift](./Sort/MeetingRooms.swift)| Easy| O(nlogn)| O(1)|
 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)| [Swift](./Sort/MergeIntervals.swift)| Hard| O(nlogn)| O(n)|
 
+## Union Find
+| Title | Solution | Difficulty | Time | Space |
+| ----- | -------- | ---------- | ---- | ----- |
+[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)| [Swift](./Sort/NumberConnectedComponentsUndirectedGraph.swift)| Medium| O(nlogn)| O(n)|
+[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [Swift](./Sort/GraphValidTree.swift)| Medium| O(nlogn)| O(n)|
+
 ## Google
 | Title | Solution | Difficulty | Frequency |
 | ----- | -------- | ---------- | --------- |
@@ -369,7 +376,7 @@
 |	[Swift](./Math/PowerThree.swift)	|	326	|	[Power of Three](https://leetcode.com/problems/power-of-three/)	| Easy
 |	[Swift](./Array/MaximumSizeSubarraySumEqualsK.swift)	|	325	|	[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)  &hearts;	|	Medium
 |	[Swift](./Sort/WiggleSortII.swift)	|	324	|	[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/)	|	Medium
-|		|	323	|	[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)  &hearts;	|	Medium
+|	[Swift](./Sort/NumberConnectedComponentsUndirectedGraph.swift)	|	323	|	[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)  &hearts;	|	Medium
 |	[Swift](./DP/CoinChange.swift)	|	322	|	[Coin Change](https://leetcode.com/problems/coin-change/)	|	Medium
 |		|	321	|	[Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)	|	Hard
 |		|	320	|	[Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/)  &hearts;	|	Medium
@@ -430,7 +437,7 @@
 |		|	265	|	[Paint House II](https://leetcode.com/problems/paint-house-ii/) &hearts;	|	Hard	|
 |	[Swift](./Math/UglyNumberII.swift)	|	264	|	[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)	|	Medium	|
 |	[Swift](./Math/UglyNumber.swift)	|	263	|	[Ugly Number](https://leetcode.com/problems/ugly-number/)	| Easy	|
-|		|	261	|	[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) &hearts;	|	Medium	|
+|	[Swift](./Sort/GraphValidTree.swift)	|	261	|	[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) &hearts;	|	Medium	|
 |		|	260	|	[Single Number III](https://leetcode.com/problems/single-number-iii/)	|	Medium	|
 |		|	259	|	[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) &hearts;	|	Medium	|
 |		|	258	|	[Add Digits](https://leetcode.com/problems/add-digits/)	| Easy	|

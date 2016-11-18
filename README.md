@@ -217,8 +217,8 @@
 ## Union Find
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
-[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)| [Swift](./Sort/NumberConnectedComponentsUndirectedGraph.swift)| Medium| O(nlogn)| O(n)|
-[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [Swift](./Sort/GraphValidTree.swift)| Medium| O(nlogn)| O(n)|
+[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)| [Swift](./UnionFind/NumberConnectedComponentsUndirectedGraph.swift)| Medium| O(nlogn)| O(n)|
+[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [Swift](./UnionFind/GraphValidTree.swift)| Medium| O(nlogn)| O(n)|
 
 ## Google
 | Title | Solution | Difficulty | Frequency |

@@ -11,9 +11,10 @@ class CombinationSumIV {
     func combinationSum4(_ nums: [Int], _ target: Int) -> Int {
         var dp = [Int](repeating: 0, count: target + 1)
         dp[0] = 1
+        let nums = nums.sorted()
         
         for i in 1 ... target {
-            for num in nums.sorted() {
+            for num in nums {
                 if i < num {
                     break
                 }

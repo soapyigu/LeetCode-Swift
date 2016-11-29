@@ -7,20 +7,17 @@
 class ShortestWordDistance {
     func shortestDistance(_ words: [String], _ word1: String, _ word2: String) -> Int {
         var distance = Int.max
-        var firstIndex: Int?
-        var secondIndex: Int?
+        var firstIndex = -1, secondIndex = -1
         
         for (i, word) in words.enumerated() {
             if word == word1 {
-                if let sec = secondIndex {
-                    distance = min(distance, i - sec)
-                }
                 firstIndex = i
-            } else if word == word2 {
-                if let fir = firstIndex {
-                    distance = min(distance, i - fir)
-                }
+            } 
+            if word == word2 {
                 secondIndex = i
+            }
+            if firstIndex != -1 && secondIndex != -1 {
+                distance = min(distance, abs(firstIndex - secondIndex))
             }
         }
         

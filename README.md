@@ -26,7 +26,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 171 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 172 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), and [jindulys](https://github.com/jindulys).
 
 ## Array
 | Title | Solution | Difficulty | Time | Space |
@@ -136,6 +136,7 @@
 [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Swift](./DP/ClimbingStairs.swift)| Easy| O(n)| O(1)|
 [Unique Paths](https://leetcode.com/problems/unique-paths/)| [Swift](./DP/UniquePaths.swift)| Medium| O(mn)| O(mn)|
 [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)| [Swift](./DP/UniquePathsII.swift)| Medium| O(mn)| O(mn)|
+[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [Swift](./DP/MinimumPathSum.swift)| Medium| O(mn)| O(mn)|
 [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| [Swift](./DP/GenerateParentheses.swift)| Medium| O(n^2)| O(n)|
 [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [Swift](./DP/BestTimeBuySellStock.swift)| Easy| O(n)| O(1)|
 [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)| [Swift](./DP/BestTimeBuySellStockIII.swift)| Hard| O(n)| O(n)|
@@ -632,7 +633,7 @@
 |	[Swift](./Math/AddBinary.swift)	|	67	|	[Add Binary](https://oj.leetcode.com/problems/add-binary/)	| Easy	|
 |	[Swift](./Math/PlusOne.swift)	|	66	|	[Plus One](https://oj.leetcode.com/problems/plus-one/)	| Easy	|
 |		|	65	|	[Valid Number](https://oj.leetcode.com/problems/valid-number/)	| Hard	|
-|		|	64	|	[Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)	| Medium	|
+|	[Swift](./DP/MinimumPathSum.swift) |	64	|	[Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)	| Medium	|
 |	[Swift](./DP/UniquePathsII.swift)	|	63	|	[Unique Paths II](https://oj.leetcode.com/problems/unique-paths-ii/)	| Medium	|
 |	[Swift](./DP/UniquePaths.swift)	|	62	|	[Unique Paths](https://oj.leetcode.com/problems/unique-paths/)	| Medium	|
 |	[Swift](./LinkedList/RotateList.swift)	|	61	|	[Rotate List](https://oj.leetcode.com/problems/rotate-list/)	| Medium	|

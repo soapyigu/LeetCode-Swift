@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/balanced-binary-tree/
  * Primary idea: use the idea of maximum depth of a binary tree
- * Time Complexity: O(n), Space Complexity: O(1)
+ * Time Complexity: O(n), Space Complexity: O(n)
  * 
  * Definition for a binary tree node.
  * public class TreeNode {

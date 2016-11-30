@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/validate-binary-search-tree/
  * Primary idea: Keep min to go right and keep max to go left
- * Time Complexity: O(n), Space Complexity: O(1)
+ * Time Complexity: O(n), Space Complexity: O(n)
  * 
  * Definition for a binary tree node.
  * public class TreeNode {

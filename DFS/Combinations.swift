@@ -10,19 +10,9 @@ class Combinations {
     func combine(n: Int, _ k: Int) -> [[Int]] {
         var res = [[Int]]()
         var path = [Int]()
-        let nums = _init(n)
+        let nums = [Int](1 ... n)
         
         _dfs(nums, &res, &path, 0, k)
-        
-        return res
-    }
-    
-    private func _init(n: Int) -> [Int] {
-        var res = [Int]()
-        
-        for i in 1 ... n {
-            res.append(i)
-        }
         
         return res
     }

@@ -26,7 +26,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 173 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 174 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), and [jindulys](https://github.com/jindulys).
 
 ## Array
 | Title | Solution | Difficulty | Time | Space |
@@ -170,8 +170,6 @@
 [Word Search](https://leetcode.com/problems/word-search/)| [Swift](./DFS/WordSearch.swift)| Medium| O((n^2)!)| O(n^2)|
 [Word Search II](https://leetcode.com/problems/word-search-ii/)| [Swift](./DFS/WordSearchII.swift)| Hard| O(((mn)^2))| O(n^2)|
 
-
-
 ## Math
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
@@ -199,6 +197,7 @@
 [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)| [Swift](./Math/TrappingRainWater.swift)| Hard| O(n)| O(n)|
 [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)| [Swift](./Math/ContainerMostWater.swift)| Medium| O(n)| O(1)|
 [Counting Bits](https://leetcode.com/problems/counting-bits/)| [Swift](./Math/CountingBits.swift)| Medium| O(n)| O(n)|
+[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)| [Swift](./Math/SudokuSolver.swift)| Hard| O(n^4)| O(1)|
 
 ## Search
 | Title | Solution | Difficulty | Time | Space |
@@ -661,7 +660,7 @@
 |	[Swift](./DFS/combinationSumII.swiftc)	|	40	|	[Combination Sum II](https://oj.leetcode.com/problems/combination-sum-ii/)	| Medium	|
 |	[Swift](./DFS/CombinationSum.swift)	|	39	|	[Combination Sum](https://oj.leetcode.com/problems/combination-sum/)	| Medium	|
 |	[Swift](./String/CountAndSay.swift)	|	38	|	[Count and Say](https://oj.leetcode.com/problems/count-and-say/)	| Easy	|
-|		|	37	|	[Sudoku Solver](https://oj.leetcode.com/problems/sudoku-solver/)	| Hard	|
+|	[Swift](./Math/SudokuSolver.swift)	|	37	|	[Sudoku Solver](https://oj.leetcode.com/problems/sudoku-solver/)	| Hard	|
 |	[Swift](./Array/ValidSudoku.swift)	|	36	|	[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)	| Easy	|
 |	[Swift](./Search/SearchInsertPosition.swift)	|	35	|	[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)	| Medium	|
 |	[Swift](./Search/SearchForARange.swift)	|	34	|	[Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/)	| Medium	|

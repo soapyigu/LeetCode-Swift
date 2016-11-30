@@ -13,8 +13,8 @@
  * Recommand Reading: http://cs.brown.edu/courses/csci0160/lectures/14.pdf
  */
 
-class CourseSchedule {
-    func canFinish(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool {
+class CourseScheduleII {
+    func findOrder(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
         // ATTENTION: if graph use [[Int]], will get 'memory limited exceed'
         var graph = [[UInt8]](repeatElement([UInt8](repeatElement(0, count: numCourses)), count: numCourses))
         var indegree = [Int](repeatElement(0, count: numCourses))
@@ -40,13 +40,11 @@ class CourseSchedule {
             }
         }
         
-        //var topoSortedList = [Int]()
-        var count = 0
+        var topoSortedList = [Int]()
         while !sources.isEmpty {
             // 4.i. Remove a vertex from the set and add it to the sorted list
             let source = sources.popLast()
-            //topoSortedList.append(source!)
-            count += 1
+            topoSortedList.append(source!)
             
             // 4.ii. Decrement the in-degree of the destination node
             for i in 0 ..< numCourses {
@@ -60,7 +58,7 @@ class CourseSchedule {
             }
         }
         
-        //return topoSortedList.count == numCourses
-        return count == numCourses
+        // If topoSortedList contain all vertices, means this is a DAG
+        return topoSortedList.count == numCourses ? topoSortedList : []
     }
 }

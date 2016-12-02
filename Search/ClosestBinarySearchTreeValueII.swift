@@ -1,6 +1,7 @@
 /**
  * Question Link: Question Link: https://leetcode.com/problems/closest-binary-search-tree-value-ii/
- * Primary idea: Inorder traverse, compare current node val with the first one of the *                 array, as it is far from closest one as usual.
+ * Primary idea: Inorder traverse, compare current node val with the first one of the 
+ *                 array, as it is far from closest one as usual.
  * Time Complexity: O(n), Space Complexity: O(n)
  * 
  * Definition for a binary tree node.

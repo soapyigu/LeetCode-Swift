@@ -7,20 +7,18 @@
  */
 
 class MoveZeroes {
-    func moveZeroes(inout nums: [Int]) {
+    func moveZeroes(_ nums: inout [Int]) {
         var zeroIndex = 0
-        
+  
         for i in 0 ..< nums.count {
             if nums[i] != 0 {
-                _swap(&nums, zeroIndex, i)
+                _swap(&nums, i, zeroIndex)
                 zeroIndex += 1
             }
         }
     }
-    
-    private func _swap<T>(inout nums: Array<T>, _ p: Int, _ q: Int) {
-        let temp = nums[p]
-        nums[p] = nums[q]
-        nums[q] = temp
+
+    private func _swap<T>(_ nums: inout Array<T>, _ p: Int, _ q: Int) {
+        (nums[p], nums[q]) = (nums[q], nums[p])
     }
 }

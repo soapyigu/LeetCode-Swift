@@ -12,7 +12,7 @@ class GroupAnagrams {
         var map = [String: [String]]()
         
         for str in strs {
-            let sortedStr = _sortStr(str)
+            let sortedStr = String(str.characters.sort { $0 < $1 })
       
             var anagrams = [String]()
             if map[sortedStr] != nil {
@@ -24,12 +24,6 @@ class GroupAnagrams {
     
         _convertMapToLists(map, &res)
         return res
-    }
-    
-    private func _sortStr(str: String) -> String {
-        var strChars = [Character](str.characters)
-        strChars.sortInPlace({$0 < $1})
-        return String(strChars)
     }
     
     private func _convertMapToLists(map: [String: [String]], inout _ res: [[String]]) {

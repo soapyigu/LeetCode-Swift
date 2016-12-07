@@ -19,26 +19,26 @@
 class PartitionList {
     func partition(head: ListNode?, _ x: Int) -> ListNode? {
         let prevDummy = ListNode(0)
-        var prev: ListNode? = prevDummy
+        var prev = prevDummy
         let postDummy = ListNode(0)
-        var post: ListNode? = postDummy
+        var post = postDummy
         
         var node = head
         
         while node != nil {
             if node!.val < x {
-                prev!.next = node
-                prev = prev!.next
+                prev.next = node
+                prev = node!
             } else {
-                post!.next = node
-                post = post!.next
+                post.next = node
+                post = node!
             }
             
             node = node!.next
         }
         
-        post!.next = nil
-        prev!.next = postDummy.next
+        post.next = nil
+        prev.next = postDummy.next
         
         return prevDummy.next
     }

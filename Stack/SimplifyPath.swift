@@ -5,31 +5,25 @@
  */
 
 class SimplifyPath {
-    func simplifyPath(path: String) -> String {
-        var res = ""
+    func simplifyPath(_ path: String) -> String {
+        let dirs = path.components(separatedBy: "/")
         var stack = [String]()
-        let paths = path.characters.split {$0 == "/"}.map(String.init)
         
-        for path in paths {
-            var path = path.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        
-            guard path != "." else {
+        for dir in dirs {
+            if dir == "." {
                 continue
-            }
-            
-            if path == ".."  {
-                if (stack.count > 0) {
+            } else if dir == ".." {
+                if !stack.isEmpty {
                     stack.removeLast()
                 }
-            } else if path.characters.count > 0 {
-                stack.append(path)
+            } else {
+                if dir != "" {
+                    stack.append(dir)
+                }
             }
         }
         
-        for str in stack {
-            res += "/"
-            res += str
-        }
+        let res = stack.reduce("") { total, dir in "\(total)/\(dir)" }
         
         return res.isEmpty ? "/" : res
     }

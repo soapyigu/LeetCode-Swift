@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/invert-binary-tree/
  * Primary idea: recursion, swap left and right of current node each time
- * Time Complexity: O(n), Space Complexity: O(1)
+ * Time Complexity: O(n), Space Complexity: O(n)
  *
  * Definition for a binary tree node.
  * public class TreeNode {

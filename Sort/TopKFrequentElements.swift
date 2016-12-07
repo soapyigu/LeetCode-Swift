@@ -18,13 +18,13 @@ class TopKFrequentElements {
             map[num] = times + 1
         }
   
-        let keys = Array(map.keys)
-        var sortedKeys = keys.sort() {
+        var keys = Array(map.keys)
+        keys.sortInPlace() {
             let value1 = map[$0]
             let value2 = map[$1]
             return value1 > value2
         }
   
-        return Array(sortedKeys[0..<k])
+        return Array(keys[0 ..< k])
     }
 }

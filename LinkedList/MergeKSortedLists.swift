@@ -57,11 +57,7 @@ class MergeKSortedLists {
             node = node.next!
         }
         
-        if l1 != nil {
-            node.next = l1
-        } else {
-            node.next = l2
-        }
+        node.next = l1 ?? l2
         
         return dummy.next
     }

@@ -19,8 +19,7 @@ class SubsetsII {
     }
     
     private func _dfs(inout res: [[Int]], inout _ path:[Int], _ nums: [Int], _ index: Int) {
-        let newPath = path
-        res.append(newPath)
+        res.append(Array(path))
         
         for i in index ..< nums.count {
             if i > 0 && nums[i] == nums[i - 1] && i != index {

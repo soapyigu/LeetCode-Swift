@@ -7,7 +7,7 @@
  */
 
 class GenerateParentheses {
-    func generateParenthesis(n: Int) -> [String] {
+    func generateParenthesis(_ n: Int) -> [String] {
         var set = Set<String>()
         
         guard n > 0 else {
@@ -15,19 +15,14 @@ class GenerateParentheses {
         }
         
         for str in generateParenthesis(n - 1) {
-            for (i, char) in str.characters.enumerate() {
+            for (i, char) in str.characters.enumerated() {
                 if char == "(" {
-                    set.insert(_substring(str, 0, i + 1) + "()" + _substring(str, i + 1, str.characters.count))
+                    set.insert(String(Array(str.characters)[0 ... i]) + "()" + String(Array(str.characters)[i + 1 ..< str.characters.count]))
                 }
             }
-            
             set.insert(str + "()")
         }
         
         return [String](set)
-    }
-    
-    private func _substring(str: String, _ start: Int, _ end: Int) -> String {
-        return str[str.startIndex.advancedBy(start) ..< str.startIndex.advancedBy(end)]
     }
 }

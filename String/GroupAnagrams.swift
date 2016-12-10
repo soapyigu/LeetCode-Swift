@@ -7,29 +7,20 @@
  */
 
 class GroupAnagrams {
-    func groupAnagrams(strs: [String]) -> [[String]] {
-        var res = [[String]]()
+    func groupAnagrams(_ strs: [String]) -> [[String]] {
         var map = [String: [String]]()
-        
+  
         for str in strs {
-            let sortedStr = String(str.characters.sort { $0 < $1 })
-      
+            let sortedStr = String(str.characters.sorted())
+    
             var anagrams = [String]()
-            if map[sortedStr] != nil {
-                anagrams = map[sortedStr] as [String]!
+            if let list = map[sortedStr] {
+                anagrams = list
             }
             anagrams.append(str)
             map[sortedStr] = anagrams
         }
-    
-        _convertMapToLists(map, &res)
-        return res
-    }
-    
-    private func _convertMapToLists(map: [String: [String]], inout _ res: [[String]]) {
-        for anagrams in map.values {
-            let anagrams = anagrams.sort({$0 < $1})
-            res.append(anagrams)
-        }
+  
+        return map.values.map { value in value.sorted() }
     }
 }

@@ -6,37 +6,15 @@
  */
 
 class RotateImage {
-    func rotate(inout matrix: [[Int]]) {
+    func rotate(_ matrix: inout [[Int]]) {
         let n = matrix.count
-    
-        guard n > 0 else {
-            return
-        }
-        
-        var start = 0
-        var end = 0
-        var offset = 0
-        var temp = 0
         
         for layer in 0 ..< n / 2 {
-            start = layer
-            end = n - 1 - layer
-            
+            let start = layer, end = n - layer - 1
             for i in start ..< end {
-                offset = i - start
-                temp = matrix[start][i]
+                let offset = i - start
                 
-                // left -> top
-                matrix[start][i] = matrix[end - offset][start]
-                
-                // bottom -> left
-                matrix[end - offset][start] = matrix[end][end - offset]
-                
-                // right -> bottom
-                matrix[end][end - offset] = matrix[i][end]
-                
-                // top -> right
-                matrix[i][end] = temp
+                (matrix[start][i], matrix[i][end], matrix[end][end - offset], matrix[end - offset][start]) = (matrix[end - offset][start], matrix[start][i], matrix[i][end], matrix[end][end - offset])
             }
         }
     }

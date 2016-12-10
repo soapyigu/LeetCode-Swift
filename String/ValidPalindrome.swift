@@ -38,6 +38,6 @@ class ValidPalindrome {
             fatalError("Character is invalid")
         }
   
-        return CharacterSet.letters.contains(char) || CharacterSet.decimalDigits.contains(char)
+        return CharacterSet.alphanumerics.contains(char)
     }
 }

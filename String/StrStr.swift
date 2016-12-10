@@ -5,31 +5,28 @@
  */
 
 class StrStr {
-    func strStr(haystack: String, _ needle: String) -> Int {
-        var hChars = [Character](haystack.characters)
-        var nChars = [Character](needle.characters)
-        
-        guard hChars.count >= nChars.count else {
+    func strStr(_ haystack: String, _ needle: String) -> Int {
+        let hChars = Array(haystack.characters), nChars = Array(needle.characters)
+        let hLen = hChars.count, nLen = nChars.count
+    
+        guard hLen >= nLen else {
             return -1
         }
-        if nChars.count == 0 {
+        guard nLen != 0 else {
             return 0
         }
         
-        for i in 0 ... hChars.count - nChars.count {
-            guard hChars[i] == nChars[0] else {
-                continue
-            }
-                
-            for j in 0 ..< nChars.count {
-                guard hChars[i + j] == nChars[j] else {
-                    break
+        for i in 0 ... hLen - nLen {
+            if hChars[i] == nChars[0] {
+                for j in 0 ..< nLen {
+                    if hChars[i + j] != nChars[j] {
+                        break
+                    }
+                    if j + 1 == nLen {
+                        return i
+                    }
                 }
-                
-                if j == nChars.count - 1 {
-                    return i
-                }
-            }
+            } 
         }
         
         return -1

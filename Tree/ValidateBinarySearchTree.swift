@@ -26,10 +26,10 @@ class ValidateBinarySearchTree {
             return true
         }
         
-        if min != nil && node.val <= min {
+        if let min = min, root.val <= min {
             return false
         }
-        if max != nil && node.val >= max {
+        if let max = max, root.val >= max {
             return false
         }
         

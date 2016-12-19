@@ -19,6 +19,7 @@
 ## Companies
 * [Google](#google)
 * [Facebook](#facebook)
+* [Snapchat](#snapchat)
 * [Uber](#uber)
 * [Airbnb](#airbnb)
 * [LinkedIn](#linkedin)
@@ -279,6 +280,12 @@
 [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [Swift](./LinkedList/ReverseLinkedList.swift)| Easy| ★★★|
 [Subsets](https://leetcode.com/problems/subsets/)| [Swift](./DFS/Subsets.swift)| Medium| ★★★|
 [Sort Colors](https://leetcode.com/problems/sort-colors/)| [Swift](./Sort/SortColors.swift)| Medium| ★★|
+
+## Snapchat
+| Title | Solution | Difficulty | Frequency |
+| ----- | -------- | ---------- | --------- |
+[Game of Life](https://leetcode.com/problems/game-of-life/)	|	| Medium| ★★★★★★|
+[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)| [Swift](./Sort/MeetingRoomsII.swift)| Medium| ★★★★★★|
 
 ## Uber
 | Title | Solution | Difficulty | Frequency |

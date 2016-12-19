@@ -7,31 +7,31 @@
 class OneEditDistance {
     func isOneEditDistance(_ s: String, _ t: String) -> Bool {
         let sChars = Array(s.characters), tChars = Array(t.characters)
-        let sLen = sChars.count, tLen = tChars.count
-    
-        guard abs(sLen - tLen) <= 1 && s != t else {
+        var foundDiff = false, i = 0, j = 0
+        
+        let shorter = sChars.count < tChars.count ? sChars : tChars
+        let longer = sChars.count < tChars.count ? tChars : sChars
+        
+        guard longer.count - shorter.count < 2 && s != t else {
             return false
         }
         
-        let s1 = sLen < tLen ? sChars : tChars, s2 = sLen < tLen ? tChars : sChars
-        var index1 = 0, index2 = 0, foundDiff = false
-        
-        while index1 < s1.count && index2 < s2.count {
-            if s1[index1] != s2[index2] {
+        while i < shorter.count && j < longer.count {
+            if shorter[i] != longer[j] {
                 if foundDiff {
                     return false
                 }
-                foundDiff = true
                 
-                if s1.count < s2.count {
-                    index2 += 1
+                foundDiff = true
+                if shorter.count < longer.count {
+                    j += 1
                 } else {
-                    index1 += 1
-                    index2 += 1
+                    i += 1
+                    j += 1
                 }
             } else {
-                index1 += 1
-                index2 += 1
+                i += 1
+                j += 1
             }
         }
         

@@ -6,21 +6,17 @@
  */
 
 class SpiralMatrixII {
-    func generateMatrix(n: Int) -> [[Int]] {
+    func generateMatrix(_ n: Int) -> [[Int]] {
         guard n > 0 else {
             return [[Int]]()
         }
     
         var num = 1
-        var res = Array(count: n, repeatedValue: Array(count: n, repeatedValue: 0))
-        
-        var start = 0
-        var end = 0
-        var offset = 0
+        var res = Array(repeating: Array(repeating: 0, count: n), count: n)
         
         for layer in 0 ..< n / 2 {
-            start = layer
-            end = n - layer - 1
+            let start = layer
+            let end = n - layer - 1
             
             // top
             for i in start ..< end {
@@ -35,13 +31,13 @@ class SpiralMatrixII {
             }
             
             // bottom
-            for i in end.stride(to: start, by: -1) {
+            for i in stride(from: end, to: start, by: -1) {
                 res[end][i] = num
                 num += 1
             }
             
             // left
-            for i in end.stride(to: start, by: -1) {
+            for i in stride(from: end, to: start, by: -1) {
                 res[i][start] = num
                 num += 1
             }

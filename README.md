@@ -27,7 +27,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 194 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 195 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), and [jindulys](https://github.com/jindulys).
 
 
 ## Array
@@ -170,6 +170,7 @@
 [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)| [Swift](./DP/CombinationSumIV.swift)| Medium| O(2^n)| O(n)|
 [Triangle](https://leetcode.com/problems/triangle/)| [Swift](./DP/Triangle.swift)| Medium| O(2^n - 1)| O(m)|
 [Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)| [Swift](./DP/GuessNumberHigherOrLowerII.swift)| Medium| O(nlogn)| O(n^2)|
+[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)| [Swift](./DP/BestTimeToBuyAndSellStockWithCooldown.swift)| Medium| O(n)| O(n)|
 
 ## Depth-first search
 | Title | Solution | Difficulty | Time | Space |
@@ -442,7 +443,7 @@
 |		|	312	|	[Burst Balloons](https://leetcode.com/problems/burst-balloons/)	|	Hard
 |		|	311	|	[Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/)  &hearts;	|	Medium
 |		|	310	|	[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)	|	Medium
-|		|	309	|	[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)	|	Medium
+|	[Swift](./DP/BestTimeToBuyAndSellStockWithCooldown.swift)	|	309	|	[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)	|	Medium
 |		|	308	|	[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/) &hearts;	|	Hard
 |		|	307	|	[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)	|	Medium
 |		|	306	|	[Additive Number](https://leetcode.com/problems/additive-number/)	|	Medium

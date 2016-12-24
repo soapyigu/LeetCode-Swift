@@ -15,24 +15,18 @@
  */
 
 class RemoveLinkedListElements {
-    func removeElements(head: ListNode?, _ val: Int) -> ListNode? {
+    func removeElements(_ head: ListNode?, _ val: Int) -> ListNode? {
         let dummy = ListNode(0)
         dummy.next = head
+        var node = dummy
         
-        var prev = dummy
-        var curr = head
-        
-        while curr != nil {
-            if curr!.val == val {
-                curr = curr!.next
+        while node.next != nil {
+            if node.next!.val == val {
+                node.next = node.next!.next
             } else {
-                prev.next = curr
-                prev = curr!
-                curr = curr!.next
+                node = node.next!
             }
         }
-        // remember to handle the last one
-        prev.next = nil
         
         return dummy.next
     }

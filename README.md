@@ -67,6 +67,7 @@
 [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)| [Swift](./String/OneEditDistance.swift)| Medium| O(n)| O(n)|
 [Word Pattern](https://leetcode.com/problems/word-pattern/)| [Swift](./String/WordPattern.swift)| Easy| O(n)| O(n)|
 [Text Justification](https://leetcode.com/problems/text-justification/)| [Swift](./String/TextJustification.swift)| Hard| O(n^2)| O(n)|
+[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Swift](./String/RegularExpressionMatching.swift) | Hard | O(n) | O(n) |
 
 ## Linked List
 | Title | Solution | Difficulty | Time | Space |
@@ -617,7 +618,7 @@
 |	[Swift](./Math/RomanToInteger.swift)	|	13	|	[Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)	|	&hearts;	|
 |		|	12	|	[Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)	|	&hearts;    &hearts;	|
 |		|	11	|	[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)	|	&hearts;    &hearts;	|
-|		|	10	|	[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)	|	&hearts;    &hearts;    &hearts;	|
+|	[Swift](./String/RegularExpressionMatching.swift)	|	10	|	[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)	|	&hearts;    &hearts;    &hearts;	|
 |	[Swift](./Math/PalindromeNumber.swift)	|	9	|	[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)	|	&hearts;	|
 |	[Swift](./Math/Atoi.swift)	|	8	|	[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)	|	&hearts;	|
 |	[Swift](./Math/ReverseInteger.swift)	|	7	|	[Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)	|	&hearts;	|

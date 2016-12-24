@@ -15,7 +15,7 @@ struct Token {
     var isStar:Bool
 }
 
-class Solution {
+class RegularExpressionMatching {
     func isMatch(_ s: String, _ p: String) -> Bool {
         return isMatch(sChars: [Character](s.characters), tokens: generateTokensFrom(pattern: p))
     }

@@ -27,7 +27,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 194 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 198 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), and [jindulys](https://github.com/jindulys).
 
 
 ## Array
@@ -142,6 +142,7 @@
 [Path Sum](https://leetcode.com/problems/path-sum/)| [Swift](./Tree/PathSum.swift)| Easy| O(n)| O(n)|
 [Path Sum II](https://leetcode.com/problems/path-sum-ii/)| [Swift](./Tree/PathSumII.swift)| Medium| O(n)| O(n)|
 [Path Sum III](https://leetcode.com/problems/path-sum-iiI/)| [Swift](./Tree/PathSumIII.swift)| Easy| O(n^2)| O(1)|
+[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)| [Swift](./Tree/UniqueBinarySearchTrees.swift)| Medium| O(n)| O(n)|
 [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)| [Swift](./Tree/RecoverBinarySearchTree.swift)| Hard| O(n)| O(1)|
 
 ## Dynamic programming
@@ -155,7 +156,10 @@
 [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [Swift](./DP/MinimumPathSum.swift)| Medium| O(mn)| O(mn)|
 [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| [Swift](./DP/GenerateParentheses.swift)| Medium| O(n^2)| O(n)|
 [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [Swift](./DP/BestTimeBuySellStock.swift)| Easy| O(n)| O(1)|
+[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [Swift](./DP/BestTimeBuySellStockII.swift)| Medium| O(n)| O(1)|
 [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)| [Swift](./DP/BestTimeBuySellStockIII.swift)| Hard| O(n)| O(n)|
+[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)| [Swift](./DP/BestTimeBuySellStockIV.swift)| Hard| O(n^2)| O(n)|
+[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)| [Swift](./DP/BestTimeBuySellStockCooldown.swift)| Medium| O(n^2)| O(n)|
 [Coin Change](https://leetcode.com/problems/coin-change/)| [Swift](./DP/CoinChange.swift)| Medium| O(n^2)| O(n)|
 [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)| [Swift](./DP/LongestIncreasingSubsequence.swift)| Medium| O(n^2)| O(n)|
 [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)| [Swift](./DP/LongestPalindromicSubstring.swift)| Medium| O(n^2)| O(n^2)|
@@ -442,7 +446,7 @@
 |		|	312	|	[Burst Balloons](https://leetcode.com/problems/burst-balloons/)	|	Hard
 |		|	311	|	[Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/)  &hearts;	|	Medium
 |		|	310	|	[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)	|	Medium
-|		|	309	|	[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)	|	Medium
+|	[Swift](./DP/BestTimeBuySellStockCooldown.swift)	|	309	|	[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)	|	Medium
 |		|	308	|	[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/) &hearts;	|	Hard
 |		|	307	|	[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)	|	Medium
 |		|	306	|	[Additive Number](https://leetcode.com/problems/additive-number/)	|	Medium
@@ -455,7 +459,7 @@
 |		|	299	|	[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)	| Easy	|
 |		|	298	|	[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) &hearts;	|	Medium	|
 |		|	297	|	[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)	|	Hard	|
-|		|	296	|	[Best Meeting Point](https://leetcode.com/problems/best-meeting-point/) &hearts;	|	Hard	|
+|	[Swift](./Tree/UniqueBinarySearchTrees.swift)	|	296	|	[Best Meeting Point](https://leetcode.com/problems/best-meeting-point/) &hearts;	|	Hard	|
 |		|	295	|	[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)	|	Hard	|
 |		|	294	|	[Flip Game II](https://leetcode.com/problems/flip-game-ii/) &hearts;	|	Medium	|
 |	[Swift](./String/FlipGame.swift)	|	293	|	[Flip Game](https://leetcode.com/problems/flip-game/) &hearts;	| Easy	|
@@ -556,7 +560,7 @@
 |		|	191	|	[Number of 1 Bits](https://oj.leetcode.com/problems/number-of-1-bits/)	| Easy	|
 |		|	190	|	[Reverse Bits](https://oj.leetcode.com/problems/reverse-bits/)	| Easy	|
 |	[Swift](./Array/RotateArray.swift)	|	189	|	[Rotate Array](https://oj.leetcode.com/problems/rotate-array/)	| Easy	|
-|		|	188	|	[Best Time to Buy and Sell Stock IV](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)	| Hard	|
+|	[Swift](./DP/BestTimeBuySellStockIV.swift)	|	188	|	[Best Time to Buy and Sell Stock IV](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)	| Hard	|
 |		|	187	|	[Repeated DNA Sequences](https://oj.leetcode.com/problems/repeated-dna-sequences/)	| Medium	|
 |		|	186	|	[Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/) &hearts;	| Medium	|
 |		|	179	|	[Largest Number](https://oj.leetcode.com/problems/largest-number/)	| Medium	|
@@ -612,7 +616,7 @@
 | [Swift](./String/ValidPalindrome.swift)		|	125	|	[Valid Palindrome](https://oj.leetcode.com/problems/valid-palindrome/)	| Easy	|
 |		|	124	|	[Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)	| Hard	|
 |	[Swift](./DP/BestTimeBuySellStockIII.swift)	|	123	|	[Best Time to Buy and Sell Stock III](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)	| Hard	|
-|		|	122	|	[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)	| Medium	|
+|	[Swift](./DP/BestTimeBuySellStockII.swift)	|	122	|	[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)	| Medium	|
 |	[Swift](./DP/BestTimeBuySellStock.swift)	|	121	|	[Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)	| Easy	|
 |	[Swift](./DP/Triangle.swift)	|	120	|	[Triangle](https://oj.leetcode.com/problems/triangle/)	| Medium	|
 |		|	119	|	[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)	| Easy	|

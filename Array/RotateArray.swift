@@ -9,7 +9,7 @@
  */
 
 class RotateArray {
-    func rotate(inout nums: [Int], _ k: Int) {
+    func rotate(_ nums: inout [Int], _ k: Int) {
         var k = k % nums.count
     
         _reverse(&nums, 0, nums.count - 1)
@@ -17,7 +17,7 @@ class RotateArray {
         _reverse(&nums, k, nums.count - 1)
     }
     
-    private func _reverse(inout nums: [Int], _ startIdx: Int, _ endIdx: Int) {
+    private func _reverse(_ nums: inout [Int], _ startIdx: Int, _ endIdx: Int) {
         // edge case
         if startIdx < 0 || endIdx > nums.count || startIdx >= endIdx {
             return
@@ -33,9 +33,7 @@ class RotateArray {
         }
     }
     
-    private func _swap(inout nums: [Int], _ p: Int, _ q: Int) {
-        var temp = nums[p]
-        nums[p] = nums[q]
-        nums[q] = temp
+    private func _swap<T>(_ nums: inout Array<T>, _ p: Int, _ q: Int) {
+        (nums[p], nums[q]) = (nums[q], nums[p])
     }
 }

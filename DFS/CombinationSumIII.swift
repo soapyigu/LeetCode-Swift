@@ -2,13 +2,13 @@
  * Question Link: https://leetcode.com/problems/combination-sum-iii/
  * Primary idea: Classic Depth-first Search
  * 
- * Time Complexity: O(n!)
+ * Time Complexity: O(n!), Space Complexity: O(nCk)
  *
  */
 
-class combinationSumIII {
+class CombinationSumIII {
     func combinationSum3(k: Int, _ n: Int) -> [[Int]] {
-        let candidates = _init()
+        let candidates = [Int](1 ... 9)
         var res = [[Int]]()
         var path = [Int]()
         
@@ -17,17 +17,9 @@ class combinationSumIII {
         return res
     }
     
-    private func _init() -> [Int] {
-        var res = [Int]()
-        for num in 1 ... 9 {
-            res.append(num)
-        }
-        return res
-    }
-    
     private func _dfs(inout res: [[Int]], inout _ path: [Int], _ candidates: [Int], _ target: Int, _ index: Int, _ size: Int) {
         if target == 0 && path.count == size{
-            res.append([Int](path))
+            res.append(Array(path))
             return
         }       
         

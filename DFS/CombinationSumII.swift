@@ -2,30 +2,23 @@
  * Question Link: https://leetcode.com/problems/combination-sum-ii/
  * Primary idea: Classic Depth-first Search
  * 
- * Time Complexity: O(n!)
+ * Time Complexity: O(n!), Space Complexity: O(2^n - 2)
  *
  */
 
-class combinationSumII {
+class CombinationSumII {
     func combinationSum2(candidates: [Int], _ target: Int) -> [[Int]] {
         var res = [[Int]]()
-        
-        // edge case
-        guard candidates.count > 0 else {
-            return res
-        }
-        
         var path = [Int]()
-        let candidates = candidates.sort({$0 < $1})
         
-        _dfs(&res, &path, target, candidates, 0)
+        _dfs(&res, &path, target, candidates.sort({$0 < $1}), 0)
         
         return res
     }
     
     private func _dfs(inout res: [[Int]], inout _ path: [Int], _ target: Int, _ candidates: [Int], _ index: Int) {
         if target == 0 {
-            res.append([Int](path))
+            res.append(Array(path))
             return
         }
         

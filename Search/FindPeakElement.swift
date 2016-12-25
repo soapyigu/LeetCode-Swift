@@ -13,9 +13,10 @@ class FindPeakElement {
         
         var left = 1
         var right = nums.count - 2
+        var mid = 0
         
         while left <= right {
-            var mid = (right - left) / 2 + left
+            mid = (right - left) / 2 + left
             if nums[mid] > nums[mid - 1] && nums[mid] > nums[mid + 1] {
                 return mid
             } else if nums[mid] < nums[mid + 1] {

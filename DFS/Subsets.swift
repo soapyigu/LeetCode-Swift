@@ -20,8 +20,8 @@ class Subsets {
     
     private func _dfs(inout res: [[Int]], inout _ path: [Int], _ nums: [Int], _ index: Int) {
         // termination case
-        let newPath = path
-        res.append(newPath)
+
+        res.append(Array(path))
         
         for i in index ..< nums.count {
             path.append(nums[i])

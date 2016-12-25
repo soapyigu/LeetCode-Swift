@@ -9,9 +9,10 @@ class SearchInRotatedSortedArrayII {
     func search(nums: [Int], _ target: Int) -> Bool {
         var left = 0
         var right = nums.count - 1
+        var mid = 0
         
         while left <= right {
-            var mid = (right - left) / 2 + left
+            mid = (right - left) / 2 + left
             
             if nums[mid] == target {
                 return true

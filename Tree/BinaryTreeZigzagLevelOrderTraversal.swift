@@ -4,6 +4,8 @@
  *
  * Note: use a boolean value to determine if needs to be added reversely
  *
+ * Time Complexity: O(n), Space Complexity: O(n)
+ *
  * Definition for a binary tree node.
  * public class TreeNode {
  *     public var val: Int

@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/invert-binary-tree/
  * Primary idea: recursion, swap left and right of current node each time
- * Time Complexity: O(n), Space Complexity: O(1)
+ * Time Complexity: O(n), Space Complexity: O(n)
  *
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -17,14 +17,12 @@
  */
 
 class InvertBinaryTree {
-    func invertTree(root: TreeNode?) -> TreeNode? {
+    func invertTree(_ root: TreeNode?) -> TreeNode? {
         guard let root = root else {
             return nil
         }
         
-        var temp = root.left 
-        root.left = root.right
-        root.right = temp
+        (root.left, root.right) = (root.right, root.left)
         
         invertTree(root.left)
         invertTree(root.right)

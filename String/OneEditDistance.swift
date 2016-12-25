@@ -5,57 +5,36 @@
  */
 
 class OneEditDistance {
-    func isOneEditDistance(s: String, _ t: String) -> Bool {
-        let sLen = s.characters.count
-        let tLen = t.characters.count
-    
-        guard abs(sLen - tLen) <= 1 else {
+    func isOneEditDistance(_ s: String, _ t: String) -> Bool {
+        let sChars = Array(s.characters), tChars = Array(t.characters)
+        var foundDiff = false, i = 0, j = 0
+        
+        let shorter = sChars.count < tChars.count ? sChars : tChars
+        let longer = sChars.count < tChars.count ? tChars : sChars
+        
+        guard longer.count - shorter.count < 2 && s != t else {
             return false
         }
         
-        if sLen > tLen {
-            return _isAddChar(t, s)
-        } else if sLen == tLen {
-            return _isReplaceChar(s, t)
-        } else {
-            return _isAddChar(s, t)
-        }
-    }
-    
-    private func _isAddChar(s: String, _ t: String) -> Bool {
-        let sChars = [Character](s.characters)
-        let tChars = [Character](t.characters)
-        
-        var tIndex = 0
-        var sIndex = 0
-        
-        while sIndex < sChars.count && tIndex < tChars.count {
-            if sChars[sIndex] != tChars[tIndex]  {
-                tIndex += 1
+        while i < shorter.count && j < longer.count {
+            if shorter[i] != longer[j] {
+                if foundDiff {
+                    return false
+                }
+                
+                foundDiff = true
+                if shorter.count < longer.count {
+                    j += 1
+                } else {
+                    i += 1
+                    j += 1
+                }
             } else {
-                tIndex += 1
-                sIndex += 1
+                i += 1
+                j += 1
             }
         }
         
-        return tIndex - sIndex <= 1
-    }
-    
-    private func _isReplaceChar(s: String, _ t: String) -> Bool {
-        let sChars = [Character](s.characters)
-        let tChars = [Character](t.characters)
-        
-        var tIndex = 0
-        var diff = 0
-        
-        for sIndex in 0 ..< sChars.count {
-            if sChars[sIndex] != tChars[tIndex] {
-                diff += 1
-            }
-            
-            tIndex += 1
-        }
-        
-        return diff == 1
+        return true
     }
 }

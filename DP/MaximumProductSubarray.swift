@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/maximum-product-subarray/
  * Primary idea: Dynamic Programming, track max and min at the same time
- * Time Complexity: O(n), Space Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(1)
  */
 
 class MaximumProductSubarray {

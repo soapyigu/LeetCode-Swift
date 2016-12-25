@@ -30,4 +30,17 @@ class ReverseLinkedList {
         
         return temp
     }
+
+    func reverseList(_ head: ListNode?) -> ListNode? {
+        guard let h = head, let next = h.next else {
+            return head
+        }
+  
+        let node = reverseList(next)
+  
+        next.next = h
+        h.next = nil
+  
+        return node
+    }
 }

@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/search-a-2d-matrix/
  * Primary idea: Search col and then binary search row
  *
- * Time Complexity: O(log(m + n), Space Complexity: O(1)
+ * Time Complexity: O(log(m + n)), Space Complexity: O(1)
  */
 
 class Search2DMatrix {

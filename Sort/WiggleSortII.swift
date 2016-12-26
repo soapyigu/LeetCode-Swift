@@ -5,8 +5,8 @@
  */
 
 class WiggleSortII {
-    func wiggleSort(inout nums: [Int]) {
-        let temp = nums.sort({$0 < $1})
+    func wiggleSort(_ nums: inout [Int]) {
+        let temp = nums.sorted()
         
         var m = temp.count
         var n = (m + 1) / 2

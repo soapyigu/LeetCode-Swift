@@ -6,12 +6,12 @@
  *
  */
 
-import UIKit
-
-class Digits {
+class AddDigits {
     func add (num: Int) -> Int {
         let numString = String(num)
-        guard numString.characters.count > 1 else { return num }
+        guard numString.characters.count > 1 else {
+            return num
+        }
         
         let array = Array(numString.characters).map { String($0) }
         

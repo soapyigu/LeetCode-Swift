@@ -27,7 +27,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 201 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 203 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
 
 
 ## Array
@@ -174,6 +174,7 @@
 [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)| [Swift](./DP/CombinationSumIV.swift)| Medium| O(2^n)| O(n)|
 [Triangle](https://leetcode.com/problems/triangle/)| [Swift](./DP/Triangle.swift)| Medium| O(2^n - 1)| O(m)|
 [Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)| [Swift](./DP/GuessNumberHigherOrLowerII.swift)| Medium| O(nlogn)| O(n^2)|
+[Burst Ballons](https://leetcode.com/problems/burst-balloons/)| [Swift](./DP/BurstBalloons.swift)| Hard| O(n^3)| O(n)|
 
 ## Depth-first search
 | Title | Solution | Difficulty | Time | Space |
@@ -202,6 +203,7 @@
 | ----- | -------- | ---------- | ---- | ----- |
 [Add Binary](https://leetcode.com/problems/add-binary/)| [Swift](./Math/AddBinary.swift)| Easy| O(n)| O(n)|
 [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)| [Swift](./Math/AddTwoNumbers.swift)| Medium| O(n)| O(1)|
+[Add Digits](https://leetcode.com/problems/add-digits/)| [Swift](./Math/AddDigits.swift)| Easy| O(1)| O(1)|
 [Plus One](https://leetcode.com/problems/plus-one/)| [Swift](./Math/PlusOne.swift)| Easy| O(n)| O(1)|
 [Integer Break](https://leetcode.com/problems/integer-break/)| [Swift](./Math/IntegerBreak.swift)| Medium| O(logn)| O(1)|
 [Happy Number](https://leetcode.com/problems/happy-number/)| [Swift](./Math/HappyNumber.swift)| Easy| O(n)| O(n)|
@@ -450,7 +452,7 @@
 |		|	315	|	[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)	|	Hard
 |	[Swift](./Tree/BinaryTreeVerticalOrderTraversal.swift)	|	314	|	[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/) &hearts;	|	Medium
 |	[Swift](./Math/SuperUglyNumber.swift)	|	313	|	[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/)	|	Medium
-|		|	312	|	[Burst Balloons](https://leetcode.com/problems/burst-balloons/)	|	Hard
+|	[Swift](./DP/GuessNumberHigherOrLowerII.swift)	|	312	|	[Burst Balloons](https://leetcode.com/problems/burst-balloons/)	|	Hard
 |		|	311	|	[Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/)  &hearts;	|	Medium
 |		|	310	|	[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)	|	Medium
 |	[Swift](./DP/BestTimeBuySellStockCooldown.swift)	|	309	|	[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)	|	Medium
@@ -503,7 +505,7 @@
 |	[Swift](./Sort/GraphValidTree.swift)	|	261	|	[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) &hearts;	|	Medium	|
 |		|	260	|	[Single Number III](https://leetcode.com/problems/single-number-iii/)	|	Medium	|
 |		|	259	|	[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) &hearts;	|	Medium	|
-|		|	258	|	[Add Digits](https://leetcode.com/problems/add-digits/)	| Easy	|
+|	[Swift](./Math/AddDigits.swift)	|	258	|	[Add Digits](https://leetcode.com/problems/add-digits/)	| Easy	|
 |		|	257	|	[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)	| Easy	|
 |		|	256	|	[Paint House](https://leetcode.com/problems/paint-house/) &hearts;	|	Medium	|
 |		|	255	|	[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/) &hearts;	|	Medium	|

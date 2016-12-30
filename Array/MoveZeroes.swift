@@ -1,6 +1,6 @@
 /**
  * Question Link: https://leetcode.com/problems/move-zeroes/
- * Primary idea: keep index zeroIndex, traverse through the array and swap the value
+ * Primary idea: keep index for element not equal to 0, traverse and set up the index
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  *
@@ -8,17 +8,18 @@
 
 class MoveZeroes {
     func moveZeroes(_ nums: inout [Int]) {
-        var zeroIndex = 0
-  
-        for i in 0 ..< nums.count {
-            if nums[i] != 0 {
-                _swap(&nums, i, zeroIndex)
-                zeroIndex += 1
+        var idx = 0
+        
+        for (i, num) in nums.enumerated() {
+            if num != 0 {
+                nums[idx] = num
+                idx += 1
             }
         }
-    }
-
-    private func _swap<T>(_ nums: inout Array<T>, _ p: Int, _ q: Int) {
-        (nums[p], nums[q]) = (nums[q], nums[p])
+        
+        while idx < nums.count {
+            nums[idx] = 0
+            idx += 1
+        }
     }
 }

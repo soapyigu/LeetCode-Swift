@@ -5,21 +5,20 @@
  */
 
 class MaximumSizeSubarraySumEqualsK {
-    func maxSubArrayLen(nums: [Int], _ k: Int) -> Int {
-        var longestLen = 0
-        var dict = [Int: Int]()
-        dict[0] = -1
-        var sum = 0
+    func maxSubArrayLen(_ nums: [Int], _ k: Int) -> Int {
+        var longestLen = 0, sum = 0
+        var sumToIdx = [Int: Int]()
+        sumToIdx[0] = -1
         
-        for i in 0 ..< nums.count {
-            sum += nums[i]
+        for (i, num) in nums.enumerated() {
+            sum += num
             
-            if let lastIndex = dict[sum - k] {
-                longestLen = max(longestLen, i - lastIndex)
+            if let idx = sumToIdx[sum - k] {
+                longestLen = max(longestLen, i - idx)
             }
             
-            guard let index = dict[sum] else {
-                dict[sum] = i
+            guard let idx = sumToIdx[sum] else {
+                sumToIdx[sum] = i
                 continue
             }
         }

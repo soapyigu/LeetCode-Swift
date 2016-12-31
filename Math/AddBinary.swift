@@ -9,32 +9,24 @@
  */
 
 class AddBinary {
-    func addBinary(a: String, _ b: String) -> String {
-        var res = ""
-        var aChars = [Character](a.characters)
-        var bChars = [Character](b.characters)
-        
-        var i = aChars.count - 1
-        var j = bChars.count - 1
-        var carry = 0
-        var num = 0
+    func addBinary(_ a: String, _ b: String) -> String {
+        var sum = 0, carry = 0, res = ""
+        let aChars = Array(a.characters), bChars = Array(b.characters)
+        var i = aChars.count - 1, j = bChars.count - 1
         
         while i >= 0 || j >= 0 || carry > 0 {
-            num = carry
-            
+            sum = carry
             if i >= 0 {
-                num += Int(String(aChars[i]))!
+                sum += Int(String(aChars[i]))!
                 i -= 1
             }
             if j >= 0 {
-                num += Int(String(bChars[j]))!
+                sum += Int(String(bChars[j]))!
                 j -= 1
             }
-            
-            carry = num / 2
-            num = num % 2
-            
-            res = String(num) + res
+            carry = sum / 2
+            sum = sum % 2
+            res = String(sum) + res
         }
         
         return res

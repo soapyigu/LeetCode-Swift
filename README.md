@@ -198,7 +198,7 @@
 [N-Queens](https://leetcode.com/problems/n-queens/)| [Swift](./DFS/NQueens.swift)| Hard| O((n^4))| O(n^2)|
 [N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [Swift](./DFS/NQueensII.swift)| Hard| O((n^3))| O(n)|
 [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)| [Swift](./DFS/SudokuSolver.swift)| Hard| O(n^4)| O(1)|
-[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)| [Swift](./DFS/RemoveInvalidParentheses)| Hard| O(n!)| O(n)|
+[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)| [Swift](./DFS/RemoveInvalidParentheses.swift)| Hard| O(n!)| O(n)|
 
 ## Math
 | Title | Solution | Difficulty | Time | Space |
@@ -466,7 +466,7 @@
 |		|	304	|	[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)	|	Medium
 |		|	303	|	[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)	| Easy
 |		|	302	|	[Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/)  &hearts;	|	Hard
-|	[Swift](./DFS/RemoveInvalidParentheses)	|	301	|	[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)	|	Hard
+|	[Swift](./DFS/RemoveInvalidParentheses.swift)	|	301	|	[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)	|	Hard
 |	[Swift](./DP/LongestIncreasingSubsequence.swift)	|	300	|	[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)	|	Medium
 |		|	299	|	[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)	| Easy	|
 |		|	298	|	[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) &hearts;	|	Medium	|

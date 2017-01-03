@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/frog-jump/
  * Primary idea: Dynamic Programming, a dictionary to keep all steps that the position 
  *               can jump, and a dp array to keep max step that the position can take
- * Time Complexity: O(n^2), Space Complexity: O(1)
+ * Time Complexity: O(n^2), Space Complexity: O(n)
  *
  */
 

@@ -13,10 +13,8 @@
             return max
         }
         
-        for i in 1 ..< prices.count {
-            if prices[i] > prices[i - 1] {
-                max += prices[i] - prices[i - 1]
-            }
+        for i in 1 ..< prices.count where prices[i] > prices[i - 1] {
+            max += prices[i] - prices[i - 1]
         }
         
         return max

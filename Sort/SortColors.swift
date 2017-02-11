@@ -5,7 +5,7 @@
  */
 
 class SortColors {
-    func sortColors(inout nums: [Int]) {
+    func sortColors(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
         }
@@ -28,9 +28,7 @@ class SortColors {
         }
     }
     
-    private func _swap<T>(inout nums: Array<T>, _ p: Int, _ q: Int) {
-        let temp = nums[p]
-        nums[p] = nums[q]
-        nums[q] = temp
+    private func _swap<T>(_ nums: inout [T], _ p: Int, _ q: Int) {
+        (nums[p], nums[q]) = (nums[q], nums[p])
     }
 }

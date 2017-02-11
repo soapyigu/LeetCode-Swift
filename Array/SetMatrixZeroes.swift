@@ -11,18 +11,14 @@ class SetMatrixZeroes {
         var rowHasZero = false, colHasZero = false
         let m = matrix.count, n = matrix[0].count
   
-        for i in 0 ..< m {
-            if matrix[i][0] == 0 {
-                colHasZero = true
-                break
-            }
+        for i in 0 ..< m where matrix[i][0] == 0 {
+            colHasZero = true
+            break
         }
   
-        for i in 0 ..< n {
-            if matrix[0][i] == 0 {
-                rowHasZero = true
-                break
-            }
+        for i in 0 ..< n where matrix[0][i] == 0 {
+            rowHasZero = true
+            break
         }
   
         for i in 1 ..< m {

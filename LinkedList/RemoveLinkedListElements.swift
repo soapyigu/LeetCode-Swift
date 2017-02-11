@@ -1,6 +1,6 @@
 /**
  * Question Link: https://leetcode.com/problems/remove-linked-list-elements/
- * Primary idea: Two pointers, iterate the list and only reserve right nodes
+ * Primary idea: Iterate the list, jump over vals by replacing next with next.next
  * Time Complexity: O(n), Space Complexity: O(1)
  *
  * Definition for singly-linked list.
@@ -15,24 +15,18 @@
  */
 
 class RemoveLinkedListElements {
-    func removeElements(head: ListNode?, _ val: Int) -> ListNode? {
+    func removeElements(_ head: ListNode?, _ val: Int) -> ListNode? {
         let dummy = ListNode(0)
         dummy.next = head
+        var node = dummy
         
-        var prev = dummy
-        var curr = head
-        
-        while curr != nil {
-            if curr!.val == val {
-                curr = curr!.next
+        while node.next != nil {
+            if node.next!.val == val {
+                node.next = node.next!.next
             } else {
-                prev.next = curr
-                prev = curr!
-                curr = curr!.next
+                node = node.next!
             }
         }
-        // remember to handle the last one
-        prev.next = nil
         
         return dummy.next
     }

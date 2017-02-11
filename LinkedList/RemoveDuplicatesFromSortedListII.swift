@@ -1,7 +1,6 @@
 /**
  * Question Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
- * Primary idea: Three pointers, iterate the list and only reserve right nodes, 
- *				 specially handle the last one afterwards
+ * Primary idea: Iterate the list, jump over duplicates by replacing next with next.next
  *
  * Note: Swift provides "===" to compare two objects refer to the same reference
  * 
@@ -19,38 +18,24 @@
  */
 
  class RemoveDuplicatesfromSortedListII {
-    func deleteDuplicates(head: ListNode?) -> ListNode? {
+    func deleteDuplicates(_ head: ListNode?) -> ListNode? {
         if head == nil || head!.next == nil {
             return head
         }
         
         let dummy = ListNode(0)
         dummy.next = head
-        
         var node = dummy
-        var prev = head
-        var post = head!.next
         
-        while post != nil {
-            if post!.val != prev!.val && prev!.next === post{
-                node.next = prev
-                node = prev!
-                prev = post!
-                post = post!.next
-            } else {
-                if post!.val != prev!.val {
-                    prev = post!
-                    post = post!.next
-                } else {
-                    post = post!.next
+        while node.next != nil && node.next!.next != nil {
+            if node.next!.val == node.next!.next!.val {
+                let val = node.next!.val
+                while node.next != nil && node.next!.val == val {
+                    node.next = node.next!.next
                 }
+            } else {
+                node = node.next!
             }
-        }
-        
-        if prev!.next != nil {
-            node.next = nil
-        } else {
-            node.next = prev
         }
         
         return dummy.next

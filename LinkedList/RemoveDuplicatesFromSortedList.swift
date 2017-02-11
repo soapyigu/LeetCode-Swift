@@ -1,6 +1,6 @@
 /**
  * Question Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
- * Primary idea: Two pointers, iterate the list and only reserve right nodes
+ * Primary idea: Iterate the list, jump over duplicates by replacing next with next.next
  * Time Complexity: O(n), Space Complexity: O(1)
  *
  * Definition for singly-linked list.
@@ -15,22 +15,20 @@
  */
 
 class RemoveDuplicatesFromSortedList {
-    func deleteDuplicates(head: ListNode?) -> ListNode? {
+    func deleteDuplicates(_ head: ListNode?) -> ListNode? {
         guard let head = head else {
             return nil
         }
     
-        var prev = head
-        var curr = head.next
+        var curt = head
         
-        while curr != nil {
-            if prev.val != curr!.val {
-                prev.next = curr
-                prev = curr!
-            } 
-            curr = curr!.next
+        while curt.next != nil {
+            if curt.next!.val == curt.val {
+                curt.next = curt.next!.next
+            } else {
+                curt = curt.next!
+            }
         }
-        prev.next = nil
         
         return head
     }

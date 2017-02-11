@@ -28,12 +28,10 @@ class FactorCombinations {
             return
         }
         
-        for i in start ... n {
-            if n % i == 0 {
-                path.append(i)
-                dfs(&res, &path, n / i, i)
-                path.removeLast()
-            }
+        for i in start ... n where n % i == 0 {
+            path.append(i)
+            dfs(&res, &path, n / i, i)
+            path.removeLast()
         }
     }
 }

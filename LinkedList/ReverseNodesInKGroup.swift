@@ -25,13 +25,13 @@ class ReverseNodesInKGroup {
             for _ in 1...k {
                 groupTail = groupTail?.next
             }
-            guard groupTail != nil else {            // groupTail = D
+            guard let _ = groupTail else {            // groupTail = D
                 break
             }
             
             let nextGroupHead = groupTail!.next      // nextGroupHead = E
             var last = nextGroupHead                 // last = E
-            var current : ListNode? = prev.next!     // current = B
+            var current : ListNode? = prev.next      // current = B
             while current != nil && current !== nextGroupHead {
                 let next = current!.next             // next = C
                 current!.next = last                 // B -> E

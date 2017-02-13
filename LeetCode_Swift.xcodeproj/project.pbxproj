@@ -144,6 +144,105 @@
 /* Begin PBXFileReference section */
 		9965EB871E520A92002349D1 /* LeetCode_SwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeetCode_SwiftTests.swift; path = LeetCode_SwiftTests/LeetCode_SwiftTests.swift; sourceTree = SOURCE_ROOT; };
 		9965EB891E520A9E002349D1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LeetCode_SwiftTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		99992EA21E5217D80038859B /* Combinations.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Combinations.playground; sourceTree = "<group>"; };
+		99992EA31E52180B0038859B /* CombinationSum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombinationSum.playground; sourceTree = "<group>"; };
+		99992EA41E52181C0038859B /* CombinationSumII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombinationSumII.playground; sourceTree = "<group>"; };
+		99992EA51E52182B0038859B /* CombinationSumIII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombinationSumIII.playground; sourceTree = "<group>"; };
+		99992EA61E5218420038859B /* LetterCombinationsPhoneNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LetterCombinationsPhoneNumber.playground; sourceTree = "<group>"; };
+		99992EA71E52184F0038859B /* NumberofIslands.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NumberofIslands.playground; sourceTree = "<group>"; };
+		99992EA81E52185F0038859B /* Permutations.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Permutations.playground; sourceTree = "<group>"; };
+		99992EA91E52186C0038859B /* PermutationsII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PermutationsII.playground; sourceTree = "<group>"; };
+		99992EAA1E5218780038859B /* Subsets.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subsets.playground; sourceTree = "<group>"; };
+		99992EAB1E5218830038859B /* SubsetsII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SubsetsII.playground; sourceTree = "<group>"; };
+		99992EAC1E52188C0038859B /* WordSearch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WordSearch.playground; sourceTree = "<group>"; };
+		99992EAD1E5218A70038859B /* BestTimeBuySellStock.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BestTimeBuySellStock.playground; sourceTree = "<group>"; };
+		99992EAE1E5218FE0038859B /* ClimbingStairs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClimbingStairs.playground; sourceTree = "<group>"; };
+		99992EAF1E52190C0038859B /* CoinChange.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CoinChange.playground; sourceTree = "<group>"; };
+		99992EB01E5219180038859B /* EditDistance.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EditDistance.playground; sourceTree = "<group>"; };
+		99992EB11E5219220038859B /* HouseRobber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HouseRobber.playground; sourceTree = "<group>"; };
+		99992EB21E5219300038859B /* HouseRobberII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HouseRobberII.playground; sourceTree = "<group>"; };
+		99992EB31E5219400038859B /* LongestIncreasingSubsequence.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LongestIncreasingSubsequence.playground; sourceTree = "<group>"; };
+		99992EB41E52194E0038859B /* MaximalSquare.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MaximalSquare.playground; sourceTree = "<group>"; };
+		99992EB51E5219560038859B /* MaximumProductSubarray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MaximumProductSubarray.playground; sourceTree = "<group>"; };
+		99992EB61E52195E0038859B /* MaximumSubarray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MaximumSubarray.playground; sourceTree = "<group>"; };
+		99992EB71E5219650038859B /* NestedListWeightSum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NestedListWeightSum.playground; sourceTree = "<group>"; };
+		99992EB81E52196D0038859B /* PerfectSquares.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PerfectSquares.playground; sourceTree = "<group>"; };
+		99992EB91E5219830038859B /* MergeKSortedLists.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MergeKSortedLists.playground; sourceTree = "<group>"; };
+		99992EBA1E52198B0038859B /* MergeTwoSortedLists.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MergeTwoSortedLists.playground; sourceTree = "<group>"; };
+		99992EBB1E5219920038859B /* PalindromeLinkedList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PalindromeLinkedList.playground; sourceTree = "<group>"; };
+		99992EBC1E52199D0038859B /* PartitionList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PartitionList.playground; sourceTree = "<group>"; };
+		99992EBD1E5219A60038859B /* RemoveDuplicatesFromSortedList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RemoveDuplicatesFromSortedList.playground; sourceTree = "<group>"; };
+		99992EBE1E5219AF0038859B /* RemoveDuplicatesFromSortedListII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RemoveDuplicatesFromSortedListII.playground; sourceTree = "<group>"; };
+		99992EBF1E5219B80038859B /* RemoveLinkedListElements.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RemoveLinkedListElements.playground; sourceTree = "<group>"; };
+		99992EC01E5219BF0038859B /* RemoveNthFromEnd.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RemoveNthFromEnd.playground; sourceTree = "<group>"; };
+		99992EC11E5219C60038859B /* ReorderList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ReorderList.playground; sourceTree = "<group>"; };
+		99992EC21E5219CD0038859B /* ReverseLinkedList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ReverseLinkedList.playground; sourceTree = "<group>"; };
+		99992EC31E5219D70038859B /* RotateList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RotateList.playground; sourceTree = "<group>"; };
+		99992EC41E5219DE0038859B /* SwapNodesInPairs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwapNodesInPairs.playground; sourceTree = "<group>"; };
+		99992EC51E5219F80038859B /* AddBinary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AddBinary.playground; sourceTree = "<group>"; };
+		99992EC61E521A000038859B /* AddTwoNumbers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AddTwoNumbers.playground; sourceTree = "<group>"; };
+		99992EC71E521A080038859B /* Atoi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Atoi.playground; sourceTree = "<group>"; };
+		99992EC81E521A160038859B /* ExcelSheetColumnNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ExcelSheetColumnNumber.playground; sourceTree = "<group>"; };
+		99992EC91E521A1E0038859B /* HappyNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HappyNumber.playground; sourceTree = "<group>"; };
+		99992ECA1E521A270038859B /* IntegerBreak.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IntegerBreak.playground; sourceTree = "<group>"; };
+		99992ECB1E521A2E0038859B /* PlusOne.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlusOne.playground; sourceTree = "<group>"; };
+		99992ECC1E521A350038859B /* Pow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Pow.playground; sourceTree = "<group>"; };
+		99992ECD1E521A3C0038859B /* PowerThree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PowerThree.playground; sourceTree = "<group>"; };
+		99992ECE1E521A440038859B /* PowerTwo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PowerTwo.playground; sourceTree = "<group>"; };
+		99992ECF1E521A4B0038859B /* RomanToInteger.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RomanToInteger.playground; sourceTree = "<group>"; };
+		99992ED01E521A530038859B /* SingleNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SingleNumber.playground; sourceTree = "<group>"; };
+		99992ED11E521A5A0038859B /* SuperUglyNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SuperUglyNumber.playground; sourceTree = "<group>"; };
+		99992ED21E521A650038859B /* UglyNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UglyNumber.playground; sourceTree = "<group>"; };
+		99992ED31E521A6D0038859B /* UglyNumberII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UglyNumberII.playground; sourceTree = "<group>"; };
+		99992ED41E521A880038859B /* ClosestBinarySearchTreeValue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClosestBinarySearchTreeValue.playground; sourceTree = "<group>"; };
+		99992ED51E521A8E0038859B /* FindMinimumRotatedSortedArray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FindMinimumRotatedSortedArray.playground; sourceTree = "<group>"; };
+		99992ED61E521A970038859B /* FindMinimumRotatedSortedArrayII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FindMinimumRotatedSortedArrayII.playground; sourceTree = "<group>"; };
+		99992ED71E521A9E0038859B /* FindPeakElement.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FindPeakElement.playground; sourceTree = "<group>"; };
+		99992ED81E521AB80038859B /* SearchForARange.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SearchForARange.playground; sourceTree = "<group>"; };
+		99992ED91E521ABF0038859B /* SearchInRotatedSortedArray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SearchInRotatedSortedArray.playground; sourceTree = "<group>"; };
+		99992EDA1E521AC80038859B /* SearchInRotatedSortedArrayII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SearchInRotatedSortedArrayII.playground; sourceTree = "<group>"; };
+		99992EDB1E521ACF0038859B /* SearchInsertPosition.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SearchInsertPosition.playground; sourceTree = "<group>"; };
+		99992EDC1E521AD60038859B /* Sqrtx.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sqrtx.playground; sourceTree = "<group>"; };
+		99992EDD1E521AF00038859B /* MeetingRooms.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MeetingRooms.playground; sourceTree = "<group>"; };
+		99992EDE1E521AF70038859B /* MergeIntervals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MergeIntervals.playground; sourceTree = "<group>"; };
+		99992EDF1E521B100038859B /* SortColors.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SortColors.playground; sourceTree = "<group>"; };
+		99992EE01E521B180038859B /* TopKFrequentElements.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TopKFrequentElements.playground; sourceTree = "<group>"; };
+		99992EE11E521B210038859B /* WiggleSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WiggleSort.playground; sourceTree = "<group>"; };
+		99992EE21E521B290038859B /* WiggleSortII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WiggleSortII.playground; sourceTree = "<group>"; };
+		99992EE31E521B380038859B /* EvaluateReversePolishNotation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EvaluateReversePolishNotation.playground; sourceTree = "<group>"; };
+		99992EE41E521B450038859B /* InorderTraversal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = InorderTraversal.playground; sourceTree = "<group>"; };
+		99992EE51E521B4E0038859B /* PostorderTraversal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PostorderTraversal.playground; sourceTree = "<group>"; };
+		99992EE61E521B550038859B /* PreorderTraversal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PreorderTraversal.playground; sourceTree = "<group>"; };
+		99992EE71E521B5E0038859B /* SimplifyPath.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SimplifyPath.playground; sourceTree = "<group>"; };
+		99992EE81E521B730038859B /* ValidParentheses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ValidParentheses.playground; sourceTree = "<group>"; };
+		99992EE91E521B8D0038859B /* CountAndSay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CountAndSay.playground; sourceTree = "<group>"; };
+		99992EEA1E521B930038859B /* FlipGame.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FlipGame.playground; sourceTree = "<group>"; };
+		99992EEB1E521B9C0038859B /* GroupAnagrams.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GroupAnagrams.playground; sourceTree = "<group>"; };
+		99992EEC1E521BA20038859B /* IsomorphicStrings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IsomorphicStrings.playground; sourceTree = "<group>"; };
+		99992EED1E521BA90038859B /* LengthLastWord.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LengthLastWord.playground; sourceTree = "<group>"; };
+		99992EEE1E521BB10038859B /* LongestCommonPrefix.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LongestCommonPrefix.playground; sourceTree = "<group>"; };
+		99992EEF1E521BB80038859B /* LongestSubstringWithoutRepeatingCharacters.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LongestSubstringWithoutRepeatingCharacters.playground; sourceTree = "<group>"; };
+		99992EF01E521BC50038859B /* OneEditDistance.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OneEditDistance.playground; sourceTree = "<group>"; };
+		99992EF11E521BD20038859B /* PalindromePermutation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PalindromePermutation.playground; sourceTree = "<group>"; };
+		99992EF21E521BDC0038859B /* ReverseString.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ReverseString.playground; sourceTree = "<group>"; };
+		99992EF31E521BE40038859B /* ReverseVowelsOfAString.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ReverseVowelsOfAString.playground; sourceTree = "<group>"; };
+		99992EF41E521BF20038859B /* StrStr.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StrStr.playground; sourceTree = "<group>"; };
+		99992EF51E521BF90038859B /* ValidAnagram.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ValidAnagram.playground; sourceTree = "<group>"; };
+		99992EF61E521C000038859B /* WordPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WordPattern.playground; sourceTree = "<group>"; };
+		99992EF71E521C1B0038859B /* BalancedBinaryTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BalancedBinaryTree.playground; sourceTree = "<group>"; };
+		99992EF81E521C220038859B /* BinaryTreeLevelOrderTraversal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinaryTreeLevelOrderTraversal.playground; sourceTree = "<group>"; };
+		99992EF91E521C290038859B /* BinaryTreeLevelOrderTraversalII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinaryTreeLevelOrderTraversalII.playground; sourceTree = "<group>"; };
+		99992EFA1E521C310038859B /* BinaryTreeZigzagLevelOrderTraversal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinaryTreeZigzagLevelOrderTraversal.playground; sourceTree = "<group>"; };
+		99992EFB1E521C390038859B /* ConstructBinaryTreeInorderPostorder.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ConstructBinaryTreeInorderPostorder.playground; sourceTree = "<group>"; };
+		99992EFC1E521C420038859B /* ConstructBinaryTreePreorderInorder.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ConstructBinaryTreePreorderInorder.playground; sourceTree = "<group>"; };
+		99992EFD1E521C4A0038859B /* InvertBinaryTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = InvertBinaryTree.playground; sourceTree = "<group>"; };
+		99992EFE1E521C510038859B /* MaximumDepthOfBinaryTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MaximumDepthOfBinaryTree.playground; sourceTree = "<group>"; };
+		99992EFF1E521C5A0038859B /* MinimumDepthOfBinaryTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinimumDepthOfBinaryTree.playground; sourceTree = "<group>"; };
+		99992F001E521C620038859B /* PathSum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PathSum.playground; sourceTree = "<group>"; };
+		99992F011E521C6A0038859B /* PathSumII.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PathSumII.playground; sourceTree = "<group>"; };
+		99992F021E521C730038859B /* SameTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SameTree.playground; sourceTree = "<group>"; };
+		99992F031E521C830038859B /* SymmetricTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SymmetricTree.playground; sourceTree = "<group>"; };
+		99992F041E521C8C0038859B /* ValidateBinarySearchTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ValidateBinarySearchTree.playground; sourceTree = "<group>"; };
 		99DB502E1E303C93002EADAB /* LeetCode_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCode_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DB50381E303C93002EADAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99DB503D1E303C93002EADAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -603,6 +702,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50C81E304350002EADAB /* WordSearch.swift */,
+				99992EAC1E52188C0038859B /* WordSearch.playground */,
 			);
 			name = WordSearch;
 			sourceTree = "<group>";
@@ -611,6 +711,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50C61E30434B002EADAB /* SubsetsII.swift */,
+				99992EAB1E5218830038859B /* SubsetsII.playground */,
 			);
 			name = SubsetsII;
 			sourceTree = "<group>";
@@ -619,6 +720,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50C41E304346002EADAB /* Subsets.swift */,
+				99992EAA1E5218780038859B /* Subsets.playground */,
 			);
 			name = Subsets;
 			sourceTree = "<group>";
@@ -627,6 +729,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50C21E304340002EADAB /* PermutationsII.swift */,
+				99992EA91E52186C0038859B /* PermutationsII.playground */,
 			);
 			name = PermutationsII;
 			sourceTree = "<group>";
@@ -635,6 +738,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50C01E30433A002EADAB /* Permutations.swift */,
+				99992EA81E52185F0038859B /* Permutations.playground */,
 			);
 			name = Permutations;
 			sourceTree = "<group>";
@@ -643,6 +747,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50BE1E30432A002EADAB /* NumberofIslands.swift */,
+				99992EA71E52184F0038859B /* NumberofIslands.playground */,
 			);
 			name = NumberofIslands;
 			sourceTree = "<group>";
@@ -651,6 +756,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50BC1E304317002EADAB /* LetterCombinationsPhoneNumber.swift */,
+				99992EA61E5218420038859B /* LetterCombinationsPhoneNumber.playground */,
 			);
 			name = LetterCombinationsPhoneNumber;
 			sourceTree = "<group>";
@@ -659,6 +765,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50BA1E30430F002EADAB /* CombinationSumIII.swift */,
+				99992EA51E52182B0038859B /* CombinationSumIII.playground */,
 			);
 			name = CombinationSumIII;
 			sourceTree = "<group>";
@@ -667,6 +774,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50B81E30430B002EADAB /* CombinationSumII.swift */,
+				99992EA41E52181C0038859B /* CombinationSumII.playground */,
 			);
 			name = CombinationSumII;
 			sourceTree = "<group>";
@@ -675,6 +783,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50B61E3042FB002EADAB /* CombinationSum.swift */,
+				99992EA31E52180B0038859B /* CombinationSum.playground */,
 			);
 			name = CombinationSum;
 			sourceTree = "<group>";
@@ -683,6 +792,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50B41E3042F7002EADAB /* Combinations.swift */,
+				99992EA21E5217D80038859B /* Combinations.playground */,
 			);
 			name = Combinations;
 			sourceTree = "<group>";
@@ -691,6 +801,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50EC1E304492002EADAB /* PerfectSquares.swift */,
+				99992EB81E52196D0038859B /* PerfectSquares.playground */,
 			);
 			name = PerfectSquares;
 			sourceTree = "<group>";
@@ -699,6 +810,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50EA1E30448A002EADAB /* NestedListWeightSum.swift */,
+				99992EB71E5219650038859B /* NestedListWeightSum.playground */,
 			);
 			name = NestedListWeightSum;
 			sourceTree = "<group>";
@@ -707,6 +819,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50E81E304486002EADAB /* MaximumSubarray.swift */,
+				99992EB61E52195E0038859B /* MaximumSubarray.playground */,
 			);
 			name = MaximumSubarray;
 			sourceTree = "<group>";
@@ -715,6 +828,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50E61E304482002EADAB /* MaximumProductSubarray.swift */,
+				99992EB51E5219560038859B /* MaximumProductSubarray.playground */,
 			);
 			name = MaximumProductSubarray;
 			sourceTree = "<group>";
@@ -723,6 +837,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50E41E30447E002EADAB /* MaximalSquare.swift */,
+				99992EB41E52194E0038859B /* MaximalSquare.playground */,
 			);
 			name = MaximalSquare;
 			sourceTree = "<group>";
@@ -731,6 +846,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50E21E304475002EADAB /* LongestIncreasingSubsequence.swift */,
+				99992EB31E5219400038859B /* LongestIncreasingSubsequence.playground */,
 			);
 			name = LongestIncreasingSubsequence;
 			sourceTree = "<group>";
@@ -739,6 +855,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50E01E30445C002EADAB /* HouseRobberII.swift */,
+				99992EB21E5219300038859B /* HouseRobberII.playground */,
 			);
 			name = HouseRobberII;
 			sourceTree = "<group>";
@@ -747,6 +864,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50DE1E304458002EADAB /* HouseRobber.swift */,
+				99992EB11E5219220038859B /* HouseRobber.playground */,
 			);
 			name = HouseRobber;
 			sourceTree = "<group>";
@@ -755,6 +873,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50DC1E304453002EADAB /* EditDistance.swift */,
+				99992EB01E5219180038859B /* EditDistance.playground */,
 			);
 			name = EditDistance;
 			sourceTree = "<group>";
@@ -763,6 +882,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50DA1E30444D002EADAB /* CoinChange.swift */,
+				99992EAF1E52190C0038859B /* CoinChange.playground */,
 			);
 			name = CoinChange;
 			sourceTree = "<group>";
@@ -771,6 +891,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50D81E30443C002EADAB /* ClimbingStairs.swift */,
+				99992EAE1E5218FE0038859B /* ClimbingStairs.playground */,
 			);
 			name = ClimbingStairs;
 			sourceTree = "<group>";
@@ -779,6 +900,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50D61E304436002EADAB /* BestTimeBuySellStock.swift */,
+				99992EAD1E5218A70038859B /* BestTimeBuySellStock.playground */,
 			);
 			name = BestTimeBuySellStock;
 			sourceTree = "<group>";
@@ -828,6 +950,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51121E3045EB002EADAB /* SwapNodesInPairs.swift */,
+				99992EC41E5219DE0038859B /* SwapNodesInPairs.playground */,
 			);
 			name = SwapNodesInPairs;
 			sourceTree = "<group>";
@@ -836,6 +959,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51101E3045E7002EADAB /* RotateList.swift */,
+				99992EC31E5219D70038859B /* RotateList.playground */,
 			);
 			name = RotateList;
 			sourceTree = "<group>";
@@ -844,6 +968,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB510E1E3045E2002EADAB /* ReverseLinkedList.swift */,
+				99992EC21E5219CD0038859B /* ReverseLinkedList.playground */,
 			);
 			name = ReverseLinkedList;
 			sourceTree = "<group>";
@@ -852,6 +977,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB510C1E3045DA002EADAB /* ReorderList.swift */,
+				99992EC11E5219C60038859B /* ReorderList.playground */,
 			);
 			name = ReorderList;
 			sourceTree = "<group>";
@@ -860,6 +986,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB510A1E3045D6002EADAB /* RemoveNthFromEnd.swift */,
+				99992EC01E5219BF0038859B /* RemoveNthFromEnd.playground */,
 			);
 			name = RemoveNthFromEnd;
 			sourceTree = "<group>";
@@ -868,6 +995,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51081E3045CC002EADAB /* RemoveLinkedListElements.swift */,
+				99992EBF1E5219B80038859B /* RemoveLinkedListElements.playground */,
 			);
 			name = RemoveLinkedListElements;
 			sourceTree = "<group>";
@@ -876,6 +1004,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51061E3045C5002EADAB /* RemoveDuplicatesFromSortedListII.swift */,
+				99992EBE1E5219AF0038859B /* RemoveDuplicatesFromSortedListII.playground */,
 			);
 			name = RemoveDuplicatesFromSortedListII;
 			sourceTree = "<group>";
@@ -884,6 +1013,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51041E3045C0002EADAB /* RemoveDuplicatesFromSortedList.swift */,
+				99992EBD1E5219A60038859B /* RemoveDuplicatesFromSortedList.playground */,
 			);
 			name = RemoveDuplicatesFromSortedList;
 			sourceTree = "<group>";
@@ -892,6 +1022,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51021E3045B6002EADAB /* PartitionList.swift */,
+				99992EBC1E52199D0038859B /* PartitionList.playground */,
 			);
 			name = PartitionList;
 			sourceTree = "<group>";
@@ -900,6 +1031,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51001E3045B3002EADAB /* PalindromeLinkedList.swift */,
+				99992EBB1E5219920038859B /* PalindromeLinkedList.playground */,
 			);
 			name = PalindromeLinkedList;
 			sourceTree = "<group>";
@@ -908,6 +1040,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50FE1E3045AE002EADAB /* MergeTwoSortedLists.swift */,
+				99992EBA1E52198B0038859B /* MergeTwoSortedLists.playground */,
 			);
 			name = MergeTwoSortedLists;
 			sourceTree = "<group>";
@@ -916,6 +1049,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB50FC1E3045A9002EADAB /* MergeKSortedLists.swift */,
+				99992EB91E5219830038859B /* MergeKSortedLists.playground */,
 			);
 			name = MergeKSortedLists;
 			sourceTree = "<group>";
@@ -924,6 +1058,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB513F1E30471B002EADAB /* UglyNumberII.swift */,
+				99992ED31E521A6D0038859B /* UglyNumberII.playground */,
 			);
 			name = UglyNumberII;
 			sourceTree = "<group>";
@@ -932,6 +1067,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB513D1E304716002EADAB /* UglyNumber.swift */,
+				99992ED21E521A650038859B /* UglyNumber.playground */,
 			);
 			name = UglyNumber;
 			sourceTree = "<group>";
@@ -940,6 +1076,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB513B1E30470C002EADAB /* SuperUglyNumber.swift */,
+				99992ED11E521A5A0038859B /* SuperUglyNumber.playground */,
 			);
 			name = SuperUglyNumber;
 			sourceTree = "<group>";
@@ -948,6 +1085,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51391E304708002EADAB /* SingleNumber.swift */,
+				99992ED01E521A530038859B /* SingleNumber.playground */,
 			);
 			name = SingleNumber;
 			sourceTree = "<group>";
@@ -956,6 +1094,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51371E304704002EADAB /* RomanToInteger.swift */,
+				99992ECF1E521A4B0038859B /* RomanToInteger.playground */,
 			);
 			name = RomanToInteger;
 			sourceTree = "<group>";
@@ -964,6 +1103,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51351E3046FE002EADAB /* PowerTwo.swift */,
+				99992ECE1E521A440038859B /* PowerTwo.playground */,
 			);
 			name = PowerTwo;
 			sourceTree = "<group>";
@@ -972,6 +1112,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51331E3046FA002EADAB /* PowerThree.swift */,
+				99992ECD1E521A3C0038859B /* PowerThree.playground */,
 			);
 			name = PowerThree;
 			sourceTree = "<group>";
@@ -980,6 +1121,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51311E3046F5002EADAB /* Pow.swift */,
+				99992ECC1E521A350038859B /* Pow.playground */,
 			);
 			name = Pow;
 			sourceTree = "<group>";
@@ -988,6 +1130,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB512F1E3046F2002EADAB /* PlusOne.swift */,
+				99992ECB1E521A2E0038859B /* PlusOne.playground */,
 			);
 			name = PlusOne;
 			sourceTree = "<group>";
@@ -996,6 +1139,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB512D1E3046EC002EADAB /* IntegerBreak.swift */,
+				99992ECA1E521A270038859B /* IntegerBreak.playground */,
 			);
 			name = IntegerBreak;
 			sourceTree = "<group>";
@@ -1004,6 +1148,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB512B1E3046E7002EADAB /* HappyNumber.swift */,
+				99992EC91E521A1E0038859B /* HappyNumber.playground */,
 			);
 			name = HappyNumber;
 			sourceTree = "<group>";
@@ -1012,6 +1157,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51291E3046E3002EADAB /* ExcelSheetColumnNumber.swift */,
+				99992EC81E521A160038859B /* ExcelSheetColumnNumber.playground */,
 			);
 			name = ExcelSheetColumnNumber;
 			sourceTree = "<group>";
@@ -1020,6 +1166,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51271E3046DF002EADAB /* Atoi.swift */,
+				99992EC71E521A080038859B /* Atoi.playground */,
 			);
 			name = Atoi;
 			sourceTree = "<group>";
@@ -1028,6 +1175,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51251E3046D8002EADAB /* AddTwoNumbers.swift */,
+				99992EC61E521A000038859B /* AddTwoNumbers.playground */,
 			);
 			name = AddTwoNumbers;
 			sourceTree = "<group>";
@@ -1036,6 +1184,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51231E3046D4002EADAB /* AddBinary.swift */,
+				99992EC51E5219F80038859B /* AddBinary.playground */,
 			);
 			name = AddBinary;
 			sourceTree = "<group>";
@@ -1060,6 +1209,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB515B1E304813002EADAB /* Sqrtx.swift */,
+				99992EDC1E521AD60038859B /* Sqrtx.playground */,
 			);
 			name = Sqrtx;
 			sourceTree = "<group>";
@@ -1068,6 +1218,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51591E30480D002EADAB /* SearchInsertPosition.swift */,
+				99992EDB1E521ACF0038859B /* SearchInsertPosition.playground */,
 			);
 			name = SearchInsertPosition;
 			sourceTree = "<group>";
@@ -1076,6 +1227,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51571E304809002EADAB /* SearchInRotatedSortedArrayII.swift */,
+				99992EDA1E521AC80038859B /* SearchInRotatedSortedArrayII.playground */,
 			);
 			name = SearchInRotatedSortedArrayII;
 			sourceTree = "<group>";
@@ -1084,6 +1236,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51551E304806002EADAB /* SearchInRotatedSortedArray.swift */,
+				99992ED91E521ABF0038859B /* SearchInRotatedSortedArray.playground */,
 			);
 			name = SearchInRotatedSortedArray;
 			sourceTree = "<group>";
@@ -1092,6 +1245,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51531E304802002EADAB /* SearchForARange.swift */,
+				99992ED81E521AB80038859B /* SearchForARange.playground */,
 			);
 			name = SearchForARange;
 			sourceTree = "<group>";
@@ -1100,6 +1254,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51511E3047FE002EADAB /* FindPeakElement.swift */,
+				99992ED71E521A9E0038859B /* FindPeakElement.playground */,
 			);
 			name = FindPeakElement;
 			sourceTree = "<group>";
@@ -1108,6 +1263,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB514F1E3047F8002EADAB /* FindMinimumRotatedSortedArrayII.swift */,
+				99992ED61E521A970038859B /* FindMinimumRotatedSortedArrayII.playground */,
 			);
 			name = FindMinimumRotatedSortedArrayII;
 			sourceTree = "<group>";
@@ -1116,6 +1272,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB514D1E3047F4002EADAB /* FindMinimumRotatedSortedArray.swift */,
+				99992ED51E521A8E0038859B /* FindMinimumRotatedSortedArray.playground */,
 			);
 			name = FindMinimumRotatedSortedArray;
 			sourceTree = "<group>";
@@ -1124,6 +1281,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB514B1E3047EC002EADAB /* ClosestBinarySearchTreeValue.swift */,
+				99992ED41E521A880038859B /* ClosestBinarySearchTreeValue.playground */,
 			);
 			name = ClosestBinarySearchTreeValue;
 			sourceTree = "<group>";
@@ -1145,6 +1303,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB516E1E30489A002EADAB /* WiggleSortII.swift */,
+				99992EE21E521B290038859B /* WiggleSortII.playground */,
 			);
 			name = WiggleSortII;
 			sourceTree = "<group>";
@@ -1153,6 +1312,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB516C1E304897002EADAB /* WiggleSort.swift */,
+				99992EE11E521B210038859B /* WiggleSort.playground */,
 			);
 			name = WiggleSort;
 			sourceTree = "<group>";
@@ -1161,6 +1321,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB516A1E304892002EADAB /* TopKFrequentElements.swift */,
+				99992EE01E521B180038859B /* TopKFrequentElements.playground */,
 			);
 			name = TopKFrequentElements;
 			sourceTree = "<group>";
@@ -1169,6 +1330,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51681E30488E002EADAB /* SortColors.swift */,
+				99992EDF1E521B100038859B /* SortColors.playground */,
 			);
 			name = SortColors;
 			sourceTree = "<group>";
@@ -1177,6 +1339,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51661E30488A002EADAB /* MergeIntervals.swift */,
+				99992EDE1E521AF70038859B /* MergeIntervals.playground */,
 			);
 			name = MergeIntervals;
 			sourceTree = "<group>";
@@ -1185,6 +1348,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51641E304886002EADAB /* MeetingRooms.swift */,
+				99992EDD1E521AF00038859B /* MeetingRooms.playground */,
 			);
 			name = MeetingRooms;
 			sourceTree = "<group>";
@@ -1227,6 +1391,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51821E30494A002EADAB /* ValidParentheses.swift */,
+				99992EE81E521B730038859B /* ValidParentheses.playground */,
 			);
 			name = ValidParentheses;
 			sourceTree = "<group>";
@@ -1235,6 +1400,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51801E304945002EADAB /* SimplifyPath.swift */,
+				99992EE71E521B5E0038859B /* SimplifyPath.playground */,
 			);
 			name = SimplifyPath;
 			sourceTree = "<group>";
@@ -1243,6 +1409,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB517E1E304941002EADAB /* PreorderTraversal.swift */,
+				99992EE61E521B550038859B /* PreorderTraversal.playground */,
 			);
 			name = PreorderTraversal;
 			sourceTree = "<group>";
@@ -1251,6 +1418,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB517C1E304936002EADAB /* PostorderTraversal.swift */,
+				99992EE51E521B4E0038859B /* PostorderTraversal.playground */,
 			);
 			name = PostorderTraversal;
 			sourceTree = "<group>";
@@ -1259,6 +1427,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB517A1E304932002EADAB /* InorderTraversal.swift */,
+				99992EE41E521B450038859B /* InorderTraversal.playground */,
 			);
 			name = InorderTraversal;
 			sourceTree = "<group>";
@@ -1267,6 +1436,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51781E30492D002EADAB /* EvaluateReversePolishNotation.swift */,
+				99992EE31E521B380038859B /* EvaluateReversePolishNotation.playground */,
 			);
 			name = EvaluateReversePolishNotation;
 			sourceTree = "<group>";
@@ -1296,6 +1466,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51AD1E304A7B002EADAB /* WordPattern.swift */,
+				99992EF61E521C000038859B /* WordPattern.playground */,
 			);
 			name = WordPattern;
 			sourceTree = "<group>";
@@ -1304,6 +1475,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51AB1E304A77002EADAB /* ValidAnagram.swift */,
+				99992EF51E521BF90038859B /* ValidAnagram.playground */,
 			);
 			name = ValidAnagram;
 			sourceTree = "<group>";
@@ -1312,6 +1484,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51A91E304A73002EADAB /* StrStr.swift */,
+				99992EF41E521BF20038859B /* StrStr.playground */,
 			);
 			name = StrStr;
 			sourceTree = "<group>";
@@ -1320,6 +1493,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51A71E304A6E002EADAB /* ReverseVowelsOfAString.swift */,
+				99992EF31E521BE40038859B /* ReverseVowelsOfAString.playground */,
 			);
 			name = ReverseVowelsOfAString;
 			sourceTree = "<group>";
@@ -1328,6 +1502,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51A51E304A6A002EADAB /* ReverseString.swift */,
+				99992EF21E521BDC0038859B /* ReverseString.playground */,
 			);
 			name = ReverseString;
 			sourceTree = "<group>";
@@ -1336,6 +1511,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51A31E304A65002EADAB /* PalindromePermutation.swift */,
+				99992EF11E521BD20038859B /* PalindromePermutation.playground */,
 			);
 			name = PalindromePermutation;
 			sourceTree = "<group>";
@@ -1344,6 +1520,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51A11E304A5C002EADAB /* OneEditDistance.swift */,
+				99992EF01E521BC50038859B /* OneEditDistance.playground */,
 			);
 			name = OneEditDistance;
 			sourceTree = "<group>";
@@ -1352,6 +1529,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB519F1E304A58002EADAB /* LongestSubstringWithoutRepeatingCharacters.swift */,
+				99992EEF1E521BB80038859B /* LongestSubstringWithoutRepeatingCharacters.playground */,
 			);
 			name = LongestSubstringWithoutRepeatingCharacters;
 			sourceTree = "<group>";
@@ -1360,6 +1538,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB519D1E304A54002EADAB /* LongestCommonPrefix.swift */,
+				99992EEE1E521BB10038859B /* LongestCommonPrefix.playground */,
 			);
 			name = LongestCommonPrefix;
 			sourceTree = "<group>";
@@ -1368,6 +1547,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB519B1E304A4F002EADAB /* LengthLastWord.swift */,
+				99992EED1E521BA90038859B /* LengthLastWord.playground */,
 			);
 			name = LengthLastWord;
 			sourceTree = "<group>";
@@ -1376,6 +1556,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51991E304A48002EADAB /* IsomorphicStrings.swift */,
+				99992EEC1E521BA20038859B /* IsomorphicStrings.playground */,
 			);
 			name = IsomorphicStrings;
 			sourceTree = "<group>";
@@ -1384,6 +1565,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51971E304A43002EADAB /* GroupAnagrams.swift */,
+				99992EEB1E521B9C0038859B /* GroupAnagrams.playground */,
 			);
 			name = GroupAnagrams;
 			sourceTree = "<group>";
@@ -1392,6 +1574,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51951E304A3E002EADAB /* FlipGame.swift */,
+				99992EEA1E521B930038859B /* FlipGame.playground */,
 			);
 			name = FlipGame;
 			sourceTree = "<group>";
@@ -1400,6 +1583,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51931E304A37002EADAB /* CountAndSay.swift */,
+				99992EE91E521B8D0038859B /* CountAndSay.playground */,
 			);
 			name = CountAndSay;
 			sourceTree = "<group>";
@@ -1408,6 +1592,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51D71E304B70002EADAB /* ValidateBinarySearchTree.swift */,
+				99992F041E521C8C0038859B /* ValidateBinarySearchTree.playground */,
 			);
 			name = ValidateBinarySearchTree;
 			sourceTree = "<group>";
@@ -1416,6 +1601,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51D51E304B6B002EADAB /* SymmetricTree.swift */,
+				99992F031E521C830038859B /* SymmetricTree.playground */,
 			);
 			name = SymmetricTree;
 			sourceTree = "<group>";
@@ -1424,6 +1610,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51D31E304B66002EADAB /* SameTree.swift */,
+				99992F021E521C730038859B /* SameTree.playground */,
 			);
 			name = SameTree;
 			sourceTree = "<group>";
@@ -1432,6 +1619,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51D11E304B61002EADAB /* PathSumII.swift */,
+				99992F011E521C6A0038859B /* PathSumII.playground */,
 			);
 			name = PathSumII;
 			sourceTree = "<group>";
@@ -1440,6 +1628,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51CF1E304B5D002EADAB /* PathSum.swift */,
+				99992F001E521C620038859B /* PathSum.playground */,
 			);
 			name = PathSum;
 			sourceTree = "<group>";
@@ -1448,6 +1637,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51CD1E304B59002EADAB /* MinimumDepthOfBinaryTree.swift */,
+				99992EFF1E521C5A0038859B /* MinimumDepthOfBinaryTree.playground */,
 			);
 			name = MinimumDepthOfBinaryTree;
 			sourceTree = "<group>";
@@ -1456,6 +1646,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51CB1E304B54002EADAB /* MaximumDepthOfBinaryTree.swift */,
+				99992EFE1E521C510038859B /* MaximumDepthOfBinaryTree.playground */,
 			);
 			name = MaximumDepthOfBinaryTree;
 			sourceTree = "<group>";
@@ -1464,6 +1655,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51C91E304B4F002EADAB /* InvertBinaryTree.swift */,
+				99992EFD1E521C4A0038859B /* InvertBinaryTree.playground */,
 			);
 			name = InvertBinaryTree;
 			sourceTree = "<group>";
@@ -1472,6 +1664,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51C71E304B4A002EADAB /* ConstructBinaryTreePreorderInorder.swift */,
+				99992EFC1E521C420038859B /* ConstructBinaryTreePreorderInorder.playground */,
 			);
 			name = ConstructBinaryTreePreorderInorder;
 			sourceTree = "<group>";
@@ -1480,6 +1673,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51C51E304B46002EADAB /* ConstructBinaryTreeInorderPostorder.swift */,
+				99992EFB1E521C390038859B /* ConstructBinaryTreeInorderPostorder.playground */,
 			);
 			name = ConstructBinaryTreeInorderPostorder;
 			sourceTree = "<group>";
@@ -1488,6 +1682,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51C31E304B42002EADAB /* BinaryTreeZigzagLevelOrderTraversal.swift */,
+				99992EFA1E521C310038859B /* BinaryTreeZigzagLevelOrderTraversal.playground */,
 			);
 			name = BinaryTreeZigzagLevelOrderTraversal;
 			sourceTree = "<group>";
@@ -1496,6 +1691,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51C11E304B3E002EADAB /* BinaryTreeLevelOrderTraversalII.swift */,
+				99992EF91E521C290038859B /* BinaryTreeLevelOrderTraversalII.playground */,
 			);
 			name = BinaryTreeLevelOrderTraversalII;
 			sourceTree = "<group>";
@@ -1504,6 +1700,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51BF1E304B39002EADAB /* BinaryTreeLevelOrderTraversal.swift */,
+				99992EF81E521C220038859B /* BinaryTreeLevelOrderTraversal.playground */,
 			);
 			name = BinaryTreeLevelOrderTraversal;
 			sourceTree = "<group>";
@@ -1512,6 +1709,7 @@
 			isa = PBXGroup;
 			children = (
 				99DB51BD1E304B32002EADAB /* BalancedBinaryTree.swift */,
+				99992EF71E521C1B0038859B /* BalancedBinaryTree.playground */,
 			);
 			name = BalancedBinaryTree;
 			sourceTree = "<group>";

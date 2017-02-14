@@ -15,11 +15,7 @@
  */
 
 class RemoveNthFromEnd {
-    func removeNthFromEnd(head: ListNode?, _ n: Int) -> ListNode? {
-        guard let head = head else {
-            return nil
-        }
-    
+    func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? {
         let dummy = ListNode(0)
         dummy.next = head
         var prev: ListNode? = dummy
@@ -27,15 +23,11 @@ class RemoveNthFromEnd {
         
         // move post
         for _ in 0 ..< n {
-            if post == nil {
-                break
-            }
-            
             post = post!.next
         }
         
         // move prev and post at the same time
-        while post != nil && post!.next != nil {
+        while post!.next != nil {
             prev = prev!.next
             post = post!.next
         }

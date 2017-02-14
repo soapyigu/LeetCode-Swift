@@ -40,7 +40,7 @@ class ReverseVowelsOfAString {
         return false
     }
     
-    private func _swap(inout chars: [Character], _ p: Int, _ q: Int) {
+    private func _swap<T>(inout chars: Array<T>, _ p: Int, _ q: Int) {
         var temp = chars[p]
         chars[p] = chars[q]
         chars[q] = temp

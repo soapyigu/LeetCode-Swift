@@ -6,22 +6,14 @@
  *
  */
 
-class combinationSumIII {
+class CombinationSumIII {
     func combinationSum3(k: Int, _ n: Int) -> [[Int]] {
-        let candidates = _init()
+        let candidates = [Int](1 ... 9)
         var res = [[Int]]()
         var path = [Int]()
         
         _dfs(&res, &path, candidates, n, 0, k)
         
-        return res
-    }
-    
-    private func _init() -> [Int] {
-        var res = [Int]()
-        for num in 1 ... 9 {
-            res.append(num)
-        }
         return res
     }
     

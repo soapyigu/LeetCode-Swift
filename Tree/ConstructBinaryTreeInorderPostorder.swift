@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
  * Primary idea: Always use the last element in postorder as root, 
  *               then find that one in inorder to get left and right subtrees
- * Time Complexity: O(n), Space Complexity: O(1)
+ * Time Complexity: O(n), Space Complexity: O(n)
  * 
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -34,11 +34,9 @@ class ConstructBinaryTreeInorderPostorder {
         let root = TreeNode(postorder[postEnd])
         
         var mid = 0
-        for i in inStart ... inEnd {
-            if inorder[i] == root.val {
-                mid = i
-                break
-            }
+        for i in inStart ... inEnd where inorder[i] == root.val {
+            mid = i
+            break
         }
         
         root.left = _buildHelper(inorder, inStart, mid - 1, postorder, postStart, mid - 1 - inStart + postStart)

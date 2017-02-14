@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/validate-binary-search-tree/
  * Primary idea: Keep min to go right and keep max to go left
- * Time Complexity: O(n), Space Complexity: O(1)
+ * Time Complexity: O(n), Space Complexity: O(n)
  * 
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -26,10 +26,10 @@ class ValidateBinarySearchTree {
             return true
         }
         
-        if min != nil && node.val <= min {
+        if let min = min, root.val <= min {
             return false
         }
-        if max != nil && node.val >= max {
+        if let max = max, root.val >= max {
             return false
         }
         

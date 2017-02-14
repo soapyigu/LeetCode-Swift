@@ -5,29 +5,23 @@
  */
 
 class WiggleSort {
-    func wiggleSort(inout nums: [Int]) {
+    func wiggleSort(_ nums: inout [Int]) {
         guard nums.count >= 2 else {
             return
         }
         
-        for i in 1.stride(to: nums.count, by: 2) {
-            let largestIndex = _getLargest(&nums, i - 1, i, i + 1)
-            if i != largestIndex {
-                _swap(&nums, largestIndex, i)
-            }
+        for i in stride(from: 1, to: nums.count, by: 2) {
+            let idx = getLargest(nums, i - 1, i , i + 1)
+            (nums[i], nums[idx]) = (nums[idx], nums[i])
         }
     }
     
-    private func _swap(inout nums: [Int], _ p: Int, _ q: Int) {
-        let temp = nums[p]
-        nums[p] = nums[q]
-        nums[q] = temp
-    }
+    private func getLargest(_ nums: [Int], _ x: Int, _ y: Int, _ z: Int) -> Int {
+        let len = nums.count
     
-    private func _getLargest(inout nums: [Int], _ x: Int, _ y: Int, _ z: Int) -> Int {
-        let xVal = _isValid(x, nums.count) ? nums[x] : Int.min
-        let yVal = _isValid(y, nums.count) ? nums[y] : Int.min
-        let zVal = _isValid(z, nums.count) ? nums[z] : Int.min
+        let xVal = x >= 0 && x < len ? nums[x] : Int.min
+        let yVal = y >= 0 && y < len ? nums[y] : Int.min
+        let zVal = z >= 0 && z < len ? nums[z] : Int.min
         let maxVal = max(xVal, yVal, zVal)
         
         if maxVal == xVal {
@@ -37,9 +31,5 @@ class WiggleSort {
         } else {
             return z
         }
-    }
-    
-    private func _isValid(index: Int, _ len: Int) -> Bool {
-        return index >= 0 && index < len
     }
 }

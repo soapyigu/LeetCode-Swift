@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/two-sum/
  * Primary idea: Traverse the array and store target - nums[i] in a dict
  *
- * Time Complexity: O(n), Space Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(nC2)
  */
 
 class TwoSum {
@@ -10,9 +10,9 @@ class TwoSum {
         var res = [Int]()
         var dict = [Int: Int]()
         
-        for i in 0 ..< nums.count {
-            guard let lastIndex = dict[target - nums[i]] else {
-                dict[nums[i]] = i
+        for (i, num) in nums.enumerated() {
+            guard let lastIndex = dict[target - num] else {
+                dict[num] = i
                 continue
             }
             

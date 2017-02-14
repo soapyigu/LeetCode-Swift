@@ -6,23 +6,22 @@
  */
 
 class FindMinimumRotatedSortedArray {
-    func findMin(nums: [Int]) -> Int {
+    func findMin(_ nums: [Int]) -> Int {
+        var minVal = Int.max
         var left = 0
         var right = nums.count - 1
-        var mid = 0
-        var minVal = Int.max
         
-        while left + 1 < right {
-            mid = (right - left) / 2 + left
-            if nums[mid] > nums[left] {
-                minVal = min(nums[left], minVal)
+        while left <= right {
+            let mid = (right - left) / 2 + left
+            if nums[mid] >= nums[left] {
+                minVal = min(minVal, nums[left])
                 left = mid + 1
             } else {
-                minVal = min(nums[mid], minVal)
+                minVal = min(minVal, nums[mid])
                 right = mid - 1
             }
         }
         
-        return min(minVal, nums[left], nums[right])
+        return minVal
     }
 }

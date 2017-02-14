@@ -18,14 +18,11 @@ class HouseRobberII {
     }
     
     private func _helper(nums:[Int], _ start: Int, _ end: Int) -> Int {
-        var pre = 0
-        var cur = 0
-        var res = 0
+        var pre = 0, cur = 0, res = 0
         
         for i in start ... end {
             res = max(pre + nums[i], cur)
-            pre = cur
-            cur = res
+            (cur, pre) = (res, cur)
         }
         
         return res

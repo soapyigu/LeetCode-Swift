@@ -27,7 +27,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 212 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 400+ questions. Currently we have 213 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
 
 
 ## Array
@@ -212,6 +212,7 @@
 [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)| [Swift](./Math/AddTwoNumbers.swift)| Medium| O(n)| O(1)|
 [Add Digits](https://leetcode.com/problems/add-digits/)| [Swift](./Math/AddDigits.swift)| Easy| O(1)| O(1)|
 [Plus One](https://leetcode.com/problems/plus-one/)| [Swift](./Math/PlusOne.swift)| Easy| O(n)| O(1)|
+[Number Complement](https://leetcode.com/problems/number-complement/)| [Swift](./Math/NumberComplement.swift)| Easy| O(n)| O(1)|
 [Hamming Distance](https://leetcode.com/problems/hamming-distance/)| [Swift](./Math/HammingDistance.swift)| Easy| O(n)| O(1)|
 [Integer Break](https://leetcode.com/problems/integer-break/)| [Swift](./Math/IntegerBreak.swift)| Medium| O(logn)| O(1)|
 [Happy Number](https://leetcode.com/problems/happy-number/)| [Swift](./Math/HappyNumber.swift)| Easy| O(n)| O(n)|

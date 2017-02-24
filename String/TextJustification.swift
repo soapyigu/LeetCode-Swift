@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/text-justification/
  * Primary idea: Iterate the words, keep track of the index of first word and the length 
  *               of the line. Insert spaces with fix spaces and extra spaces. 
- * Time Complexity: O(n^2), Space Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(n)
  */
 
 class TextJustification {
@@ -24,9 +24,9 @@ class TextJustification {
                 if i - last - 1 > 0 {
                     spaceNum = (maxWidth - count) / (i - last - 1)
                     extraNum = (maxWidth - count) % (i - last - 1)
-                    res.append(_buildLine(words, last, i - 1, spaceNum, extraNum))
+                    res.append(buildLine(words, last, i - 1, spaceNum, extraNum))
                 } else {
-                    res.append(_buildSpecialLine(words, last, last, maxWidth))
+                    res.append(buildSpecialLine(words, last, last, maxWidth))
                 }
                 count = 0
                 last = i
@@ -35,12 +35,12 @@ class TextJustification {
             count += wordLen
         } 
         
-        res.append(_buildSpecialLine(words, last, words.count - 1, maxWidth))
+        res.append(buildSpecialLine(words, last, words.count - 1, maxWidth))
         
         return res
     }
     
-    private func _buildLine(words: [String], _ start: Int, _ end: Int, _ spaceNum: Int, _ extraNum: Int) -> String {
+    fileprivate func buildLine(words: [String], _ start: Int, _ end: Int, _ spaceNum: Int, _ extraNum: Int) -> String {
         var res = ""
         var extraNum = extraNum
         
@@ -60,7 +60,7 @@ class TextJustification {
         return res
     }
     
-    private func _buildSpecialLine(words: [String], _ start: Int, _ end: Int, _ lineLength: Int) -> String {
+    fileprivate func buildSpecialLine(words: [String], _ start: Int, _ end: Int, _ lineLength: Int) -> String {
         var res = ""
         
         for i in start ... end {

@@ -37,32 +37,28 @@ class FindPeakElement {
 // Alternative using switch statement
 // returns as soon as a peak is found...with early returns, beats 83% of submissions. 
 
-class Solution {
+class findPeakElementWithSwitch {
     func findPeakElement(_ nums: [Int]) -> Int {
         guard nums.count > 1 else { return 0 }
-        var output: [Int] = []
         
         for index in 0..<nums.count {
             switch index {
             case nums.startIndex:
                 if nums[0] > nums[1] {
-                    output.append(0)
-                    return output[0]
+                    return 0
                 }
             case nums.endIndex - 1:
                 if nums[nums.endIndex - 1] > nums[nums.endIndex - 2] {
-                    output.append(index)
-                    return output[0]
+                    return nums.endIndex - 1
                 }
             default:
                 if nums[index] > nums[index - 1] && nums[index] > nums[index + 1] {
-                    output.append(index)
-                    return output[0]
-
+                    return index
                 }
             }
         }
         
-        return output[0]
+        // method always returns in the switch (under the given assumptions)
+        return 0 // never gets called
     }
 }

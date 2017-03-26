@@ -1,21 +1,39 @@
 /**
  * Question Link: https://leetcode.com/problems/valid-anagram/
- * Primary idea: Transfer string to char array and sort, compare the sort one
- * Time Complexity: O(nlogn), Space Complexity: O(1)
+ * Primary idea: Add each character from s to a dictionary and remove for each character from t. Then check for number of keys.
+ * Time Complexity: O(n), Space Complexity: O(n)
  */
 
 class ValidAnagram {
     func isAnagram(s: String, _ t: String) -> Bool {
-        guard s.characters.count == t.characters.count else {
-            return false
+        guard s.characters.count == t.characters.count else { 
+            return false 
+        }
+    
+        var charsDict = [Character : Int]()
+        
+        for char in s.characters {
+            if let num = charsDict[char] { 
+                charsDict[char] = num + 1 
+            } 
+            else { 
+                charsDict[char] = 1 
+            }
         }
         
-        return sortStr(s) == sortStr(t)
-    }
-    
-    private func sortStr(s: String) -> [Character] {
-        var sChars = [Character](s.characters)
-        sChars.sortInPlace({$0 < $1})
-        return sChars
+        for char in t.characters {
+            if let num = charsDict[char] {
+                if num == 1 { 
+                    charsDict[char] = nil 
+                } 
+                else { 
+                    charsDict[char] = num - 1 
+                }
+            } else { 
+                return false 
+            }
+        }
+        
+        return charsDict.keys.count == 0
     }
 }

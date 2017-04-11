@@ -16,7 +16,7 @@
 
 class MergeIntervals {
     func merge(intervals: [Interval]) -> [Interval] {
-        guard intervals.count > 1 else {
+        guard intervals.count > 0 else {
             return intervals
         }
     
@@ -28,12 +28,11 @@ class MergeIntervals {
             }
         }
 
-        var res = [Interval]()
-        res.append(intervals[0])
+        var res = [intervals.first!]
         
         for i in 1 ..< intervals.count {
-            let last = res[res.count - 1]
-            let current = intervals[i]
+            let (last, current) = (res.last!, intervals[i])
+            
             if current.start > last.end {
                 res.append(current)
             } else {

@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/unique-binary-search-trees/
  * Primary idea: Dynamic programming, for each node as root, dp[i] += dp[j] * dp[i - j - 1]
  *
- * Time Complexity: O(n), Space Complexity: O(n)
+ * Time Complexity: O(n^2), Space Complexity: O(n)
  *
  * Definition for a binary tree node.
  * public class TreeNode {

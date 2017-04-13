@@ -26,3 +26,19 @@ class SortColors {
         (nums[p], nums[q]) = (nums[q], nums[p])
     }
 }
+
+class SortColorsWithFilter {
+    func sortColors(_ nums: inout [Int]) {
+        enum Color: Int {
+            case red = 0
+            case white = 1
+            case blue = 2
+        }
+        
+        let red = nums.filter({$0 == Color.red.rawValue})
+        let white = nums.filter({$0 == Color.white.rawValue})
+        let blue = nums.filter({$0 == Color.blue.rawValue})
+        
+        nums = red + white + blue
+    }
+}

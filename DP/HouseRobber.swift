@@ -10,7 +10,7 @@ class HouseRobber {
         var curt = 0, prev = 0, res = 0
         
         for num in nums {
-            res = max(res, prev + num)
+            res = max(cur, prev + num)
             (curt, prev) = (res, curt)
         }
         

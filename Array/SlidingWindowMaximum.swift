@@ -3,7 +3,7 @@
  * Primary idea: Use an array to store indices of elements, from larger to smaller, 
  *               adjust it while iterating the array
  *
- * Time Complexity: O(n), Space Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(k)
  *
  */
 

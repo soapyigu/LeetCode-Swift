@@ -27,7 +27,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 500+ questions. Currently we have 219 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 500+ questions. Currently we have 221 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
 
 
 ## Array
@@ -188,7 +188,6 @@
 [Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)| [Swift](./DP/GuessNumberHigherOrLowerII.swift)| Medium| O(nlogn)| O(n^2)|
 [Burst Ballons](https://leetcode.com/problems/burst-balloons/)| [Swift](./DP/BurstBalloons.swift)| Hard| O(n^3)| O(n)|
 [Frog Jump](https://leetcode.com/problems/frog-jump/)| [Swift](./DP/FrogJump.swift)| Hard| O(n^2)| O(n)|
-
 
 ## Depth-first search
 | Title | Solution | Difficulty | Time | Space |
@@ -770,5 +769,4 @@
 |	[Swift](./String/LongestSubstringWithoutRepeatingCharacters.swift)	|	3	|	[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)	| Medium	|
 |	[Swift](./Math/AddTwoNumbers.swift)	|	2	|	[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)	| Medium	|
 |	[Swift](./Array/TwoSum.swift)	|	1	|	[Two Sum](https://leetcode.com/problems/two-sum/)	| Easy	|
-
 

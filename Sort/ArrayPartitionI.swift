@@ -1,4 +1,4 @@
-class Solution {
+class ArrayPartitionI {
     func arrayPairSum(_ nums: [Int]) -> Int {
         var arr = nums
         arr = arr.sorted { $0 < $1 }

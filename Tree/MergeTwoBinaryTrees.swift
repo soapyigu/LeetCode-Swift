@@ -11,7 +11,7 @@
  *     }
  * }
  */
-class Solution {
+class MergeTwoBinaryTrees {
     func mergeTrees(_ t1: TreeNode?, _ t2: TreeNode?) -> TreeNode? {
         guard let t1 = t1 else {
             return t2

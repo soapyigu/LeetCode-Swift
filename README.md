@@ -154,6 +154,7 @@
 [Path Sum III](https://leetcode.com/problems/path-sum-iiI/)| [Swift](./Tree/PathSumIII.swift)| Easy| O(n^2)| O(1)|
 [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)| [Swift](./Tree/UniqueBinarySearchTrees.swift)| Medium| O(n^2)| O(n)|
 [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)| [Swift](./Tree/RecoverBinarySearchTree.swift)| Hard| O(n)| O(1)|
+[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/description/) | [Swift](./Tree/MergeTwoBinaryTrees.swift) | Easy | O(n) | O(n) |
 
 ## Dynamic programming
 | Title | Solution | Difficulty | Time | Space |
@@ -187,6 +188,7 @@
 [Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)| [Swift](./DP/GuessNumberHigherOrLowerII.swift)| Medium| O(nlogn)| O(n^2)|
 [Burst Ballons](https://leetcode.com/problems/burst-balloons/)| [Swift](./DP/BurstBalloons.swift)| Hard| O(n^3)| O(n)|
 [Frog Jump](https://leetcode.com/problems/frog-jump/)| [Swift](./DP/FrogJump.swift)| Hard| O(n^2)| O(n)|
+
 
 ## Depth-first search
 | Title | Solution | Difficulty | Time | Space |
@@ -767,3 +769,5 @@
 |	[Swift](./String/LongestSubstringWithoutRepeatingCharacters.swift)	|	3	|	[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)	| Medium	|
 |	[Swift](./Math/AddTwoNumbers.swift)	|	2	|	[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)	| Medium	|
 |	[Swift](./Array/TwoSum.swift)	|	1	|	[Two Sum](https://leetcode.com/problems/two-sum/)	| Easy	|
+
+

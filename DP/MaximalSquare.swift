@@ -16,8 +16,8 @@ class MaximalSquare {
         var max_global = 0
         var maxSquareSide = Array(count: m, repeatedValue: (Array(count: n, repeatedValue: 0)))
         
-        for i in 0 ..< m {
-            for j in 0 ..< n {
+        for i in 0..<m {
+            for j in 0..<n {
                 guard matrix[i][j] != "0" else {
                     continue;
                 }

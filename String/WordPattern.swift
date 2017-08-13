@@ -15,7 +15,7 @@ class WordPattern {
             return false
         }
         
-        for i in 0 ..< strs.count {
+        for i in 0..<strs.count {
             let currentWord = strs[i]
             let currentChar = patterns[i]
         

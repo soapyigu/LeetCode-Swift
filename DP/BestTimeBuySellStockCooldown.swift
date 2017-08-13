@@ -14,8 +14,8 @@
         var res = 0
         var dp = Array(repeating: 0, count: prices.count)
         
-        for i in 1 ..< prices.count {
-            for j in (0 ..< i).reversed() {
+        for i in 1..<prices.count {
+            for j in (0..<i).reversed() {
                 if j >= 2 {
                     dp[i] = max(dp[i], prices[i] - prices[j] + dp[j - 2])
                 } else {

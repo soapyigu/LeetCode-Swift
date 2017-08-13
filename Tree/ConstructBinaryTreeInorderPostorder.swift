@@ -34,7 +34,7 @@ class ConstructBinaryTreeInorderPostorder {
         let root = TreeNode(postorder[postEnd])
         
         var mid = 0
-        for i in inStart ... inEnd where inorder[i] == root.val {
+        for i in inStart...inEnd where inorder[i] == root.val {
             mid = i
             break
         }

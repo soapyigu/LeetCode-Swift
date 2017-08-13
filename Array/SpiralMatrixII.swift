@@ -14,18 +14,18 @@ class SpiralMatrixII {
         var num = 1
         var res = Array(repeating: Array(repeating: 0, count: n), count: n)
         
-        for layer in 0 ..< n / 2 {
+        for layer in 0..<n / 2 {
             let start = layer
             let end = n - layer - 1
             
             // top
-            for i in start ..< end {
+            for i in start..<end {
                 res[start][i] = num
                 num += 1
             }
             
             // right
-            for i in start ..< end {
+            for i in start..<end {
                 res[i][end] = num
                 num += 1
             }

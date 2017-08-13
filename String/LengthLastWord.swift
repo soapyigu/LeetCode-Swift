@@ -13,7 +13,7 @@ class LengthLastWord {
             return 0
         }
         
-        for i in (0 ... sChars.count - 1).reverse() {
+        for i in (0...sChars.count - 1).reverse() {
             if res == 0 {
                 if sChars[i] == " " {
                     continue

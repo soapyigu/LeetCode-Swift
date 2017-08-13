@@ -14,7 +14,7 @@ class TextJustification {
             return res
         }
         
-        for i in 0 ..< words.count {
+        for i in 0..<words.count {
             let wordLen = words[i].characters.count
         
             if count + (i - last) + wordLen > maxWidth {
@@ -44,10 +44,10 @@ class TextJustification {
         var res = ""
         var extraNum = extraNum
         
-        for i in start ... end {
+        for i in start...end {
             res += words[i]
             if i != end {
-                for _ in 1 ... spaceNum {
+                for _ in 1...spaceNum {
                     res += " "
                 }
                 if extraNum != 0 {
@@ -63,14 +63,14 @@ class TextJustification {
     fileprivate func buildSpecialLine(words: [String], _ start: Int, _ end: Int, _ lineLength: Int) -> String {
         var res = ""
         
-        for i in start ... end {
+        for i in start...end {
             res += words[i]
             if i < end {
                 res += " "
             }
         }
         
-        for _ in res.characters.count ..< lineLength {
+        for _ in res.characters.count..<lineLength {
             res += " "
         }
         

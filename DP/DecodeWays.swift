@@ -16,11 +16,11 @@ class DecodeWays {
             return 0
         }
         
-        for i in 1 ... len {
-            if isValid(String(sChars[i - 1 ..< i])) {
+        for i in 1...len {
+            if isValid(String(sChars[i - 1..<i])) {
                 dp[i] += dp[i - 1]
             }
-            if i >= 2 && isValid(String(sChars[i - 2 ..< i])) {
+            if i >= 2 && isValid(String(sChars[i - 2..<i])) {
                 dp[i] += dp[i - 2]
             }
         }

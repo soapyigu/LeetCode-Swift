@@ -14,7 +14,7 @@ class FizzBuzz {
             return res
         }
         
-        for i in 1 ... n {
+        for i in 1...n {
             if i % 3 == 0 && i % 5 == 0 {
                 res.append("FizzBuzz")
             } else if i % 3 == 0 {

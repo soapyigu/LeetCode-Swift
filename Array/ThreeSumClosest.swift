@@ -12,7 +12,7 @@
   
         let nums = nums.sorted()
   
-        for i in 0 ..< nums.count - 2 {
+        for i in 0..<nums.count - 2 {
             if i == 0 || nums[i] != nums[i - 1] {
                 let twoSum = target - nums[i]
                 var left = i + 1

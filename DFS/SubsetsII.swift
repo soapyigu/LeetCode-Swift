@@ -11,7 +11,7 @@ class SubsetsII {
         var res = [[Int]]()
         var path = [Int]()
         
-        let nums = nums.sort({$0 < $1})
+        let nums = nums.sorted(by: <)
         
         _dfs(&res, &path, nums, 0)
         
@@ -21,7 +21,7 @@ class SubsetsII {
     private func _dfs(inout res: [[Int]], inout _ path:[Int], _ nums: [Int], _ index: Int) {
         res.append(Array(path))
         
-        for i in index ..< nums.count {
+        for i in index..<nums.count {
             if i > 0 && nums[i] == nums[i - 1] && i != index {
                 continue
             }

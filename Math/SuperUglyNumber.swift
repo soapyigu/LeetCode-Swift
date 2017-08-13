@@ -11,7 +11,7 @@ class SuperUglyNumber {
         var uglyNums = [Int](count: n, repeatedValue: 1)
         var dict = _init(primes)
         
-        for i in 1 ..< n {
+        for i in 1..<n {
             uglyNums[i] = _getMin(&dict, uglyNums, i - 1)
         }
         

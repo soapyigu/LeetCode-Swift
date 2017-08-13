@@ -16,7 +16,7 @@ class ProductExceptSelf {
         let left = _initLeft(nums)
         let right = _initRight(nums)
         
-        for i in 0 ..< nums.count {
+        for i in 0..<nums.count {
             res.append(left[i] * right[i])
         }
         
@@ -27,7 +27,7 @@ class ProductExceptSelf {
         var left = [Int]()
         left.append(1)
         
-        for i in 1 ..< nums.count {
+        for i in 1..<nums.count {
             left.append(left[i - 1] * nums[i - 1])
         }
         

@@ -52,7 +52,7 @@ class BinaryTreeVerticalOrderTraversal {
             }
         }
         
-        for col in minCol ... maxCol {
+        for col in minCol...maxCol {
             res.append(colVals[col]!)
         }
         

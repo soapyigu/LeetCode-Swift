@@ -30,7 +30,7 @@ class MergeIntervals {
 
         var res = [intervals.first!]
         
-        for i in 1 ..< intervals.count {
+        for i in 1..<intervals.count {
             let (last, current) = (res.last!, intervals[i])
             
             if current.start > last.end {

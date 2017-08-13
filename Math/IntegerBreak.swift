@@ -1,6 +1,6 @@
 /**
  * Question Link: https://leetcode.com/problems/integer-break/
- * Primary idea: Final Result must be split as 2^m * 3^n. Lets say p = p1 + p2 + ... + pn,
+ * Primary idea: Final Result must be split as 2^m * 3^n. Lets say p = p1 + p2 +...+ pn,
  * 				 if p1 could be split as 2(p1 - 2), than it would be greater than p1 if p1 > 4.
  *				 same thing for 3(p1 - 3). Thus we spilt the original number to multiple 3s and 2s to 
  *				 get the final result

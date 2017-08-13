@@ -18,10 +18,10 @@ class BurstBalloons {
         let n = nums.count, nums = renderNums(nums)
         var dp = Array(repeating: Array(repeating: 0, count: nums.count), count: nums.count)
   
-        for len in 1 ... n {
-            for left in 1 ... n - len + 1 {
+        for len in 1...n {
+            for left in 1...n - len + 1 {
                 let right = left + len - 1
-                    for k in left ... right {
+                    for k in left...right {
                         dp[left][right] = max(dp[left][right], nums[left - 1] * nums[k] * nums[right + 1] + dp[left][k - 1] + dp[k + 1][right])
                     }
             }

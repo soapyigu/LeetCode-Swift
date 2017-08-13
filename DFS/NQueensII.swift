@@ -26,7 +26,7 @@
             return
         }
         
-        for col in 0 ..< n {
+        for col in 0..<n {
             if isValid(usedCols, row, col) {
                 usedCols[row] = col
                 dfs(&usedCols, &count, n, row + 1)
@@ -37,7 +37,7 @@
     private func isValid(_ usedCols: [Int], _ row: Int, _ col: Int) -> Bool {
         var c = -1
     
-        for i in 0 ..< row {
+        for i in 0..<row {
             c = usedCols[i] 
             
             // check col

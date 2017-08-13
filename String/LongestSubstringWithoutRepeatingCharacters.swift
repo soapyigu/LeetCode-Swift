@@ -20,7 +20,7 @@ class LongestSubstringWithoutRepeatingCharacters {
         var startIndex = 0
         var chars = [Character](s.characters)
         
-        for i in 0 ..< chars.count {
+        for i in 0..<chars.count {
             var current = chars[i]
             
             if set.contains(current) {

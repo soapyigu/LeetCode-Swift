@@ -18,7 +18,7 @@ class PaintFence {
         var lastSame = k
         var lastDiff = k * (k - 1)
         
-        for i in 2 ..< n {
+        for i in 2..<n {
             (lastSame, lastDiff) = (lastDiff, (k - 1) * (lastSame + lastDiff))
         }
         

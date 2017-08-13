@@ -7,14 +7,14 @@
 
 class ThreeSum {
     func threeSum(nums: [Int]) -> [[Int]] {
-        var nums = nums.sort({$0 < $1})
+        var nums = nums.sorted(by: <)
         var res = [[Int]]()
         
         if nums.count <= 2 {
             return res
         }
         
-        for i in 0 ... nums.count - 3 {
+        for i in 0...nums.count - 3 {
             if i == 0 || nums[i] != nums[i - 1] {
                 var remain = -nums[i]
                 var left = i + 1

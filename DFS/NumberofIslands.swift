@@ -17,8 +17,8 @@ class NumberofIslands {
         let n = grid[0].count
         var count = 0
         
-        for i in 0 ..< m {
-            for j in 0 ..< n {
+        for i in 0..<m {
+            for j in 0..<n {
                 if String(grid[i][j]) == "1" {
                     count += 1
                     _dfs(&grid, m, n, i, j)

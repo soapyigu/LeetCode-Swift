@@ -13,8 +13,8 @@ class MinimumPathSum {
         let m = grid.count, n = grid[0].count
         var dp = Array(repeating: Array(repeating: 0, count: n), count: m)
         
-        for i in 0 ..< m {
-            for j in 0 ..< n {
+        for i in 0..<m {
+            for j in 0..<n {
                 if i == 0 && j == 0{
                     dp[i][j] = grid[i][j]
                 } else if i == 0 {

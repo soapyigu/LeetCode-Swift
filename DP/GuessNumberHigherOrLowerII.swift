@@ -21,7 +21,7 @@ class GuessNumberHigherOrLowerII {
             return table[s][e]
         }
         var guarantee = Int.max
-        for i in s ..< e + 1 {
+        for i in s..<e + 1 {
             // To get the worse case of every choice to guarantee the result
             let tmp = i + max(DP(&table, s, i - 1), DP(&table, i + 1, e))
             // To get the least cost among the guaranteed results

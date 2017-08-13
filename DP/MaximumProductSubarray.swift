@@ -10,7 +10,7 @@ class MaximumProductSubarray {
         var max_soFar = nums[0]
         var max_global = nums[0]
         
-        for i in 1 ..< nums.count {
+        for i in 1..<nums.count {
             var a = max_soFar * nums[i]
             var b = min_soFar * nums[i]
             

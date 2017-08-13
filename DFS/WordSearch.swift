@@ -17,8 +17,8 @@ class WordSearch {
         var visited = Array(count: m, repeatedValue: Array(count: n, repeatedValue: false))
         var wordContent = [Character](word.characters)
         
-        for i in 0 ..< m {
-            for j in 0 ..< n {
+        for i in 0..<m {
+            for j in 0..<n {
                 if board[i][j] == wordContent[0] && _dfs(board, wordContent, m, n, i, j, &visited, 0) {
                     return true
                 }

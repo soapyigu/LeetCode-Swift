@@ -14,7 +14,7 @@ class CountPrimes {
     
         var isPrime = [Bool](repeating: true, count: n)
         
-        for i in 2 ..< n {
+        for i in 2..<n {
             if isPrime[i] {
                 for j in stride(from: 2 * i, to: n, by: i) {
                     isPrime[j] = false

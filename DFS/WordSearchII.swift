@@ -18,8 +18,8 @@ class WordSearchII {
         let trie = _convertToTrie(words)
         var visited = [[Bool]](count: m, repeatedValue: Array(count: n, repeatedValue: false))
   
-        for i in 0 ..< m {
-            for j in 0 ..< n {
+        for i in 0..<m {
+            for j in 0..<n {
                 _dfs(board, m, n, i, j, &visited, &res, trie, "")
             }
         }
@@ -80,7 +80,7 @@ class WordSearchII {
             var node = root
             var word = [Character](word.characters)
     
-            for i in 0 ..< word.count {
+            for i in 0..<word.count {
                 let c = word[i]
       
                 if node.children[c] == nil {
@@ -97,7 +97,7 @@ class WordSearchII {
             var node = root
             var word = [Character](word.characters)
     
-            for i in 0 ..< word.count {
+            for i in 0..<word.count {
                 let c = word[i]
       
                 if node.children[c] == nil {
@@ -114,7 +114,7 @@ class WordSearchII {
             var node = root
             var prefix = [Character](prefix.characters)
     
-            for i in 0 ..< prefix.count {
+            for i in 0..<prefix.count {
                 let c = prefix[i]
       
                 if node.children[c] == nil {

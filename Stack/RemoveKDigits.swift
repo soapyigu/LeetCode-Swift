@@ -18,7 +18,7 @@ class RemoveKDigits {
             res.append(char)
         }
         
-        res = Array(res[0 ..< size])
+        res = Array(res[0..<size])
         for char in res {
             if char != "0" {
                 break

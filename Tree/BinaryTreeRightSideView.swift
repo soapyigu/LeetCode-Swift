@@ -28,7 +28,7 @@ class BinaryTreeRightSideView {
         while nodeQ.count > 0 {
             var size = nodeQ.count
             
-            for i in 0 ..< size {
+            for i in 0..<size {
                 let node = nodeQ.removeFirst()
                 
                 if i + 1 == size {

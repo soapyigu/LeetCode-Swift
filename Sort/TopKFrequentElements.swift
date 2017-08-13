@@ -25,6 +25,6 @@ class TopKFrequentElements {
             return value1 > value2
         }
   
-        return Array(keys[0 ..< k])
+        return Array(keys[0..<k])
     }
 }

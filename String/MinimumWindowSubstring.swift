@@ -47,7 +47,7 @@ class MinimumWindowSubstring {
                 if freqencyDict[startChar]! > 0 {
                     // update res
                     if i - startIndex + 1 < minLen {
-                        res = String(sChars[startIndex ... i])
+                        res = String(sChars[startIndex...i])
                         minLen = i - startIndex + 1
                     }
                     count -= 1

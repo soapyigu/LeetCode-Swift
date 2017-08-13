@@ -16,7 +16,7 @@ class TrappingRainWater {
         var left = _initMaxHeights(height, true)
         var right = _initMaxHeights(height, false)
         
-        for i in 0 ..< height.count {
+        for i in 0..<height.count {
             res += min(left[i], right[i]) - height[i]
         }
         
@@ -28,12 +28,12 @@ class TrappingRainWater {
         var currentMax = 0
         
         if isLeft {
-            for i in 0 ..< height.count {
+            for i in 0..<height.count {
                 res[i] = max(currentMax, height[i])
                 currentMax = res[i]
             }
         } else {
-            for i in (0 ..< height.count).reverse() {
+            for i in (0..<height.count).reverse() {
                 res[i] = max(currentMax, height[i])
                 currentMax = res[i]
             }

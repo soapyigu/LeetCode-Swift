@@ -13,7 +13,7 @@ class FlipGame {
             return res
         }
         
-        for i in 0 ..< sChars.count - 1 {
+        for i in 0..<sChars.count - 1 {
             if sChars[i] == "+" && sChars[i + 1] == "+" {
                 var temp = sChars
                 (temp[i], temp[i + 1])  = ("-", "-")

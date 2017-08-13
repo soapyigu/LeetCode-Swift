@@ -24,7 +24,7 @@ class GeneralizedAbbreviation {
         
         res.append(subset + String(word.count - index))
         
-        for i in index ..< word.count {
+        for i in index..<word.count {
             let offset = i - index
             if offset != 0 {
                 dfs(word, &res, subset + String(offset) + String(word[i]), i + 1)

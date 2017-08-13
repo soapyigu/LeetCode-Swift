@@ -16,7 +16,7 @@ class ContainsDuplicateII {
         // key: nums[index], value: index
         var dict = [Int: Int]()
         
-        for i in 0 ..< nums.count {
+        for i in 0..<nums.count {
             guard let index = dict[nums[i]] where i - index <= k else {
                 dict[nums[i]] = i
                 continue

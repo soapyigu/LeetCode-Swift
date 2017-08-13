@@ -20,8 +20,8 @@ class DifferentWaysAddParentheses {
         
         for (i, char) in chars.enumerated() {
             if char == "+" || char == "*" || char == "-" {
-                let leftResults = diffWaysToCompute(String(chars[0 ..< i]))
-                let rightResults = diffWaysToCompute(String(chars[i + 1 ..< chars.count]))
+                let leftResults = diffWaysToCompute(String(chars[0..<i]))
+                let rightResults = diffWaysToCompute(String(chars[i + 1..<chars.count]))
                 
                 for leftRes in leftResults {
                     for rightRes in rightResults {

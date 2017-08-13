@@ -33,11 +33,11 @@ class ExpressionAddOperators {
             return
         }
         
-        for i in pos ..< numChars.count {
+        for i in pos..<numChars.count {
             if i != pos && numChars[pos] == "0" {
                 break
             }
-            let curt = Int(String(numChars[pos ..< i + 1]))!
+            let curt = Int(String(numChars[pos..<i + 1]))!
             if pos == 0 {
                 dfs(&res, temp + String(curt), numChars, target, i + 1, curt, curt)
             } else {

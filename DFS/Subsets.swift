@@ -11,7 +11,7 @@ class Subsets {
         var res = [[Int]]()
         var path = [Int]()
         
-        let nums = nums.sort({$0 < $1})
+        let nums = nums.sorted(by: <)
         
         _dfs(&res, &path, nums, 0)
         
@@ -23,7 +23,7 @@ class Subsets {
 
         res.append(Array(path))
         
-        for i in index ..< nums.count {
+        for i in index..<nums.count {
             path.append(nums[i])
             _dfs(&res, &path, nums, i + 1)
             path.removeLast()

@@ -34,7 +34,7 @@ class ConstructBinaryTreePreorderInorder {
         let root = TreeNode(preorder[preStart])
         
         var mid = 0
-        for i in inStart ... inEnd {
+        for i in inStart...inEnd {
             if inorder[i] == preorder[preStart] {
                 mid = i
                 break

@@ -19,7 +19,7 @@ class Solution {
         let cnt = chars.count
         
         
-        for i in 0 ..< numRows {
+        for i in 0..<numRows {
             let len = 2 * numRows - 2
             var index = i
             while index < cnt {

@@ -28,7 +28,7 @@ class NQueens {
         }
         
         
-        for col in 0 ..< n {
+        for col in 0..<n {
             if isValid(board, col, row) {
                 board[row] = setRow(col, n)
                 dfs(&boards, &board, n, row + 1)
@@ -39,8 +39,8 @@ class NQueens {
     private func isValid(_ board: [String], _ col: Int, _ row: Int) -> Bool {
         var c = -1
     
-        for i in 0 ..< row {
-            for j in 0 ..< board[0].characters.count {
+        for i in 0..<row {
+            for j in 0..<board[0].characters.count {
                 if charAt(board[i], j) == "Q" {
                     c = j
                     break
@@ -68,7 +68,7 @@ class NQueens {
     private func setRow(_ col: Int, _ n: Int) -> String {
         var row = ""
         
-        for i in 0 ..< n {
+        for i in 0..<n {
             if i == col {
                 row.append("Q")
             } else {

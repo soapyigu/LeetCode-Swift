@@ -14,8 +14,8 @@ class PerfectSquares {
         var leastNums = [Int](count: n + 1, repeatedValue: Int.max)
         leastNums[0] = 0
         
-        for i in 1 ... n {
-            for j in 1 ... i  {
+        for i in 1...n {
+            for j in 1...i  {
                 if j * j > i {
                     break
                 }

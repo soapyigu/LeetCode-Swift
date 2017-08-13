@@ -26,8 +26,8 @@ class UniqueBinarySearchTrees {
         var dp = Array(repeating: 0, count: n + 1)
         dp[0] = 1
         
-        for i in 1 ... n {
-            for j in 0 ..< i {
+        for i in 1...n {
+            for j in 0..<i {
                 dp[i] += dp[j] * dp[i - j - 1]
             }
         }

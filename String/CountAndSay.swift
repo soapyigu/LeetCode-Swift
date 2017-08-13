@@ -21,13 +21,13 @@ class CountAndSay {
         var chars: [Character]
         var current: Character
   
-        for _ in 1 ..< n{
+        for _ in 1..<n{
             temp = ""
             count = 1
             chars = [Character](res.characters)
             current = chars[0]
     
-            for i in 1 ..< chars.count {
+            for i in 1..<chars.count {
                 if chars[i] == current {
                     count += 1
                 } else {

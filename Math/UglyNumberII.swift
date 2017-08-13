@@ -17,7 +17,7 @@ class UglyNumberII {
         var index3 = 0
         var index5 = 0
         
-        for i in 1 ..< n {
+        for i in 1..<n {
             var minVal = min(uglyNums[index2] * 2, uglyNums[index3] * 3, uglyNums[index5] * 5)
             
             if minVal == uglyNums[index2] * 2 {

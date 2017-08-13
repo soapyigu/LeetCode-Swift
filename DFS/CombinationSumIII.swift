@@ -8,7 +8,7 @@
 
 class CombinationSumIII {
     func combinationSum3(k: Int, _ n: Int) -> [[Int]] {
-        let candidates = [Int](1 ... 9)
+        let candidates = [Int](1...9)
         var res = [[Int]]()
         var path = [Int]()
         
@@ -23,7 +23,7 @@ class CombinationSumIII {
             return
         }       
         
-        for i in index ..< candidates.count {
+        for i in index..<candidates.count {
             guard candidates[i] <= target else {
                 break
             }

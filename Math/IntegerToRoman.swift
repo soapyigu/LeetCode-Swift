@@ -20,7 +20,7 @@
         while number > 0 {
             let current = number / nums[digit]
             
-            for _ in 0 ..< current {
+            for _ in 0..<current {
                 res += symbols[digit]
             }
             

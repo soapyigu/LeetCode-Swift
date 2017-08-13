@@ -17,11 +17,11 @@ class FrogJump {
         
         insert(&indexSteps, 0, 0)
         
-        for i in 1 ..< stones.count {
+        for i in 1..<stones.count {
             while maxStep[k] + 1 < stones[i] - stones[k] {
                 k += 1
             }
-            for j in k ..< i {
+            for j in k..<i {
                 let distance = stones[i] - stones[j]
                 
                 if let steps = indexSteps[j], steps.contains(distance - 1) || steps.contains(distance) || steps.contains(distance + 1) {

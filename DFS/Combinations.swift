@@ -10,7 +10,7 @@ class Combinations {
     func combine(n: Int, _ k: Int) -> [[Int]] {
         var res = [[Int]]()
         var path = [Int]()
-        let nums = [Int](1 ... n)
+        let nums = [Int](1...n)
         
         _dfs(nums, &res, &path, 0, k)
         
@@ -23,7 +23,7 @@ class Combinations {
             return
         }
         
-        for i in index ..< nums.count {
+        for i in index..<nums.count {
             path.append(nums[i])
             _dfs(nums, &res, &path, i + 1, k)
             path.removeLast()

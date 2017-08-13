@@ -17,7 +17,7 @@ class GenerateParentheses {
         for str in generateParenthesis(n - 1) {
             for (i, char) in str.characters.enumerated() {
                 if char == "(" {
-                    set.insert(String(Array(str.characters)[0 ... i]) + "()" + String(Array(str.characters)[i + 1 ..< str.characters.count]))
+                    set.insert(String(Array(str.characters)[0...i]) + "()" + String(Array(str.characters)[i + 1..<str.characters.count]))
                 }
             }
             set.insert(str + "()")

@@ -20,7 +20,7 @@ class HouseRobberII {
     private func _helper(nums:[Int], _ start: Int, _ end: Int) -> Int {
         var pre = 0, cur = 0, res = 0
         
-        for i in start ... end {
+        for i in start...end {
             res = max(pre + nums[i], cur)
             (cur, pre) = (res, cur)
         }

@@ -9,8 +9,8 @@
 
  class IntersectionTwoArraysII {
     func intersect(nums1: [Int], _ nums2: [Int]) -> [Int] {
-        var nums1 = nums1.sort({$0 < $1})
-        var nums2 = nums2.sort({$0 < $1})
+        var nums1 = nums1.sorted(by: <)
+        var nums2 = nums2.sorted(by: <)
         
         var i = 0
         var j = 0

@@ -13,7 +13,7 @@ class NumberConnectedComponentsUndirectedGraph {
         }
     
         var count = n
-        var roots = [Int](0 ... n - 1)
+        var roots = [Int](0...n - 1)
         
         for edge in edges {
             let root0 = findRoot(edge[0], roots)

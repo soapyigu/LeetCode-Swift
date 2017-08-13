@@ -14,7 +14,7 @@
         var dp = triangle.last!
         
         for i in stride(from: triangle.count - 2, through: 0, by: -1) {
-            for j in 0 ... i {
+            for j in 0...i {
                 dp[j] = min(dp[j], dp[j + 1]) + triangle[i][j]
             }
         }

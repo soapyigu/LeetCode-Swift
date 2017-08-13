@@ -20,7 +20,7 @@ class CourseSchedule {
         var indegree = [Int](repeatElement(0, count: numCourses))
         
         // 1. Create the graph
-        for i in 0 ..< prerequisites.count {
+        for i in 0..<prerequisites.count {
             let course = prerequisites[i][0]
             let pre = prerequisites[i][1]
             
@@ -34,7 +34,7 @@ class CourseSchedule {
         
         // 3. Create a array of sources
         var sources = [Int]()
-        for i in 0 ..< numCourses {
+        for i in 0..<numCourses {
             if indegree[i] == 0 {
                 sources.append(i)
             }
@@ -49,7 +49,7 @@ class CourseSchedule {
             count += 1
             
             // 4.ii. Decrement the in-degree of the destination node
-            for i in 0 ..< numCourses {
+            for i in 0..<numCourses {
                 if graph[source!][i] == 1 {
                     indegree[i] -= 1
                     // Check all of its destination vertices and add them to the set if they have no incoming edges

@@ -11,7 +11,7 @@ class WiggleSortII {
         var m = temp.count
         var n = (m + 1) / 2
         
-        for i in 0 ..< nums.count {
+        for i in 0..<nums.count {
             if i & 1 == 0 {
                 n = n - 1
                 nums[i] = temp[n]

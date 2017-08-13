@@ -28,7 +28,7 @@ class MeetingRooms {
             }
         }
         
-        for i in 0 ..< intervals.count - 1 {
+        for i in 0..<intervals.count - 1 {
             if intervals[i].end > intervals[i + 1].start {
                 return false
             }

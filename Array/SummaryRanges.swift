@@ -16,7 +16,7 @@ class SummaryRanges {
             return res
         }
   
-        for i in 0 ... nums.count {
+        for i in 0...nums.count {
             if i == nums.count || (i > 0 && nums[i] != nums[i - 1] + 1) {
                 str = "\(nums[start])"
                 if i - 1 != start {

@@ -15,8 +15,8 @@ class GameLife {
     
         let m = board.count, n = board[0].count
         
-        for i in 0 ..< m {
-            for j in 0 ..< n {
+        for i in 0..<m {
+            for j in 0..<n {
                 changeStatus(&board, i, j, m, n)
             }
         }
@@ -27,8 +27,8 @@ class GameLife {
     private func changeStatus(_ board: inout [[Int]], _ i: Int, _ j: Int, _ m: Int, _ n: Int) {
         var liveNum = 0
     
-        for x in i - 1 ... i + 1 {
-            for y in j - 1 ... j + 1 {
+        for x in i - 1...i + 1 {
+            for y in j - 1...j + 1 {
                 if x < 0 || x >= m || y < 0 || y >= n {
                     continue
                 }

@@ -12,7 +12,7 @@ class SlidingWindowMaximum {
         var maxIdx = [Int]()
         var res = [Int]()
         
-        for i in 0 ..< nums.count {
+        for i in 0..<nums.count {
             while maxIdx.count > 0 && nums[maxIdx.last!] < nums[i] {
                 maxIdx.removeLast()
             }

@@ -23,7 +23,7 @@
         
         var local = Array(repeating: 0, count: k + 1), global = Array(repeating: 0, count: k + 1)
         
-        for i in 0 ..< n - 1 {
+        for i in 0..<n - 1 {
             let diff = prices[i + 1] - prices[i]
             for j in stride(from: k, to: 0, by: -1) {
                 local[j] = max(global[j - 1] + max(diff, 0), local[j] + diff)
@@ -37,7 +37,7 @@
     private func makeMaxProfit(_ prices: [Int]) -> Int {
         var sum = 0
     
-        for i in 1 ..< prices.count {
+        for i in 1..<prices.count {
             let diff = prices[i] - prices[i - 1]
             sum += diff > 0 ? diff : 0
         }

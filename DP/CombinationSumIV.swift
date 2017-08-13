@@ -13,7 +13,7 @@ class CombinationSumIV {
         dp[0] = 1
         let nums = nums.sorted()
         
-        for i in 1 ... target {
+        for i in 1...target {
             for num in nums {
                 if i < num {
                     break

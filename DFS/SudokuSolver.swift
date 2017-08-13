@@ -17,10 +17,10 @@
     private func helper(_ board: inout [[Character]]) -> Bool {
         let m = board.count, n = board[0].count
     
-        for i in 0 ..< m {
-            for j in 0 ..< n {
+        for i in 0..<m {
+            for j in 0..<n {
                 if board[i][j] == "." {
-                    for num in 1 ... 9 {
+                    for num in 1...9 {
                         if isValid(board, i, j, Character(String(num))) {
                             board[i][j] = Character(String(num))
                             
@@ -43,22 +43,22 @@
         let m = board.count, n = board[0].count
     
         // check row
-        for x in 0 ..< n {
+        for x in 0..<n {
             if board[i][x] == num {
                 return false
             }
         }
         
         // check col
-        for y in 0 ..< m {
+        for y in 0..<m {
             if board[y][j] == num {
                 return false
             }
         }
         
         // check square
-        for x in i / 3 * 3 ..< i / 3 * 3 + 3 {
-            for y in j / 3 * 3 ..< j / 3 * 3 + 3 {
+        for x in i / 3 * 3..<i / 3 * 3 + 3 {
+            for y in j / 3 * 3..<j / 3 * 3 + 3 {
                 if board[x][y] == num {
                     return false
                 }

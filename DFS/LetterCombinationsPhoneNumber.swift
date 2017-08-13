@@ -50,7 +50,7 @@ class LetterCombinationsPhoneNumber {
         var temp = temp
         let current = [Character](board[Int(String(chars[index]))!].characters)
         
-        for i in 0 ..< current.count {
+        for i in 0..<current.count {
             temp += String(current[i])
             _dfs(&res, board, chars, temp, index + 1)
             temp = String(temp.characters.dropLast())

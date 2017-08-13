@@ -13,7 +13,7 @@ class CoinChange {
     
         var minNums = [Int](count: amount + 1, repeatedValue: -1)
         
-        for i in 0 ... amount {
+        for i in 0...amount {
             for coin in coins {
                 if coin == i {
                     minNums[i] = 1

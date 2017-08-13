@@ -6,8 +6,8 @@
  */
 
 class FourSum {
-    func fourSum(nums: [Int], _ target: Int) -> [[Int]] {
-        let nums = nums.sort({$0 < $1})
+    func fourSum(_ nums: [Int], _ target: Int) -> [[Int]] {
+        let nums = nums.sorted(by: <)
         var threeSum = 0
         var twoSum = 0
         var left = 0
@@ -18,13 +18,13 @@ class FourSum {
             return res
         }
         
-        for i in 0 ..< nums.count - 3 {
+        for i in 0..<nums.count - 3 {
             guard i == 0 || nums[i] != nums[i - 1] else {
                 continue
             }
             threeSum = target - nums[i]
             
-            for j in i + 1 ..< nums.count - 2 {
+            for j in i + 1..<nums.count - 2 {
                 guard j == i + 1 || nums[j] != nums[j - 1] else {
                     continue
                 }

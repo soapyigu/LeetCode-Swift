@@ -15,9 +15,9 @@ class ValidSudoku {
     private func _isRowValid(board: [[Character]]) -> Bool {
         var visited = Array(count: size, repeatedValue: false)
         
-        for i in 0 ..< size {
+        for i in 0..<size {
             visited = Array(count: size, repeatedValue: false)
-            for j in 0 ..< size {
+            for j in 0..<size {
                 if !_isValidChar(board[i][j], &visited) {
                     return false
                 }
@@ -30,9 +30,9 @@ class ValidSudoku {
     private func _isColValid(board: [[Character]]) -> Bool {
         var visited = Array(count: size, repeatedValue: false)
 
-        for i in 0 ..< size {
+        for i in 0..<size {
             visited = Array(count: size, repeatedValue: false)
-            for j in 0 ..< size {
+            for j in 0..<size {
                 if !_isValidChar(board[j][i], &visited) {
                     return false
                 }
@@ -48,8 +48,8 @@ class ValidSudoku {
         for i in 0.stride(to: size, by: 3) {
             for j in 0.stride(to: size, by: 3) {
                 visited = Array(count: size, repeatedValue: false)
-                for m in i ..< i + 3 {
-                    for n in j ..< j + 3 {
+                for m in i..<i + 3 {
+                    for n in j..<j + 3 {
                         if !_isValidChar(board[m][n], &visited) {
                             return false
                         }

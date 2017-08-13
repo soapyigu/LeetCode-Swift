@@ -22,7 +22,7 @@ class RemoveNthFromEnd {
         var post: ListNode? = dummy
         
         // move post
-        for _ in 0 ..< n {
+        for _ in 0..<n {
             post = post!.next
         }
         

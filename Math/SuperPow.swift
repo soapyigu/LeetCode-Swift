@@ -17,7 +17,7 @@ class SuperPow {
 
     private func _pow(a: Int, _ b: Int) -> Int {
       var ret = 1
-      for _ in 0 ..< b {
+      for _ in 0..<b {
         ret = ret * a % base
       }
       return ret

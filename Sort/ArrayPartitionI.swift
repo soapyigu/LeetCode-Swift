@@ -3,7 +3,7 @@ class ArrayPartitionI {
         var arr = nums
         arr = arr.sorted()
         var res = 0
-        for i in 0 ..< arr.count {
+        for i in 0..<arr.count {
             if i & 1 != 0 {
                 res += min(arr[i], arr[i - 1])
             }

@@ -11,7 +11,7 @@ class CombinationSum {
         var res = [[Int]]()
         var path = [Int]()
         
-        _dfs(candidates.sort({$0 < $1}), target, &res, &path, 0)
+        _dfs(candidates.sorted(by: <), target, &res, &path, 0)
         
         return res
     }
@@ -22,7 +22,7 @@ class CombinationSum {
             return
         }
         
-        for i in index ..< candidates.count {
+        for i in index..<candidates.count {
             guard candidates[i] <= target else {
                 break
             }

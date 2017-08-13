@@ -11,7 +11,7 @@ class RomanToInteger {
         let chars = [Character](s.characters.reverse())
         var res = 0
         
-        for i in 0 ..< chars.count {
+        for i in 0..<chars.count {
             guard let current = dict[String(chars[i])] else {
                 return res
             }

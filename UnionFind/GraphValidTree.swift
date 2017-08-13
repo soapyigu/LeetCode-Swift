@@ -13,7 +13,7 @@ class GraphValidTree {
             return true
         }
         
-        var roots = [Int](0 ..< n)
+        var roots = [Int](0..<n)
         var count = n
         
         for edge in edges {

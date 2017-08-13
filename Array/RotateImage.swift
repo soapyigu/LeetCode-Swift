@@ -9,9 +9,9 @@ class RotateImage {
     func rotate(_ matrix: inout [[Int]]) {
         let n = matrix.count
         
-        for layer in 0 ..< n / 2 {
+        for layer in 0..<n / 2 {
             let start = layer, end = n - layer - 1
-            for i in start ..< end {
+            for i in start..<end {
                 let offset = i - start
                 
                 (matrix[start][i], matrix[i][end], matrix[end][end - offset], matrix[end - offset][start]) = (matrix[end - offset][start], matrix[start][i], matrix[i][end], matrix[end][end - offset])

@@ -12,7 +12,7 @@ class PermutationsII {
         var path = [Int]()
         var visited = [Bool](count: nums.count, repeatedValue: false)
         
-        let nums = nums.sort({$0 < $1})
+        let nums = nums.sorted(by: <)
         
         _dfs(&res, &path, nums, &visited)
         
@@ -26,7 +26,7 @@ class PermutationsII {
             return
         }
         
-        for i in 0 ..< nums.count {
+        for i in 0..<nums.count {
             if visited[i] || (i > 0 && nums[i] == nums[i - 1] && visited[i - 1]) {
                 continue
             }

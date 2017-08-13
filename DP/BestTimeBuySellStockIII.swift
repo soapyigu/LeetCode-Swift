@@ -26,7 +26,7 @@ class BestTimeBuySellStockIII {
         
         maxProfit = 0
         
-        for i in (0 ..< prices.count).reversed() {
+        for i in (0..<prices.count).reversed() {
             let price = prices[i]
             maxProfit = max(high - price, maxProfit)
             high = max(price, high)

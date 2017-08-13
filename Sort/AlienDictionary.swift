@@ -53,7 +53,7 @@ class AlienDictionary {
             }    
         }
         
-        for i in 0 ..< words.count - 1 {
+        for i in 0..<words.count - 1 {
             let prev = Array(words[i].characters)
             let post = Array(words[i + 1].characters)
             var j = 0

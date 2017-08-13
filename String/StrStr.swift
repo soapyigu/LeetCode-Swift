@@ -16,9 +16,9 @@ class StrStr {
             return 0
         }
         
-        for i in 0 ... hLen - nLen {
+        for i in 0...hLen - nLen {
             if hChars[i] == nChars[0] {
-                for j in 0 ..< nLen {
+                for j in 0..<nLen {
                     if hChars[i + j] != nChars[j] {
                         break
                     }

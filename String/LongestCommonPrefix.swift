@@ -16,12 +16,12 @@ class LongestCommonPrefix {
             var strContent = [Character](str.characters)
             
             if res.count > strContent.count {
-                res = Array(res[0 ..< strContent.count])
+                res = Array(res[0..<strContent.count])
             }
             
-            for i in 0 ..< res.count {
+            for i in 0..<res.count {
                 if res[i] != strContent[i] {
-                    res = Array(res[0 ..< i])
+                    res = Array(res[0..<i])
                     break
                 }
             }

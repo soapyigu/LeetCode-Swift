@@ -16,8 +16,8 @@ class WallsGates {
         let m = rooms.count
         let n = rooms[0].count
         
-        for i in 0 ..< m {
-            for j in 0 ..< n {
+        for i in 0..<m {
+            for j in 0..<n {
                 if rooms[i][j] == 0 {
                     dfs(&rooms, i, j, m, n, 0)
                 }

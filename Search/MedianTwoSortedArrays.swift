@@ -32,9 +32,9 @@ class MedianTwoSortedArrays {
         let j = min(index / 2, n)
         
         if nums1[i - 1] < nums2[j - 1] {
-            return findKth(Array(nums1[i ..< m]), nums2, index - i)
+            return findKth(Array(nums1[i..<m]), nums2, index - i)
         } else {
-            return findKth(nums1, Array(nums2[j ..< n]), index - j)
+            return findKth(nums1, Array(nums2[j..<n]), index - j)
         }
     }
 }

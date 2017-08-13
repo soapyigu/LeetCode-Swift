@@ -20,7 +20,7 @@ class SpiralMatrix {
         
         while true {
             // top
-            for i in startY ... endY {
+            for i in startY...endY {
                 res.append(matrix[startX][i])
             }
             startX += 1
@@ -29,7 +29,7 @@ class SpiralMatrix {
             }
             
             // right
-            for i in startX ... endX {
+            for i in startX...endX {
                 res.append(matrix[i][endY])
             }
             endY -= 1

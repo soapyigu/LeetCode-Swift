@@ -16,7 +16,7 @@ class IsomorphicStrings {
             return false
         }
         
-        for i in 0 ..< sChars.count {
+        for i in 0..<sChars.count {
             let sCurrent = sChars[i]
             let tCurrent = tChars[i]
             

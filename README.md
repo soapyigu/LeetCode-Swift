@@ -72,9 +72,9 @@
 ## String
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
-[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)| [Swift](./FizzBuzz.swift)| Easy| O(n)| O(1)|
-[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)| [Swift](./FirstUniqueCharacterInString.swift)| Easy| O(n)| O(1)|
-[Keyboard Row](https://leetcode.com/problems/keyboard-row/)| [Swift](./KeyboardRow.swift)| Easy| O(nm)| O(n)|
+[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)| [Swift](./String/FizzBuzz.swift)| Easy| O(n)| O(1)|
+[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)| [Swift](./String/FirstUniqueCharacterInString.swift)| Easy| O(n)| O(1)|
+[Keyboard Row](https://leetcode.com/problems/keyboard-row/)| [Swift](./String/KeyboardRow.swift)| Easy| O(nm)| O(n)|
 [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)| [Swift](./String/ValidPalindrome.swift)| Easy| O(n)| O(n)|
 [Detect Capital](https://leetcode.com/problems/detect-capital/)| [Swift](./String/DetectCapital.swift)| Easy| O(n)| O(1)|
 [Count and Say](https://leetcode.com/problems/count-and-say/)| [Swift](./String/CountAndSay.swift)| Easy| O(n^2)| O(n)|

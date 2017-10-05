@@ -1,7 +1,7 @@
 # LeetCode by Swift
 [LeetCode Online Judge] (https://leetcode.com/) is a website containing many **algorithm questions**. Most of them are real interview questions of **Google, Facebook, LinkedIn, Apple**, etc. This repo shows my solutions by Swift with the code style strictly follows the [RayWenderlich Swift Style Guide](https://github.com/raywenderlich/swift-style-guide). Please feel free to reference and **STAR** to support this repo, thank you!
 
-![Leetcode](https://leetcode.com/static/images/logolarge.jpg) ![Swift](http://eclipsesource.com/blogs/wp-content/uploads/2014/06/Apple_Swift_Logo.png)
+![Leetcode](https://leetcode.com/static/images/logolarge.jpg) ![Swift](https://blog.liip.ch/content/uploads/2016/09/windex.png)
 
 ## Data Structures
 * [Array](#array)

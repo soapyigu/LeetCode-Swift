@@ -6,7 +6,7 @@
  */
 
 class TextJustification {
-    func fullJustify(words: [String], _ maxWidth: Int) -> [String] {
+    func fullJustify(_ words: [String], _ maxWidth: Int) -> [String] {
         var res = [String]()
         var count = 0, last = 0
         
@@ -15,7 +15,7 @@ class TextJustification {
         }
         
         for i in 0..<words.count {
-            let wordLen = words[i].characters.count
+            let wordLen = words[i].count
         
             if count + (i - last) + wordLen > maxWidth {
                 var spaceNum = 0
@@ -40,7 +40,7 @@ class TextJustification {
         return res
     }
     
-    fileprivate func buildLine(words: [String], _ start: Int, _ end: Int, _ spaceNum: Int, _ extraNum: Int) -> String {
+    fileprivate func buildLine(_ words: [String], _ start: Int, _ end: Int, _ spaceNum: Int, _ extraNum: Int) -> String {
         var res = ""
         var extraNum = extraNum
         
@@ -60,7 +60,7 @@ class TextJustification {
         return res
     }
     
-    fileprivate func buildSpecialLine(words: [String], _ start: Int, _ end: Int, _ lineLength: Int) -> String {
+    fileprivate func buildSpecialLine(_ words: [String], _ start: Int, _ end: Int, _ lineLength: Int) -> String {
         var res = ""
         
         for i in start...end {
@@ -70,7 +70,7 @@ class TextJustification {
             }
         }
         
-        for _ in res.characters.count..<lineLength {
+        for _ in res.count..<lineLength {
             res += " "
         }
         

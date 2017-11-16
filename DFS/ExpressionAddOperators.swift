@@ -33,7 +33,7 @@ class ExpressionAddOperators {
         }
 
         for i in pos..<num.count {
-            if i != pos && num[i] == "0" {
+            if i != pos && num[pos] == "0" {
                 break
             }
             let curt = Int(num[pos..<i + 1])!

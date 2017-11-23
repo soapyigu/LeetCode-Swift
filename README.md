@@ -278,6 +278,7 @@
 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)| [Swift](./Sort/MergeIntervals.swift)| Hard| O(nlogn)| O(n)|
 [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)| [Swift](./Sort/AlienDictionary.swift)| Hard| O(nm)| O(nm)|
 [Array Partition I](https://leetcode.com/problems/array-partition-i/description/)| [Swift](./Sort/ArrayPartitionI.swift)|Easy| O(nlogn)| O(n)|
+[Insert Interval](https://leetcode.com/problems/insert-interval/description/)| [Swift](./Sort/InsertInterval.swift)|Hard| O(n)| O(1)|
 
 ## Union Find
 | Title | Solution | Difficulty | Time | Space |
@@ -713,7 +714,7 @@
 |		|	60	|	[Permutation Sequence](https://oj.leetcode.com/problems/permutation-sequence/)	| Medium	|
 |	[Swift](./Array/SpiralMatrixII.swift)	|	59	|	[Spiral Matrix II](https://oj.leetcode.com/problems/spiral-matrix-ii/)	| Medium	|
 |	[Swift](./String/LengthLastWord.swift)	|	58	|	[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)	| Easy	|
-|		|	57	|	[Insert Interval](https://oj.leetcode.com/problems/insert-interval/)	| Hard	|
+| [Swift](./Sort/InsertInterval.swift) |	57	|	[Insert Interval](https://oj.leetcode.com/problems/insert-interval/)	| Hard	|
 |	[Swift](./Sort/MergeIntervals.swift)	|	56	|	[Merge Intervals](https://oj.leetcode.com/problems/merge-intervals/)	| Hard	|
 |	[Swift](./DP/JumpGame.swift) |	55	|	[Jump Game](https://oj.leetcode.com/problems/jump-game/)	| Medium	|
 |	[Swift](./Array/SpiralMatrix.swift)	|	54	|	[Spiral Matrix](https://oj.leetcode.com/problems/spiral-matrix/)	| Medium	|

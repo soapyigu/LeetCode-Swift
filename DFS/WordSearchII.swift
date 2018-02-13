@@ -67,76 +67,68 @@ class WordSearchII {
   
         return trie
     }
+}
 
     
-    class Trie {
-        var root: TrieNode
+class TrieNode {
+    var isEnd: Bool
+    var letter: Character
+    var children: [Character: TrieNode]
   
-        init() {
-            root = TrieNode(letter: Character("0"))
-        }
-  
-        func insert(word: String) {
-            var node = root
-            var word = [Character](word.characters)
-    
-            for i in 0..<word.count {
-                let c = word[i]
-      
-                if node.children[c] == nil {
-                    node.children[c] = TrieNode(letter: c)
-                }
-      
-                node = node.children[c]!
-            }
-    
-            node.isEnd = true
-        }
-  
-        func isWord(word: String) -> Bool {
-            var node = root
-            var word = [Character](word.characters)
-    
-            for i in 0..<word.count {
-                let c = word[i]
-      
-                if node.children[c] == nil {
-                    return false
-                }
-      
-                node = node.children[c]!
-            }
-    
-            return node.isEnd
-        }
-        
-        func isWordPrefix(prefix: String) -> Bool {
-            var node = root
-            var prefix = [Character](prefix.characters)
-    
-            for i in 0..<prefix.count {
-                let c = prefix[i]
-      
-                if node.children[c] == nil {
-                    return false
-                }
-      
-                node = node.children[c]!
-            }
-    
-            return true
-        }
+    init(_ letter: Character) {
+        self.isEnd = false
+        self.letter = letter
+        self.children = [Character: TrieNode]()
     }
+}
 
-    class TrieNode {
-        var letter: Character
-        var isEnd: Bool
-        var children: [Character:TrieNode]
+
+class Trie {
+    var root: TrieNode?
   
-        init(letter: Character) {
-            self.letter = letter
-            isEnd = false
-            children = [Character:TrieNode]()
+    init() {
+        root = TrieNode(Character("0"))
+    }
+  
+    func insert(_ word: String) {
+        var node = root
+    
+        for char in word {
+            if node?.children[char] == nil {
+                node?.children[char] = TrieNode(char)
+            }
+      
+            node = node?.children[char]
         }
+    
+        node?.isEnd = true
+    }
+  
+    func search(_ word: String) -> Bool {
+        var node = root
+    
+        for char in word {
+            guard let childTrieNode = node?.children[char] else {
+                return false
+            }
+      
+            node = childTrieNode
+        }
+    
+        return node?.isEnd
+    }
+  
+    func start(with word: String) -> Bool {
+        var node = root
+    
+        for char in word {
+            guard let childTrieNode = node?.children[char] else {
+                return false
+            }
+      
+            node = childTrieNode
+        }
+    
+        return true
     }
 }

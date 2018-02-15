@@ -20,13 +20,17 @@
 
 class SameTree {
     func isSameTree(p: TreeNode?, _ q: TreeNode?) -> Bool {
-        if p == nil && q == nil {
-            return true
+        guard let p = p else {
+            return q == nil
         }
-        if p == nil || q == nil || p!.val != q!.val {
+        guard let q = q else {
+            return p == nil
+        }
+  
+        if p.val != q.val {
             return false
         }
-    
-        return isSameTree(p!.left, q!.left) && isSameTree(p!.right, q!.right)
+  
+        return isSameTree(p.left, q.left) && isSameTree(p.right, q.right)
     }
 }

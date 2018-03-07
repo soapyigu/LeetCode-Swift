@@ -11,7 +11,7 @@ class GroupAnagrams {
         var map = [String: [String]]()
   
         for str in strs {
-            let sortedStr = String(str.characters.sorted())
+            let sortedStr = String(str.sorted())
     
             var anagrams = [String]()
             if let list = map[sortedStr] {

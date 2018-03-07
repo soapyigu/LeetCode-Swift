@@ -8,15 +8,14 @@
 
 class CombinationSumII {
     func combinationSum2(candidates: [Int], _ target: Int) -> [[Int]] {
-        var res = [[Int]]()
-        var path = [Int]()
+        var res = [[Int]](), path = [Int]()
         
-        _dfs(&res, &path, target, candidates.sorted(by: <), 0)
+        dfs(&res, &path, target, candidates.sorted(), 0)
         
         return res
     }
     
-    private func _dfs(inout res: [[Int]], inout _ path: [Int], _ target: Int, _ candidates: [Int], _ index: Int) {
+    fileprivate func dfs(_ res: inout [[Int]], _ path: inout [Int], _ target: Int, _ candidates: [Int], _ index: Int) {
         if target == 0 {
             res.append(Array(path))
             return

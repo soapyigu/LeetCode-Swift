@@ -19,7 +19,7 @@
  */
 
 class SameTree {
-    func isSameTree(p: TreeNode?, _ q: TreeNode?) -> Bool {
+    func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
         guard let p = p else {
             return q == nil
         }

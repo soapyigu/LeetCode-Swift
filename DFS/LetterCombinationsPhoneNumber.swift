@@ -8,24 +8,17 @@
  */
 
 class LetterCombinationsPhoneNumber {
-    func letterCombinations(digits: String) -> [String] {
-        var res = [String]()
-        let chars = [Character](digits.characters)
+    func letterCombinations(_ digits: String) -> [String] {
+        var combinations = [String](), combination = ""
         
-        guard chars.count > 0 else {
-            return res
-        }
+        dfs(createBoard(), &combinations, &combination, Array(digits), 0)
         
-        let board = _init()
-        
-        _dfs(&res, board, chars, "", 0)
-        
-        return res
+        return combinations
     }
     
-    private func _init() -> [String] {
+    fileprivate func createBoard() -> [String] {
         var res = [String]()
-        
+  
         res.append("")
         res.append("")
         res.append("abc")
@@ -36,24 +29,25 @@ class LetterCombinationsPhoneNumber {
         res.append("pqrs")
         res.append("tuv")
         res.append("wxyz")
-        
+  
         return res
     }
     
-    private func _dfs(inout res: [String], _ board: [String], _ chars: [Character], _ temp: String, _ index: Int) {
-        // termination case
-        if index == chars.count {
-            res.append(temp)
+    fileprivate func dfs(_ board: [String], _ combinations: inout [String], _ combination: inout String, _ digits: [Character], _ index: Int) {
+        if digits.count == index {
+            if combination != "" {
+                combinations.append(String(combination))
+            }
+            
             return
         }
         
-        var temp = temp
-        let current = [Character](board[Int(String(chars[index]))!].characters)
+        let digitStr = board[Int(String(digits[index]))!]
         
-        for i in 0..<current.count {
-            temp += String(current[i])
-            _dfs(&res, board, chars, temp, index + 1)
-            temp = String(temp.characters.dropLast())
+        for digitChar in digitStr {
+            combination.append(digitChar)
+            dfs(board, &combinations, &combination, digits, index + 1)
+            combination.removeLast()
         }
     }
 }

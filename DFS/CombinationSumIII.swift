@@ -9,27 +9,32 @@
 class CombinationSumIII {
     func combinationSum3(k: Int, _ n: Int) -> [[Int]] {
         let candidates = [Int](1...9)
-        var res = [[Int]]()
-        var path = [Int]()
+        var res = [[Int]](), path = [Int]()
         
-        _dfs(&res, &path, candidates, n, 0, k)
+        dfs(&res, &path, candidates, n, 0, k)
         
         return res
     }
     
-    private func _dfs(inout res: [[Int]], inout _ path: [Int], _ candidates: [Int], _ target: Int, _ index: Int, _ size: Int) {
-        if target == 0 && path.count == size{
+    fileprivate func dfs(_ res: inout [[Int]], _ path: inout [Int], _ candidates: [Int], _ target: Int, _ index: Int, _ size: Int) {
+        if target == 0 && path.count == size {
             res.append(Array(path))
+            return
+        }
+
+        guard path.count < size else {
             return
         }       
         
         for i in index..<candidates.count {
-            guard candidates[i] <= target else {
+            let candidate = candidates[i]
+
+            guard candidate <= target else {
                 break
             }
             
-            path.append(candidates[i])
-            _dfs(&res, &path, candidates, target - candidates[i], i + 1, size)
+            path.append(candidate)
+            _dfs(&res, &path, candidates, target - candidate, i + 1, size)
             path.removeLast()
         }
     }

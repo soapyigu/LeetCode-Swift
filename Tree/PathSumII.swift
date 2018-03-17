@@ -20,30 +20,29 @@
  */
 
 class PathSumII {
-    func pathSum(root: TreeNode?, _ sum: Int) -> [[Int]] {
-        var res = [[Int]]()
-        var list = [Int]()
-    
-        _dfs(&res, &list, root, sum)
-    
-        return res
+    func pathSum(_ root: TreeNode?, _ sum: Int) -> [[Int]] {
+        var paths = [[Int]](), path = [Int]()
+        
+        dfs(root, sum, &paths, &path)
+        
+        return paths
     }
-  
-    private func _dfs(inout res: [[Int]], inout _ list:[Int], _ root: TreeNode?, _ sum: Int) {
-        guard let root = root else {
+    
+    fileprivate func dfs(_ root: TreeNode?, _ sum: Int, _ paths: inout [[Int]], _ path: inout [Int]) {
+        guard let root = root else {            
             return
         }
         
-        if root.left == nil && root.right == nil && root.val == sum {
-            list.append(root.val)
-            res.append(list)
+        path.append(root.val)
+        
+        if root.val == sum && root.left == nil && root.right == nil {
+            paths.append(path)
             return
         }
-    
-        list.append(root.val)
-        var dupListLeft = list
-        var dupListRight = list
-        _dfs(&res, &dupListLeft, root.left, sum - root.val)
-        _dfs(&res, &dupListRight, root.right, sum - root.val)
+        
+        var pathLeft = path, pathRight = path
+        
+        dfs(root.left, sum - root.val, &paths, &pathLeft)
+        dfs(root.right, sum - root.val, &paths, &pathRight)
     }
 }

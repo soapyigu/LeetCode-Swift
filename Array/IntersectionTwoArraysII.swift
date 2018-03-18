@@ -1,30 +1,26 @@
 /**
  * Question Link: https://leetcode.com/problems/intersection-of-two-arrays-ii/
- * Primary idea: Sort and iterate to find all common elements
+ * Primary idea: Use dictionary to get frequencies of elements of one array, and 
+ *               compare with another array to filter the intersection
  * Note: Set cannot help you to find the number of common elements; thus it is not effective
  *
- * Time Complexity: O(nlogn), Space Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(n)
  *
  */
 
  class IntersectionTwoArraysII {
-    func intersect(nums1: [Int], _ nums2: [Int]) -> [Int] {
-        var nums1 = nums1.sorted(by: <)
-        var nums2 = nums2.sorted(by: <)
-        
-        var i = 0
-        var j = 0
+    func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+        var frequencies = Dictionary(nums1.map { ($0, 1) } , uniquingKeysWith: +)
         var res = [Int]()
         
-        while i < nums1.count && j < nums2.count {
-            if nums1[i] < nums2[j] {
-                i += 1
-            } else if nums1[i] > nums2[j] {
-                j += 1
-            } else {
-                res.append(nums1[i])
-                i += 1
-                j += 1
+        for num in nums2 {
+            guard let frequent = frequencies[num] else {
+                continue
+            }
+            
+            if frequent > 0 {
+                frequencies[num]! = frequent - 1
+                res.append(num)
             }
         }
         

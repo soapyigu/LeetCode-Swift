@@ -16,12 +16,9 @@
 
 class AddTwoNumbers {
     func addTwoNumbers(l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        var carry = 0
-        var sum = 0
+        var carry = 0, sum = 0, l1 = l1, l2 = l2
         let dummy = ListNode(0)
         var node = dummy
-        var l1 = l1
-        var l2 = l2
         
         while l1 != nil || l2 != nil || carry != 0 {
             sum = carry
@@ -36,9 +33,8 @@ class AddTwoNumbers {
             }
             
             carry = sum / 10
-            sum = sum % 10
             
-            node.next = ListNode(sum)
+            node.next = ListNode(sum % 10)
             node = node.next!
         }
         

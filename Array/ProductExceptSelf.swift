@@ -6,7 +6,7 @@
  */
 
 class ProductExceptSelf {
-    func productExceptSelf(nums: [Int]) -> [Int] {
+    func productExceptSelf(_ nums: [Int]) -> [Int] {
         var res = [Int]()
     
         guard nums.count > 0 else {
@@ -23,7 +23,7 @@ class ProductExceptSelf {
         return res
     }
     
-    private func _initLeft(nums: [Int]) -> [Int] {
+    private func _initLeft(_ nums: [Int]) -> [Int] {
         var left = [Int]()
         left.append(1)
         
@@ -34,10 +34,10 @@ class ProductExceptSelf {
         return left
     }
     
-    private func _initRight(nums: [Int]) -> [Int] {
-        var right = Array(count: nums.count, repeatedValue: 1)
+    private func _initRight(_ nums: [Int]) -> [Int] {
+        var right = Array(repeating: 1, count: nums.count)
         
-        for i in (nums.count - 2).stride(through: 0, by: -1) {
+        for i in stride(from: nums.count - 2, through: 0, by: -1) {
             right[i] = right[i + 1] * nums[i + 1]
         }
         

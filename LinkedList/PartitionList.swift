@@ -22,6 +22,9 @@ class PartitionList {
         var node = head
         
         while node != nil {
+            let next = node!.next
+            node!.next = nil
+
             if node!.val < x {
                 prev.next = node
                 prev = prev.next!
@@ -29,10 +32,9 @@ class PartitionList {
                 post.next = node
                 post = post.next!
             }
-            node = node!.next
+            node = next
         }
         
-        post.next = nil
         prev.next = postDummy.next
         
         return prevDummy.next

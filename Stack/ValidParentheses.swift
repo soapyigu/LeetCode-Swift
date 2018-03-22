@@ -5,10 +5,10 @@
  */
 
 class ValidParentheses {
-    func isValid(s: String) -> Bool {
+    func isValid(_ s: String) -> Bool {
         var stack = [Character]()
         
-        for char in s.characters {
+        for char in s {
             if char == "(" || char == "[" || char == "{" {
                 stack.append(char)
             } else if char == ")" {
@@ -26,6 +26,6 @@ class ValidParentheses {
             }
         }
         
-        return stack.count == 0
+        return stack.isEmpty
     }
 }

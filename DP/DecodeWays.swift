@@ -8,35 +8,37 @@
 
 class DecodeWays {
     func numDecodings(_ s: String) -> Int {
-        let sChars = Array(s.characters), len = sChars.count
-        var dp = Array(repeating: 0, count: len + 1)
+        let sChars = Array(s)
+        var dp = Array(repeating: 0, count: s.count + 1)
         dp[0] = 1
         
-        guard len >= 1 else {
+        guard s.count >= 1 else {
             return 0
         }
         
-        for i in 1...len {
-            if isValid(String(sChars[i - 1..<i])) {
+        for i in 1...s.count {
+            if String(sChars[i - 1..<i]).isValid {
                 dp[i] += dp[i - 1]
             }
-            if i >= 2 && isValid(String(sChars[i - 2..<i])) {
+            if i >= 2 && String(sChars[i - 2..<i]).isValid {
                 dp[i] += dp[i - 2]
             }
         }
         
-        return dp[len]
+        return dp[s.count]
     }
-    
-    private func isValid(_ numStr: String) -> Bool {
-        if Array(numStr.characters).first == "0" {
-            return false
-        }
-    
-        guard let num = Int(numStr) else {
+}
+
+extension String {
+    var isValid: Bool {
+        if let first = first, first == "0" {
             return false
         }
         
-        return num >= 1 && num <= 26
+        guard let num = Int(self) else {
+            return false
+        }
+        
+        return 0 < num && 26 >= num
     }
 }

@@ -6,8 +6,7 @@
 
 class MaximumSizeSubarraySumEqualsK {
     func maxSubArrayLen(_ nums: [Int], _ k: Int) -> Int {
-        var longestLen = 0, sum = 0
-        var sumToIdx = [Int: Int]()
+        var longestLen = 0, sum = 0, sumToIdx = [Int: Int]()
         sumToIdx[0] = -1
         
         for (i, num) in nums.enumerated() {

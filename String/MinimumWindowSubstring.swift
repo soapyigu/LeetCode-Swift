@@ -8,68 +8,45 @@
  */
 
 class MinimumWindowSubstring {
+
     func minWindow(_ s: String, _ t: String) -> String {
-        let sChars = Array(s.characters)
-        let sLen = sChars.count
-        let tLen = t.characters.count
-    
-        guard sLen >= tLen else {
-            return ""
-        }
-    
-        var freqencyDict = calcCharFrec(t)
-        var startIndex = 0
-        var minLen = Int.max
-        var count = 0
-        var res = ""
+        var tFreqs = Dictionary(Array(t).map { ($0, 1) }, uniquingKeysWith: +), count = 0
+        var sChars = Array(s), tChars = Array(t), res = "", start = 0
         
-        for (i, current) in sChars.enumerated() {
-            guard freqencyDict[current] != nil else {
+        for (i, sChar) in sChars.enumerated() {
+            guard let freq = tFreqs[sChar] else {
                 continue
             }
             
-            // update freqency dictionary
-            freqencyDict[current]! -= 1
-            if freqencyDict[current]! >= 0 {
+            tFreqs[sChar] = freq - 1
+            
+            if freq > 0 {
                 count += 1
             }
             
-            // update startIndex
-            while count == tLen {
-                let startChar = sChars[startIndex]
-            
-                guard freqencyDict[startChar] != nil else {
-                    startIndex += 1
+            while count == tChars.count {
+                // jump over redundants
+                guard let startFreq = tFreqs[sChars[start]] else {
+                    start += 1
                     continue
                 }
                 
-                freqencyDict[startChar]! += 1
-                if freqencyDict[startChar]! > 0 {
+                tFreqs[sChars[start]] = startFreq + 1
+                
+                if startFreq == 0 {
                     // update res
-                    if i - startIndex + 1 < minLen {
-                        res = String(sChars[startIndex...i])
-                        minLen = i - startIndex + 1
+                    if res.isEmpty || res.count > i - start + 1 {
+                        res = String(sChars[start...i])
                     }
+                    
                     count -= 1
                 }
-                startIndex += 1
+                
+                start += 1
+                
             }
         }
         
         return res
-    }
-    
-    private func calcCharFrec(_ t: String) -> [Character: Int] {
-        var dict = [Character: Int]()
-    
-        for char in t.characters {
-            if let freq = dict[char] {
-                dict[char] = freq + 1
-            } else {
-                dict[char] = 1
-            }
-        }
-        
-        return dict
     }
 }

@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/diameter-of-binary-tree/
  * Primary idea: recursion, update globel diameter along with maxDepth 
- * Time Complexity: O(n), Space Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(1)
  * 
  * Definition for a binary tree node.
  * public class TreeNode {

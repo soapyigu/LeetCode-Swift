@@ -19,11 +19,12 @@ class SlidingWindowMaximum {
             
             maxIdx.append(i)
             
-            if i + 1 >= k {
-                res.append(nums[maxIdx.first!])
-            }
-            if i - maxIdx.first! + 1 == k {
-                maxIdx.removeFirst()
+            if i >= k - 1 {
+                if decreaseIndexQueue.first! + k == i {
+                    decreaseIndexQueue.removeFirst()
+                } 
+                
+                res.append(nums[decreaseIndexQueue.first!])
             }
         }
         

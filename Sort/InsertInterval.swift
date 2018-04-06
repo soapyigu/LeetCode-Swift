@@ -18,10 +18,11 @@
  *     }
  * }
  */
-class Solution {
+
+class InsertInterval {
     func insert(_ intervals: [Interval], _ newInterval: Interval) -> [Interval] {
         var index = 0
-        var result : [Interval] = []
+        var result: [Interval] = []
         var tempInterval = Interval(newInterval.start, newInterval.end)
         
         while index < intervals.count && newInterval.start > intervals[index].end {
@@ -30,8 +31,8 @@ class Solution {
         }
         
         while index < intervals.count && newInterval.end >= intervals[index].start {
-            var minStart = min(tempInterval.start, intervals[index].start)
-            var maxEnd = max(tempInterval.end, intervals[index].end)
+            let minStart = min(tempInterval.start, intervals[index].start)
+            let maxEnd = max(tempInterval.end, intervals[index].end)
             tempInterval = Interval(minStart, maxEnd)
             index += 1
         }

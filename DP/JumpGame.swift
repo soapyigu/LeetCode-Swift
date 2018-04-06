@@ -5,13 +5,13 @@
  *
  */
 
-class Solution {
+class JumpGame {
     func canJump(_ nums: [Int]) -> Bool {
         var max = 0
         
         for i in 0 ..< nums.count {
-            var farestStep = i + nums[i]
-            if (i > max) {
+            let farestStep = i + nums[i]
+            if i > max {
                 return false
             }
             max = max > farestStep ? max : farestStep

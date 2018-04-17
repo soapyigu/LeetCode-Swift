@@ -9,38 +9,44 @@
 
 class RemoveInvalidParentheses {
     func removeInvalidParentheses(_ s: String) -> [String] {
-        var res = [String](), s = Array(s.characters)
+        var paths = [String]()
         
-        dfs(&res, s, 0, 0, (Character("("), Character(")")))
+        dfs(&paths, Array(s), 0, 0, ("(", ")"))
         
-        return res
+        return paths
     }
     
-    private func dfs(_ res: inout [String], _ s: [Character], _ lastI: Int, _ lastJ: Int, _ parens: (Character, Character)) {
-        var stack = 0, s = s
+    fileprivate func dfs(_ paths: inout [String], _ s: [Character], _ lastValid: Int, _ lastRight: Int, _ parens: (Character, Character)) {
+        var counter = 0, s = s
         
-        for i in lastI..<s.count {
+        for i in lastValid..<s.count {
             if s[i] == parens.0 {
-                stack += 1
-            }
+                counter += 1
+            } 
             if s[i] == parens.1 {
-                stack -= 1
+                counter -= 1
             }
             
-            if stack < 0 {
-                for j in lastJ...i {
-                    if s[j] == parens.1 && (j == lastJ || s[j - 1] != parens.1) {
-                        dfs(&res, Array(s[0..<j] + s[j + 1..<s.count]), i, j, parens)
+            if counter < 0 {
+                for j in lastRight...i {
+                    guard s[j] == parens.1 else {
+                        continue
                     }
+                    guard j == 0 || s[j] != s[j - 1] || j == lastRight else {
+                        continue
+                    }
+                    
+                    dfs(&paths, Array(s[0..<j] + s[j + 1..<s.count]), i, j, parens)
                 }
+                // jump over invalid ones
                 return
             }
         }
         
         if parens.0 == "(" {
-            dfs(&res, s.reversed(), 0, 0, (Character(")"), Character("(")))
+            dfs(&paths, s.reversed(), 0, 0, (")", "("))
         } else {
-            res.append(String(s.reversed()))
+            paths.append(String(s.reversed()))
         }
     }
 }

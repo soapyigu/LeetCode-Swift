@@ -10,8 +10,8 @@
 class MinimumWindowSubstring {
 
     func minWindow(_ s: String, _ t: String) -> String {
-        var tFreqs = Dictionary(Array(t).map { ($0, 1) }, uniquingKeysWith: +), count = 0
-        var sChars = Array(s), tChars = Array(t), res = "", start = 0
+        var tFreqs = Dictionary(t.map { ($0, 1) }, uniquingKeysWith: +), count = 0
+        var sChars = Array(s), res = "", start = 0
         
         for (i, sChar) in sChars.enumerated() {
             guard let freq = tFreqs[sChar] else {
@@ -24,7 +24,7 @@ class MinimumWindowSubstring {
                 count += 1
             }
             
-            while count == tChars.count {
+            while count == t.count {
                 // jump over redundants
                 guard let startFreq = tFreqs[sChars[start]] else {
                     start += 1

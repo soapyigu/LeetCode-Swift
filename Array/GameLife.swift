@@ -24,7 +24,7 @@ class GameLife {
         board = board.map { $0.map { $0 % 2 } }
     }
     
-    private func changeStatus(_ board: inout [[Int]], _ i: Int, _ j: Int, _ m: Int, _ n: Int) {
+    fileprivate func changeStatus(_ board: inout [[Int]], _ i: Int, _ j: Int, _ m: Int, _ n: Int) {
         var liveNum = 0
     
         for x in i - 1...i + 1 {
@@ -41,13 +41,9 @@ class GameLife {
         }
         
         if board[i][j] == 1 {
-            if liveNum < 2 || liveNum > 3 {
-                board[i][j] = 2
-            }
+            board[i][j] = liveNum < 2 || liveNum > 3 ? 2 : 1
         } else {
-            if liveNum == 3 {
-                board[i][j] = 3
-            }
+            board[i][j] = liveNum == 3 ? 3 : 0
         }
     }
 }

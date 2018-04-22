@@ -5,9 +5,9 @@
  */
 
 class FlipGame {
-    func generatePossibleNextMoves(s: String) -> [String] {
+    func generatePossibleNextMoves(_ s: String) -> [String] {
         var res = [String]()
-        var sChars = Array(s.characters)
+        let sChars = Array(s)
         
         guard sChars.count > 1 else {
             return res
@@ -15,9 +15,7 @@ class FlipGame {
         
         for i in 0..<sChars.count - 1 {
             if sChars[i] == "+" && sChars[i + 1] == "+" {
-                var temp = sChars
-                (temp[i], temp[i + 1])  = ("-", "-")
-                res.append(String(temp))
+                res.append(String(sChars[0..<i] + "--" + sChars[i + 2..<sChars.count]))
             }
         }
         

@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/triangle/
  * Primary idea: Dynamic Programming, start from bottom to top
- * Time Complexity: O(2^n - 1), Space Complexity: O(m)
+ * Time Complexity: O(2^n), Space Complexity: O(m)
  *
  */
 

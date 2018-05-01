@@ -7,13 +7,12 @@
 
 class HouseRobber {
     func rob(nums: [Int]) -> Int {
-        var curt = 0, prev = 0, res = 0
+        var curt = 0, prev = 0
         
         for num in nums {
-            res = max(cur, prev + num)
-            (curt, prev) = (res, curt)
+            (curt, prev) = (max(curt, prev + num), curt)
         }
         
-        return res
+        return curt
     }
 }

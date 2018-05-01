@@ -6,25 +6,25 @@
  */
 
 class HouseRobberII {
-    func rob(nums: [Int]) -> Int {
-        guard nums.count != 0 else {
-            return 0
-        }
+    func rob(_ nums: [Int]) -> Int {
         guard nums.count != 1 else {
             return nums[0]
         }
-    
-        return max(_helper(nums, 0, nums.count - 2), _helper(nums, 1, nums.count - 1))
+        
+        return max(helper(nums, 0, nums.count - 2), helper(nums, 1, nums.count - 1))
     }
     
-    private func _helper(nums:[Int], _ start: Int, _ end: Int) -> Int {
-        var pre = 0, cur = 0, res = 0
-        
-        for i in start...end {
-            res = max(pre + nums[i], cur)
-            (cur, pre) = (res, cur)
+    fileprivate func helper(_ nums: [Int], _ start: Int, _ end: Int) -> Int {
+        if start > end {
+            return 0
         }
         
-        return res
+        var prev = 0, current = 0
+        
+        for i in start...end {
+            (current, prev) = (max(prev + nums[i], current), current)
+        }
+        
+        return current
     }
 }

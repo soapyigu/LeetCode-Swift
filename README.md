@@ -28,7 +28,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 800+ questions. Currently we have 244 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 800+ questions. Currently we have 245 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
 
 
 ## Array
@@ -63,6 +63,7 @@
 [Rotate Image](https://leetcode.com/problems/rotate-image/)| [Swift](./Array/RotateImage.swift)| Medium| O(n^2)| O(1)|
 [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)| [Swift](./Array/SpiralMatrix.swift)| Medium| O(n^2)| O(1)|
 [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix/)| [Swift](./Array/SpiralMatrixII.swift)| Medium| O(n^2)| O(1)|
+[Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/description/)| [Swift](./Array/DiagonalTraverse.swift)| Medium| O(mn)| O(1)|
 [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| [Swift](./Array/ValidSudoku.swift)| Easy| O(n^2)| O(n)|
 [Set Matrix Zero](https://leetcode.com/problems/set-matrix-zeroes/)| [Swift](./Array/SetMatrixZero.swift)| Medium| O(n^2)| O(1)|
 [Next Permutation](https://leetcode.com/problems/next-permutation/)| [Swift](./Array/NextPermutation.swift)| Medium| O(n)| O(1)|

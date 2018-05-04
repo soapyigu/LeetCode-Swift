@@ -9,27 +9,26 @@
 
 class GasStation {
     func canCompleteCircuit(_ gas: [Int], _ cost: [Int]) -> Int {
-        guard gas.count == cost.count else {
+        let totalGas = gas.reduce(0) { $0 + $1 }, totalCost = cost.reduce(0) { $0 + $1 }
+        guard totalGas >= totalCost else {
             return -1
         }
-    
-        var currentSum = 0
-        var total = 0
-        var startIdx = 0
         
-        for (i, curtGas) in gas.enumerated() {
-            currentSum += (curtGas - cost[i])
-            total += (curtGas - cost[i])
+        var start = 0, gasSum = 0, costSum = 0
+        
+        for (i, currentGas) in gas.enumerated() {
+            let currentCost = cost[i]
             
-            if currentSum < 0 {
-                startIdx = i + 1
-                currentSum = 0
+            gasSum += currentGas
+            costSum += currentCost
+            
+            if gasSum < costSum {
+                start = i + 1
+                gasSum = 0
+                costSum = 0
             }
         }
         
-        if total < 0 {
-            return -1
-        }
-        return startIdx
+        return start
     }
 }

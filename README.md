@@ -28,7 +28,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 800+ questions. Currently we have 250 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 800+ questions. Currently we have 251 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
 
 
 ## Array
@@ -233,8 +233,9 @@
 [Word Search](https://leetcode.com/problems/word-search/)| [Swift](./DFS/WordSearch.swift)| Medium| O((n^2)!)| O(n^2)|
 [Word Search II](https://leetcode.com/problems/word-search-ii/)| [Swift](./DFS/WordSearchII.swift)| Hard| O(((mn)^2))| O(n^2)|
 [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)| [Swift](./DFS/WordDictionary.swift)| Medium| O(n)| O(n)|
-[N-Queens](https://leetcode.com/problems/n-queens/)| [Swift](./DFS/NQueens.swift)| Hard| O((n^4))| O(n^2)|
-[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [Swift](./DFS/NQueensII.swift)| Hard| O((n^3))| O(n)|
+[N-Queens](https://leetcode.com/problems/n-queens/)| [Swift](./DFS/NQueens.swift)| Hard| O((n!))| O(n^2)|
+[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [Swift](./DFS/NQueensII.swift)| Hard| O((n!))| O(n)|
+[Word Squares](https://leetcode.com/problems/word-squares/)| [Swift](./DFS/WordSquares.swift)| Hard| O((n!))| O(n)|
 [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)| [Swift](./DFS/SudokuSolver.swift)| Hard| O(n^4)| O(1)|
 [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)| [Swift](./DFS/RemoveInvalidParentheses.swift)| Hard| O(n!)| O(n)|
 [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)| [Swift](./DFS/ExpressionAddOperators.swift)| Hard| O(n!)| O(n)|

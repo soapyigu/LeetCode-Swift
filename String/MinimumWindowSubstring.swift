@@ -10,43 +10,42 @@
 class MinimumWindowSubstring {
 
     func minWindow(_ s: String, _ t: String) -> String {
-        var tFreqs = Dictionary(t.map { ($0, 1) }, uniquingKeysWith: +), count = 0
-        var sChars = Array(s), res = "", start = 0
+        let sChars = Array(s), tChars = Array(t)
+        var tFreq = Dictionary(tChars.map { ($0, 1) }, uniquingKeysWith: +)
+        var left = 0, shortestLen = Int.max, start = 0, matters = 0
         
         for (i, sChar) in sChars.enumerated() {
-            guard let freq = tFreqs[sChar] else {
+            guard let sCharFreq = tFreq[sChar] else {
                 continue
             }
             
-            tFreqs[sChar] = freq - 1
+            tFreq[sChar] = sCharFreq - 1
             
-            if freq > 0 {
-                count += 1
+            if sCharFreq > 0 {
+                matters += 1
             }
             
-            while count == t.count {
-                // jump over redundants
-                guard let startFreq = tFreqs[sChars[start]] else {
-                    start += 1
+            while matters == tChars.count {
+                guard let leftFreq = tFreq[sChars[left]] else {
+                    left += 1
                     continue
                 }
                 
-                tFreqs[sChars[start]] = startFreq + 1
-                
-                if startFreq == 0 {
-                    // update res
-                    if res.isEmpty || res.count > i - start + 1 {
-                        res = String(sChars[start...i])
+                if leftFreq == 0 {
+                    matters -= 1
+                    
+                    if i - left + 1 < shortestLen {
+                        shortestLen = i - left + 1
+                        start = left
                     }
                     
-                    count -= 1
                 }
                 
-                start += 1
-                
+                tFreq[sChars[left]] = leftFreq + 1
+                left += 1
             }
         }
         
-        return res
+        return shortestLen == Int.max ? "" : String(sChars[start..<start + shortestLen])
     }
 }

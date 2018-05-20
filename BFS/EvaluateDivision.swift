@@ -12,11 +12,16 @@ class EvaluateDivision {
         var rest = [Double]()
         
         for query in queries {
-            guard let _ = dict[query.first!], let _ = dict[query.last!] else {
+            guard let first = query.first, let last = query.last else {
+                rest.append(-1.0)
+                continue
+            } 
+            
+            guard let _ = dict[first], let _ = dict[last] else {
                 rest.append(-1.0)
                 continue
             }
-            
+
             bfs(query, dict, &rest)
         }
         
@@ -27,38 +32,41 @@ class EvaluateDivision {
         var dict = [String: [(String, Double)]]()
         
         for (i, equation) in equations.enumerated() {
-            let dividend = equation.first!, divisor = equation.last!, divideRes = values[i]
+            guard let dividend = equation.first, let divisor = equation.last else {
+                continue
+            }
             
-            insert(dividend, divisor, divideRes, to: &dict)
-            insert(divisor, dividend, 1.0 / divideRes, to: &dict)
+            dict[dividend] = dict[dividend, default: []] + [(divisor, values[i])]
+            dict[divisor] = dict[divisor, default: []] + [(dividend, 1.0 / values[i])]
         }
         
         return dict
     }
     
-    fileprivate func insert(_ dividend: String, _ divisor: String, _ divideRes: Double, to dict: inout [String: [(String, Double)]]) {
-        if dict[dividend] == nil {
-            dict[dividend] = [(divisor, divideRes)]
-        } else {
-            dict[dividend]!.append((divisor, divideRes))
-        }
-    }
-    
     fileprivate func bfs(_ query: [String], _ dict: [String: [(String, Double)]], _ rest: inout [Double]) {
-        var visited = Set([query.first!])
-        var qStrs = [query.first!]
+        guard let first = query.first, let last = query.last else {
+            rest.append(-1.0)
+            return
+        } 
+
+        var visited = Set([first])
+        var qStrs = [first]
         var qVals = [1.0]
 
         while !qStrs.isEmpty {
             let currentStr = qStrs.removeFirst()
             let currentVal = qVals.removeFirst()
 
-            if currentStr == query.last! {
+            if currentStr == last {
                 rest.append(currentVal)
                 return
             }
 
-            for (str, val) in dict[currentStr]! {
+            guard let candidates = dict[currentStr] else {
+                continue
+            }
+
+            for (str, val) in candidates {
                 guard !visited.contains(str) else {
                     continue
                 }

@@ -28,7 +28,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 800+ questions. Currently we have 253 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 800+ questions. Currently we have 255 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
 
 
 ## Array
@@ -48,6 +48,7 @@
 [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [Swift](./Array/RemoveDuplicatesFromSortedArrayII.swift)| Medium| O(n)| O(1)|
 [Move Zeroes](https://leetcode.com/problems/move-zeroes/)| [Swift](./Array/MoveZeroes.swift)| Easy| O(n)| O(1)|
 [Remove Element](https://leetcode.com/problems/remove-element/)| [Swift](./Array/RemoveElement.swift)| Easy| O(n)| O(1)|
+[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)| [Swift](./Array/StrobogrammaticNumber.swift)| Easy| O(n)| O(1)|
 [Two Sum](https://leetcode.com/problems/two-sum/)| [Swift](./Array/TwoSum.swift)| Easy| O(n)| O(n)|
 [3Sum](https://leetcode.com/problems/3sum/)| [Swift](./Array/ThreeSum.swift)| Medium| O(n^2)| O(nC3)|
 [3Sum Closest](https://leetcode.com/problems/3sum-closest/)| [Swift](./Array/ThreeSum.swift)| Medium| O(n^2)| O(nC3)|
@@ -226,6 +227,7 @@
 [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)| [Swift](./DFS/CombinationSumIII.swift)| Medium| O(n!)| O(nCk)|
 [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)| [Swift](./DFS/LetterCombinationsPhoneNumber.swift)| Medium| O(mn)| O(n)|
 [Factor Combinations](https://leetcode.com/problems/factor-combinations/)| [Swift](./DFS/FactorCombinations.swift)| Medium| O(n^n))| O(2^n - 1)|
+[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)| [Swift](./DFS/StrobogrammaticNumberII.swift)| Medium| O(m^n)| O(n)|
 [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/)| [Swift](./DFS/GeneralizedAbbreviation.swift)| Medium| O(n!)| O(2^n)|
 [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)| [Swift](./DFS/PalindromePartitioning.swift)| Medium| O(n!)| O(n)|
 [Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite/)| [Swift](./DFS/IsGraphBipartite.swift)| Medium| O(n)| O(n)|
@@ -580,8 +582,8 @@
 |		|	250	|	[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/) &hearts;	|	Medium	|
 |		|	249	|	[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/) &hearts;	| Easy	|
 |		|	248	|	[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii/) &hearts;	|	Hard	|
-|		|	247	|	[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/) &hearts;	|	Medium	|
-|		|	246	|	[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/) &hearts;	| Easy	|
+|	[Swift](./DFS/StrobogrammaticNumberII.swift)	|	247	|	[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/) &hearts;	|	Medium	|
+|	[Swift](./Array/StrobogrammaticNumber.swift)	|	246	|	[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/) &hearts;	| Easy	|
 |	[Swift](./Array/ShortestWordDistanceIII.swift)	|	245	|	[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/) &hearts;	|	Medium	|
 |		|	244	|	[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/) &hearts;	|	Medium	|
 | [Swift](./String/ShortestWordDistance.swift)	|	243	|	[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/) &hearts;	| Easy	|

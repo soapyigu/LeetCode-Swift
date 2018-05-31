@@ -5,37 +5,24 @@
  */
 
 class EvaluateReversePolishNotation {
-    func evalRPN(tokens: [String]) -> Int {
+    func evalRPN(_ tokens: [String]) -> Int {
         var stack = [Int]()
         
-        for str in tokens {
-            if _isNumber(str) {
-                stack.append(Int(str)!)
+        for token in tokens {
+            if let num = Int(token) {
+                stack.append(num)
             } else {
-                guard stack.count > 1 else {
-                    return 0
-                }
-                
                 let post = stack.removeLast()
                 let prev = stack.removeLast()
                 
-                let res = _operate(prev, post, str)
-                stack.append(res)
+                stack.append(operate(prev, post, token))
             }
         }
         
-        if stack.count == 0 {
-            return 0
-        } else {
-            return stack.first!
-        }
+        return stack.first ?? 0
     }
     
-    private func _isNumber(str: String) -> Bool {
-        return Int(str) != nil
-    }
-    
-    private func _operate(prev: Int, _ post: Int, _ token: String) -> Int{
+    fileprivate func _operate(_ prev: Int, _ post: Int, _ token: String) -> Int{
         switch token {
             case "+":
                 return prev + post

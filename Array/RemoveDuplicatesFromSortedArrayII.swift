@@ -8,19 +8,19 @@
 
 class RemoveDuplicatesFromSortedArrayII {
     func removeDuplicates(inout nums: [Int]) -> Int {
-        // edge case
-        if nums.count <= 2 {
+        guard nums.count > 2 else {
             return nums.count
         }
         
-        var lastIndex = 1
+        var index = 1
+        
         for i in 2..<nums.count {
-            if nums[lastIndex] != nums[i] || nums[lastIndex] != nums[lastIndex - 1] {
-                lastIndex += 1
-                nums[lastIndex] = nums[i]
-            }
+            if nums[index] != nums[index - 1] || nums[index] != nums[i] {
+                index += 1
+                nums[index] = nums[i]
+            } 
         }
         
-        return lastIndex + 1
+        return index + 1
     }
 }

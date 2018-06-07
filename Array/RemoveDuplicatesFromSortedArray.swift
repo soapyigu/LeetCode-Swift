@@ -7,19 +7,17 @@
 
 class RemoveDuplicatesFromSortedArray {
     func removeDuplicates(inout nums: [Int]) -> Int {
-        if nums.count <= 1 {
-            return nums.count
-        }
-    
-        var lastIndex = 0
-        
-        for num in nums {
-            if num != nums[lastIndex] {
-                lastIndex += 1
-                nums[lastIndex] = num
-            }
+        guard nums.count > 0 else {
+            return 0
         }
         
-        return lastIndex + 1
+        var index = 0
+        
+        for num in nums where num != nums[index] {
+            index += 1
+            nums[index] = num
+        }
+        
+        return index + 1
     }
 }

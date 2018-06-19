@@ -5,25 +5,24 @@
  */
 
 class WordPattern {
-    func wordPattern(pattern: String, _ str: String) -> Bool {
-        var wordDict = [String: Character]()
-        var charDict = [Character: String]()
-        let strs = str.characters.split{$0 == " "}.map(String.init)
-        let patterns = [Character](pattern.characters)
+    func wordPattern(_ pattern: String, _ str: String) -> Bool {
+        let strs = str.split(separator: " ").map(String.init)
         
-        guard patterns.count == strs.count else {
+        guard pattern.count == strs.count else {
             return false
         }
         
-        for i in 0..<strs.count {
-            let currentWord = strs[i]
-            let currentChar = patterns[i]
+        var patternToWord = [Character: String]()
+        var wordToPattern = [String: Character]()
         
-            if wordDict[currentWord] == nil && charDict[currentChar] == nil{
-                wordDict[currentWord] = currentChar
-                charDict[currentChar] = currentWord
+        for (i, char) in pattern.enumerated() {
+            let word = strs[i]
+            
+            if patternToWord[char] == nil && wordToPattern[word] == nil {
+                wordToPattern[word] = char
+                patternToWord[char] = word
             } else {
-                if wordDict[currentWord] != currentChar {
+                if patternToWord[char] != word || wordToPattern[word] != char {
                     return false
                 }
             }

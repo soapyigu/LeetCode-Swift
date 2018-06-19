@@ -1,32 +1,37 @@
 /**
  * Question Link: https://leetcode.com/problems/longest-common-prefix/
  * Primary idea: Use the first string as the result at first, trim it while iterating the array
- * Time Complexity: O(nm), Space Complexity: O(m), m stands for the length of first string
+ * Time Complexity: O(nm), Space Complexity: O(m), m stands for the length of longest prefix
  */
 
 class LongestCommonPrefix {
-    func longestCommonPrefix(strs: [String]) -> String {
-        guard strs.count > 0 else {
-            return ""
-        }
-    
-        var res = [Character](strs[0].characters)
+    func longestCommonPrefix(_ strs: [String]) -> String {
+        var longestPrefix = [Character](), index = 0
         
-        for str in strs {
-            var strContent = [Character](str.characters)
+        guard let firstStr = strs.first else {
+            return String(longestPrefix)
+        }
+        
+        let firstStrChars = Array(firstStr)
+        let strsChars = strs.map { Array($0) }
+        
+        while index < firstStr.count {
             
-            if res.count > strContent.count {
-                res = Array(res[0..<strContent.count])
-            }
+            longestPrefix.append(firstStrChars[index])
             
-            for i in 0..<res.count {
-                if res[i] != strContent[i] {
-                    res = Array(res[0..<i])
-                    break
+            for str in strsChars {
+                if index >= str.count {
+                    return String(longestPrefix.dropLast())
+                }
+                
+                if str[index] != longestPrefix[index] {
+                    return String(longestPrefix.dropLast())
                 }
             }
+            
+            index += 1
         }
         
-        return String(res)
+        return String(longestPrefix)
     }
 }

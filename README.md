@@ -28,7 +28,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 800+ questions. Currently we have 256 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 800+ questions. Currently we have 257 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
 
 
 ## Array
@@ -54,6 +54,7 @@
 [3Sum Closest](https://leetcode.com/problems/3sum-closest/)| [Swift](./Array/ThreeSum.swift)| Medium| O(n^2)| O(nC3)|
 [4Sum](https://leetcode.com/problems/4sum/)| [Swift](./Array/FourSum.swift)| Medium| O(n^3)| O(nC4)|
 [Summary Ranges](https://leetcode.com/problems/summary-ranges/)| [Swift](./Array/SummaryRanges.swift)| Medium| O(n)| O(n)|
+[Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)| [Swift](./Array/AsteroidCollision.swift)| Medium| O(n)| O(n)|
 [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)| [Swift](./Array/ShortestWordDistance.swift)| Easy| O(n)| O(1)|
 [Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)| [Swift](./Array/ShortestWordDistanceIII.swift)| Medium| O(n)| O(1)|
 [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)| [Swift](./Array/MinimumSizeSubarraySum.swift)| Medium| O(n)| O(1)|

@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/word-search/
  * Primary idea: Classic Depth-first Search, go up, down, left, right four directions
  * 
- * Time Complexity: O((n^2)!), Space Complexity: O(n^2)
+ * Time Complexity: O(mn * 4^(k - 1)), m and n stand for width and height of matrix, k is the word size, Space Complexity: O(mn)
  *
  */
 

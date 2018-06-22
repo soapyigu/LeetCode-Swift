@@ -5,28 +5,37 @@
  */
 
 class UniquePathsII {
-    func uniquePathsWithObstacles(obstacleGrid: [[Int]]) -> Int {
+    func uniquePathsWithObstacles(_ obstacleGrid: [[Int]]) -> Int {
         let m = obstacleGrid.count
+        guard m > 0 else {
+            return 0
+        }
+        
         let n = obstacleGrid[0].count
+        guard n > 0 else {
+            return 0
+        }
     
-        var pathNums = Array(count: m, repeatedValue: Array(count: n, repeatedValue: 0))
-        return _helper(&pathNums, m - 1, n - 1, obstacleGrid)
+        var dp = Array(repeating: Array(repeating: -1, count: n), count: m)
+        
+        return help(m - 1, n - 1, &dp, obstacleGrid)
     }
     
-    func _helper(inout _ pathNums: [[Int]], _ m: Int, _ n: Int, _ obstacleGrid: [[Int]]) -> Int {
-        // termination
-        if m < 0 || n < 0 || obstacleGrid[m][n] == 1 {
+    fileprivate func help(_ m: Int, _ n: Int, _ dp: inout [[Int]], _ obstacleGrid: [[Int]]) -> Int {
+        if m < 0 || n < 0 {
+            return 0
+        }
+        if obstacleGrid[m][n] == 1 {
             return 0
         }
         if m == 0 && n == 0 {
             return 1
         }
-        if pathNums[m][n] != 0 {
-            return pathNums[m][n]
+        if dp[m][n] != -1 {
+            return dp[m][n]
         }
         
-        pathNums[m][n] = _helper(&pathNums, m - 1, n, obstacleGrid) + _helper(&pathNums, m, n - 1, obstacleGrid)
-        
-        return pathNums[m][n]
+        dp[m][n] = help(m - 1, n, &dp, obstacleGrid) + help(m, n - 1, &dp, obstacleGrid)
+        return dp[m][n]
     }
 }

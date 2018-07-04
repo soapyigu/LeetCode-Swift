@@ -3,7 +3,7 @@
  * Primary idea: Classic Depth-first Search, use index to track substring, 
  *               and move forward to deeper level only if the substring is a palindrome
  * 
- * Time Complexity: O(n!), Space Complexity: O(n)
+ * Time Complexity: O(n^n), Space Complexity: O(n)
  *
  */
 

@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/combinations/
  * Primary idea: Classic Depth-first Search, another version of Subsets
  * 
- * Time Complexity: O(n!), Space Complexity: O(n)
+ * Time Complexity: O(n^n), Space Complexity: O(n)
  *
  */
 

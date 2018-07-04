@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/generalized-abbreviation/
  * Primary idea: Classic Depth-first Search
  * 
- * Time Complexity: O(n!), Space Complexity: O(2^n)
+ * Time Complexity: O(n^n), Space Complexity: O(2^n)
  *
  */
 

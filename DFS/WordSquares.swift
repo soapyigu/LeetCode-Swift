@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/word-squares/
  * Primary idea: Classic Depth-first Search, fill out row by row, choose correct word with fixed prefix, only need to care which column is used
  * 
- * Time Complexity: O(n!), Space Complexity: O(n)
+ * Time Complexity: O(n^n), Space Complexity: O(n)
  *
  */
 

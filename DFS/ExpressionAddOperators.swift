@@ -7,7 +7,7 @@
  * 1. String cast to Integer will make character loss, e.g. "05" -> 5
  * 2. Multiplication's priority is higher than addiction
  *
- * Time Complexity: O(n!), Space Complexity: O(n)
+ * Time Complexity: O(n^n), Space Complexity: O(n)
  *
  */
 

@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/permutations/
  * Primary idea: Classic Depth-first Search, remember backtracking
  * 
- * Time Complexity: O(n!), Space Complexity: O(n)
+ * Time Complexity: O(n^n), Space Complexity: O(n)
  *
  */
 

@@ -1,6 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/dungeon-game/
- * Primary idea: Classic DP, current minimum health is decided by right and below minimum health 
+ * Primary idea: Classic DP, current minimum health is decided by right and below minimum health
+ * 
  * Time Complexity: O(mn), Space Complexity: O(mn)
  */
 

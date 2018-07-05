@@ -28,7 +28,7 @@
 * [Microsoft](#microsoft)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 800+ questions. Currently we have 264 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
+[Problem Status](#problem-status) shows the latest progress to all 800+ questions. Currently we have 265 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them. Thank you for great contributions from [CharleneJiang](https://github.com/CharleneJiang), [ReadmeCritic](https://github.com/ReadmeCritic), [demonkoo](https://github.com/demonkoo), [DaiYue](https://github.com/DaiYue), [Quaggie](https://github.com/Quaggie) and [jindulys](https://github.com/jindulys).
 
 
 ## Array
@@ -306,6 +306,7 @@
 [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)| [Swift](./Search/Search2DMatrixII.swift)| Medium| O(m + n)| O(1)|
 [Search for a Range](https://leetcode.com/problems/search-for-a-range/)| [Swift](./Search/SearchForARange.swift)| Medium| O(logn)| O(1)|
 [Search Insert Position](https://leetcode.com/problems/search-insert-position/)| [Swift](./Search/SearchForARange.swift)| Medium| O(logn)| O(1)|
+[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)| [Swift](./Search/PeakIndexMountainArray.swift)| Easy| O(logn)| O(1)|
 [Find Peak Element](https://leetcode.com/problems/find-peak-element/)| [Swift](./Search/FindPeakElement.swift)| Medium| O(logn)| O(1)|
 [Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [Swift](./Search/Sqrtx.swift)| Medium| O(logn)| O(1)|
 [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)| [Swift](./Search/MedianTwoSortedArrays.swift)| Hard| O(log(m + n))| O(1)|

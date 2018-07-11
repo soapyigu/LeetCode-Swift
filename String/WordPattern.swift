@@ -13,17 +13,19 @@ class WordPattern {
         }
         
         var patternToWord = [Character: String]()
-        var wordToPattern = [String: Character]()
         
         for (i, char) in pattern.enumerated() {
             let word = strs[i]
             
-            if patternToWord[char] == nil && wordToPattern[word] == nil {
-                wordToPattern[word] = char
-                patternToWord[char] = word
-            } else {
-                if patternToWord[char] != word || wordToPattern[word] != char {
+            if let charWord = patternToWord[char] {
+                if charWord != word {
                     return false
+                }
+            } else {
+                if patternToWord.values.contains(word) {
+                    return false
+                } else {
+                    patternToWord[char] = word
                 }
             }
         }

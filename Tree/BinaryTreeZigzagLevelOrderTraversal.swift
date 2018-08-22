@@ -22,28 +22,21 @@
 
 class BinaryTreeZigzagLevelOrderTraversal {
     func zigzagLevelOrder(root: TreeNode?) -> [[Int]] {
-        var res = [[Int]]()
-        var queue = [TreeNode]()
-        var isOdd = false
+        var res = [[Int]](), queue = [TreeNode](), isReverse = false
         
         if let root = root {
             queue.append(root)
         }
         
-        while queue.count > 0 {
-            var size = queue.count
+        while !queue.isEmpty {
+            let size = queue.count
             var level = [Int]()
             
-            for _ in 1...size {
-                let node = queue[0]
-                queue.removeAtIndex(0)
+            for _ in 0..<size {
+                let node = queue.removeFirst()
                 
                 // add val
-                if isOdd {
-                    level.insert(node.val, atIndex: 0) 
-                } else {
-                    level.append(node.val)
-                }
+                level.insert(node.val, at: isReverse ? 0 : level.count) 
                 
                 // add TreeNodes in next level
                 if let left = node.left {
@@ -55,7 +48,7 @@ class BinaryTreeZigzagLevelOrderTraversal {
             }
             
             res.append(level)
-            isOdd = !isOdd
+            isReverse = !isReverse
         }
         
         return res

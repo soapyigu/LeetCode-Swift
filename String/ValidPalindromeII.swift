@@ -12,7 +12,7 @@ class ValidPalindromeII {
         return isPalindrome(array, 0, array.count - 1)
     }
     
-    func isPalindrome(_ array: [Character], _ i: Int, _ j: Int, alreadyRemoved: Bool = false) -> Bool {
+    fileprivate func isPalindrome(_ array: [Character], _ i: Int, _ j: Int, alreadyRemoved: Bool = false) -> Bool {
         var i = i
         var j = j
         while i < j {

@@ -8,33 +8,26 @@
 
 class ValidPalindromeII {
     func validPalindrome(_ s: String) -> Bool {
-        var i = 0, j = s.count - 1
-        let sChars = Array(s)
-        
-        while i < j {
-            if sChars[i] != sChars[j] {
-                return isPalindrome(sChars, i + 1, j) || isPalindrome(sChars, i, j - 1)
-            } else {
-                i += 1
-                j -= 1
-            }
-        }
-        
-        return true
+        let array = Array(s)
+        return isPalindrome(array, 0, array.count - 1)
     }
     
-    fileprivate func isPalindrome(_ s: [Character], _ i: Int, _ j: Int) -> Bool {
-        var i = i, j = j
-        
+    func isPalindrome(_ array: [Character], _ i: Int, _ j: Int, alreadyRemoved: Bool = false) -> Bool {
+        var i = i
+        var j = j
         while i < j {
-            if s[i] != s[j] {
-                return false
+            if array[i] != array[j] {
+                if alreadyRemoved {
+                    return false
+                } else {
+                    return isPalindrome(array, i + 1, j, alreadyRemoved: true) || 
+                           isPalindrome(array, i, j - 1, alreadyRemoved: true)
+                }
             } else {
                 i += 1
                 j -= 1
             }
         }
-        
         return true
     }
 }

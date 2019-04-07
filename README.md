@@ -8,7 +8,9 @@
 
 ## Contributors
 
-![Contributors](Leetcode_Contributors.png?style=centerme)
+<p align="center">
+  <img src="./Leetcode_Contributors.png">
+</p>
 
 ## Data Structures
 * [Array](#array)

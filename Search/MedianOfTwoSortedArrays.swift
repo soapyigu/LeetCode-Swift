@@ -15,7 +15,7 @@
  */
  
  class Solution {
-    func findMedianSortedArrays(nums1: [Int], _ nums2: [Int]) -> Double {
+    func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
         let m = nums1.count
         let n = nums2.count
         

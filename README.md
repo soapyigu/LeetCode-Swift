@@ -8,7 +8,7 @@
 
 ## Contributors
 
-![Contributors](Contributors.png?style=centerme)
+![Contributors](Leetcode_Contributors.png?style=centerme)
 
 ## Data Structures
 * [Array](#array)

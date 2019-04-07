@@ -7,16 +7,19 @@
 
 class JumpGame {
     func canJump(_ nums: [Int]) -> Bool {
-        var max = 0
+        var maximumIndex = nums[0]
         
-        for i in 0 ..< nums.count {
-            let farestStep = i + nums[i]
-            if i > max {
+        for (currentIndex, value) in nums.enumerated(){
+            
+            if currentIndex > maximumIndex{
                 return false
             }
-            max = max > farestStep ? max : farestStep
+            
+            maximumIndex = max(maximumIndex, currentIndex + value)
         }
         
         return true
     }
 }
+
+

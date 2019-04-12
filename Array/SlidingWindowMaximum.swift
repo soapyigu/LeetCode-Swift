@@ -8,7 +8,7 @@
  */
 
 class SlidingWindowMaximum {
-    func maxSlidingWindow(nums: [Int], _ k: Int) -> [Int] {
+    func maxSlidingWindow(_ nums: [Int], _ k: Int) -> [Int] {
         var maxIdx = [Int]()
         var res = [Int]()
         
@@ -20,11 +20,11 @@ class SlidingWindowMaximum {
             maxIdx.append(i)
             
             if i >= k - 1 {
-                if decreaseIndexQueue.first! + k == i {
-                    decreaseIndexQueue.removeFirst()
+                if maxIdx.first! + k == i {
+                    maxIdx.removeFirst()
                 } 
                 
-                res.append(nums[decreaseIndexQueue.first!])
+                res.append(nums[maxIdx.first!])
             }
         }
         

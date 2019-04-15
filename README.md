@@ -348,6 +348,11 @@
 [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [Swift](./UnionFind/GraphValidTree.swift)| Medium| O(nlogn)| O(n)|
 [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)| [Swift](./UnionFind/NumberIslandsII.swift)| Hard| O(klogmn)| O(mn)|
 
+## Design
+| Title | Solution | Difficulty | Time | Space |
+| ----- | -------- | ---------- | ---- | ----- |
+[LRU Cache](https://leetcode.com/problems/lru-cache/)| [Swift](./Design/LRUCache.swift)| Hard| O(1)| O(n)|
+
 ## Google
 | Title | Solution | Difficulty | Frequency |
 | ----- | -------- | ---------- | --------- |

@@ -696,7 +696,7 @@
 |		|	149	|	[Max Points on a Line](https://oj.leetcode.com/problems/max-points-on-a-line/)	| Hard	|
 |		|	148	|	[Sort List](https://oj.leetcode.com/problems/sort-list/)	| Medium	|
 |		|	147	|	[Insertion Sort List](https://oj.leetcode.com/problems/insertion-sort-list/)	| Medium	|
-|		|	146	|	[LRU Cache](https://oj.leetcode.com/problems/lru-cache/)	| Hard	|
+|	[Swift](./Design/LRUCache.swift)	|	146	|	[LRU Cache](https://oj.leetcode.com/problems/lru-cache/)	| Hard	|
 |	[Swift](./Stack/PostorderTraversal.swift)	|	145	|	[Binary Tree Postorder Traversal](https://oj.leetcode.com/problems/binary-tree-postorder-traversal/)	| Hard	|
 |	[Swift](./Stack/PreorderTraversal.swift)	|	144	|	[Binary Tree Preorder Traversal](https://oj.leetcode.com/problems/binary-tree-preorder-traversal/)	| Medium	|
 |	[Swift](./LinkedList/ReorderList.swift)	|	143	|	[Reorder List](https://oj.leetcode.com/problems/reorder-list/)	| Medium	|

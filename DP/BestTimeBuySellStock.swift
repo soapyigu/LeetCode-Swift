@@ -8,16 +8,16 @@
 
 class BestTimeBuySellStock {
     func maxProfit(prices: [Int]) -> Int {
-        guard prices.count >= 2 else {
-            return 0
-        }
-    
+        guard prices.count > 0 else {return 0}
         var maxProfit = 0
-        var lowest = prices[0]
+        var buyDay = 0
         
-        for price in prices {
-            maxProfit = max(maxProfit, price - lowest)
-            lowest = min(lowest, price)
+        for i in 1 ..< prices.count {
+            let profit = prices[i] - prices[buyDay]
+            if profit < 0 {
+                buyDay = i
+            }
+            maxProfit = max(profit, maxProfit)
         }
         
         return maxProfit

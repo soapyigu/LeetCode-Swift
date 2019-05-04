@@ -16,26 +16,18 @@
 
 class AddTwoNumbers {
     func addTwoNumbers(l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        var carry = 0, l1 = l1, l2 = l2
-        let dummy = ListNode(0)
-        var node = dummy
+        guard let l1 = l1 else {return l2}
+        guard let l2 = l2 else {return l1}
         
-        while l1 != nil || l2 != nil || carry != 0 {
-            if l1 != nil {
-                carry += l1!.val
-                l1 = l1!.next
-            }
-            if l2 != nil {
-                carry += l2!.val
-                l2 = l2!.next
-            }
-            
-            node.next = ListNode(carry % 10)
-            node = node.next!
-            
-            carry = carry / 10
+        let outputNode = ListNode((l1.val + l2.val)%10)
+        if l1.val + l2.val > 9 {
+            outputNode.next = addTwoNumbers(addTwoNumbers(l1.next, l2.next),
+                                            ListNode(1))
+        } else {
+            outputNode.next = addTwoNumbers(l1.next, l2.next)
         }
         
-        return dummy.next 
+        
+        return outputNode
     }
 }

@@ -7,21 +7,20 @@
 
 class ProductExceptSelf {
     func productExceptSelf(_ nums: [Int]) -> [Int] {
-        var res = Array(repeating: 1, count: nums.count)
-        var right = 1
-        
-        guard nums.count > 0 else {
-            return res
+        var zeroCount = 0
+        let total = nums.reduce(1) {
+            if $1 == 0 {
+                zeroCount += 1
+            }
+            return $0 * ($1 == 0 ? 1 : $1)
         }
-    
-        for i in 1..<nums.count {
-            res[i] = res[i - 1] * nums[i - 1]
-        }
-        for i in (0..<nums.count).reversed() {
-            res[i] = right * res[i]
-            right = right * nums[i]
-        }
-        
-        return res
+        if zeroCount > 1 {return nums.map({_ in return 0})}
+        return nums.map({
+            if zeroCount == 1 {
+                return ($0 == 0 ? total : 0)
+            } else {
+                return ($0 == 0 ? total : total / $0)
+            }
+        })
     }
 }

@@ -26,16 +26,16 @@ class BinaryTreeLevelOrderTraversal {
         }
         
         while queue.count > 0 {
-            var size = queue.count
+            let size = queue.count
             var level = [Int]()
             
-            for _ in 1...size {
+            for _ in 0 ..< size {
                 let node = queue[0]
-                queue.removeAtIndex(0)
+                queue.remove(at: 0)
                 
                 // add val
                 level.append(node.val)
-
+                
                 // add TreeNodes in next level
                 if let left = node.left {
                     queue.append(left)

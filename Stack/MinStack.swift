@@ -2,7 +2,6 @@ class MinStack {
     
     var stack: [Int]
     var min = Int.max
-    var secondMin: Int?
     /** initialize your data structure here. */
     init() {
         stack = [Int]()

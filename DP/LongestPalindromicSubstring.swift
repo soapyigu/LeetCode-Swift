@@ -1,18 +1,9 @@
-/**
- * Question Link: https://leetcode.com/problems/longest-palindromic-substring/
- * Primary idea: 2D Dynamic Programming, update boolean array based on
- *               current two characters' equity and the previous boolean subarray
- * Time Complexity: O(n^2), Space Complexity: O(n^2)
- *
- */
-
-class LongestPalindromicSubstring {
     func longestPalindrome(_ s: String) -> String {
-        guard s.characters.count > 1 else {
+        guard s.count > 1 else {
             return s
         }
         
-        var sChars = [Character](s.characters)
+        var sChars = Array(s)
         let len = sChars.count
         var maxLen = 1
         var maxStart = 0
@@ -46,4 +37,3 @@ class LongestPalindromicSubstring {
         
         return String(sChars[maxStart...maxStart + maxLen - 1])
     }
-}

@@ -163,9 +163,7 @@
 ## Queue
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
-[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) 
-[Swift](./Queue/ImplementQueueUsingStacks.swift)|
-| Easy | O(n) | O(n) |
+[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)| [Swift](./Queue/ImplementQueueUsingStacks.swift)| Easy| O(n)| O(n)|
 
 ## Tree
 | Title | Solution | Difficulty | Time | Space |

@@ -160,6 +160,10 @@
 [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)| [Swift](./Stack/PostorderTraversal.swift)| Hard| O(n)| O(n)|
 [Decode String](https://leetcode.com/problems/decode-string/)| [Swift](./Stack/DecodeString.swift)| Medium| O(n)| O(n)|
 
+## Queue
+| Title | Solution | Difficulty | Time | Space |
+| ----- | -------- | ---------- | ---- | ----- |
+[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | Easy | O(n) | O(n) |
 
 ## Tree
 | Title | Solution | Difficulty | Time | Space |

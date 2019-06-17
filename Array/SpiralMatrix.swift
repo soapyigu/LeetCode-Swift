@@ -6,7 +6,7 @@
  */
 
 class SpiralMatrix {
-    func spiralOrder(matrix: [[Int]]) -> [Int] {
+    func spiralOrder(_ matrix: [[Int]]) -> [Int] {
         var res = [Int]()
     
         guard matrix.count != 0 else {
@@ -38,7 +38,7 @@ class SpiralMatrix {
             }
             
             // bottom
-            for i in endY.stride(through: startY, by: -1) {
+            for i in stride(from: endY, through: startY, by: -1) {
                 res.append(matrix[endX][i])
             }
             endX -= 1
@@ -47,7 +47,7 @@ class SpiralMatrix {
             }
             
             // left
-            for i in endX.stride(through: startX, by: -1) {
+            for i in stride(from: endX, through: startX, by: -1) {
                 res.append(matrix[i][startY])
             }
             startY += 1

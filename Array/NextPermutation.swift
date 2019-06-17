@@ -9,43 +9,36 @@
 
 class NextPermutation {
     func nextPermutation(_ nums: inout [Int]) {
-        guard nums.count > 0 else {
+        guard let violateIndex = findViolate(nums) else {
+            nums.reverse()
             return
         }
         
-        var violate = -1
-        
-        // find violate
-        for i in stride(from: nums.count - 1, to: 0, by: -1) {
+        swap(&nums, violateIndex, findLeastGreater(nums, violateIndex))
+        nums = nums[0...violateIndex] + nums[(violateIndex + 1)...].reversed()
+    }
+    
+    fileprivate func findViolate(_ nums: [Int]) -> Int? {
+        for i in (1..<nums.count).reversed() {
             if nums[i] > nums[i - 1] {
-                violate = i - 1
-                break
+                return i - 1
             }
         }
         
-        if violate != -1 {
-            for i in stride(from: nums.count - 1, to: violate, by: -1) {
-                if nums[i] > nums[violate] {
-                    swap(&nums, i, violate)
-                    break
-                }
+        return nil
+    }
+    
+    fileprivate func findLeastGreater(_ nums: [Int], _ violateIndex: Int) -> Int {
+        for i in (violateIndex + 1..<nums.count).reversed() {
+            if nums[i] > nums[violateIndex] {
+                return i
             }
-        } 
-        
-        reverse(&nums, violate + 1, nums.count - 1)
-    }
-    
-    func reverse<T>(_ nums: inout [T], _ start: Int, _ end: Int) {
-        var start = start, end = end
-    
-        while start < end {
-            swap(&nums, start, end)
-            start += 1
-            end -= 1
         }
+        
+        fatalError()
     }
     
-    func swap<T>(_ nums: inout [T], _ p: Int, _ q: Int) {
-        (nums[p], nums[q]) = (nums[q], nums[p])
+    fileprivate func swap<T>(_ nums: inout [T], _ indexL: Int, _ indexR: Int) {
+        (nums[indexL], nums[indexR]) = (nums[indexR], nums[indexL])
     }
 }

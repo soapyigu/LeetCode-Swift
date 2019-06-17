@@ -8,6 +8,6 @@
 
 class ReverseString {
     func reverseString(s: String) -> String {
-        return String(s.characters.reverse())
+        return String(s.reversed())
     }
 }

@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/subsets-ii/
  * Primary idea: Classic Depth-first Search, avoid duplicates by adopting the first occurrence
  * 
- * Time Complexity: O(n!), Space Complexity: O(n)
+ * Time Complexity: O(n^n), Space Complexity: O(n)
  *
  */
 

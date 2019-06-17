@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/permutations-ii/
  * Primary idea: Classic Depth-first Search, adopt last occurrence to avoid dupliates
  * 
- * Time Complexity: O(n!), Space Complexity: O(n)
+ * Time Complexity: O(n^n), Space Complexity: O(n)
  *
  */
 

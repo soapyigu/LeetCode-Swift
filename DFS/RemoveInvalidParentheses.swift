@@ -3,7 +3,7 @@
  * Primary idea: Remove ) when the string is invalid, add to result when string is valid, 
  *               and do the same thing for the reversed one
  * 
- * Time Complexity: O(n!), Space Complexity: O(n)
+ * Time Complexity: O(n^n), Space Complexity: O(n)
  *
  */
 

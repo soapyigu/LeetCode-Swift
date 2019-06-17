@@ -8,21 +8,40 @@
 
 class ValidPalindrome {
     func isPalindrome(_ s: String) -> Bool {
-        // Make String into an array of lowercase Characters
-        let characters = s.lowercased().characters
+        var i = 0, j = s.count - 1
+        let sChars = Array(s.lowercased())
         
-        // Only keep alphanumeric characters.
-        let cleaned = characters.filter { character in
-            return character.description.rangeOfCharacter(from: CharacterSet.alphanumerics) != nil
-        }
-        
-        // Compare values at mirroring indices.
-        let total = cleaned.count
-        for i in 0 ..< total/2 {
-            if cleaned[i] != cleaned[total - 1 - i] {
+        while i < j {
+            while !sChars[i].isAlphanumeric && i < j {
+                i += 1
+            }
+            
+            while !sChars[j].isAlphanumeric && i < j {
+                j -= 1
+            }
+            
+            if sChars[i] != sChars[j] {
                 return false
+            } else {
+                i += 1
+                j -= 1
             }
         }
+        
         return true
+    }
+}
+
+extension Character {
+    var isAlpha: Bool {
+        return (Character("a")...Character("z")).contains(self)
+    }
+    
+    var isNumeric: Bool {
+        return (Character("0")...Character("9")).contains(self)
+    }
+    
+    var isAlphanumeric: Bool {
+        return isAlpha || isNumeric
     }
 }

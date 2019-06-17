@@ -3,7 +3,7 @@
  * Primary idea: Classic Depth-first Search, fill out row by row, and check column and 
  *               diagnol for each time
  * 
- * Time Complexity: O(n!), Space Complexity: O(n^2)
+ * Time Complexity: O(n^n), Space Complexity: O(n^2)
  *
  */
 

@@ -1,5 +1,5 @@
 /**
- * Question Link: https://leetcode.com/problems/search-for-a-range/
+ * Question Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
  * Primary idea: Binary Search, check left or right separately
  *
  * Time Complexity: O(logn), Space Complexity: O(1)

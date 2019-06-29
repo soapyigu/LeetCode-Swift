@@ -8,6 +8,6 @@
 
 class IntersectionTwoArrays {
     func intersection(nums1: [Int], _ nums2: [Int]) -> [Int] {
-      return [Int](Set<Int>(nums1).intersect(nums2))
+        return Array(Set(nums1).intersection(Set(nums2)))
     }
 }

@@ -10,8 +10,13 @@
 
 class RotateArray {
     func rotate(_ nums: inout [Int], _ k: Int) {
-        var k = k % nums.count
-    
+        guard nums.count > 0 && k > 0 else {
+            return
+        }
+        let k = k % nums.count
+        guard k != 0 else {
+            return
+        }
         _reverse(&nums, 0, nums.count - 1)
         _reverse(&nums, 0, k - 1)
         _reverse(&nums, k, nums.count - 1)

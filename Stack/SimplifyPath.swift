@@ -6,9 +6,12 @@
 
 class SimplifyPath {
     func simplifyPath(_ path: String) -> String {
-        let dirs = path.components(separatedBy: "/")
         var stack = [String]()
-        
+
+        // split
+        let dirs = path.split(separator: "/")
+
+        // add to stack
         for dir in dirs {
             if dir == "." {
                 continue
@@ -17,14 +20,11 @@ class SimplifyPath {
                     stack.removeLast()
                 }
             } else {
-                if dir != "" {
-                    stack.append(dir)
-                }
+                stack.append(String(dir))
             }
         }
-        
-        let res = stack.reduce("") { total, dir in "\(total)/\(dir)" }
-        
-        return res.isEmpty ? "/" : res
+
+        // pop stack and join as a string
+        return "/" +  String(stack.joined(separator: "/"))
     }
 }

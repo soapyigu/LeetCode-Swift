@@ -1,3 +1,18 @@
+/**
+ * Question Link: https://leetcode.com/problems/implement-queue-using-stacks/
+ * Primary idea: queue
+ * Time Complexity: O(n), Space Complexity: O(n)
+ *
+ * Copyright © 2019 Ilyar Mnazhdin. All rights reserved.
+
+ * Your MyQueue object will be instantiated and called as such:
+ * let obj = MyQueue()
+ * obj.push(x)
+ * let ret_2: Int = obj.pop()
+ * let ret_3: Int = obj.peek()
+ * let ret_4: Bool = obj.empty()
+ */
+
 import Foundation
 
 class MyQueue {
@@ -29,12 +44,3 @@ class MyQueue {
         return storage.isEmpty
     }
 }
-
-/**
- * Your MyQueue object will be instantiated and called as such:
- * let obj = MyQueue()
- * obj.push(x)
- * let ret_2: Int = obj.pop()
- * let ret_3: Int = obj.peek()
- * let ret_4: Bool = obj.empty()
- */

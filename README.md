@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 800+ questions. Currently we have 276 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 277 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -270,6 +270,7 @@
 ## Breadth-first search
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Word Ladder](https://leetcode.com/problems/word-ladder/)| [Swift](./BFS/WordLadder.swift)| Medium| O(nm)| O(nm)|
 [Evaluate Division](https://leetcode.com/problems/evaluate-division/)| [Swift](./BFS/EvaluateDivision.swift)| Medium| O(n^2)| O(n)|
 [Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)| [Swift](./BFS/ShortestDistanceAllBuildings.swift)| Hard| O((mn)^2)| O(mn)|
 
@@ -720,7 +721,7 @@
 |		|	130	|	[Surrounded Regions](https://oj.leetcode.com/problems/surrounded-regions/)	| Medium	|
 |		|	129	|	[Sum Root to Leaf Numbers](https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/)	| Medium	|
 | [Swift](./Array/LongestConsecutiveSequence.swift)	 | 128	|	[Longest Consecutive Sequence](https://oj.leetcode.com/problems/longest-consecutive-sequence/)	| Hard	|
-|		|	127	|	[Word Ladder](https://oj.leetcode.com/problems/word-ladder/)	| Medium	|
+| [Swift](./BFS/WordLadder.swift) |	127	|	[Word Ladder](https://oj.leetcode.com/problems/word-ladder/)	| Medium	|
 |		|	126	|	[Word Ladder II](https://oj.leetcode.com/problems/word-ladder-ii/)	| Hard	|
 | [Swift](./String/ValidPalindrome.swift)		|	125	|	[Valid Palindrome](https://oj.leetcode.com/problems/valid-palindrome/)	| Easy	|
 |		|	124	|	[Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)	| Hard	|

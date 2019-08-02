@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 277 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 278 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -281,6 +281,7 @@
 [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)| [Swift](./Math/AddTwoNumbers.swift)| Medium| O(n)| O(1)|
 [Add Digits](https://leetcode.com/problems/add-digits/)| [Swift](./Math/AddDigits.swift)| Easy| O(1)| O(1)|
 [Plus One](https://leetcode.com/problems/plus-one/)| [Swift](./Math/PlusOne.swift)| Easy| O(n)| O(1)|
+[Missing Number](https://leetcode.com/problems/missing-number/)| [Swift](./Math/MissingNumber.swift)| Easy| O(n)| O(1)|
 [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)| [Swift](./Math/DivideTwoIntegers.swift)| Medium| O(logn)| O(1)|
 [Number Complement](https://leetcode.com/problems/number-complement/)| [Swift](./Math/NumberComplement.swift)| Easy| O(n)| O(1)|
 [Hamming Distance](https://leetcode.com/problems/hamming-distance/)| [Swift](./Math/HammingDistance.swift)| Easy| O(n)| O(1)|
@@ -597,7 +598,7 @@
 |		|	271	|	[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) &hearts;	|	Medium	|
 |	[Swift](./Search/ClosestBinarySearchTreeValue.swift)	|	270	|	[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/) &hearts;	| Easy	|
 |	[Swift](./Sort/AlienDictionary.swift)	|	269	|	[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) &hearts;	|	Hard	|
-|		|	268	|	[Missing Number](https://leetcode.com/problems/missing-number/)	|	Medium	|
+|	[Swift](./Math/MissingNumber.swift)	|	268	|	[Missing Number](https://leetcode.com/problems/missing-number/)	|	Easy	|
 |		|	267	|	[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) &hearts;	|	Medium	|
 |	[Swift](./String/PalindromePermutation.swift)	|	266	|	[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) &hearts;	| Easy	|
 |		|	265	|	[Paint House II](https://leetcode.com/problems/paint-house-ii/) &hearts;	|	Hard	|

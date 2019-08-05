@@ -1,21 +1,14 @@
 /**
  * Question Link: https://leetcode.com/problems/valid-anagram/
- * Primary idea: Transfer string to char array and sort, compare the sort one
- * Time Complexity: O(nlogn), Space Complexity: O(1)
+ * Primary idea: Compare two strings' characters' frequency
+ * Time Complexity: O(n), Space Complexity: O(n)
  */
 
 class ValidAnagram {
     func isAnagram(s: String, _ t: String) -> Bool {
-        guard s.characters.count == t.characters.count else {
-            return false
-        }
+        let sCharsFreq = Dictionary(s.map { ($0, 1) }, uniquingKeysWith: +)
+        let tCharsFreq = Dictionary(t.map { ($0, 1) }, uniquingKeysWith: +)
         
-        return sortStr(s) == sortStr(t)
-    }
-    
-    private func sortStr(s: String) -> [Character] {
-        var sChars = [Character](s.characters)
-        sChars.sortInPlace({$0 < $1})
-        return sChars
-    }
+        return sCharsFreq == tCharsFreq
+    }   
 }

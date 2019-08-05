@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 278 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 280 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -114,7 +114,7 @@
 [Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/)| [Swift](./String/ShortestDistanceToACharacter.swift)| Easy| O(n)| O(1)|
 [Multiply Strings](https://leetcode.com/problems/multiply-strings/)| [Swift](./String/MultiplyStrings.swift)| Medium| O(n)| O(1)|
 [Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)| [Swift](./String/PalindromePermutation.swift)| Easy| O(n)| O(n)|
-[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [Swift](./String/ValidAnagram.swift)| Easy| O(nlogn)| O(1)|
+[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [Swift](./String/ValidAnagram.swift)| Easy| O(n)| O(n)|
 [Ransom Note](https://leetcode.com/problems/ransom-note/)| [Swift](./String/RansomNote.swift)| Easy| O(n)| O(n)|
 [Group Anagrams](https://leetcode.com/problems/anagrams/)| [Swift](./String/GroupAnagrams.swift)| Medium| O(nmlogm + nlogn)| O(n)
 [Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system/)| [Swift](./String/FindDuplicateFileInSystem.swift)| Medium| O(nm)| O(n)
@@ -174,6 +174,7 @@
 [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)| [Swift](./Tree/BalancedBinaryTree.swift)| Easy|  O(n)| O(n)|
 [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)| [Swift](./Tree/SumLeftLeaves.swift)| Easy|  O(n)| O(1)|
 [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)| [Swift](./Tree/FlattenBinaryTreeLinkedList.swift)| Medium| O(n)| O(1)|
+[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)| [Swift](./Tree/ConvertSortedArrayBinarySearchTree.swift)| Easy| O(n)| O(1)|
 [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [Swift](./Tree/ValidateBinarySearchTree.swift)| Medium| O(n)| O(log n)|
 [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [Swift](./Tree/BinaryTreeLevelOrderTraversal.swift)| Easy| O(n)| O(n)|
 [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)| [Swift](./Tree/BinaryTreeLevelOrderTraversalII.swift)| Easy| O(n)| O(n)|
@@ -282,6 +283,7 @@
 [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)| [Swift](./Math/AddTwoNumbers.swift)| Medium| O(n)| O(1)|
 [Add Digits](https://leetcode.com/problems/add-digits/)| [Swift](./Math/AddDigits.swift)| Easy| O(1)| O(1)|
 [Plus One](https://leetcode.com/problems/plus-one/)| [Swift](./Math/PlusOne.swift)| Easy| O(n)| O(1)|
+[Missing Number](https://leetcode.com/problems/missing-number/)| [Swift](./Math/MissingNumber.swift)| Easy| O(n)| O(1)|
 [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)| [Swift](./Math/DivideTwoIntegers.swift)| Medium| O(logn)| O(1)|
 [Number Complement](https://leetcode.com/problems/number-complement/)| [Swift](./Math/NumberComplement.swift)| Easy| O(n)| O(1)|
 [Hamming Distance](https://leetcode.com/problems/hamming-distance/)| [Swift](./Math/HammingDistance.swift)| Easy| O(n)| O(1)|
@@ -599,7 +601,7 @@
 |		|	271	|	[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) &hearts;	|	Medium	|
 |	[Swift](./Search/ClosestBinarySearchTreeValue.swift)	|	270	|	[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/) &hearts;	| Easy	|
 |	[Swift](./Sort/AlienDictionary.swift)	|	269	|	[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) &hearts;	|	Hard	|
-|		|	268	|	[Missing Number](https://leetcode.com/problems/missing-number/)	|	Medium	|
+|	[Swift](./Math/MissingNumber.swift)	|	268	|	[Missing Number](https://leetcode.com/problems/missing-number/)	|	Easy	|
 |		|	267	|	[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) &hearts;	|	Medium	|
 |	[Swift](./String/PalindromePermutation.swift)	|	266	|	[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) &hearts;	| Easy	|
 |		|	265	|	[Paint House II](https://leetcode.com/problems/paint-house-ii/) &hearts;	|	Hard	|
@@ -742,7 +744,7 @@
 |	[Swift](./Tree/MinimumDepthOfBinaryTree.swift)	|	111	|	[Minimum Depth of Binary Tree](https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/)	| Easy	|
 |	[Swift](./Tree/BalancedBinaryTree.swift)	|	110	|	[Balanced Binary Tree](https://oj.leetcode.com/problems/balanced-binary-tree/)	| Easy	|
 |		|	109	|	[Convert Sorted List to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)	| Medium	|
-|		|	108	|	[Convert Sorted Array to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)	| Medium	|
+|	[Swift](./Tree/ConvertSortedArrayBinarySearchTree.swift)	|	108	|	[Convert Sorted Array to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)	| Medium	|
 |	[Swift](./Tree/BinaryTreeLevelOrderTraversalII.swift)	|	107	|	[Binary Tree Level Order Traversal II](https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/)	| Easy	|
 |	[Swift](./Tree/ConstructBinaryTreeInorderPostorder.swift)	|	106	|	[Construct Binary Tree from Inorder and Postorder Traversal](https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)	| Medium	|
 |	[Swift](./Tree/ConstructBinaryTreePreorderInorder.swift)	|	105	|	[Construct Binary Tree from Preorder and Inorder Traversal](https://oj.leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)	| Medium	|

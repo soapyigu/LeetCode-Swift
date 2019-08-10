@@ -10,39 +10,27 @@
  */
 
 class CountAndSay {
-    func countAndSay(n: Int) -> String {
-        guard n > 0 else {
-            return ""
+    func countAndSay(_ n: Int) -> String {
+        if n == 1 {
+            return "1"
         }
-  
-        var res = "1"
-        var temp: String
-        var count: Int
-        var chars: [Character]
-        var current: Character
-  
-        for _ in 1..<n{
-            temp = ""
-            count = 1
-            chars = [Character](res.characters)
-            current = chars[0]
-    
-            for i in 1..<chars.count {
-                if chars[i] == current {
-                    count += 1
-                } else {
-                    temp.append(Character("\(count)"))
-                    temp.append(current)
-                    count = 1
-                    current = chars[i]
-                }
+        
+        let previousStr = countAndSay(n - 1)
+        var currentChar = previousStr.first!, currentCount = 0, res = ""
+        
+        for (i, char) in previousStr.enumerated() { 
+            if char == currentChar {
+                currentCount += 1  
+            } else {
+                res += "\(currentCount)\(currentChar)"
+                
+                currentCount = 1
+                currentChar = char
             }
-            temp.append(Character("\(count)"))
-            temp.append(current)
-    
-            res = temp
         }
-  
+        
+        res += "\(currentCount)\(currentChar)"
+        
         return res
     }
 }

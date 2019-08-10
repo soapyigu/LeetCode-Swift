@@ -1,11 +1,8 @@
 /**
  * Question Link: https://leetcode.com/problems/count-and-say/
- * Primary idea: Recursive iteration, use outer iteration to count times, 
- *               use inner iteration to get the right string for specific index
+ * Primary idea: Recursion to get previous string, then iterate and generate current one.
  * 
- * Note: Swift does not have a way to access a character in a string with O(1), 
- *       thus we have to first transfer the string to a character array
- * Time Complexity: O(n^2), Space Complexity: O(n)
+ * Time Complexity: O(n^2), Space Complexity: O(1)
  *
  */
 

@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 280 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 282 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -25,6 +25,7 @@
 * [Search](#search)
 * [Sort](#sort)
 * [Union Find](#union-find)
+* [Design](#design)
 
 ## Companies
 * [Google](#google)
@@ -149,6 +150,7 @@
 ## Stack
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Min Stack](https://leetcode.com/problems/min-stack/)| [Swift](./Stack/MinStack.swift)| Easy| O(1)| O(n)|
 [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [Swift](./Stack/ValidParentheses.swift)| Easy| O(n)| O(n)|
 [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)| [Swift](./Stack/LongestValidParentheses.swift)| Hard| O(n)| O(n)|
 [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)| [Swift](./Stack/EvaluateReversePolishNotation.swift)| Medium| O(n)| O(n)|
@@ -359,6 +361,7 @@
 ## Design
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/)| [Swift](./Design/ShuffleAnArray.swift)| Easy| O(n)| O(1)|
 [LRU Cache](https://leetcode.com/problems/lru-cache/)| [Swift](./Design/LRUCache.swift)| Hard| O(1)| O(n)|
 
 ## Google
@@ -697,7 +700,7 @@
 |		|	158	|	[Read N Characters Given Read4 II - Call multiple times](https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) &hearts;	| Hard	|
 |		|	157	|	[Read N Characters Given Read4](https://oj.leetcode.com/problems/read-n-characters-given-read4/) &hearts;	| Easy	|
 |	[Swift](./Tree/BinaryTreeUpsideDown) |	156	|	[Binary Tree Upside Down](https://oj.leetcode.com/problems/binary-tree-upside-down/) &hearts;	| Medium	|
-|		|	155	|	[Min Stack](https://oj.leetcode.com/problems/min-stack/)	| Easy	|
+|	[Swift](./Stack/MinStack.swift)	|	155	|	[Min Stack](https://oj.leetcode.com/problems/min-stack/)	| Easy	|
 |	[Swift](./Search/FindMinimumRotatedSortedArrayII.swift)	|	154	|	[Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)	| Hard	|
 |	[Swift](./Search/FindMinimumRotatedSortedArray.swift)	|	153	|	[Find Minimum in Rotated Sorted Array](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/)	| Medium	|
 |	[Swift](./DP/MaximumProductSubarray.swift)	|	152	|	[Maximum Product Subarray](https://oj.leetcode.com/problems/maximum-product-subarray/)	| Medium	|

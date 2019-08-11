@@ -10,7 +10,7 @@ class HammingDistance {
         var z = x ^ y, count = 0
         
         while z > 0 {
-            count = z & 1 == 1 ? count + 1 : count
+            count += z & 1
             z = z >> 1
         }
         

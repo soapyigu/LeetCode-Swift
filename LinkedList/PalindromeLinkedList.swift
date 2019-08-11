@@ -15,36 +15,37 @@
  */
 
 class PalindromeLinkedList {
-    func isPalindrome(head: ListNode?) -> Bool {
-        guard head != nil else {
-            return true
-        }
-    
-        var slow = head
-        var fast = head
-        var prev: ListNode?
-        var post = slow!.next
+    func isPalindrome(_ head: ListNode?) -> Bool {
+        var slow = head, fast = head, dummy: ListNode? = nil
         
+        // reverse first half
         while fast != nil && fast!.next != nil {
             fast = fast!.next!.next
             
-            slow!.next = prev
-            prev = slow
-            slow = post
-            post = post!.next
-        }
-        
-        if fast != nil {
-            slow = post
-        }
-        
-        while prev != nil {
-            if prev!.val != slow!.val {
-                return false
-            }
+            let nextNode = slow!.next
             
-            prev = prev!.next
+            slow!.next = dummy
+            
+            dummy = slow
+            slow = nextNode
+        }
+        
+        // go to the starting point when length of list is odd
+        if fast != nil {
+            if slow == nil {
+                return true
+            }
             slow = slow!.next
+        }
+        
+        // compare reversed first and second half
+        while slow != nil {
+            if slow!.val != dummy!.val {
+                return false
+            } else {
+                slow = slow!.next
+                dummy = dummy!.next
+            }
         }
         
         return true

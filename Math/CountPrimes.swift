@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/count-primes/
  * Primary idea: Create a boolean array to determine prime or not, 
- *               filter numbers are times of previous ones
+ *               filter numbers are times of previous number starting from its square
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
@@ -11,21 +11,27 @@ class CountPrimes {
         guard n > 2 else {
             return 0
         }
-    
-        var isPrime = [Bool](repeating: true, count: n)
+      
+        // init isPrime bool array
+        var isPrime = Array(repeating: true, count: n)
+        isPrime[0] = false
+        isPrime[1] = false
         
-        for i in 2..<n {
-            if isPrime[i] {
-                for j in stride(from: 2 * i, to: n, by: i) {
-                    isPrime[j] = false
-                }
+        // count prime number
+        var count = 0
+        for num in 2..<n {
+            guard isPrime[num] else {
+                continue
+            }
+            
+            count += 1
+            
+            var nextNum = num * num
+            while nextNum < n {
+                isPrime[nextNum] = false
+                nextNum += num
             }
         }
-        
-        var count = 1
-        for i in stride(from: 3, to: n, by: 2) {
-            count += isPrime[i] ? 1 : 0
-        } 
         
         return count
     }

@@ -6,32 +6,29 @@
 
 class LongestCommonPrefix {
     func longestCommonPrefix(_ strs: [String]) -> String {
-        var longestPrefix = [Character](), index = 0
-        
         guard let firstStr = strs.first else {
-            return String(longestPrefix)
+            return ""
         }
         
-        let firstStrChars = Array(firstStr)
-        let strsChars = strs.map { Array($0) }
+        var res = ""
         
-        while index < firstStr.count {
-            
-            longestPrefix.append(firstStrChars[index])
-            
-            for str in strsChars {
-                if index >= str.count {
-                    return String(longestPrefix.dropLast())
+        for (i, char) in firstStr.enumerated() {
+            // dropFirst(_ k: Int = 1) returns a Substring struct
+            for str in strs.dropFirst() {
+                if i == str.count {
+                    return res
                 }
                 
-                if str[index] != longestPrefix[index] {
-                    return String(longestPrefix.dropLast())
+                // Another easy way: Array(str)[i], time complexity is linear though
+                let currentStrChar = str[str.index(str.startIndex, offsetBy: i)]
+                
+                if char != currentStrChar {
+                    return res
                 }
             }
-            
-            index += 1
+            res.append(char)
         }
         
-        return String(longestPrefix)
+        return res
     }
 }

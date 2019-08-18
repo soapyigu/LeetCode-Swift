@@ -7,30 +7,28 @@
 
 class GenerateParentheses {
     func generateParenthesis(_ n: Int) -> [String] {
-        var paths = [String](), path = [Character](repeating: " ", count: 2 * n)
+        guard n > 0 else {
+            return [String]()
+        }
         
-        helper(&paths, &path, n, n, 0)
+        var paths = [String](), path = ""
+        
+        dfs(&paths, path, n, n)
         
         return paths
     }
     
-    func helper(_ paths: inout [String], _ path: inout [Character], _ leftCount: Int, _ rightCount: Int, _ index: Int) {
-        if leftCount < 0 || leftCount > rightCount {
+    private func dfs(_ paths: inout [String], _ path: String, _ leftRemaining: Int, _ rightRemaining: Int) {
+        if rightRemaining == 0 {
+            paths.append(path)
             return
         }
         
-        if leftCount == 0 && rightCount == 0 {
-            paths.append(String(path))
-            return
+        if leftRemaining > 0 {
+            dfs(&paths, path + "(", leftRemaining - 1, rightRemaining)
         }
-        
-        if leftCount > 0 {
-            path[index] = "("
-            helper(&paths, &path, leftCount - 1, rightCount, index + 1)
-        }
-        if rightCount > leftCount {
-            path[index] = ")"
-            helper(&paths, &path, leftCount, rightCount - 1, index + 1)
+        if rightRemaining > leftRemaining {
+            dfs(&paths, path + ")", leftRemaining, rightRemaining - 1)
         }
     }
 }

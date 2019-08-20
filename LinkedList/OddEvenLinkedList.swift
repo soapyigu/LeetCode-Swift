@@ -16,31 +16,29 @@
 
 class OddEvenLinkedList {
     func oddEvenList(_ head: ListNode?) -> ListNode? {
-        guard head != nil && head!.next != nil else {
+        guard head != nil, head!.next != nil else {
             return head
         }
         
-        let evenHead = head!.next
-        var p = head
-        var q = evenHead
-        var isEndEven = true
+        var prev = head, post = head!.next, isEndEven = true
+        let evenStart = post
         
-        while q!.next != nil {
-            let node = q!.next
+        while post!.next != nil {
+            prev!.next = post!.next
             
-            p!.next = node
+            prev = post
+            post = post!.next
             
-            p = q
-            q = node
             isEndEven = !isEndEven
         }
         
         if isEndEven {
-            p!.next = evenHead
+            prev!.next = evenStart
         } else {
-            p!.next = nil
-            q!.next = evenHead
+            prev!.next = nil
+            post!.next = evenStart
         }
+        
         
         return head
     }

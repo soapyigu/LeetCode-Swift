@@ -6,42 +6,38 @@
  */
 
 class ThreeSum {
-    func threeSum(nums: [Int]) -> [[Int]] {
-        var nums = nums.sorted(by: <)
+    func threeSum(_ nums: [Int]) -> [[Int]] {
         var res = [[Int]]()
         
-        if nums.count <= 2 {
+        guard nums.count >= 3 else {
             return res
         }
         
-        for i in 0...nums.count - 3 {
-            if i == 0 || nums[i] != nums[i - 1] {
-                var remain = -nums[i]
-                var left = i + 1
-                var right = nums.count - 1
-                while left < right {
-                    if nums[left] + nums[right] == remain {
-                        var temp = [Int]()
-                        temp.append(nums[i])
-                        temp.append(nums[left])
-                        temp.append(nums[right])
-                        
-                        res.append(temp)
-                        repeat {
-                            left += 1
-                        } while (left < right && nums[left] == nums[left - 1])
-                        repeat {
-                            right -= 1
-                        } while (left < right && nums[right] == nums[right + 1])
-                    } else if nums[left] + nums[right] < remain {
-                        repeat {
-                            left += 1
-                        } while (left < right && nums[left] == nums[left - 1])
-                    } else {
-                        repeat {
-                            right -= 1
-                        } while (left < right && nums[right] == nums[right + 1])
-                    }
+        let nums = nums.sorted()
+        
+        for i in 0..<nums.count - 2 {
+            if i > 0 && nums[i] == nums[i - 1] {
+                continue
+            }
+            
+            let firstNum = nums[i], remainingSum = -firstNum
+            var m = i + 1, n = nums.count - 1
+            
+            while m < n {
+                if nums[m] + nums[n] == remainingSum {
+                    res.append([firstNum, nums[m], nums[n]])
+                    
+                    repeat {
+                        m += 1
+                    } while nums[m] == nums[m - 1] && m < n
+                    
+                    repeat {
+                        n -= 1
+                    } while nums[n] == nums[n + 1] && m < n
+                } else if nums[m] + nums[n] < remainingSum {
+                    m += 1
+                } else {
+                    n -= 1
                 }
             }
         }

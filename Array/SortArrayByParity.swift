@@ -8,11 +8,9 @@
 
 class SortArrayByParity {
     func sortArrayByParity(_ A: [Int]) -> [Int] {
-        var outputArray = [Int]()
-        for (_,value) in A.enumerated(){
-            outputArray.insert(value, at: value % 2 == 0 ? 0 : outputArray.count)
+        return A.enumerated().reduce(into: [Int]()) { (acc, arg) in
+            let (_, value) = arg
+            acc.insert(value, at: value.isMultiple(of: 2) ? 0 : acc.count)
         }
-        
-        return outputArray
     }
 }

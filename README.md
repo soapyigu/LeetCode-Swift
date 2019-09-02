@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 282 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 283 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -65,6 +65,7 @@
 [4Sum](https://leetcode.com/problems/4sum/)| [Swift](./Array/FourSum.swift)| Medium| O(n^3)| O(nC4)|
 [Summary Ranges](https://leetcode.com/problems/summary-ranges/)| [Swift](./Array/SummaryRanges.swift)| Medium| O(n)| O(n)|
 [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)| [Swift](./Array/NumMatrix.swift)| Medium| O(mn)| O(mn)|
+[Missing Ranges](https://leetcode.com/problems/missing-ranges/)| [Swift](./Array/MissingRanges.swift)| Medium| O(n)| O(1)|
 [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)| [Swift](./Array/AsteroidCollision.swift)| Medium| O(n)| O(n)|
 [Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/)| [Swift](./Array/MaximizeDistanceToClosestPerson.swift)| Easy| O(n)| O(1)|
 [Exam Room](https://leetcode.com/problems/exam-room/)| [Swift](./Array/ExamRoom.swift)| Medium| O(n)| O(n)|
@@ -692,7 +693,7 @@
 |		|	166	|	[Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/)	| Medium	|
 |		|	165	|	[Compare Version Numbers](https://oj.leetcode.com/problems/compare-version-numbers/)	| Easy	|
 |		|	164	|	[Maximum Gap](https://oj.leetcode.com/problems/maximum-gap/)	| Hard	|
-|		|	163	|	[Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/) &hearts;	| Medium	|
+|	[Swift](./Array/MissingRanges.swift)	|	163	|	[Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/) &hearts;	| Medium	|
 |	[Swift](./Search/FindPeakElement.swift)	|	162	|	[Find Peak Element](https://oj.leetcode.com/problems/find-peak-element/)	| Medium	|
 |	[Swift](./String/OneEditDistance.swift)	|	161	|	[One Edit Distance](https://oj.leetcode.com/problems/one-edit-distance/)&hearts;	| Medium	|
 |		|	160	|	[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)	| Easy	|

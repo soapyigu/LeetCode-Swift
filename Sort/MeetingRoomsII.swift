@@ -15,21 +15,23 @@
  */
 
 class MeetingRoomsII {
-    func minMeetingRooms(_ intervals: [Interval]) -> Int {
-        let starts = intervals.map { interval in interval.start }.sorted()   
-        let ends = intervals.map { interval in interval.end }.sorted()
-        var i = 0, j = 0, count = 0
+    func minMeetingRooms(_ intervals: [[Int]]) -> Int {
+        let startingTimes = intervals.map { interval in interval[0] }.sorted()
+        let endingTimes = intervals.map { interval in interval[1] }.sorted()
+        let intervalsCount = intervals.count
         
-        while i < starts.count && j < ends.count {
-            if starts[i] < ends[j] {
-                count += 1
-                i += 1
+        var i = 0, j = 0, meetingRoomsNum = 0
+        
+        while i < intervalsCount && j < intervalsCount {
+            if startingTimes[i] < endingTimes[j] {
+                meetingRoomsNum += 1
             } else {
-                i += 1
                 j += 1
             }
-        } 
+            
+            i += 1
+        }
         
-        return count
+        return meetingRoomsNum
     }
 }

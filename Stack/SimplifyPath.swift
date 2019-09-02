@@ -6,25 +6,18 @@
 
 class SimplifyPath {
     func simplifyPath(_ path: String) -> String {
-        let dirs = path.components(separatedBy: "/")
-        var stack = [String]()
-        
-        for dir in dirs {
-            if dir == "." {
-                continue
-            } else if dir == ".." {
-                if !stack.isEmpty {
-                    stack.removeLast()
-                }
-            } else {
-                if dir != "" {
-                    stack.append(dir)
-                }
+        var directories = [String]()
+        let components = path.split(separator: "/")
+        for component in components {
+            switch component {
+            case "": break // do nothing
+            case ".": break // do nothing, pointing to the current directory
+            case "..":
+                directories.popLast() // if empty, does nothing
+            default:
+                directories.append(String(component))
             }
         }
-        
-        let res = stack.reduce("") { total, dir in "\(total)/\(dir)" }
-        
-        return res.isEmpty ? "/" : res
+        return "/" + String(directories.joined(separator: "/"))
     }
 }

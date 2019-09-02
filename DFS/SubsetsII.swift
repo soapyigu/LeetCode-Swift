@@ -8,8 +8,7 @@
 
 class SubsetsII {
     func subsetsWithDup(nums: [Int]) -> [[Int]] {
-        var res = [[Int]]()
-        var path = [Int]()
+        var res = [[Int]](), path = [Int]()
         
         let nums = nums.sorted(by: <)
         
@@ -19,7 +18,7 @@ class SubsetsII {
     }
     
     private func _dfs(inout res: [[Int]], inout _ path:[Int], _ nums: [Int], _ index: Int) {
-        res.append(Array(path))
+        res.append(path)
         
         for i in index..<nums.count {
             if i > 0 && nums[i] == nums[i - 1] && i != index {

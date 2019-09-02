@@ -17,6 +17,7 @@
 * [String](#string)
 * [Linked List](#linked-list)
 * [Stack](#stack)
+* [Queue](#queue)
 * [Tree](#tree)
 * [Dynamic programming](#dynamic-programming)
 * [Depth-first search](#depth-first-search)
@@ -163,6 +164,10 @@
 [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)| [Swift](./Stack/PostorderTraversal.swift)| Hard| O(n)| O(n)|
 [Decode String](https://leetcode.com/problems/decode-string/)| [Swift](./Stack/DecodeString.swift)| Medium| O(n)| O(n)|
 
+## Queue
+| Title | Solution | Difficulty | Time | Space |
+| ----- | -------- | ---------- | ---- | ----- |
+[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)| [Swift](./Queue/ImplementQueueUsingStacks.swift)| Easy| O(n)| O(n)|
 
 ## Tree
 | Title | Solution | Difficulty | Time | Space |
@@ -640,7 +645,7 @@
 |		|	235	|	[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)	| Easy	|
 |	[Swift](./LinkedList/PalindromeLinkedList.swift)	|	234	|	[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)	| Easy	|
 |		|	233	|	[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)	|	Hard	|
-|		|	232	|	[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)	| Easy	|
+|	[Swift](./Queue/ImplementQueueUsingStacks.swift)	|	232	|	[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)	| Easy	|
 |	[Swift](./Math/PowerTwo.swift)	|	231	|	[Power of Two](https://leetcode.com/problems/power-of-two/)	| Easy	|
 |	[Swift](./Tree/KthSmallestElementBST.swift)	|	230	|	[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)	|	Medium	|
 |	[Swift](./Array/MajorityElementII.swift)	|	229	|	[Majority Element II](https://leetcode.com/problems/majority-element-ii/)	|	Medium	|

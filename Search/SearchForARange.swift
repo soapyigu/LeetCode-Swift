@@ -6,59 +6,43 @@
  */
 
 class SearchForARange {
-    func searchRange(nums: [Int], _ target: Int) -> [Int] {
-        var res = [-1, -1]
-        
-        guard nums.count > 0 else {
-            return res
+    func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
+        guard !nums.isEmpty else {
+            return [-1, -1]
         }
         
-        res[0] = _search(nums, target, true)
-        res[1] = _search(nums, target, false)
-        
-        return res
+        return [searchStartIdx(nums, target), searchEndIdx(nums, target)]
     }
     
-    private func _search(nums: [Int], _ target: Int, _ isLeft: Bool) -> Int {
-        var left = 0
-        var right = nums.count - 1
-        var mid = 0
+    private func searchStartIdx(_ nums: [Int], _ target: Int) -> Int {
+        var left = 0, right = nums.count - 1
         
         while left + 1 < right {
-            mid = (right - left) / 2 + left
-            if nums[mid] == target {
-                if isLeft {
-                    right = mid
-                } else {
-                    left = mid
-                }
-            } else if nums[mid] > target {
-                right = mid - 1
-            } else {
+            let mid = (right - left) / 2 + left
+            
+            if nums[mid] < target {
                 left = mid + 1
+            } else {
+                right = mid
             }
         }
         
-        if isLeft {
-            if _isIndexValid(left, nums, target) {
-                return left
-            }
-            if _isIndexValid(right, nums, target) {
-                return right
-            }
-        } else {
-            if _isIndexValid(right, nums, target) {
-                return right
-            }
-            if _isIndexValid(left, nums, target) {
-                return left
-            }
-        }
-        
-        return -1
+        return nums[left] == target ? left : nums[right] == target ? right : -1
     }
     
-    private func _isIndexValid(index: Int, _ nums: [Int], _ target: Int) -> Bool {
-        return index >= 0 && index < nums.count && nums[index] == target
+    private func searchEndIdx(_ nums: [Int], _ target: Int) -> Int {
+        var left = 0, right = nums.count - 1
+        
+        while left + 1 < right {
+            let mid = (right - left) / 2 + left
+            
+            if nums[mid] > target {
+                right = mid - 1
+            } else {
+                left = mid
+            }
+        }
+        
+        return nums[right] == target ? right : nums[left] == target ? left : -1
     }
 }

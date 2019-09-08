@@ -5,30 +5,29 @@
  */
 
 class CoinChange {
-    func coinChange(coins: [Int], _ amount: Int) -> Int {
-        // edge case
-        guard amount != 0 else {
+    func coinChange(_ coins: [Int], _ amount: Int) -> Int {
+        guard amount > 0 else {
             return 0
         }
-    
-        var minNums = [Int](count: amount + 1, repeatedValue: -1)
         
-        for i in 0...amount {
+        let coins = coins.sorted()
+        var minAmounts = Array(repeating: -1, count: amount + 1)
+        minAmounts[0] = 0
+        
+        for i in 1...amount {
             for coin in coins {
-                if coin == i {
-                    minNums[i] = 1
+                if coin > i {
                     break
                 }
-                if coin < i && minNums[i - coin] != -1 {
-                    if minNums[i] == -1 {
-                        minNums[i] = minNums[i - coin] + 1
-                    } else {
-                        minNums[i] = min(minNums[i], minNums[i - coin] + 1)
-                    }
+                
+                if minAmounts[i - coin] == -1 {
+                    continue
                 }
+                
+                minAmounts[i] = minAmounts[i] == -1 ? minAmounts[i - coin] + 1 : min(minAmounts[i - coin] + 1, minAmounts[i])  
             }
         }
         
-        return minNums[amount]
+        return minAmounts[amount]
     }
 }

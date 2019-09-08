@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 285 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 286 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -64,6 +64,7 @@
 [3Sum](https://leetcode.com/problems/3sum/)| [Swift](./Array/ThreeSum.swift)| Medium| O(n^2)| O(nC3)|
 [3Sum Closest](https://leetcode.com/problems/3sum-closest/)| [Swift](./Array/ThreeSumClosest.swift)| Medium| O(n^2)| O(nC3)|
 [4Sum](https://leetcode.com/problems/4sum/)| [Swift](./Array/FourSum.swift)| Medium| O(n^3)| O(nC4)|
+[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)| [Swift](./Array/IncreasingTripletSubsequence.swift)| Medium| O(n)| O(1)|
 [Summary Ranges](https://leetcode.com/problems/summary-ranges/)| [Swift](./Array/SummaryRanges.swift)| Medium| O(n)| O(n)|
 [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)| [Swift](./Array/NumMatrix.swift)| Medium| O(mn)| O(mn)|
 [Missing Ranges](https://leetcode.com/problems/missing-ranges/)| [Swift](./Array/MissingRanges.swift)| Medium| O(n)| O(1)|
@@ -546,7 +547,7 @@
 |	[Swift](./Tree/HouseRobberIII.swift)	|	337	|	[House Robber III](https://leetcode.com/problems/house-robber-iii/)	|	Medium
 |		|	336	|	[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)	|	Hard
 |		|	335	|	[Self Crossing](https://leetcode.com/problems/self-crossing/)	|	Hard
-|		|	334	|	[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)	|	Medium
+|	[Swift](./Tree/IncreasingTripletSubsequence.swift)	|	334	|	[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)	|	Medium
 |		|	333	|	[Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree/)  &hearts;	|	Medium
 |		|	332	|	[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)	|	Medium
 |		|	331	|	[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)	|	Medium

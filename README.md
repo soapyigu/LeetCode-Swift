@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 286 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 287 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -370,8 +370,10 @@
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
 [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/)| [Swift](./Design/ShuffleAnArray.swift)| Easy| O(n)| O(1)|
-[LRU Cache](https://leetcode.com/problems/lru-cache/)| [Swift](./Design/LRUCache.swift)| Hard| O(1)| O(n)|
+[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)| [Swift](./Design/Vector2D.swift)| Medium | O(n)| O(n)|
 [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)| [Swift](./Design/ImplementTrie.swift)| Medium | O(n)| O(n)|
+[LRU Cache](https://leetcode.com/problems/lru-cache/)| [Swift](./Design/LRUCache.swift)| Hard| O(1)| O(n)|
+
 
 ## Google
 | Title | Solution | Difficulty | Frequency |
@@ -629,7 +631,7 @@
 |	[Swift](./DFS/FactorCombinations.swift)	|	254	|	[Factor Combinations](https://leetcode.com/problems/factor-combinations/) &hearts;	|	Medium	|
 |	[Swift](./Sort/MeetingRoomsII.swift)	|	253	|	[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) &hearts;	|	Medium	|
 |	[Swift](./Sort/MeetingRooms.swift)	|	252	|	[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) &hearts;	| Easy	|
-|		|	251	|	[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/) &hearts;	|	Medium	|
+|	[Swift](./Design/Vector2D.swift)	|	251	|	[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/) &hearts;	|	Medium	|
 |		|	250	|	[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/) &hearts;	|	Medium	|
 |		|	249	|	[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/) &hearts;	| Easy	|
 |		|	248	|	[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii/) &hearts;	|	Hard	|

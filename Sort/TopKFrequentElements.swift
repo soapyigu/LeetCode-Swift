@@ -7,24 +7,13 @@
  */
 
 class TopKFrequentElements {
-    func topKFrequent(nums: [Int], _ k: Int) -> [Int] {
-        var map = [Int: Int]()
-  
-        for num in nums {
-            guard let times = map[num] else {
-                map[num] = 1
-                continue
-            }
-            map[num] = times + 1
+    func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
+        let numFreq = Dictionary(nums.map { ($0, 1) }, uniquingKeysWith: +)
+        
+        let sortedNums = numFreq.keys.sorted {
+            return numFreq[$0]! > numFreq[$1]!
         }
-  
-        var keys = Array(map.keys)
-        keys.sortInPlace() {
-            let value1 = map[$0]
-            let value2 = map[$1]
-            return value1 > value2
-        }
-  
-        return Array(keys[0..<k])
+        
+        return Array(sortedNums[0..<k])
     }
 }

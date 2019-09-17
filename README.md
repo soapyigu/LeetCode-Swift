@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 288 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 289 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -356,6 +356,7 @@
 [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)| [Swift](./Sort/MeetingRoomsII.swift)| Medium| O(nlogn)| O(n)|
 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)| [Swift](./Sort/MergeIntervals.swift)| Hard| O(nlogn)| O(n)|
 [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)| [Swift](./Sort/AlienDictionary.swift)| Hard| O(nm)| O(nm)|
+[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)| [Swift](./Sort/KthLargestElementInArray.swift)| Medium| O(nlogn)| O(n)|
 [Array Partition I](https://leetcode.com/problems/array-partition-i/description/)| [Swift](./Sort/ArrayPartitionI.swift)|Easy| O(nlogn)| O(n)|
 [Insert Interval](https://leetcode.com/problems/insert-interval/description/)| [Swift](./Sort/InsertInterval.swift)|Hard| O(n)| O(1)|
 [Largest Number](https://leetcode.com/problems/largest-number/)| [Swift](./Sort/LargestNumber.swift)| Medium| O(nlogn)| O(1)|
@@ -668,7 +669,7 @@
 |		|	218	|	[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)	|	Hard	|
 |	[Swift](./Array/ContainsDuplicate.swift)	|	217	|	[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)	| Easy	|
 |	[Swift](./DFS/combinationSumIII.swift)	|	216	|	[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)	|	Medium	|
-|		|	215	|	[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)	|	Medium	|
+|	[Swift](./Sort/KthLargestElementInArray.swift)	|	215	|	[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)	|	Medium	|
 |		|	214	|	[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)	|	Hard	|
 |	[Swift](./DP/HouseRobberII.swift)	|	213	|	[House Robber II](https://leetcode.com/problems/house-robber-ii/)	|	Medium	|
 | [Swift](./DFS/WordSearchII.swift)	|	212	|	[Word Search II](https://leetcode.com/problems/word-search-ii/)	|	Hard	|

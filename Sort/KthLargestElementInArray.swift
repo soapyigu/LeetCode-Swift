@@ -20,14 +20,10 @@ class KthLargestElementInArray {
         
         if leftPart.count > k - 1 {
             return findKthLargest(leftPart, k)
-        } else if leftPart.count == k - 1 {
-            return pivot
+        } else if k - leftPart.count <= middlePart.count {
+            return findKthLargest(middlePart, k - leftPart.count)
         } else {
-            if k - leftPart.count <= middlePart.count {
-                return findKthLargest(middlePart, k - leftPart.count)
-            } else {
-                return findKthLargest(rightPart, k - leftPart.count - middlePart.count)
-            }
-        } 
+            return findKthLargest(rightPart, k - leftPart.count - middlePart.count)
+        }
     }
 }

@@ -4,6 +4,8 @@
     1. return false/tru for absolute cases 
     2. compare each character, only if a pair of different characters occurs return true
  * Time Complexity: O(n), Space Complexity: O(n)
+ * Runtime: 12 ms, faster than 95.56% of Swift online submissions for Buddy Strings.
+ * Memory Usage: 23.3 MB, less than 100.00% of Swift online submissions for Buddy Strings.
  */
  
  class BuddyStrings {

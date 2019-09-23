@@ -130,6 +130,7 @@
 [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)| [Swift](./String/LongestSubstringMostTwoDistinctCharacters.swift)| Hard| O(n)| O(n)|
 [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)| [Swift](./String/LongestSubstringMostKDistinctCharacters.swift)| Hard| O(n)| O(n)|
 [Text Justification](https://leetcode.com/problems/text-justification/)| [Swift](./String/TextJustification.swift)| Hard| O(n)| O(n)|
+[Buddy Strings](https://leetcode.com/problems/buddy-strings/)| [Swift](./String/BuddyStrings.swift)| Easy| O(n)| O(n)|
 
 ## Linked List
 | Title | Solution | Difficulty | Time | Space |

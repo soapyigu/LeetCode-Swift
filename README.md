@@ -507,6 +507,7 @@
 ## Problem Status
 | Solution | Number | Title | Difficulty |
 | -------- | ------ | ----- | ---------- |
+| [Swift](./String/BuddyStrings.swift)	|	460	|	[Buddy Strings](https://leetcode.com/problems/buddy-strings/)	| Easy	|
 | [Swift](./LinkedList/LFUCache.swift)	|	460	|	[LFU Cache](https://oj.leetcode.com/problems/lfu-cache/)	| Hard	|
 | [Swift](./Array/FindDisappearedNumbers.swift)| 448| [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)| Easy|
 | [Swift](./DFS/CombinationSumIV.swift)	|	377	|	[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)	|	Medium

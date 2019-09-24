@@ -13,6 +13,7 @@ final class KthLargest {
         
         for i in 0...nums.count-1 {
             if nums[i] < val {
+                nums.removeLast()
                 nums.insert(val, at: i)
                 break
             }

@@ -11,7 +11,7 @@ final class KthLargest {
     func add(_ val: Int) -> Int {
         self.nums.append(val)
         
-        for i in 0...nums.count-1 {
+        for i in 0..<nums.count {
             if nums[i] < val {
                 nums.removeLast()
                 nums.insert(val, at: i)

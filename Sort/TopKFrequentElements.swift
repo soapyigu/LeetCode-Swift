@@ -7,13 +7,23 @@
  */
 
 class TopKFrequentElements {
-    func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
-        let numFreq = Dictionary(nums.map { ($0, 1) }, uniquingKeysWith: +)
-        
-        let sortedNums = numFreq.keys.sorted {
-            return numFreq[$0]! > numFreq[$1]!
-        }
-        
-        return Array(sortedNums[0..<k])
+  func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
+    var combinations = [Int: Int]()
+
+    for n in nums {
+      if let val = combinations[n] {
+        combinations[n] = val + 1
+      } else {
+        combinations[n] = 1
+      }
     }
+		
+    let highToLow = combinations.sorted(by: { $1.value < $0.value })
+    var result = [Int]()
+		
+    for m in 0..<k {
+      result.append(highToLow[m].key)
+    }
+    return result
+  }
 }

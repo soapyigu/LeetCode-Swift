@@ -430,7 +430,7 @@
 [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)| [Swift](./Math/SudokuSolver.swift)| Hard| ★★★|
 [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [Swift](./LinkedList/ReverseLinkedList.swift)| Easy| ★★|
 [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)| [Swift](./Tree/UniqueBinarySearchTrees.swift)| Medium| ★★|
-[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)| [Swift](./Array/MinimumWindowSubstring.swift)| Hard| ★★|
+[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)| [Swift](./String/MinimumWindowSubstring.swift)| Hard| ★★|
 [Remove K Digits](https://leetcode.com/problems/remove-k-digits/)| [Swift](./Stack/RemoveKDigits.swift)| Medium| ★|
 [Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/)| [Swift](./Stack/TernaryExpressionParser.swift)| Medium| ★|
 

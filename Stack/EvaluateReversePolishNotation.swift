@@ -5,33 +5,39 @@
  */
 
 class EvaluateReversePolishNotation {
-    func evalRPN(_ tokens: [String]) -> Int {
-        var stack = [Int]()
+    var stack = [Int]()
         
         for token in tokens {
             if let num = Int(token) {
                 stack.append(num)
             } else {
-                let post = stack.removeLast()
-                let prev = stack.removeLast()
+                guard let postNum = stack.popLast(), let prevNum = stack.popLast() else {
+                    fatalError("Invalid Input")
+                }
                 
-                stack.append(operate(prev, post, token))
+                stack.append(operate(token, prevNum, postNum))
             }
         }
         
-        return stack.first ?? 0
+        if let last = stack.last {
+            return last
+        } else {
+            fatalError("Invalid Input")
+        }
     }
     
-    fileprivate func _operate(_ prev: Int, _ post: Int, _ token: String) -> Int{
+    private func operate(_ token: String, _ prevNum: Int, _ postNum: Int) -> Int {
         switch token {
             case "+":
-                return prev + post
+                return prevNum + postNum
             case "-":
-                return prev - post
+                return prevNum - postNum
             case "*":
-                return prev * post
+                return prevNum * postNum
+            case "/":
+                return prevNum / postNum
             default:
-                return prev / post
-       }
+                fatalError("Invalid Input") 
+        }
     }
 }

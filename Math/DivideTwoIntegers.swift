@@ -7,11 +7,7 @@
 
  class DivideTwoIntegers {
     func divide(_ dividend: Int, _ divisor: Int) -> Int {
-        if divisor == 0 {
-            return Int.max
-        }
-        
-        let isNegative = (dividend < 0) != (divisor < 0)
+        let isPositive = (dividend < 0) == (divisor < 0)
         var dividend = abs(dividend), divisor = abs(divisor), count = 0
         
         while dividend >= divisor {
@@ -22,9 +18,25 @@
             }
             
             dividend -= divisor << (shift - 1)
-            count += 1 << (shift - 1)
+            
+            count += (1 << (shift - 1))
         }
         
-        return isNegative ? -count : count
+        return refactorCount(count, isPositive)
+    }
+    
+    private func refactorCount(_ count: Int, _ isPositive: Bool) -> Int {
+        let INTMAX = 2147483647
+        var count = count
+        
+        if isPositive {
+            if count > INTMAX {
+                count = INTMAX
+            }
+        } else {
+            count *= -1
+        }
+        
+        return count
     }
 }

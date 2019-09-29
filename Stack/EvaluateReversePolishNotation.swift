@@ -5,7 +5,8 @@
  */
 
 class EvaluateReversePolishNotation {
-    var stack = [Int]()
+    func evalRPN(_ tokens: [String]) -> Int {
+        var stack = [Int]()
         
         for token in tokens {
             if let num = Int(token) {

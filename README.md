@@ -305,7 +305,7 @@
 [Super Ugly Number](https://leetcode.com/problems/super-ugly-number/)| [Swift](./Math/SuperUglyNumber.swift)| Medium| O(n^2)| O(n)|
 [Count Primes](https://leetcode.com/problems/count-primes/)| [Swift](./Math/CountPrimes.swift)| Easy| O(n)| O(n)|
 [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)| [Swift](./Math/Atoi.swift)| Easy| O(n)| O(1)|
-[Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/)| [Swift](FractionToRecurringDecimal.swift) | Medium| O(logn)| O(n)|
+[Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/)| [Swift](./Math/FractionToRecurringDecimal.swift) | Medium| O(logn)| O(n)|
 [Pow(x, n)](https://leetcode.com/problems/isomorphic-strings/)| [Swift](./Math/Pow.swift)| Medium| O(logn)| O(1)|
 [Power of Two](https://leetcode.com/problems/power-of-two/)| [Swift](./Math/PowerTwo.swift)| Easy| O(1)| O(1)|
 [Power of Three](https://leetcode.com/problems/power-of-three/)| [Swift](./Math/PowerThree.swift)| Easy| O(1)| O(1)|
@@ -705,7 +705,7 @@
 | [Swift](./Array/MajorityElement.swift)  |	169	|	[Majority Element](https://oj.leetcode.com/problems/majority-element/)	| Easy	|
 |		|	168	|	[Excel Sheet Column Title](https://oj.leetcode.com/problems/excel-sheet-column-title/)	| Easy	|
 |		|	167	|	[Two Sum II - Input array is sorted](https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/) &hearts;	| Medium	|
-|		|	166	|	[Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/)	| Medium	|
+|	[Swift](./Math/FractionToRecurringDecimal.swift)	|	166	|	[Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/)	| Medium	|
 |		|	165	|	[Compare Version Numbers](https://oj.leetcode.com/problems/compare-version-numbers/)	| Easy	|
 |		|	164	|	[Maximum Gap](https://oj.leetcode.com/problems/maximum-gap/)	| Hard	|
 |	[Swift](./Array/MissingRanges.swift)	|	163	|	[Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/) &hearts;	| Medium	|

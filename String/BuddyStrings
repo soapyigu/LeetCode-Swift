@@ -11,12 +11,15 @@
  class BuddyStrings {
     func buddyStrings(_ A: String, _ B: String) -> Bool {
         var count = 0
-        let aLength = A.length
-        let bLength = B.length
-        if aLength != bLength || aLength == 0 { return false }
-        if A == B && Array(Set(A)).count != aLength { return true }
-        let aArray = Array(A)
-        let bArray = Array(B)
+        let aLength = A.count
+        let bLength = B.count
+        if aLength != bLength || aLength == 0 { 
+            return false 
+        }
+        if A == B && Array(Set(A)).count != aLength { 
+            return true 
+        }
+        let aArray = Array(A), bArray = Array(B)
         var diff = [Character]()
         for index in 0...aLength-1 {
             if aArray[index] != bArray[index] { 

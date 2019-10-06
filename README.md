@@ -112,9 +112,9 @@
 [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)| [Swift](./String/ReverseWordsString.swift)| Medium| O(n)| O(1)|
 [Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/)| [Swift](./String/ReverseWordsStringII.swift)| Medium| O(n)| O(1)|
 [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)| [Swift](./String/ReverseWordsStringIII.swift)| Easy| O(n)| O(1)|
-[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)| [Swift](./String/AddStrings.swift)| Easy| O(n)| O(n)|
+[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)| [Swift](./String/LengthLastWord.swift)| Easy| O(n)| O(n)|
 [String Compression](https://leetcode.com/problems/string-compression/)| [Swift](./String/StringCompression.swift)| Easy| O(n)| O(1)|
-[Add Strings](https://leetcode.com/problems/add-strings/)| [Swift](./String/LengthLastWord.swift)| Easy| O(n)| O(1)|
+[Add Strings](https://leetcode.com/problems/add-strings/)| [Swift](./String/AddStrings.swift)| Easy| O(n)| O(1)|
 [Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/)| [Swift](./String/ShortestDistanceToACharacter.swift)| Easy| O(n)| O(1)|
 [Multiply Strings](https://leetcode.com/problems/multiply-strings/)| [Swift](./String/MultiplyStrings.swift)| Medium| O(n)| O(1)|
 [Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)| [Swift](./String/PalindromePermutation.swift)| Easy| O(n)| O(n)|

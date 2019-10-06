@@ -7,15 +7,13 @@
 
 class ExcelSheetColumnNumber {
     func titleToNumber(s: String) -> Int {
-        var res = 0
-        let scalarsOfA = "A".unicodeScalars
+        var result = 0
         
-        for char in s.characters {
-            let scalars = String(char).unicodeScalars
-            let current = Int(scalars[scalars.startIndex].value - scalarsOfA[scalarsOfA.startIndex].value) + 1
-            res = res * 26 + current
+        for c in s.unicodeScalars {
+            let value = Int(c.value) - 64
+            result = (result * 26)  + value
         }
         
-        return res
+        return result
     }
 }

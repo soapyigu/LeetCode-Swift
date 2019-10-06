@@ -9,17 +9,15 @@
  */
 
 class Sqrtx {
-    func mySqrt(x: Int) -> Int {
-        if x <= 0 {
-            return x
+    func mySqrt(_ x: Int) -> Int {
+        guard x >= 0 else {
+            return 0
         }
         
-        var left = 0
-        var right = x / 2 + 1
-        var mid = 0
-
+        var left = 0, right = x / 2 + 1
+        
         while left <= right {
-            mid = (right - left) / 2 + left
+            let mid = (right - left) / 2 + left
             
             if mid * mid == x {
                 return mid

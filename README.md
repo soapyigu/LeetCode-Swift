@@ -92,6 +92,7 @@
 [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)| [Swift](./Array/LongestConsecutiveSequence.swift)| Hard| O(n)| O(n)|
 [Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)| [Swift](./Array/CreateMaximumNumber.swift)| Hard| O(n^2)| O(n)|
 [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)| [Swift](./Array/FindDisappearedNumbers.swift)| Easy| O(n)| O(1)|
+[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)| [Swift](./Array/Pascal'sTriangle.swift)| Easy| O(n^2)| O(n^2)|
 
 ## String
 | Title | Solution | Difficulty | Time | Space |
@@ -753,7 +754,7 @@
 |	[Swift](./DP/BestTimeBuySellStock.swift)	|	121	|	[Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)	| Easy	|
 |	[Swift](./DP/Triangle.swift)	|	120	|	[Triangle](https://oj.leetcode.com/problems/triangle/)	| Medium	|
 |		|	119	|	[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)	| Easy	|
-|		|	118	|	[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)	| Easy	|
+|	[Swift](./Array/Pascal'sTriangle.swift)	|	118	|	[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)	| Easy	|
 |		|	117	|	[Populating Next Right Pointers in Each Node II](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)	| Hard	|
 |		|	116	|	[Populating Next Right Pointers in Each Node](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/)	| Medium	|
 |		|	115	|	[Distinct Subsequences](https://oj.leetcode.com/problems/distinct-subsequences/)	| Hard	|

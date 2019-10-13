@@ -1,7 +1,7 @@
 /**
  * Question Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
- * Primary idea: Use a set to hold characters and then iterate the string, 
- *               update maxLen, set, startIdx encountering duplicates
+ * Primary idea: Use a dictionary to hold the next possible valid position of characters of the non-repeating substring,
+ *               and then iterate the string to update maxLen, dictionary, and startIdx encountering duplicates
  * 
  * Note: Swift does not have a way to access a character in a string with O(1), 
  *       thus we have to first transfer the string to a character array
@@ -11,25 +11,19 @@
 
 class LongestSubstringWithoutRepeatingCharacters {
     func lengthOfLongestSubstring(_ s: String) -> Int {
-        var longest = 0, left = 0, set = Set<Character>()
+        var maxLen = 0, startIdx = 0, charToPos = [Character: Int]()
         let sChars = Array(s)
         
         for (i, char) in sChars.enumerated() {
-            if set.contains(char) {
-                
-                longest = max(longest, i - left)
-                
-                while sChars[left] != char {
-                    set.remove(sChars[left])
-                    left += 1
-                }
-                left += 1
-
-            } else {
-                set.insert(char)
+            if let pos = charToPos[char] {
+                startIdx = max(startIdx, pos)
             }
+            
+            // update to next valid position
+            charToPos[char] = i + 1
+            maxLen = max(maxLen, i - startIdx + 1)
         }
         
-        return max(longest, sChars.count - left)
+        return maxLen
     }
 }

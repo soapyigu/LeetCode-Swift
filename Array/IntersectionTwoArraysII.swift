@@ -10,17 +10,13 @@
 
  class IntersectionTwoArraysII {
     func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
-        var frequencies = Dictionary(nums1.map { ($0, 1) } , uniquingKeysWith: +)
+        var numsFreq = Dictionary(nums1.map { ($0, 1) }, uniquingKeysWith: +)
         var res = [Int]()
         
         for num in nums2 {
-            guard let frequent = frequencies[num] else {
-                continue
-            }
-            
-            if frequent > 0 {
-                frequencies[num]! = frequent - 1
+            if let freq = numsFreq[num], freq > 0 {
                 res.append(num)
+                numsFreq[num] = freq - 1
             }
         }
         

@@ -16,19 +16,17 @@
  * }
  */
 class InorderTraversal {
-    func inorderTraversal(root: TreeNode?) -> [Int] {
-        var stack = [TreeNode]()
-        var res = [Int]()
-        var node = root
+    func inorderTraversal(_ root: TreeNode?) -> [Int] {
+        var res = [Int](), stack = [TreeNode](), node = root
         
-        while !stack.isEmpty || node != nil {
-            if node != nil {
-                stack.append(node!)
-                node = node!.left
+        while node != nil || !stack.isEmpty {
+            if let currentNode = node {
+                stack.append(currentNode)
+                node = currentNode.left
             } else {
-                node = stack.removeLast()
-                res.append(node!.val)
-                node = node!.right
+                let prevNode = stack.removeLast()
+                res.append(prevNode.val)
+                node = prevNode.right
             }
         }
         

@@ -33,15 +33,7 @@ class ValidPalindrome {
 }
 
 extension Character {
-    var isAlpha: Bool {
-        return (Character("a")...Character("z")).contains(self)
-    }
-    
-    var isNumeric: Bool {
-        return (Character("0")...Character("9")).contains(self)
-    }
-    
-    var isAlphanumeric: Bool {
-        return isAlpha || isNumeric
+    var isValid: Bool {
+        return isLetter || isNumber
     }
 }

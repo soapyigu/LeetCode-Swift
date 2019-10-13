@@ -7,10 +7,8 @@
  */
 
 class PermutationsII {
-    func permuteUnique(nums: [Int]) -> [[Int]] {
-        var res = [[Int]]()
-        var path = [Int]()
-        var visited = [Bool](count: nums.count, repeatedValue: false)
+    func permuteUnique(_ nums: [Int]) -> [[Int]] {
+        var res = [[Int]](), path = [Int](), visited = [Bool](repeating: false, count: nums.count)
         
         let nums = nums.sorted(by: <)
         
@@ -22,7 +20,7 @@ class PermutationsII {
     private func _dfs(inout res: [[Int]], inout _ path: [Int], _ nums: [Int], inout _ visited: [Bool]) {
         // termination case
         if path.count == nums.count {
-            res.append(Array(path))
+            res.append(path)
             return
         }
         

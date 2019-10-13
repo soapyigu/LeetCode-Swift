@@ -2,52 +2,51 @@
  * Question Link: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
  * Primary idea: Classic Depth-first Search, create phone board at first
  * 
- * Time Complexity: O(nm), m stands for the average size of a string represented by a number 
- * Space Complexity: O(n)
+ * Time Complexity: O(4^n), n stands for length of digits 
+ * Space Complexity: O(n), n stands for length of digits
  *
  */
 
 class LetterCombinationsPhoneNumber {
     func letterCombinations(_ digits: String) -> [String] {
-        var combinations = [String](), combination = ""
+        guard digits.count > 0 else {
+            return [String]()
+        }
         
-        dfs(createBoard(), &combinations, &combination, Array(digits), 0)
+        var combinations = [String](), combination = ""
+        let numberToStr = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
+        
+        dfs(&combinations, &combination, numberToStr, digits, 0)
         
         return combinations
     }
     
-    fileprivate func createBoard() -> [String] {
-        var res = [String]()
-  
-        res.append("")
-        res.append("")
-        res.append("abc")
-        res.append("def")
-        res.append("ghi")
-        res.append("jkl")
-        res.append("mno")
-        res.append("pqrs")
-        res.append("tuv")
-        res.append("wxyz")
-  
-        return res
-    }
-    
-    fileprivate func dfs(_ board: [String], _ combinations: inout [String], _ combination: inout String, _ digits: [Character], _ index: Int) {
-        if digits.count == index {
-            if combination != "" {
-                combinations.append(String(combination))
-            }
-            
+    private func dfs(_ combinations: inout [String], _ combination: inout String, _ numberToStr: [String], _ digits: String, _ index: Int) {
+        if combination.count == digits.count {
+            combinations.append(combination)
             return
         }
         
-        let digitStr = board[Int(String(digits[index]))!]
+        let currentStr = fetchCurrentStr(from: digits, at: index, numberToStr)
         
-        for digitChar in digitStr {
-            combination.append(digitChar)
-            dfs(board, &combinations, &combination, digits, index + 1)
+        for char in currentStr {
+            combination.append(char)
+            dfs(&combinations, &combination, numberToStr, digits, index + 1)
             combination.removeLast()
         }
+    }
+        
+    private func fetchCurrentStr(from digits: String, at index: Int, _ numberToStr: [String]) -> String {
+        guard index >= 0 && index < digits.count else {
+            fatalError("Invalid index")
+        }
+        
+        let currentDigitChar = digits[digits.index(digits.startIndex, offsetBy: index)]
+        
+        guard let currentDigit = Int(String(currentDigitChar)), currentDigit >= 0, currentDigit < numberToStr.count else {
+            fatalError("Invalid digits")
+        }
+        
+        return numberToStr[currentDigit]
     }
 }

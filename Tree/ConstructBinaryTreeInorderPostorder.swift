@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
  * Primary idea: Always use the last element in postorder as root, 
  *               then find that one in inorder to get left and right subtrees
- * Time Complexity: O(n), Space Complexity: O(n)
+ * Time Complexity: O(nlogn), Space Complexity: O(1)
  * 
  * Definition for a binary tree node.
  * public class TreeNode {

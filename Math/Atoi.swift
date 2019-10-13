@@ -6,55 +6,55 @@
  */
 
 class Atoi {
-    func myAtoi(str: String) -> Int {
-        var res = 0
-        var flag = 1
-        var index = 0
-        let int_max = 2147483647
-        let int_min = -2147483648
+    func myAtoi(_ str: String) -> Int {
+        var res = 0, flag = 1, index = 0
+        let intMax = 2147483647, intMin = -2147483648, strChars = Array(str)
         
         // trim
-        let content = [Character](str.characters)
-        while index < content.count {
-            guard content[index] == " " else {
+        while index < strChars.count {
+            let currentChar = strChars[index]
+            
+            // trim
+            guard currentChar.isWhitespace else {
                 break
             }
+            
             index += 1
         }
-        guard index < content.count else {
+        
+        guard index < strChars.count else {
             return res
         }
         
         // handle flag
-        if content[index] == "-" {
+        if strChars[index] == "-" {
             flag = -1
             index += 1
-        } else if content[index] == "+" {
+        } else if strChars[index] == "+" {
             index += 1
         }
         
-        while index < content.count {
-            guard _isDigit(content[index]) else {
+        // cast to number
+        while index < strChars.count {
+            let currentChar = strChars[index]
+            
+            guard currentChar.isNumber else {
                 break
             }
             
-            res = res * 10 + Int(String(content[index]))!
+            res = res * 10 + currentChar.wholeNumberValue!
             
-            if res >= int_max {
+            if res >= intMax {
                 if flag == 1 {
-                    return int_max
-                } else if res > int_max && flag == -1 {
-                    return int_min
+                    return intMax
+                } else if flag == -1 && res > intMax {
+                    return intMin
                 }
             }
-        
+            
             index += 1
         }
         
         return flag * res
-    }
-    
-    private func _isDigit(char: Character) -> Bool {
-        return char >= "0" && char <= "9"
     }
 }

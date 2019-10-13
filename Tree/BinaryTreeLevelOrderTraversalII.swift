@@ -20,34 +20,23 @@
  */
  
 class BinaryTreeLevelOrderTraversalII {
-    func levelOrderBottom(root: TreeNode?) -> [[Int]] {
+    func levelOrderBottom(_ root: TreeNode?) -> [[Int]] {
         var res = [[Int]]()
-        var queue = [TreeNode]()
         
-        if let root = root {
-            queue.append(root)
+        guard let root = root else {
+            return res
         }
         
-        while queue.count > 0 {
-            var size = queue.count
-            var level = [Int]()
+        var currentLevel = [root]
+        
+        while !currentLevel.isEmpty {
+            let currentLevelVals = currentLevel.map { $0.val }
             
-            for _ in 1...size {
-                let node = queue[0]
-                queue.removeAtIndex(0)
-
-                // add val
-                level.append(node.val)
-
-                // add TreeNodes in next level
-                if let left = node.left {
-                    queue.append(left)
-                }
-                if let right = node.right {
-                    queue.append(right)
-                }
-            }
-            res.insert(level, atIndex:0)
+            // add current level vals
+            res.insert(currentLevelVals, at: 0)
+            
+            // add next level nodes
+            currentLevel = currentLevel.flatMap { [$0.left, $0.right] }.compactMap { $0 }
         }
         
         return res

@@ -491,7 +491,7 @@
 ## Problem Status
 | Solution | Number | Title | Difficulty |
 | -------- | ------ | ----- | ---------- |
-| [Swift](./Array/SquaresOfASortedArray.swift)  |   977 |   [Array](https://leetcode.com/problems/squares-of-a-sorted-array/)   | Easy |
+| [Swift](./Array/SquaresOfASortedArray.swift)  |   977 |   [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)   | Easy |
 | [Swift](./LinkedList/LFUCache.swift)	|	460	|	[LFU Cache](https://oj.leetcode.com/problems/lfu-cache/)	| Hard	|
 | [Swift](./DFS/CombinationSumIV.swift)	|	377	|	[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)	|	Medium
 |		|	376	|	[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)	|	Medium

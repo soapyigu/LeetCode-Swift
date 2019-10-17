@@ -42,6 +42,7 @@
 ## Array
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Snapshot Array](https://leetcode.com/problems/snapshot-array/)|[Swift](Array/SnapshotArray.swift)| Medium| O(n)| O(n)|
 [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)|[Swift](Array/SortArrayByParity.swift)| Easy| O(n)| O(n)|
 [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)| [Swift](./Array/MaxConsecutiveOnes.swift)| Easy| O(n)| O(1)|
 [Heaters](https://leetcode.com/problems/heaters/)| [Swift](./Array/Heaters.swift)| Easy| O(nlogn)| O(1)|
@@ -511,6 +512,7 @@
 ## Problem Status
 | Solution | Number | Title | Difficulty |
 | -------- | ------ | ----- | ---------- |
+| [Swift](./Array/SnapshotArray.swift) | 1146 |   [Snapshot Array](https://leetcode.com/problems/snapshot-array/)   | Medium |
 | [Swift](./Array/SquaresOfASortedArray.swift)  |   977 |   [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)   | Easy |
 | [Swift](./LinkedList/LFUCache.swift)	|	460	|	[LFU Cache](https://oj.leetcode.com/problems/lfu-cache/)	| Hard	|
 | [Swift](./Array/FindDisappearedNumbers.swift)| 448| [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)| Easy|

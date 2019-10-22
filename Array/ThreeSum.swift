@@ -16,6 +16,10 @@ class ThreeSum {
         let nums = nums.sorted()
         
         for i in 0..<nums.count - 2 {
+            guard nums[i] <= 0 else {
+                return res
+            }
+            
             if i > 0 && nums[i] == nums[i - 1] {
                 continue
             }

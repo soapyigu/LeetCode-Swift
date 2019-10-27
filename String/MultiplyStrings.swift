@@ -12,32 +12,42 @@
 
 class MultiplyStrings {
     func multiply(_ num1: String, _ num2: String) -> String {
-        guard num1 != "0" && num2 != "0" else {
-            return "0"
-        }
+        let num1 = num1.reversed(), num2 = num2.reversed()
+        var res = Array(repeating: 0, count: num1.count + num2.count), resStr = ""
         
-        let num1Chars = Array(num1.characters.reversed())
-        let num2Chars = Array(num2.characters.reversed())
-        var res = Array(repeating: 0, count: num1Chars.count + num2Chars.count)
-        var finalChars = [String](), carry = 0, sum = 0
-        
-        for (i, char1) in num1Chars.enumerated() {
-            let n1 = Int(String(char1))
-            for (j, char2) in num2Chars.enumerated() {
-                res[i + j] += n1! * Int(String(char2))!
+        // calculate product for every digit
+        for (i, char1) in num1.enumerated() {
+            
+            guard let digit1 = Int(String(char1)) else {
+                fatalError("Invalid Input num1")
+            }
+            
+            for (j, char2) in num2.enumerated() {
+                guard let digit2 = Int(String(char2)) else {
+                    fatalError("Invalid Input num2")
+                }
+                
+                res[i + j] += digit1 * digit2
             }
         }
         
-        for num in res {
-            sum = (carry + num) % 10
-            carry = (carry + num) / 10
-            finalChars.insert(String(sum), at: 0)
+        // update digits
+        for i in 0..<res.count {
+            let num = res[i]
+            
+            res[i] = num % 10
+            if i < res.count - 1 {
+                res[i + 1] += num / 10
+            }
+            
+            resStr = "\(res[i])" + resStr
         }
         
-        while !finalChars.isEmpty && finalChars.first! == "0" {
-            finalChars.removeFirst()
+        // trim starting 0s
+        while !resStr.isEmpty && resStr.first! == "0" {
+            resStr.removeFirst()
         }
         
-        return finalChars.reduce("") { $0 + $1 }
+        return resStr.isEmpty ? "0" : resStr
     }
 }

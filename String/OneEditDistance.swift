@@ -4,37 +4,57 @@
  * Time Complexity: O(n), Space Complexity: O(n)
  */
 
+enum Edit {
+    case insert
+    case delete
+    case replace
+}
+
 class OneEditDistance {
     func isOneEditDistance(_ s: String, _ t: String) -> Bool {
-        let sChars = Array(s.characters), tChars = Array(t.characters)
-        var foundDiff = false, i = 0, j = 0
+        guard s != t else { 
+            return false 
+        }
+        var editType = Edit.insert
         
-        let shorter = sChars.count < tChars.count ? sChars : tChars
-        let longer = sChars.count < tChars.count ? tChars : sChars
-        
-        guard longer.count - shorter.count < 2 && s != t else {
-            return false
+        if s.count == t.count { 
+            editType = .replace
+        } else if s.count - t.count == 1 {
+            editType = .delete
+        } else if t.count - s.count == 1 {
+            editType = .insert
+        } else {
+            return false 
         }
         
-        while i < shorter.count && j < longer.count {
-            if shorter[i] != longer[j] {
-                if foundDiff {
-                    return false
+        let arr = Array(s), brr = Array(t)
+        var flag = false, aIdx = 0, bIdx = 0
+        
+        while aIdx < arr.count && bIdx < brr.count {
+            
+            if arr[aIdx] != brr[bIdx] {
+                
+                guard !flag else { 
+                    return false 
                 }
                 
-                foundDiff = true
-                if shorter.count < longer.count {
-                    j += 1
-                } else {
-                    i += 1
-                    j += 1
+                flag = true
+                
+                switch editType {
+                case .insert: 
+                    bIdx += 1
+                case .delete: 
+                    aIdx += 1
+                case .replace: 
+                    aIdx += 1
+                    bIdx += 1
                 }
             } else {
-                i += 1
-                j += 1
+                aIdx += 1
+                bIdx += 1
             }
+            
         }
-        
-        return true
+        return true 
     }
 }

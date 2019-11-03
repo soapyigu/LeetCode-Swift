@@ -1,28 +1,29 @@
 /**
  * Question Link: https://leetcode.com/problems/perfect-squares/
- * Primary idea: Dynamic Programming, transition function is 
- *               nums[i] = min(nums[i], nums[i - j * j] + 1)
- * Time Complexity: O(n^2), Space Complexity: O(n)
+ * Primary idea: Binary Search, base on the num itself, from 0 to num, divide the search by half each time  
+ *               
+ * Time Complexity: O(logn), Space Complexity: O(1)
  */
 
 class PerfectSquares {
     func numSquares(n: Int) -> Int {
-        guard n > 0 else {
-            return 0
+        if num == 1 {
+            return true 
         }
-        
-        var leastNums = [Int](count: n + 1, repeatedValue: Int.max)
-        leastNums[0] = 0
-        
-        for i in 1...n {
-            for j in 1...i  {
-                if j * j > i {
-                    break
-                }
-                leastNums[i] = min(leastNums[i], leastNums[i - j * j] + 1)
+
+        var l = 0, r = num / 2 
+        while l <= r {
+            let mid = l + (r - l) / 2
+            let tmp = mid * mid 
+            if tmp == num {
+                return true 
+            } else if tmp < num {
+                l = mid + 1
+            } else {
+                r = mid - 1
             }
         }
-        
-        return leastNums[n]
+
+        return false
     }
 }

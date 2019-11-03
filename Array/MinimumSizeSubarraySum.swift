@@ -13,7 +13,7 @@
         for (i, num) in nums.enumerated() {
             currentSum += num
             
-            while currentSum >= s && start <= i {
+            while currentSum >= s, start <= i {
                 miniSize = min(miniSize, i - start + 1)
                 
                 currentSum -= nums[start]

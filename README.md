@@ -375,7 +375,7 @@
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
 [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/)| [Swift](./Design/ShuffleAnArray.swift)| Easy| O(n)| O(1)|
-[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/| [Swift](./Design/DesignTicTacToe.swift)| Medium| O(1)| O(n)|
+[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/)| [Swift](./Design/DesignTicTacToe.swift)| Medium| O(1)| O(n)|
 [Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)| [Swift](./Design/Vector2D.swift)| Medium | O(n)| O(n)|
 [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)| [Swift](./Design/ImplementTrie.swift)| Medium | O(n)| O(n)|
 [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)| [Swift](./Design/InsertDeleteGetRandom.swift)| Medium| O(1)| O(n)|

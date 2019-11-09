@@ -15,19 +15,31 @@
  */
 
 class AddTwoNumbers {
-    func addTwoNumbers(l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        guard let l1 = l1 else {return l2}
-        guard let l2 = l2 else {return l1}
-        
-        let outputNode = ListNode((l1.val + l2.val)%10)
-        if l1.val + l2.val > 9 {
-            outputNode.next = addTwoNumbers(addTwoNumbers(l1.next, l2.next),
-                                            ListNode(1))
-        } else {
-            outputNode.next = addTwoNumbers(l1.next, l2.next)
+    func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        if(l1==nil)&&(l2==nil) {
+            return nil
         }
-        
-        
-        return outputNode
+
+        var ll1 = l1
+        var ll2 = l2
+
+        let head = ListNode(0)
+        var point = head
+        var carry = 0
+
+        while (ll1 != nil) || (ll2 != nil) || carry != 0 {
+            let total = sum(lhs: ll1?.val, rhs: ll2?.val, carry: carry)
+            point.val = total.sum
+            carry = total.carry
+
+            ll1 = ll1?.next
+            ll2 = ll2?.next
+            if ll1 != nil || ll2 != nil || carry != 0 {
+                point.next = ListNode(0)
+                point = point.next!
+            }
+        }
+
+        return head
     }
 }

@@ -11,7 +11,7 @@
 class AddBinary {
     func addBinary(_ a: String, _ b: String) -> String {
         var sum = 0, carry = 0, res = ""
-        let aChars = Array(a.characters), bChars = Array(b.characters)
+        let aChars = Array(a), bChars = Array(b)
         var i = aChars.count - 1, j = bChars.count - 1
         
         while i >= 0 || j >= 0 || carry > 0 {

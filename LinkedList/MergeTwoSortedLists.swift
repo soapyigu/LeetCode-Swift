@@ -38,3 +38,24 @@ class MergeTwoSortedLists {
         return dummy.next
     }
 }
+
+
+//Iteration method
+class MergeTwoSortedListsWithIteration {
+    func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        guard let l1 = l1 else { return l2 }
+        guard let l2 = l2 else { return l1 }
+
+        let dummy: ListNode = ListNode(0)
+
+        if l1.val < l2.val {
+            dummy.next = l1
+            dummy.next?.next = mergeTwoLists(l1.next, l2)
+        } else {
+            dummy.next = l2
+            dummy.next?.next = mergeTwoLists(l1, l2.next)
+        }
+
+        return dummy.next
+    }
+}

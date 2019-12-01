@@ -21,7 +21,11 @@
             return makeMaxProfit(prices)
         }
         
-        var local = Array(repeating: 0, count: k + 1), global = Array(repeating: 0, count: k + 1)
+        // local[i] means the maxProfit when sell happens at ith day
+        var local = Array(repeating: 0, count: k + 1)
+
+        // global[i] means the maxProfit at ith day
+        var global = Array(repeating: 0, count: k + 1)
         
         for i in 0..<n - 1 {
             let diff = prices[i + 1] - prices[i]

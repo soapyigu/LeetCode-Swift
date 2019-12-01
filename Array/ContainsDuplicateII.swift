@@ -7,22 +7,19 @@
  */
 
 class ContainsDuplicateII {
-    func containsNearbyDuplicate(nums: [Int], _ k: Int) -> Bool {
-        // edge case
-        if nums.count <= 1 {
+    func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool {
+        guard nums.count > 1 else {
             return false
         }
         
-        // key: nums[index], value: index
-        var dict = [Int: Int]()
+        var numToLastIndex = [Int: Int]()
         
-        for i in 0..<nums.count {
-            guard let index = dict[nums[i]] where i - index <= k else {
-                dict[nums[i]] = i
-                continue
-            } 
-            
-            return true
+        for (i, num) in nums.enumerated() {
+            if let lastIndex = numToLastIndex[num], i - lastIndex <= k {
+                return true
+            } else {
+                numToLastIndex[num] = i
+            }
         }
         
         return false

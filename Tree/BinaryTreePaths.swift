@@ -18,37 +18,28 @@
 
  class BinaryTreePaths {
     func binaryTreePaths(_ root: TreeNode?) -> [String] {
-        var path = [Character](), paths = [String]()
+        var paths = [String]()
         
-        dfs(root, &path, &paths)
+        guard let root = root else {
+            return paths
+        }
+        
+        dfs(root, &paths, "\(root.val)")
         
         return paths
     }
     
-    fileprivate func dfs(_ root: TreeNode?, _ path: inout [Character], _ paths: inout [String]) {
-        guard let root = root else {
-            return
-        }
-        
-        append(&path, root)
-        
+    private func dfs(_ root: TreeNode, _ paths: inout [String], _ path: String) {
         if root.left == nil && root.right == nil {
-            paths.append(String(path))
+            paths.append(path)
             return
         }
         
-        var pathLeft = path, pathRight = path
-        
-        dfs(root.left, &pathLeft, &paths)
-        dfs(root.right, &pathRight, &paths)
-    }
-    
-    fileprivate func append(_ path: inout [Character], _ node: TreeNode) {
-        if !path.isEmpty {
-            path.append(Character("-"))
-            path.append(Character(">"))
+        if let left = root.left {
+            dfs(left, &paths, path + "->\(left.val)")
         }
-        
-        path += Array(String(node.val))
+        if let right = root.right {
+            dfs(right, &paths, path + "->\(right.val)")
+        }
     }
 }

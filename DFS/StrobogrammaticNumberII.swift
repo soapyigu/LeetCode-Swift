@@ -8,42 +8,34 @@
  */
 
  class StrobogrammaticNumberII {
+    let mirrorDigits = [0: 0, 1: 1, 6: 9, 8: 8, 9: 6]
+    
     func findStrobogrammatic(_ n: Int) -> [String] {
-        var res = [String]()
+        var path = Array(repeating: Character(" "), count: n), paths = [String]()
         
-        guard n >= 1 else {
-            return res
-        }
+        dfs(0, n - 1, &path, &paths)
         
-        let left = Array("01689"), right = Array("01986")
-        var path = Array(repeating: Character("-"), count: n)
-        
-        dfs(&res, left, right, 0, n - 1, &path)
-        
-        return res
+        return paths
     }
     
-    fileprivate func dfs(_ res: inout [String], _ left: [Character], _ right: [Character], _ leftIdx: Int, _ path: inout [Character]) {
-    	let rightIdx = path.count - leftIdx - 1
-
-        if leftIdx > rightIdx {            
-            res.append(String(path))
+    private func dfs(_ left: Int, _ right: Int, _ path: inout [Character], _ paths: inout [String]) {
+        if left > right {
+            paths.append(String(path))
             return
         }
         
-        for i in 0..<left.count {
-            if leftIdx == 0 && leftIdx != rightIdx && left[i] == "0" {
+        for (key, value) in mirrorDigits {
+            if left == right && (key == 6 || key == 9) {
+                continue
+            }
+            if left != right && left == 0 && key == 0 {
                 continue
             }
             
-            if leftIdx == rightIdx && (left[i] == "6" || left[i] == "9") {
-                continue
-            }
+            path[left] = Character(String(key))
+            path[right] = Character(String(value))
             
-            path[leftIdx] = left[i]
-            path[rightIdx] = right[i]
-            
-            dfs(&res, left, right, leftIdx + 1, rightIdx - 1, &path)
+            dfs(left + 1, right - 1, &path, &paths)
         }
     }
 }

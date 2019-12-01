@@ -24,14 +24,14 @@
     }
     
     fileprivate func isValid(_ charA: Character, _ charB: Character) -> Bool {
-        if charA == charB {
-            return ["0", "1", "8"].contains(charA)
+        guard let digitA = Int(String(charA)), let digitB = Int(String(charB)) else {
+            fatalError("Invalid input")
+        }
+        
+        if let mirrorA = mirrorDigits[digitA], mirrorA == digitB {
+            return true
         } else {
-            if (charA == "6" && charB == "9") || (charA == "9" && charB == "6") {
-                return true
-            } else {
-                return false
-            }
+            return false
         }
     }
 }

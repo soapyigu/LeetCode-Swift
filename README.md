@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 295 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 296 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -25,7 +25,7 @@
 * [Math](#math)
 * [Search](#search)
 * [Sort](#sort)
-* [Union Find](#union-find)
+* [Graph](#graph)
 * [Design](#design)
 
 ## Companies
@@ -365,12 +365,13 @@
 [Insert Interval](https://leetcode.com/problems/insert-interval/description/)| [Swift](./Sort/InsertInterval.swift)|Hard| O(n)| O(1)|
 [Largest Number](https://leetcode.com/problems/largest-number/)| [Swift](./Sort/LargestNumber.swift)| Medium| O(nlogn)| O(1)|
 
-## Union Find
+## Graph
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
-[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)| [Swift](./UnionFind/NumberConnectedComponentsUndirectedGraph.swift)| Medium| O(nlogn)| O(n)|
-[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [Swift](./UnionFind/GraphValidTree.swift)| Medium| O(nlogn)| O(n)|
-[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)| [Swift](./UnionFind/NumberIslandsII.swift)| Hard| O(klogmn)| O(mn)|
+[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)| [Swift](./Graph/NumberConnectedComponentsUndirectedGraph.swift)| Medium| O(nlogn)| O(n)|
+[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [Swift](./Graph/GraphValidTree.swift)| Medium| O(nlogn)| O(n)|
+[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)| [Swift](./Graph/NumberIslandsII.swift)| Hard| O(klogmn)| O(mn)|
+[Course Schedule](https://leetcode.com/problems/course-schedule/)| [Swift](./Graph/CourseSchedule.swift)| Medium| O(n)| O(n)|
 
 ## Design
 | Title | Solution | Difficulty | Time | Space |
@@ -586,7 +587,7 @@
 |		|	308	|	[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/) &hearts;	|	Hard
 |		|	307	|	[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)	|	Medium
 |		|	306	|	[Additive Number](https://leetcode.com/problems/additive-number/)	|	Medium
-|	[Swift](./UnionFind/NumberIslandsII.swift)	|	305	|	[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)  &hearts;	|	Hard
+|	[Swift](./Graph/NumberIslandsII.swift)	|	305	|	[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)  &hearts;	|	Hard
 |	[Swift](./Array/NumMatrix.swift)	|	304	|	[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)	|	Medium
 |		|	303	|	[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)	| Easy
 |		|	302	|	[Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/)  &hearts;	|	Hard
@@ -683,7 +684,7 @@
 |		|	210	|	[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)	|	Medium	|
 |	[Swift](./Array/MinimumSizeSubarraySum.swift)	|	209	|	[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)	|	Medium	|
 |	[Swift](./Design/ImplementTrie.swift)	|	208	|	[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)	|	Medium	|
-|		|	207	|	[Course Schedule](https://leetcode.com/problems/course-schedule/)	|	Medium	|
+|	[Swift](./Graph/CourseSchedule.swift)	|	207	|	[Course Schedule](https://leetcode.com/problems/course-schedule/)	|	Medium	|
 |	[Swift](./LinkedList/ReverseLinkedList.swift)	|	206	|	[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)	| Easy	|
 |	[Swift](./String/IsomorphicStrings.swift)	|	205	|	[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)	| Easy	|
 |	[Swift](./Math/CountPrimes.swift)	|	204	|	[Count Primes](https://leetcode.com/problems/count-primes/)	| Easy	|

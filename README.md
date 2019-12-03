@@ -359,7 +359,7 @@
 [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)| [Swift](./Sort/MeetingRooms.swift)| Easy| O(nlogn)| O(1)|
 [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)| [Swift](./Sort/MeetingRoomsII.swift)| Medium| O(nlogn)| O(n)|
 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)| [Swift](./Sort/MergeIntervals.swift)| Hard| O(nlogn)| O(n)|
-[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)| [Swift](./Sort/AlienDictionary.swift)| Hard| O(nm)| O(nm)|
+[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)| [Swift](./Graph/AlienDictionary.swift)| Hard| O(nm)| O(nm)|
 [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)| [Swift](./Sort/KthLargestElementInArray.swift)| Medium| O(nlogn)| O(n)|
 [Array Partition I](https://leetcode.com/problems/array-partition-i/description/)| [Swift](./Sort/ArrayPartitionI.swift)|Easy| O(nlogn)| O(n)|
 [Insert Interval](https://leetcode.com/problems/insert-interval/description/)| [Swift](./Sort/InsertInterval.swift)|Hard| O(n)| O(1)|
@@ -432,7 +432,7 @@
 [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)| [Swift](./Sort/MeetingRoomsII.swift)| Medium| ★★★★★★|
 [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| [Swift](./Array/ValidSudoku.swift)| Easy| ★★★★★|
 [Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)| [Swift](./Tree/BinaryTreeVerticalOrderTraversal.swift)| Medium| ★★★★|
-[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)| [Swift](./Sort/AlienDictionary.swift)| Hard| ★★★★|
+[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)| [Swift](./Graph/AlienDictionary.swift)| Hard| ★★★★|
 [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)| [Swift](./String/OneEditDistance.swift)| Medium| ★★★|
 [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)| [Swift](./Math/SudokuSolver.swift)| Hard| ★★★|
 [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [Swift](./LinkedList/ReverseLinkedList.swift)| Easy| ★★|
@@ -623,7 +623,7 @@
 |	[Swift](./Search/ClosestBinarySearchTreeValueII.swift)	|	272	|	[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) &hearts;	|	Hard	|
 |		|	271	|	[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) &hearts;	|	Medium	|
 |	[Swift](./Search/ClosestBinarySearchTreeValue.swift)	|	270	|	[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/) &hearts;	| Easy	|
-|	[Swift](./Sort/AlienDictionary.swift)	|	269	|	[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) &hearts;	|	Hard	|
+|	[Swift](./Graph/AlienDictionary.swift)	|	269	|	[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) &hearts;	|	Hard	|
 |	[Swift](./Math/MissingNumber.swift)	|	268	|	[Missing Number](https://leetcode.com/problems/missing-number/)	|	Easy	|
 |		|	267	|	[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) &hearts;	|	Medium	|
 |	[Swift](./String/PalindromePermutation.swift)	|	266	|	[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) &hearts;	| Easy	|

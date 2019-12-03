@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 296 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 297 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -372,6 +372,7 @@
 [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [Swift](./Graph/GraphValidTree.swift)| Medium| O(nlogn)| O(n)|
 [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)| [Swift](./Graph/NumberIslandsII.swift)| Hard| O(klogmn)| O(mn)|
 [Course Schedule](https://leetcode.com/problems/course-schedule/)| [Swift](./Graph/CourseSchedule.swift)| Medium| O(n)| O(n)|
+[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)| [Swift](./Graph/CourseScheduleII.swift)| Medium| O(n)| O(n)|
 
 ## Design
 | Title | Solution | Difficulty | Time | Space |
@@ -681,7 +682,7 @@
 |	[Swift](./DP/HouseRobberII.swift)	|	213	|	[House Robber II](https://leetcode.com/problems/house-robber-ii/)	|	Medium	|
 | [Swift](./DFS/WordSearchII.swift)	|	212	|	[Word Search II](https://leetcode.com/problems/word-search-ii/)	|	Hard	|
 |	[Swift](./DFS/WordDictionary.swift)	|	211	|	[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)	|	Medium	|
-|		|	210	|	[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)	|	Medium	|
+|	[Swift](./Graph/CourseScheduleII.swift)	|	210	|	[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)	|	Medium	|
 |	[Swift](./Array/MinimumSizeSubarraySum.swift)	|	209	|	[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)	|	Medium	|
 |	[Swift](./Design/ImplementTrie.swift)	|	208	|	[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)	|	Medium	|
 |	[Swift](./Graph/CourseSchedule.swift)	|	207	|	[Course Schedule](https://leetcode.com/problems/course-schedule/)	|	Medium	|

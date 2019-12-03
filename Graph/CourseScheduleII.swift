@@ -1,13 +1,13 @@
 /**
- * Question Link: https://leetcode.com/problems/course-schedule/
+ * Question Link: https://leetcode.com/problems/course-schedule-ii/
  * Primary idea: Topological sort, use indegree of a graph and BFS to solve the problem
  * 
  * Time Complexity: O(n), Space Complexity: O(n)
  *
  */
 
- class CourseSchedule {
-    func canFinish(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool {
+ class CourseScheduleII {
+    func findOrder(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
         var inDegrees = Array(repeating: 0, count: numCourses), fromTo = [Int: [Int]]()
         var coursesCouldTake = [Int](), queue = [Int]()
         
@@ -41,6 +41,6 @@
             }
         }
     
-        return coursesCouldTake.count == numCourses
+        return coursesCouldTake.count == numCourses ? coursesCouldTake : [Int]()
     }
 }

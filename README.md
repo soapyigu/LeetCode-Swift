@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 299 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 300 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -199,6 +199,7 @@
 [Path Sum II](https://leetcode.com/problems/path-sum-ii/)| [Swift](./Tree/PathSumII.swift)| Medium| O(n)| O(n)|
 [Path Sum III](https://leetcode.com/problems/path-sum-iii/)| [Swift](./Tree/PathSumIII.swift)| Easy| O(n^2)| O(1)|
 [Bnary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)| [Swift](./Tree/BnaryTreePaths.swift)| Easy| O(n)| O(n)|
+[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)| [Swift](./Tree/BinaryTreeMaximumPathSum.swift)| Hard| O(n)| O(1)|
 [House Robber III](https://leetcode.com/problems/house-robber-iii/)| [Swift](./Tree/HouseRobberIII.swift)| Medium| O(n)| O(1)|
 [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)| [Swift](./Tree/UniqueBinarySearchTrees.swift)| Medium| O(n^2)| O(n)|
 [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)| [Swift](./Tree/RecoverBinarySearchTree.swift)| Hard| O(n)| O(1)|
@@ -754,7 +755,7 @@
 | [Swift](./BFS/WordLadder.swift) |	127	|	[Word Ladder](https://oj.leetcode.com/problems/word-ladder/)	| Medium	|
 |		|	126	|	[Word Ladder II](https://oj.leetcode.com/problems/word-ladder-ii/)	| Hard	|
 | [Swift](./String/ValidPalindrome.swift)		|	125	|	[Valid Palindrome](https://oj.leetcode.com/problems/valid-palindrome/)	| Easy	|
-|		|	124	|	[Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)	| Hard	|
+|	[Swift](./Tree/BinaryTreeMaximumPathSum.swift)	|	124	|	[Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)	| Hard	|
 |	[Swift](./DP/BestTimeBuySellStockIII.swift)	|	123	|	[Best Time to Buy and Sell Stock III](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)	| Hard	|
 |	[Swift](./DP/BestTimeBuySellStockII.swift)	|	122	|	[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)	| Medium	|
 |	[Swift](./DP/BestTimeBuySellStock.swift)	|	121	|	[Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)	| Easy	|

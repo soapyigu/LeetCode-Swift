@@ -20,42 +20,30 @@
  
 class BinaryTreeVerticalOrderTraversal {
     func verticalOrder(_ root: TreeNode?) -> [[Int]] {
-        var res = [[Int]](), qNodes = [TreeNode](), qVals = [Int]()
-        var colVals = [Int: [Int]](), minCol = 0, maxCol = 0
-    
+        func verticalOrder(_ root: TreeNode?) -> [[Int]] {
         guard let root = root else {
-            return res
+            return [[Int]]()
         }
         
-        qNodes.append(root)
-        qVals.append(0)
+        var orderToVals = [0: [root.val]], nodes = [(root, 0)]
         
-        while !qNodes.isEmpty {
-            let node = qNodes.removeFirst()
-            let col = qVals.removeFirst()
+        while !nodes.isEmpty {
+            let size = nodes.count
             
-            if colVals[col] != nil {
-                colVals[col]!.append(node.val)
-            } else {
-                colVals[col] = [node.val]
-            }
-            
-            if let left = node.left {
-                qNodes.append(left)
-                qVals.append(col - 1)
-                minCol = min(minCol, col - 1)
-            }
-            if let right = node.right {
-                qNodes.append(right)
-                qVals.append(col + 1)
-                maxCol = max(maxCol, col + 1)
+            for _ in 0..<size {
+                let (node, order) = nodes.removeFirst()
+                
+                if let left = node.left {
+                    orderToVals[order - 1, default: []].append(left.val)
+                    nodes.append((left, order - 1))
+                }
+                if let right = node.right {
+                    orderToVals[order + 1, default: []].append(right.val)
+                    nodes.append((right, order + 1))
+                }
             }
         }
         
-        for col in minCol...maxCol {
-            res.append(colVals[col]!)
-        }
-        
-        return res
+        return orderToVals.sorted { $0.key < $1.key }.map { $0.value }
     }
 }

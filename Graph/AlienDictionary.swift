@@ -8,80 +8,69 @@
  */
 
 class AlienDictionary {
-    var inDegrees = [Character: Int]()
-    var toWords = [Character: [Character]]()
-    var valid = true
-
     func alienOrder(_ words: [String]) -> String {
-        var res = "", qChars = [Character]()
-    
-        guard words.count > 0 else {
-            return res
-        }
+        var res = "", queueChars = [Character]()
+        var (indegrees, charToChars) = initGraph(words)
         
-        initGraph(words)
+        indegrees.keys.filter { indegrees[$0] == 0 }.forEach { queueChars.append($0) }
         
-        for char in inDegrees.keys {
-            if inDegrees[char] == 0 {
-                qChars.append(char)
-            }
-        }
-        
-        while !qChars.isEmpty {
-            let char = qChars.removeFirst()
-            res += String(char)
+        while !queueChars.isEmpty {
+            let char = queueChars.removeFirst()
+            res.append(char)
             
-            guard let toChars = toWords[char] else {
-                continue
+            guard let toChars = charToChars[char] else {
+                fatalError("Init Graph Error")
             }
             
-            for c in toChars {
-                inDegrees[c]! -= 1
-                if inDegrees[c] == 0 {
-                    qChars.append(c)
+            for toChar in toChars {
+                guard let indegree = indegrees[toChar] else {
+                    fatalError("Init Graph Error")
+                }
+                
+                indegrees[toChar] = indegree - 1
+                if indegree == 1 {
+                    queueChars.append(toChar)
                 }
             }
         }
         
-        return res.characters.count == inDegrees.count && valid ? res : ""
+        return res.count == indegrees.count ? res : ""
     }
     
-    private func initGraph(_ words: [String]) {
-        for word in words {
-            for char in word.characters {
-                inDegrees[char] = 0
-            }    
+    private func initGraph(_ words: [String]) -> ([Character: Int], [Character: [Character]]) {
+        var indegrees = [Character: Int](), charToChars = [Character: [Character]]()
+        
+        // init indegress and charToChars
+        words.forEach { word in
+            word.forEach { char in
+                indegrees[char] = 0
+                charToChars[char] = [Character]() 
+            } 
         }
         
+        // refactor indegress and charToChars based on words
         for i in 0..<words.count - 1 {
-            let prev = Array(words[i].characters)
-            let post = Array(words[i + 1].characters)
+            let currentWord = Array(words[i]), nextWord = Array(words[i + 1])
             var j = 0
-            
-            while j < prev.count && j < post.count {
-                if prev[j] == post[j] {
+
+            while j < currentWord.count && j < nextWord.count {
+                let currentChar = currentWord[j], nextChar = nextWord[j]
+
+                if nextChar == currentChar {
                     j += 1
-                } else {
-                    addEdge(prev[j], post[j])
+                    continue
+                }
+                if let toChars = charToChars[currentChar], toChars.contains(nextChar) {
                     break
                 }
-            } 
-            
-            if prev.count != post.count && j == post.count {
-                valid = false
+
+                indegrees[nextChar, default: 0] += 1
+                charToChars[currentChar, default: [Character]()].append(nextChar)
+                break
             }
+
         }
-    }
-    
-    private func addEdge(_ from: Character, _ to: Character) {
-        if let inDegree = inDegrees[to] {
-            inDegrees[to] = inDegree + 1
-        }
-        
-        if toWords[from] != nil {
-            toWords[from]!.append(to)
-        } else {
-            toWords[from] = [to]
-        }
+
+        return (indegrees, charToChars)
     }
 }

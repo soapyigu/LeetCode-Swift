@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 300 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 301 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -126,6 +126,7 @@
 [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)| [Swift](./String/LongestSubstringWithoutRepeatingCharacters.swift)| Medium| O(n)| O(n)|
 [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)| [Swift](./String/OneEditDistance.swift)| Medium| O(n)| O(n)|
 [Word Pattern](https://leetcode.com/problems/word-pattern/)| [Swift](./String/WordPattern.swift)| Easy| O(n)| O(n)|
+[Permutation in String](https://leetcode.com/problems/permutation-in-string/)| [Swift](/.String/PermutationInString.swift)| Medium| O(nm)| O(n)|
 [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)| [Swift](./String/MinimumWindowSubstring.swift)| Hard| O(n^2)| O(n)|
 [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)| [Swift](./String/LongestSubstringMostTwoDistinctCharacters.swift)| Hard| O(n)| O(n)|
 [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)| [Swift](./String/LongestSubstringMostKDistinctCharacters.swift)| Hard| O(n)| O(n)|

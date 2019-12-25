@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 301 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 302 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -330,6 +330,7 @@
 [Gary Code](https://leetcode.com/problems/gray-code/)| [Swift](./Math/GaryCode.swift)| Medium| O(n)| O(2^n)|
 [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)| [Swift](./Math/PermutationSequence.swift)| Medium| O(n^2)| O(1)|
 [Line Reflection](https://leetcode.com/problems/line-reflection/)| [Swift](./Math/LineReflection.swift)| Medium| O(n)| O(n)|
+[Valid Number](https://leetcode.com/problems/valid-number/)| [Swift](./Math/ValidNumber.swift)| Hard| O(n)| O(1)|
 
 ## Search
 | Title | Solution | Difficulty | Time | Space |
@@ -815,7 +816,7 @@
 |	[Swift](./String/TextJustification.swift)	|	68	|	[Text Justification](https://oj.leetcode.com/problems/text-justification/)	| Hard	|
 |	[Swift](./Math/AddBinary.swift)	|	67	|	[Add Binary](https://oj.leetcode.com/problems/add-binary/)	| Easy	|
 |	[Swift](./Math/PlusOne.swift)	|	66	|	[Plus One](https://oj.leetcode.com/problems/plus-one/)	| Easy	|
-|		|	65	|	[Valid Number](https://oj.leetcode.com/problems/valid-number/)	| Hard	|
+|	[Swift](./Math/ValidNumber.swift)	|	65	|	[Valid Number](https://oj.leetcode.com/problems/valid-number/)	| Hard	|
 |	[Swift](./DP/MinimumPathSum.swift) |	64	|	[Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)	| Medium	|
 |	[Swift](./DP/UniquePathsII.swift)	|	63	|	[Unique Paths II](https://oj.leetcode.com/problems/unique-paths-ii/)	| Medium	|
 |	[Swift](./DP/UniquePaths.swift)	|	62	|	[Unique Paths](https://oj.leetcode.com/problems/unique-paths/)	| Medium	|

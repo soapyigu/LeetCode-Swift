@@ -5,25 +5,21 @@
  */
 
 class IsomorphicStrings {
-    func isIsomorphic(s: String, _ t: String) -> Bool {
-        var stDict = [Character: Character]()
-        var tsDict = [Character: Character]()
-        
-        let sChars = [Character](s.characters)
-        let tChars = [Character](t.characters)
-        
-        guard sChars.count == tChars.count else {
+    func isIsomorphic(_ s: String, _ t: String) -> Bool {
+        guard s.count == t.count else {
             return false
         }
         
-        for i in 0..<sChars.count {
-            let sCurrent = sChars[i]
-            let tCurrent = tChars[i]
+        var stDict = [Character: Character](), tsDict = [Character: Character]()
+        let s = Array(s), t = Array(t)
+        
+        for (i, sChar) in s.enumerated() {
+            let tChar = t[i]
             
-            if stDict[sCurrent] == nil && tsDict[tCurrent] == nil {
-                stDict[sCurrent] = tCurrent
-                tsDict[tCurrent] = sCurrent
-            } else if stDict[sCurrent] != tCurrent || tsDict[tCurrent] != sCurrent {
+            if stDict[sChar] == nil && tsDict[tChar] == nil {
+                stDict[sChar] = tChar
+                tsDict[tChar] = sChar
+            } else if stDict[sChar] != tChar || tsDict[tChar] != sChar {
                 return false
             }
         }

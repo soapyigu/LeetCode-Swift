@@ -1,6 +1,6 @@
 /**
- * Question Link: https://leetcode.com/problems/nested-list-weight-sum/
- * Primary idea: Track depth and caculate value at each level
+ * Question Link: https://leetcode.com/problems/nested-list-weight-sum-ii/
+ * Primary idea: Use a helper function to track depth
  * Time Complexity: O(n), Space Complexity: O(1)
  *
  * This is the interface that allows for creating nested lists.
@@ -24,23 +24,26 @@
  *     public func getList() -> [NestedInteger]
  * }
  */
- 
-class NestedListWeightSum {
-    func depthSum(nestedList: [NestedInteger]) -> Int {
-        return _helper(nestedList, 1)
+
+ class NestedListWeightSumII {
+    func depthSumInverse(_ nestedList: [NestedInteger]) -> Int {
+        var numDepth = [(Int, Int)](), maxDepth = 0
+        
+        helper(nestedList, 1, &maxDepth, &numDepth)
+        
+        return numDepth.reduce(0) { (total, numDepth) in total + numDepth.0 * (maxDepth - numDepth.1 + 1) }
     }
     
-    private func _helper(nestedList: [NestedInteger], _ depth: Int) -> Int {
-        var res = 0
+    private func helper(_ nestedList: [NestedInteger], _ depth: Int, _ maxDepth: inout Int, _ numDepth: inout [(Int, Int)]) {
+        maxDepth = max(depth, maxDepth)
         
         for nestedInt in nestedList {
             if nestedInt.isInteger() {
-                res += nestedInt.getInteger() * depth
+                numDepth.append((nestedInt.getInteger(), depth))
             } else {
-                res += _helper(nestedInt.getList(), depth + 1)
+                helper(nestedInt.getList(), depth + 1, &maxDepth, &numDepth)
             }
         }
-        
-        return res
     }
 }
+

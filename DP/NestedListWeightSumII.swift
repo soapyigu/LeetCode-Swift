@@ -1,10 +1,10 @@
 /**
  * Question Link: https://leetcode.com/problems/nested-list-weight-sum-ii/
- * Primary idea: Use a helper function to track depth
- * Time Complexity: O(n), Space Complexity: O(1)
+ * Primary idea: Track depth for every number and max depth overall
+ * Time Complexity: O(n), Space Complexity: O(n)
  *
- * This is the interface that allows for creating nested lists.
- * You should not implement it, or speculate about its implementation
+ * // This is the interface that allows for creating nested lists.
+ * // You should not implement it, or speculate about its implementation
  * class NestedInteger {
  *     // Return true if this NestedInteger holds a single integer, rather than a nested list.
  *     public func isInteger() -> Bool

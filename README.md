@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 307 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 308 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -388,6 +388,7 @@
 | ----- | -------- | ---------- | ---- | ----- |
 [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/)| [Swift](./Design/ShuffleAnArray.swift)| Easy| O(n)| O(1)|
 [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/)| [Swift](./Design/DesignTicTacToe.swift)| Medium| O(1)| O(n)|
+[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)| [Swift](./Design/FlattenNestedListIterator.swift)| Medium| O(n)| O(n)|
 [Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)| [Swift](./Design/Vector2D.swift)| Medium | O(n)| O(n)|
 [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)| [Swift](./Design/ImplementTrie.swift)| Medium | O(n)| O(n)|
 [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)| [Swift](./Design/AddSearchWord.swift)| Medium | O(24^n)| O(n)|
@@ -562,7 +563,7 @@
 |	[Swift](./String/ReverseString.swift)	|	344	|	[Reverse String](https://leetcode.com/problems/reverse-string/)	| Easy
 |	[Swift](./Math/IntegerBreak.swift)	|	343	|	[Integer Break](https://leetcode.com/problems/integer-break/)	|	Medium
 |		|	342	|	[Power of Four](https://leetcode.com/problems/power-of-four/)	| Easy
-|		|	341	|	[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)	|	Medium
+|	[Swift](./Design/FlattenNestedListIterator.swift)	|	341	|	[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)	|	Medium
 |	[Swift](./String/LongestSubstringMostKDistinctCharacters.swift)	|	340	|	[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)  &hearts;	|	Hard
 |	[Swift](./DP/NestedListWeightSum.swift)	|	339	|	[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)  &hearts;	| Easy
 |	[Swift](./Math/CountingBits.swift)	|	338	|	[Counting Bits](https://leetcode.com/problems/counting-bits/)	|	Medium

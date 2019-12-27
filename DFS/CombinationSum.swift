@@ -7,18 +7,17 @@
  */
 
 class CombinationSum {
-    func combinationSum(candidates: [Int], _ target: Int) -> [[Int]] {
-        var res = [[Int]]()
-        var path = [Int]()
+    func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
+        var combination = [Int](), combinations = [[Int]]()
         
-        _dfs(candidates.sorted(by: <), target, &res, &path, 0)
+        dfs(candidates.sorted(), target, 0, &combinations, &combination)
         
-        return res
+        return combinations
     }
     
-    private func _dfs(candidates: [Int], _ target: Int, inout _ res: [[Int]], inout _ path: [Int], _ index: Int) {
+    private func dfs(_ candidates: [Int], _ target: Int, _ index: Int, _ combinations: inout [[Int]], _ combination: inout [Int]) {
         if target == 0 {
-            res.append(Array(path))
+            combinations.append(combination)
             return
         }
         
@@ -27,9 +26,9 @@ class CombinationSum {
                 break
             }
             
-            path.append(candidates[i])
-            _dfs(candidates, target - candidates[i], &res, &path, i)
-            path.removeLast()
+            combination.append(candidates[i])
+            dfs(candidates, target - candidates[i], i, &combinations, &combination)
+            combination.removeLast()
         }
     }
 }

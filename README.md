@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 308 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 310 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -160,6 +160,7 @@
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
 [Min Stack](https://leetcode.com/problems/min-stack/)| [Swift](./Stack/MinStack.swift)| Easy| O(1)| O(n)|
+[Max Stack](https://leetcode.com/problems/max-stack/)| [Swift](./Stack/MaxStack.swift)| Easy| O(n)| O(n)|
 [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [Swift](./Stack/ValidParentheses.swift)| Easy| O(n)| O(n)|
 [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)| [Swift](./Stack/LongestValidParentheses.swift)| Hard| O(n)| O(n)|
 [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)| [Swift](./Stack/EvaluateReversePolishNotation.swift)| Medium| O(n)| O(n)|
@@ -387,6 +388,7 @@
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
 [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/)| [Swift](./Design/ShuffleAnArray.swift)| Easy| O(n)| O(1)|
+[Design HashMap](https://leetcode.com/problems/design-hashmap/)| [Swift](./Design/DesignHashMap.swift)| Easy| O(n)| O(n)|
 [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/)| [Swift](./Design/DesignTicTacToe.swift)| Medium| O(1)| O(n)|
 [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)| [Swift](./Design/FlattenNestedListIterator.swift)| Medium| O(n)| O(n)|
 [Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)| [Swift](./Design/Vector2D.swift)| Medium | O(n)| O(n)|

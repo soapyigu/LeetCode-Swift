@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 311 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 312 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -397,6 +397,7 @@
 [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)| [Swift](./Design/AddSearchWord.swift)| Medium | O(24^n)| O(n)|
 [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)| [Swift](./Design/InsertDeleteGetRandom.swift)| Medium| O(1)| O(n)|
 [LRU Cache](https://leetcode.com/problems/lru-cache/)| [Swift](./Design/LRUCache.swift)| Hard| O(1)| O(n)|
+[All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/)| [Swift](./Design/AllOne.swift)| Hard| O(1)| O(n)|
 
 
 ## Google

@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 312 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 314 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -236,6 +236,8 @@
 [Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/)| [Swift](./DP/MaximumSumThreeNonOverlappingSubarrays.swift)| Hard| O(n)| O(n)|
 [Coin Change](https://leetcode.com/problems/coin-change/)| [Swift](./DP/CoinChange.swift)| Medium| O(n^2)| O(n)|
 [Coin Change II](https://leetcode.com/problems/coin-change-ii/)| [Swift](./DP/CoinChangeII.swift)| Medium| O(n^2)| O(n)|
+[Paint House](https://leetcode.com/problems/paint-house/)| [Swift](./DP/PaintHouse.swift)| Easy| O(n)| O(n)|
+[Paint House II](https://leetcode.com/problems/paint-house-ii/)| [Swift](./DP/PaintHouseII.swift)| Hard| O(n)| O(1)|
 [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)| [Swift](./DP/LongestIncreasingSubsequence.swift)| Medium| O(nlogn)| O(n)|
 [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)| [Swift](./DP/PalindromicSubstrings.swift)| Medium| O(n^2)| O(n^2)|
 [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)| [Swift](./DP/LongestPalindromicSubstring.swift)| Medium| O(n^2)| O(n^2)|
@@ -643,7 +645,7 @@
 |	[Swift](./Math/MissingNumber.swift)	|	268	|	[Missing Number](https://leetcode.com/problems/missing-number/)	|	Easy	|
 |		|	267	|	[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) &hearts;	|	Medium	|
 |	[Swift](./String/PalindromePermutation.swift)	|	266	|	[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) &hearts;	| Easy	|
-|		|	265	|	[Paint House II](https://leetcode.com/problems/paint-house-ii/) &hearts;	|	Hard	|
+|	[Swift](./DP/PaintHouseII.swift)	|	265	|	[Paint House II](https://leetcode.com/problems/paint-house-ii/) &hearts;	|	Hard	|
 |	[Swift](./Math/UglyNumberII.swift)	|	264	|	[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)	|	Medium	|
 |	[Swift](./Math/UglyNumber.swift)	|	263	|	[Ugly Number](https://leetcode.com/problems/ugly-number/)	| Easy	|
 |	[Swift](./Sort/GraphValidTree.swift)	|	261	|	[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) &hearts;	|	Medium	|
@@ -651,7 +653,7 @@
 |		|	259	|	[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) &hearts;	|	Medium	|
 |	[Swift](./Math/AddDigits.swift)	|	258	|	[Add Digits](https://leetcode.com/problems/add-digits/)	| Easy	|
 |	[Swift](./Tree/BnaryTreePaths.swift)	|	257	|	[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)	| Easy	|
-|		|	256	|	[Paint House](https://leetcode.com/problems/paint-house/) &hearts;	|	Medium	|
+|	[Swift](./DP/PaintHouse.swift)	|	256	|	[Paint House](https://leetcode.com/problems/paint-house/) &hearts;	|	Medium	|
 |		|	255	|	[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/) &hearts;	|	Medium	|
 |	[Swift](./DFS/FactorCombinations.swift)	|	254	|	[Factor Combinations](https://leetcode.com/problems/factor-combinations/) &hearts;	|	Medium	|
 |	[Swift](./Sort/MeetingRoomsII.swift)	|	253	|	[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) &hearts;	|	Medium	|

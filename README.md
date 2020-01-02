@@ -184,8 +184,8 @@
 | ----- | -------- | ---------- | ---- | ----- |
 [Same Tree](https://oj.leetcode.com/problems/same-tree/)| [Swift](./Tree/SameTree.swift)| Easy| O(n)| O(n)|
 [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)| [Swift](./Tree/SymmetricTree.swift)| Easy| O(n)| O(n)|
-[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [Swift](./Tree/InvertBinaryTree)| Easy| O(n)| O(n)|
-[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/)| [Swift](./Tree/BinaryTreeUpsideDown)| Medium| O(n)| O(1)|
+[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [Swift](./Tree/InvertBinaryTree.swift)| Easy| O(n)| O(n)|
+[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/)| [Swift](./Tree/BinaryTreeUpsideDown.swift)| Medium| O(n)| O(1)|
 [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)| [Swift](./Tree/MinimumDepthOfBinaryTree.swift)| Easy| O(n)| O(1)|
 [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| [Swift](./Tree/MaximumDepthOfBinaryTree.swift)| Easy| O(n)| O(1)|
 [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)| [Swift](./Tree/DiameterBinaryTree.swift)| Easy| O(n)| O(1)|

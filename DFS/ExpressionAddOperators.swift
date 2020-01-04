@@ -14,56 +14,40 @@
 class ExpressionAddOperators {
     func addOperators(_ num: String, _ target: Int) -> [String] {
         var res = [String]()
-
-        guard num.count > 0 else {
-            return res
-        }
-
-        dfs(&res, "", num, target, 0, 0, 0)
-
+        
+        dfs(Array(num), 0, target, 0, 0, &res, "")
+            
         return res
     }
 
-    private func dfs(_ res: inout [String], _ temp: String, _ num: String, _ target: Int, _ pos: Int, _ eval: Int, _ mul: Int) {
-        if pos == num.count {
+    private func dfs(_ nums: [Character], _ index: Int, _ target: Int, _ eval: Int, _ mul: Int, _ res: inout [String], _ candidate: String) {
+        if index == nums.count {
             if eval == target {
-                res.append(temp)
+                res.append(candidate)
             }
+              
             return
         }
-
-        for i in pos..<num.count {
-            if i != pos && num[pos] == "0" {
+        
+        for i in index..<nums.count {
+            // edge case: "305", 15 -> []
+            if i != index && nums[index] == "0" {
                 break
             }
-            let curt = Int(num[pos..<i + 1])!
-            if pos == 0 {
-                dfs(&res, temp + String(curt), num, target, i + 1, curt, curt)
+            
+            let curStr = String(nums[index...i])
+            
+            guard let cur = Int(curStr) else {
+                fatalError("Invalid input: num")
+            }
+            
+            if index == 0 {
+                dfs(nums, i + 1, target, cur, cur, &res, curStr)
             } else {
-                dfs(&res, temp + "+" + String(curt), num, target, i + 1, eval + curt, curt)
-                dfs(&res, temp + "-" + String(curt), num, target, i + 1, eval - curt, -curt)
-                dfs(&res, temp + "*" + String(curt), num, target, i + 1, eval - mul + mul * curt, mul * curt)
+                dfs(nums, i + 1, target, eval + cur, cur, &res, candidate + "+" + curStr)
+                dfs(nums, i + 1, target, eval - cur, -cur, &res, candidate + "-" + curStr)
+                dfs(nums, i + 1, target, eval - mul + mul * cur, mul * cur, &res, candidate + "*" + curStr)
             }
         }
     }
-}
-
-extension String {
-  subscript(index: Int) -> String {
-    get {
-      assert(index < self.count)
-      return String(Array(self.characters)[index])
-    }
-  }
-  
-  subscript(range: CountableRange<Int>) -> String {
-    get {
-      var result = ""
-      for i in range {
-        assert(i < self.count)
-        result.append(self[i])
-      }
-      return result
-    }
-  }
 }

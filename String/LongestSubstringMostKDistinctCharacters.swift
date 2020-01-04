@@ -10,30 +10,26 @@
 
 class LongestSubstringMostKDistinctCharacters {
     func lengthOfLongestSubstringKDistinct(_ s: String, _ k: Int) -> Int {
-        var start = 0, longest = 0, charsFreq = [Character: Int]()
-        let sChars = Array(s)
-        
         guard k > 0 else {
-            return longest
+            return 0
         }
         
-        for (i, char) in sChars.enumerated() {
+        let s = Array(s)
+        var start = 0, longest = 0, charsFreq = [Character: Int]()
+        
+        for (i, char) in s.enumerated() {
             if let freq = charsFreq[char] {
                 charsFreq[char] = freq + 1
             } else {
-                if charsFreq.count == k {
-                    longest = max(longest, i - start)
+                while charsFreq.count == k {
+                    longest = max(i - start, longest)
                     
-                    while charsFreq.count == k {
-                        let charStart = sChars[start]
-                        charsFreq[charStart]! -= 1
-                        
-                        if charsFreq[charStart] == 0 {
-                            charsFreq[charStart] = nil
-                        }
-                        
-                        start += 1
+                    guard let freq = charsFreq[s[start]] else {
+                        fatalError()
                     }
+                    charsFreq[s[start]] = freq == 1 ? nil : freq - 1
+                    
+                    start += 1
                 }
                 
                 charsFreq[char] = 1

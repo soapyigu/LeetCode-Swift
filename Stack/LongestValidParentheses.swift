@@ -6,19 +6,22 @@
 
 class LongestValidParentheses {
     func longestValidParentheses(_ s: String) -> Int {
-        let sChars = Array(s.characters)
-        var stack = [Int]()
-        var longest = 0
+        var stack = [Int](), longest = 0, start = 0
         
-        for (i, char) in sChars.enumerated() {
-            if char == "(" || stack.isEmpty || sChars[stack.last!] == ")" {
+        for (i, char) in s.enumerated() {
+            if char == "(" {
                 stack.append(i)
             } else {
-                let _ = stack.removeLast()
-                if stack.isEmpty {
-                    longest = max(longest, i + 1)
+                if !stack.isEmpty {
+                    stack.removeLast()
+                    
+                    if let last = stack.last {
+                        longest = max(longest, i - last)
+                    } else {
+                        longest = max(longest, i - start + 1)
+                    }
                 } else {
-                    longest = max(longest, i - stack.last!)
+                    start = i + 1   
                 }
             }
         }

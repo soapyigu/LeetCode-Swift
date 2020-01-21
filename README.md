@@ -174,6 +174,7 @@
 [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)| [Swift](./Stack/BinarySearchTreeIterator.swift)| Medium| O(n)| O(n)|
 [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)| [Swift](./Stack/PostorderTraversal.swift)| Hard| O(n)| O(n)|
 [Decode String](https://leetcode.com/problems/decode-string/)| [Swift](./Stack/DecodeString.swift)| Medium| O(n)| O(n)|
+[Basic Calculator](https://leetcode.com/problems/basic-calculator/)| [Swift](./Stack/BasicCalculator.swift)| Hard| O(n)| O(n)|
 
 ## Queue
 | Title | Solution | Difficulty | Time | Space |
@@ -689,7 +690,7 @@
 |		|	227	|	[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)	|	Medium	|
 |	[Swift](./Tree/InvertBinaryTree.swift)	|	226	|	[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)	| Easy	|
 |		|	225	|	[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)	| Easy	|
-|		|	224	|	[Basic Calculator](https://leetcode.com/problems/basic-calculator/)	|	Hard	|
+|	[Swift](./Stack/BasicCalculator.swift)	|	224	|	[Basic Calculator](https://leetcode.com/problems/basic-calculator/)	|	Hard	|
 |	[Swift](./Math/RectangleArea.swift)	|	223	|	[Rectangle Area](https://leetcode.com/problems/rectangle-area/)	| Easy	|
 |		|	222	|	[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)	|	Medium	|
 |	[Swift](./DP/MaximalSquare.swift)	|	221	|	[Maximal Square](https://leetcode.com/problems/maximal-square/)	|	Medium	|

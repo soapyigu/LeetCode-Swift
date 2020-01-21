@@ -85,7 +85,7 @@
 [Rotate Array](https://leetcode.com/problems/rotate-array/)| [Swift](./Array/RotateArray.swift)| Easy| O(n)| O(1)|
 [Rotate Image](https://leetcode.com/problems/rotate-image/)| [Swift](./Array/RotateImage.swift)| Medium| O(n^2)| O(1)|
 [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)| [Swift](./Array/SpiralMatrix.swift)| Medium| O(n^2)| O(1)|
-[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix/)| [Swift](./Array/SpiralMatrixII.swift)| Medium| O(n^2)| O(1)|
+[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)| [Swift](./Array/SpiralMatrixII.swift)| Medium| O(n^2)| O(1)|
 [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/description/)| [Swift](./Array/DiagonalTraverse.swift)| Medium| O(mn)| O(1)|
 [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| [Swift](./Array/ValidSudoku.swift)| Easy| O(n^2)| O(n)|
 [Set Matrix Zero](https://leetcode.com/problems/set-matrix-zeroes/)| [Swift](./Array/SetMatrixZeroes.swift)| Medium| O(n^2)| O(1)|

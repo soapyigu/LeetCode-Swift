@@ -8,28 +8,26 @@
 
 class LongestConsecutiveSequence {
     func longestConsecutive(_ nums: [Int]) -> Int {
-        var set = Set(nums), longest = 0
+        var set = Set<Int>(nums), longest = 0
         
         for num in nums {
-            if set.contains(num) {
-                set.remove(num)
-                let distance = 1 + findConsecutive(&set, num, 1) + findConsecutive(&set, num, -1)
-                longest = max(longest, distance)
-            }
-        }
+            var currentLength = 1
+            dfs(num, &set, &longest, &currentLength)
+        } 
         
         return longest
     }
     
-    fileprivate func findConsecutive(_ set: inout Set<Int>, _ num: Int, _ step: Int) -> Int {
-        var len = 0, num = num + step
-    
-        while set.contains(num) {
-            set.remove(num)
-            len += 1
-            num += step
+    private func dfs(_ num: Int, _ set: inout Set<Int>, _ longest: inout Int, _ length: inout Int) {
+        if !set.contains(num) {
+            return
         }
         
-        return len
+        longest = max(longest, length)
+        set.remove(num)
+        length += 1
+        
+        dfs(num + 1, &set, &longest, &length)
+        dfs(num - 1, &set, &longest, &length)
     }
 }

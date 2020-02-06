@@ -10,41 +10,41 @@
 
 class WordLadder {
     func ladderLength(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int {
-        var words = Set(wordList)
-        var qWordStep = [(beginWord, 1)]
+        guard beginWord.count == endWord.count else {
+            return 0
+        }
         
-        while !qWordStep.isEmpty {
-            let (currentWord, currentStep) = qWordStep.removeFirst()
+        var queue = [(beginWord, 1)], wordSet = Set<String>(wordList)
+        
+        while !queue.isEmpty {
+            let (word, step) = queue.removeFirst()
             
-            if currentWord == endWord {
-                return currentStep
+            if word == endWord {
+                return step
             }
             
-            for (i, currentWordChar) in currentWord.enumerated() {
+            // transform word
+            for i in 0..<word.count {
+                var wordArray = Array(word)
+                
                 for char in "abcdefghijklmnopqrstuvwxyz" {
-                    if char != currentWordChar {
-                        let newWord = currentWord.replace(at: i, to: char)
-                        
-                        if words.contains(newWord) {
-                            qWordStep.append((newWord, currentStep + 1))
-                            
-                            words.remove(newWord)
-                        }
+                    guard char != wordArray[i] else {
+                        continue
                     }
+                    
+                    wordArray[i] = char
+                    let transformedWord = String(wordArray)
+                    
+                    guard wordSet.contains(transformedWord) else {
+                        continue
+                    }
+                    
+                    wordSet.remove(transformedWord)
+                    queue.append((transformedWord, step + 1))
                 }
             }
         }
         
         return 0
-    }
-}
-
-extension String {
-    func replace(at index: Int, to char: Character) -> String {
-        var chars = Array(self)
-        
-        chars[index] = char
-        
-        return String(chars)
     }
 }

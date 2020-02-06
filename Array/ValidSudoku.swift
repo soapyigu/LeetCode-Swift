@@ -6,19 +6,18 @@
  */
 
 class ValidSudoku {
-    let size = 9
-
-    func isValidSudoku(board: [[Character]]) -> Bool {
-        return _isRowValid(board) && _isColValid(board) && _isSquareValid(board)
+    func isValidSudoku(_ board: [[Character]]) -> Bool {
+        return areRowsValid(board) && areColsValid(board) && areSubsquaresValid(board)
     }
     
-    private func _isRowValid(board: [[Character]]) -> Bool {
-        var visited = Array(count: size, repeatedValue: false)
+    private func areRowsValid(_ board: [[Character]]) -> Bool {
+        var existingDigits = Set<Character>()
         
-        for i in 0..<size {
-            visited = Array(count: size, repeatedValue: false)
-            for j in 0..<size {
-                if !_isValidChar(board[i][j], &visited) {
+        for i in 0..<board.count {
+            existingDigits.removeAll()
+            
+            for j in 0..<board[0].count {
+                if !isDigitValid(board[i][j], &existingDigits) {
                     return false
                 }
             }
@@ -27,13 +26,14 @@ class ValidSudoku {
         return true
     }
     
-    private func _isColValid(board: [[Character]]) -> Bool {
-        var visited = Array(count: size, repeatedValue: false)
-
-        for i in 0..<size {
-            visited = Array(count: size, repeatedValue: false)
-            for j in 0..<size {
-                if !_isValidChar(board[j][i], &visited) {
+    private func areColsValid(_ board: [[Character]]) -> Bool {
+        var existingDigits = Set<Character>()
+        
+        for i in 0..<board[0].count {
+            existingDigits.removeAll()
+            
+            for j in 0..<board.count {
+                if !isDigitValid(board[j][i], &existingDigits) {
                     return false
                 }
             }
@@ -42,15 +42,16 @@ class ValidSudoku {
         return true
     }
     
-    private func _isSquareValid(board: [[Character]]) -> Bool {
-        var visited = Array(count: size, repeatedValue: false)
+    private func areSubsquaresValid(_ board: [[Character]]) -> Bool {
+        var existingDigits = Set<Character>()
         
-        for i in 0.stride(to: size, by: 3) {
-            for j in 0.stride(to: size, by: 3) {
-                visited = Array(count: size, repeatedValue: false)
+        for i in stride(from: 0, to: board.count, by: 3) {
+            for j in stride(from: 0, to: board[0].count, by: 3) {
+                existingDigits.removeAll()
+                
                 for m in i..<i + 3 {
                     for n in j..<j + 3 {
-                        if !_isValidChar(board[m][n], &visited) {
+                        if !isDigitValid(board[m][n], &existingDigits) {
                             return false
                         }
                     }
@@ -61,21 +62,16 @@ class ValidSudoku {
         return true
     }
     
-    private func _isValidChar(char: Character, inout _ visited: [Bool]) -> Bool {
-        let current = String(char)
+    private func isDigitValid(_ digit: Character, _ set: inout Set<Character>) -> Bool {
+        if digit == "." {
+            return true
+        }
         
-        if current != "." {
-            if let num = Int(current){
-                if num < 1 || num > 9 || visited[num - 1] {
-                    return false
-                } else {
-                    visited[num - 1] = true
-                }
-            } else {
-                return false
-            }
-        } 
-        
-        return true
+        if set.contains(digit) {
+            return false
+        } else {
+            set.insert(digit)
+            return true
+        }
     }
 }

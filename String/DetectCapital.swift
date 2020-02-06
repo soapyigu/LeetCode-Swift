@@ -9,23 +9,23 @@
 class DetectCapital {
     func detectCapitalUse(_ word: String) -> Bool {
         var capitalNum = 0, isFirstUpperCased = false
-  
-        for char in word.characters {
+
+        for char in word {
             if char.isUpperCased() {
                 capitalNum += 1
             }
         }
-        
-        if let firstChar = word.characters.first {
+
+        if let firstChar = word.first {
             isFirstUpperCased = firstChar.isUpperCased()
         }
-  
-        return capitalNum == 0 || (capitalNum == 1 && isFirstUpperCased) || capitalNum == word.characters.count
+
+        return capitalNum == 0 || (capitalNum == 1 && isFirstUpperCased) || capitalNum == word.count
     }
 }
 
 fileprivate extension Character {
-  func isUpperCased() -> Bool {
-    return String(self).uppercased() == String(self)
-  }
+    func isUpperCased() -> Bool {
+        return String(self).uppercased() == String(self)
+    }
 }

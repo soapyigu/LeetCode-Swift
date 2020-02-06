@@ -7,9 +7,7 @@
 
 class FirstMissingPositive {
     func firstMissingPositive(_ nums: [Int]) -> Int {
-        var set = Set<Int>()
-        
-        nums.forEach { set.insert($0) }
+        let set = Set(nums)
         
         for i in 0..<nums.count {
             if !set.contains(i + 1) {

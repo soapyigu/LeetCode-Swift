@@ -6,7 +6,7 @@
  *
  */
 
-class Solution {
+class LicenseKeyFormatting {
     func licenseKeyFormatting(_ S: String, _ K: Int) -> String {
         guard S.count > 0 && K > 0 else{
             return ""

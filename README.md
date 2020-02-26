@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 321 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 322 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -93,6 +93,7 @@
 [Gas Station](https://leetcode.com/problems/gas-station/)| [Swift](./Array/GasStation.swift)| Medium| O(n)| O(1)|
 [Game of Life](https://leetcode.com/problems/game-of-life/)| [Swift](./Array/GameLife.swift)| Medium| O(n)| O(1)|
 [Task Scheduler](https://leetcode.com/problems/task-scheduler/)| [Swift](./Array/TaskScheduler.swift)| Medium| O(nlogn)| O(n)|
+[]
 [Sliding Window Maximum ](https://leetcode.com/problems/sliding-window-maximum/)| [Swift](./Array/SlidingWindowMaximum.swift)| Hard| O(n)| O(n)|
 [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)| [Swift](./Array/LongestConsecutiveSequence.swift)| Hard| O(n)| O(n)|
 [Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)| [Swift](./Array/CreateMaximumNumber.swift)| Hard| O(n^2)| O(n)|
@@ -133,6 +134,7 @@
 [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)| [Swift](./String/OneEditDistance.swift)| Medium| O(n)| O(n)|
 [Word Pattern](https://leetcode.com/problems/word-pattern/)| [Swift](./String/WordPattern.swift)| Easy| O(n)| O(n)|
 [Permutation in String](https://leetcode.com/problems/permutation-in-string/)| [Swift](/.String/PermutationInString.swift)| Medium| O(nm)| O(n)|
+[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)| [Swift](/.String/FindAllAnagramsInAString.swift)| Medium| O(n)| O(n)|
 [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)| [Swift](./String/MinimumWindowSubstring.swift)| Hard| O(n^2)| O(n)|
 [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)| [Swift](./String/LongestSubstringMostTwoDistinctCharacters.swift)| Hard| O(n)| O(n)|
 [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)| [Swift](./String/LongestSubstringMostKDistinctCharacters.swift)| Hard| O(n)| O(n)|

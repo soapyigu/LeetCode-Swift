@@ -361,7 +361,7 @@
 [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)| [Swift](./Search/Search2DMatrix.swift)| Medium| O(log(m + n))| O(1)|
 [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)| [Swift](./Search/Search2DMatrixII.swift)| Medium| O(m + n)| O(1)|
 [Search for a Range](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)| [Swift](./Search/SearchForARange.swift)| Medium| O(logn)| O(1)|
-[Search Insert Position](https://leetcode.com/problems/search-insert-position/)| [Swift](./Search/SearchForARange.swift)| Medium| O(logn)| O(1)|
+[Search Insert Position](https://leetcode.com/problems/search-insert-position/)| [Swift](./Search/SearchInsertPosition.swift)| Medium| O(logn)| O(1)|
 [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)| [Swift](./Search/PeakIndexMountainArray.swift)| Easy| O(logn)| O(1)|
 [Find Peak Element](https://leetcode.com/problems/find-peak-element/)| [Swift](./Search/FindPeakElement.swift)| Medium| O(logn)| O(1)|
 [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)| [Swift](./Search/RandomPickWeight.swift)| Medium| O(logn)| O(1)|

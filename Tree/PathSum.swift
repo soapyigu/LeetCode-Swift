@@ -17,7 +17,7 @@
  */
 
 class PathSum {
-    func hasPathSum(root: TreeNode?, _ sum: Int) -> Bool {
+    func hasPathSum(_ root: TreeNode?, _ sum: Int) -> Bool {
         guard let root = root else {
             return false
         }

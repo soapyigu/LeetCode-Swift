@@ -75,9 +75,7 @@ class EvaluateDivision {
                 qStrs.append(str)
                 qVals.append(currentVal * val)
             }
-
-
-            rest.append(-1.0)
         }
+        rest.append(-1.0)
     }
 }

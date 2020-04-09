@@ -7,9 +7,18 @@
 
 class NumMatrix {
     fileprivate var sum: [[Int]]
+    fileprivate var m: Int
+    fileprivate var n: Int
     
     init(_ matrix: [[Int]]) {
-        let m = matrix.count, n = matrix[0].count
+        m = matrix.count
+        
+        if m == 0 {
+            n = 0
+        } else {
+            n = matrix[0].count
+        }
+        
         sum = Array(repeating: Array(repeating: 0, count: n), count: m)
         
         for i in 0..<m {

@@ -12,15 +12,15 @@ class ValidParentheses {
             if char == "(" || char == "[" || char == "{" {
                 stack.append(char)
             } else if char == ")" {
-                guard stack.count != 0 && stack.removeLast() == "(" else {
+                guard stack.popLast() == "(" else {
                     return false
                 }
             } else if char == "]" {
-                guard stack.count != 0 && stack.removeLast() == "[" else {
+                guard stack.popLast() == "[" else {
                     return false
                 }
             } else if char == "}" {
-                guard stack.count != 0 && stack.removeLast() == "{" else {
+                guard stack.popLast() == "{" else {
                     return false
                 }
             }

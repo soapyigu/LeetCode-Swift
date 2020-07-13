@@ -7,37 +7,23 @@
 
 class Pow {
     func myPow(x: Double, _ n: Int) -> Double {
-        guard n != 0 else {
-            return 1
-        }
-        guard x != 0 else {
-            return 0
-        }
-        
-        var res = _helper(abs(x), abs(n))
-        
-        if n < 0 {
-            res = 1 / res
-        }
-        if n % 2 != 0 && x < 0 {
-            res = -res
-        }
-        
-        return res
-    }
+        var x = x, n = n
     
-    private func _helper(x: Double, _ n: Int) -> Double {
-        guard n != 0 else {
-            return 1
+        if n < 0 {
+            x = 1.0 / x
+            n = -n
         }
-        guard n != 1 else {
-            return x
+
+        var res = 1.0
+
+        while n > 0 {
+            if n % 2 != 0 {
+                res *= x
+            }
+            x *= x
+            n /= 2
         }
-        
-        if n % 2 == 0 {
-            return _helper(x * x, n / 2)
-        } else {
-            return _helper(x, n - 1) * x
-        }
+
+        return res
     }
 }

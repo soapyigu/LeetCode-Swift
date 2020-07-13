@@ -8,30 +8,27 @@
 
 class FactorCombinations {
     func getFactors(_ n: Int) -> [[Int]] {
-        var res = [[Int]]()
-        var path = [Int]()
+        var paths = [[Int]](), path = [Int]()
         
-        dfs(&res, &path, n, 2)
+        dfs(&paths, path, 2, n)
         
-        return res
+        return paths
     }
     
-    private func dfs(_ res: inout [[Int]], _ path: inout [Int], _ n: Int, _ start: Int) {
-        if n == 1 {
+    private func dfs(_ paths: inout [[Int]], _ path: [Int], _ start: Int, _ target: Int) {
+        if target == 1 {
             if path.count > 1 {
-                res.append(Array(path))
+                paths.append(path)
             }
             return
         }
         
-        if start > n {
+        guard start <= target else {
             return
         }
         
-        for i in start...n where n % i == 0 {
-            path.append(i)
-            dfs(&res, &path, n / i, i)
-            path.removeLast()
+        for factor in start...target where target % factor == 0 {
+            dfs(&paths, path + [factor], factor, target / factor)
         }
     }
 }

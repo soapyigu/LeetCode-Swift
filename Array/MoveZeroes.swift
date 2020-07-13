@@ -8,18 +8,16 @@
 
 class MoveZeroes {
     func moveZeroes(_ nums: inout [Int]) {
-        var idx = 0
+        var nonZeroIdx = 0
         
-        for (i, num) in nums.enumerated() {
-            if num != 0 {
-                nums[idx] = num
-                idx += 1
-            }
+        for num in nums where num != 0 {
+            nums[nonZeroIdx] = num
+            nonZeroIdx += 1
         }
         
-        while idx < nums.count {
-            nums[idx] = 0
-            idx += 1
+        while nonZeroIdx < nums.count {
+            nums[nonZeroIdx] = 0
+            nonZeroIdx += 1
         }
     }
 }

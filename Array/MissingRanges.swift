@@ -8,36 +8,31 @@
 
  class MissingRanges {
     func findMissingRanges(_ nums: [Int], _ lower: Int, _ upper: Int) -> [String] {     
-        if nums.isEmpty {
-            return [getRange(lower - 1, upper + 1)]
-        }
-        
         var res = [String]()
         
-        for (i, num) in nums.enumerated() {
-            if i == 0 {
-                if lower < num {
-                    res.append(getRange(lower - 1, num))
-                }
-            } else {
-                if nums[i - 1] + 1 < num {
-                    res.append(getRange(nums[i - 1], num))
-                }
-            }
+        guard !nums.isEmpty else {
+            addRange(&res, lower, upper)
+            return res
         }
         
-        if nums.last! + 1 < upper + 1 {
-            res.append(getRange(nums.last!, upper + 1))
+        addRange(&res, lower, nums[0] - 1)
+        
+        for i in 1..<nums.count {
+            addRange(&res, nums[i - 1] + 1, nums[i] - 1)
         }
+        
+        addRange(&res, nums[nums.count - 1] + 1, upper)
         
         return res
     }
     
-    private func getRange(_ numPrev: Int, _ numPost: Int) -> String {
-        if numPrev + 2 == numPost {
-            return "\(numPrev + 1)"
+    private func addRange(_ res: inout [String], _ start: Int, _ end: Int) {
+        if start > end {
+            return
+        } else if start == end {
+            res.append("\(end)")
         } else {
-            return "\(numPrev + 1)->\(numPost - 1)"
+            res.append("\(start)->\(end)")
         }
     }
 }

@@ -8,41 +8,30 @@
  */
 
 class ReverseVowelsOfAString {
-    func reverseVowels(s: String) -> String {
-        var left = 0
-        var right = s.characters.count - 1
-        var chars = [Character](s.characters)
+    func reverseVowels(_ s: String) -> String {
+        var left = 0, right = s.count - 1
+        var chars = Array(s)
         
         while left < right {
-            while left < right && !_isVowel(chars[left]) {
+            let isVowelLeft = isVowel(chars[left]), isVowelRight = isVowel(chars[right])
+            
+            if isVowelLeft && isVowelRight {
+                chars.swapAt(left, right)
                 left += 1
-            }
-            while left < right && !_isVowel(chars[right]) {
                 right -= 1
+            } else {
+                if !isVowelLeft {
+                    left += 1
+                } else {
+                    right -= 1
+                }
             }
-            guard left < right else {
-                break
-            }
-            _swap(&chars, left, right)
-            left += 1
-            right -= 1
         }
         
         return String(chars)
     }
-    
-    private func _isVowel(char: Character) -> Bool {
-        var char = String(char).lowercaseString
-        if char == "a" || char == "e" || char == "i" || char == "o" || char == "u" {
-            return true
-        }
-        
-        return false
-    }
-    
-    private func _swap<T>(inout chars: Array<T>, _ p: Int, _ q: Int) {
-        var temp = chars[p]
-        chars[p] = chars[q]
-        chars[q] = temp
+
+    private func isVowel(_ char: Character) -> Bool {
+        return Set("aeiouAEIOU").contains(char)
     }
 }

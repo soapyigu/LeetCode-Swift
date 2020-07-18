@@ -29,3 +29,43 @@ class LongestValidParentheses {
         return longest
     }
 }
+
+
+func longestValidParenthesesWithoutExtraSpace(_ s: String) -> Int {
+    var longest = 0, leftCount = 0, rightCount = 0
+    
+    for char in s {
+        if char == "(" {
+            leftCount += 1
+        } else {
+            rightCount += 1
+        }
+        
+        if leftCount == rightCount {
+            longest = max(longest, leftCount + rightCount)
+        } else if leftCount < rightCount {
+            leftCount = 0
+            rightCount = 0
+        }
+    }
+    
+    leftCount = 0
+    rightCount = 0
+    
+    for char in s.reversed() {
+        if char == "(" {
+            leftCount += 1
+        } else {
+            rightCount += 1
+        }
+        
+        if leftCount == rightCount {
+            longest = max(longest, leftCount + rightCount)
+        } else if leftCount > rightCount {
+            leftCount = 0
+            rightCount = 0
+        }
+    }
+    
+    return longest
+}

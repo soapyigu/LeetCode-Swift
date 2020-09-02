@@ -12,11 +12,11 @@ class ValidPalindrome {
         let sChars = Array(s.lowercased())
         
         while i < j {
-            while !sChars[i].isAlphanumeric && i < j {
+            while !sChars[i].isValid && i < j {
                 i += 1
             }
             
-            while !sChars[j].isAlphanumeric && i < j {
+            while !sChars[j].isValid && i < j {
                 j -= 1
             }
             

@@ -48,3 +48,45 @@ class WordLadder {
         return 0
     }
 }
+//c++  code of word ladder
+class Solution {
+public:
+    int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
+        set<string> s;
+        for(int i=0;i<wordList.size();i++)
+        {
+            s.insert(wordList[i]);
+        }
+        if(s.find(endWord)==s.end())
+            return 0;
+        int level=1;
+        queue<string> q;
+        q.push(beginWord);
+        while(!q.empty())
+        {
+          level++;
+            int siz=q.size();
+            for(int i=0;i<siz;i++)
+            {
+                string word=q.front();
+                q.pop();
+                for(int pos=0;pos<beginWord.size();pos++)
+                {
+                    char orichar=word[pos];
+                    for(char c='a';c<='z';c++)
+                    {
+                        word[pos]=c;
+                        if(word==endWord)
+                            return level;
+                        if(s.find(word)==s.end())
+                            continue;
+                        s.erase(word);
+                        q.push(word);
+                    }
+                    word[pos]=orichar;
+                }
+            }
+        }
+        return 0;
+    }
+};

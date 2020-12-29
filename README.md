@@ -349,6 +349,7 @@
 [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)| [Swift](./Math/PermutationSequence.swift)| Medium| O(n^2)| O(1)|
 [Line Reflection](https://leetcode.com/problems/line-reflection/)| [Swift](./Math/LineReflection.swift)| Medium| O(n)| O(n)|
 [Valid Number](https://leetcode.com/problems/valid-number/)| [Swift](./Math/ValidNumber.swift)| Hard| O(n)| O(1)|
+[Reach a Number](https://leetcode.com/problems/reach-a-number/)| [Swift](./Math/ReachANumber.swift)| Medium| O(logn)| O(1)|
 
 ## Search
 | Title | Solution | Difficulty | Time | Space |
@@ -542,6 +543,7 @@
 | Solution | Number | Title | Difficulty |
 | -------- | ------ | ----- | ---------- |
 | [Swift](./BFS/JumpGameIV.swift)	|	1345	|	[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)	| Hard	|
+| [Swift](./Math/ReachANumber.swift)	|	754	|	[Reach a Number](https://leetcode.com/problems/reach-a-number/)	| Medium	|
 | [Swift](./LinkedList/LFUCache.swift)	|	460	|	[LFU Cache](https://oj.leetcode.com/problems/lfu-cache/)	| Hard	|
 | [Swift](./Array/FindDisappearedNumbers.swift)| 448| [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)| Easy|
 | [Swift](./DFS/CombinationSumIV.swift)	|	377	|	[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)	|	Medium

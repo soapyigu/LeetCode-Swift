@@ -159,6 +159,7 @@
 [Partition List](https://leetcode.com/problems/partition-list/)| [Swift](./LinkedList/PartitionList.swift)| Medium| O(n)| O(1)|
 [LRU Cache](https://leetcode.com/problems/lru-cache/) | [Swift](./LinkedList/LRUCache.swift) | Hard| O(1)| O(1)|
 [LFU Cache](https://leetcode.com/problems/lfu-cache/) | [Swift](./LinkedList/LFUCache.swift) | Hard| O(1)| O(1)|
+[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/) | [Swift](./LinkedList/PseudoPalindromicPathsInABinaryTree.swift) | Medium| O(n)| O(n)|
 
 ## Stack
 | Title | Solution | Difficulty | Time | Space |
@@ -542,6 +543,7 @@
 ## Problem Status
 | Solution | Number | Title | Difficulty |
 | -------- | ------ | ----- | ---------- |
+| [Swift](./LinkedList/PseudoPalindromicPathsInABinaryTree.swift)	|	1457	|	[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)	| Medium	|
 | [Swift](./BFS/JumpGameIV.swift)	|	1345	|	[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)	| Hard	|
 | [Swift](./Math/ReachANumber.swift)	|	754	|	[Reach a Number](https://leetcode.com/problems/reach-a-number/)	| Medium	|
 | [Swift](./LinkedList/LFUCache.swift)	|	460	|	[LFU Cache](https://oj.leetcode.com/problems/lfu-cache/)	| Hard	|

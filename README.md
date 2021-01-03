@@ -42,8 +42,9 @@
 ## Array
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)|[Swift](./Array/CheckArrayFormationThroughConcatenation.swift)| Easy| O(nlogn)| O(n)|
 [Verify an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)|[Swift](Array/VerifyingAlienDictionary.swift)| Easy| O(n)| O(n)|
-[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)|[Swift](Array/SortArrayByParity.swift)| Easy| O(n)| O(n)|
+[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)|[Swift](./Array/SortArrayByParity.swift)| Easy| O(n)| O(n)|
 [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)| [Swift](./Array/MaxConsecutiveOnes.swift)| Easy| O(n)| O(1)|
 [Heaters](https://leetcode.com/problems/heaters/)| [Swift](./Array/Heaters.swift)| Easy| O(nlogn)| O(1)|
 [Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)| [Swift](./Array/NumberBoomerangs.swift)| Easy| O(n ^ 2)| O(n)|
@@ -544,6 +545,7 @@
 ## Problem Status
 | Solution | Number | Title | Difficulty |
 | -------- | ------ | ----- | ---------- |
+| [Swift](./Array/CheckArrayFormationThroughConcatenation.swift)	|	1640	|	[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)	| Easy	|
 | [Swift](./LinkedList/PseudoPalindromicPathsInABinaryTree.swift)	|	1457	|	[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)	| Medium	|
 | [Swift](./BFS/JumpGameIV.swift)	|	1345	|	[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)	| Hard	|
 | [Swift](./Math/ReachANumber.swift)	|	754	|	[Reach a Number](https://leetcode.com/problems/reach-a-number/)	| Medium	|

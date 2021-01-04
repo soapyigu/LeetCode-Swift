@@ -274,6 +274,7 @@
 ## Depth-first search
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)| [Swift](./DFS/BeautifulArrangement.swift)| Medium| O(n)| O(n)|
 [Permutations](https://leetcode.com/problems/permutations/)| [Swift](./DFS/Permutations.swift)| Medium| O(n^n)| O(n)|
 [Permutations II](https://leetcode.com/problems/permutations-ii/)| [Swift](./DFS/PermutationsII.swift)| Medium| O(n^n)| O(n)|
 [Subsets](https://leetcode.com/problems/subsets/)| [Swift](./DFS/Subsets.swift)| Medium| O(n^n)| O(n)|
@@ -549,6 +550,7 @@
 | [Swift](./LinkedList/PseudoPalindromicPathsInABinaryTree.swift)	|	1457	|	[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)	| Medium	|
 | [Swift](./BFS/JumpGameIV.swift)	|	1345	|	[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)	| Hard	|
 | [Swift](./Math/ReachANumber.swift)	|	754	|	[Reach a Number](https://leetcode.com/problems/reach-a-number/)	| Medium	|
+| [Swift](./DFS/BeautifulArrangement.swift)	|	526	|	[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)	| Medium	|
 | [Swift](./LinkedList/LFUCache.swift)	|	460	|	[LFU Cache](https://oj.leetcode.com/problems/lfu-cache/)	| Hard	|
 | [Swift](./Array/FindDisappearedNumbers.swift)| 448| [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)| Easy|
 | [Swift](./DFS/CombinationSumIV.swift)	|	377	|	[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)	|	Medium

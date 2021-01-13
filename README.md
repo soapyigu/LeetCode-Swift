@@ -225,6 +225,7 @@
 ## Dynamic programming
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [Swift](./DP/BoatsToSavePeople.swift)	| Medium| O(nlogn)| O(n)|
 [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)| [Swift](./DP/NestedListWeightSum.swift)| Easy| O(n)| O(1)|
 [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Swift](./DP/ClimbingStairs.swift)| Easy| O(n)| O(1)|
 [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)| [Swift](./DP/MinCostClimbingStairs.swift)| Easy| O(n)| O(n)|
@@ -549,6 +550,7 @@
 | [Swift](./Array/CheckArrayFormationThroughConcatenation.swift)	|	1640	|	[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)	| Easy	|
 | [Swift](./LinkedList/PseudoPalindromicPathsInABinaryTree.swift)	|	1457	|	[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)	| Medium	|
 | [Swift](./BFS/JumpGameIV.swift)	|	1345	|	[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)	| Hard	|
+| [Swift](./DP/BoatsToSavePeople.swift)	|	881	|	[Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)	| Medium	|
 | [Swift](./Math/ReachANumber.swift)	|	754	|	[Reach a Number](https://leetcode.com/problems/reach-a-number/)	| Medium	|
 | [Swift](./DFS/BeautifulArrangement.swift)	|	526	|	[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)	| Medium	|
 | [Swift](./LinkedList/LFUCache.swift)	|	460	|	[LFU Cache](https://oj.leetcode.com/problems/lfu-cache/)	| Hard	|

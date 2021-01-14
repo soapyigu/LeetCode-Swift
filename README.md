@@ -225,6 +225,7 @@
 ## Dynamic programming
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | [Swift](./DP/MinimumOperationsToReduceXToZero.swift)	| Medium| O(n)| O(n)|
 [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [Swift](./DP/BoatsToSavePeople.swift)	| Medium| O(nlogn)| O(n)|
 [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)| [Swift](./DP/NestedListWeightSum.swift)| Easy| O(n)| O(1)|
 [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Swift](./DP/ClimbingStairs.swift)| Easy| O(n)| O(1)|
@@ -547,6 +548,7 @@
 ## Problem Status
 | Solution | Number | Title | Difficulty |
 | -------- | ------ | ----- | ---------- |
+| [Swift](./DP/MinimumOperationsToReduceXToZero.swift)	|	1658	|	[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)	| Medium	|
 | [Swift](./Array/CheckArrayFormationThroughConcatenation.swift)	|	1640	|	[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)	| Easy	|
 | [Swift](./LinkedList/PseudoPalindromicPathsInABinaryTree.swift)	|	1457	|	[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)	| Medium	|
 | [Swift](./BFS/JumpGameIV.swift)	|	1345	|	[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)	| Hard	|

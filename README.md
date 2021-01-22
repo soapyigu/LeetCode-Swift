@@ -104,6 +104,7 @@
 ## String
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)| [Swift](./String/DetermineIfTwoStringsAreClose.swift)| Medium| O(n^2)| O(n)|
 [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)| [Swift](./String/FizzBuzz.swift)| Easy| O(n)| O(1)|
 [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)| [Swift](./String/FirstUniqueCharacterInString.swift)| Easy| O(n)| O(1)|
 [Keyboard Row](https://leetcode.com/problems/keyboard-row/)| [Swift](./String/KeyboardRow.swift)| Easy| O(nm)| O(n)|
@@ -552,6 +553,7 @@
 | -------- | ------ | ----- | ---------- |
 | [Swift](./Array/MaxNumberOfK-SumPairs.swift)	|	1679	|	[Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)	| Medium	|
 | [Swift](./DP/MinimumOperationsToReduceXToZero.swift)	|	1658	|	[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)	| Medium	|
+| [Swift](./String/DetermineIfTwoStringsAreClose.swift)	|	1657	|	[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)	| Medium	|
 | [Swift](./DP/CountSortedVowelStrings.swift)	|	1641	|	[Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/)	| Medium	|
 | [Swift](./Array/CheckArrayFormationThroughConcatenation.swift)	|	1640	|	[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)	| Easy	|
 | [Swift](./LinkedList/PseudoPalindromicPathsInABinaryTree.swift)	|	1457	|	[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)	| Medium	|
@@ -561,6 +563,7 @@
 | [Swift](./DFS/BeautifulArrangement.swift)	|	526	|	[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)	| Medium	|
 | [Swift](./LinkedList/LFUCache.swift)	|	460	|	[LFU Cache](https://oj.leetcode.com/problems/lfu-cache/)	| Hard	|
 | [Swift](./Array/FindDisappearedNumbers.swift)| 448| [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)| Easy|
+| [Swift](./String/FizzBuzz.swift)	|	412	|	[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)	|	Easy
 | [Swift](./DFS/CombinationSumIV.swift)	|	377	|	[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)	|	Medium
 |		|	376	|	[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)	|	Medium
 |	[Swift](./DP/GuessNumberHigherOrLowerII.swift)	|	375	|	[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)	|	Medium

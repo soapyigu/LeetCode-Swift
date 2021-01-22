@@ -42,8 +42,10 @@
 ## Array
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)|[Swift](./Array/MaxNumberOfK-SumPairs.swift)| Medium| O(n)| O(n)|
+[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)|[Swift](./Array/CheckArrayFormationThroughConcatenation.swift)| Easy| O(nlogn)| O(n)|
 [Verify an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)|[Swift](Array/VerifyingAlienDictionary.swift)| Easy| O(n)| O(n)|
-[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)|[Swift](Array/SortArrayByParity.swift)| Easy| O(n)| O(n)|
+[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)|[Swift](./Array/SortArrayByParity.swift)| Easy| O(n)| O(n)|
 [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)| [Swift](./Array/MaxConsecutiveOnes.swift)| Easy| O(n)| O(1)|
 [Heaters](https://leetcode.com/problems/heaters/)| [Swift](./Array/Heaters.swift)| Easy| O(nlogn)| O(1)|
 [Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)| [Swift](./Array/NumberBoomerangs.swift)| Easy| O(n ^ 2)| O(n)|
@@ -102,6 +104,7 @@
 ## String
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)| [Swift](./String/DetermineIfTwoStringsAreClose.swift)| Medium| O(n^2)| O(n)|
 [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)| [Swift](./String/FizzBuzz.swift)| Easy| O(n)| O(1)|
 [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)| [Swift](./String/FirstUniqueCharacterInString.swift)| Easy| O(n)| O(1)|
 [Keyboard Row](https://leetcode.com/problems/keyboard-row/)| [Swift](./String/KeyboardRow.swift)| Easy| O(nm)| O(n)|
@@ -159,10 +162,12 @@
 [Partition List](https://leetcode.com/problems/partition-list/)| [Swift](./LinkedList/PartitionList.swift)| Medium| O(n)| O(1)|
 [LRU Cache](https://leetcode.com/problems/lru-cache/) | [Swift](./LinkedList/LRUCache.swift) | Hard| O(1)| O(1)|
 [LFU Cache](https://leetcode.com/problems/lfu-cache/) | [Swift](./LinkedList/LFUCache.swift) | Hard| O(1)| O(1)|
+[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/) | [Swift](./LinkedList/PseudoPalindromicPathsInABinaryTree.swift) | Medium| O(n)| O(n)|
 
 ## Stack
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)| [Swift](./Stack/LargestRectangleInHistogram.swift)| Hard| O(n)| O(n)|
 [Min Stack](https://leetcode.com/problems/min-stack/)| [Swift](./Stack/MinStack.swift)| Easy| O(1)| O(n)|
 [Max Stack](https://leetcode.com/problems/max-stack/)| [Swift](./Stack/MaxStack.swift)| Easy| O(n)| O(n)|
 [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [Swift](./Stack/ValidParentheses.swift)| Easy| O(n)| O(n)|
@@ -222,6 +227,9 @@
 ## Dynamic programming
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | [Swift](./DP/CountSortedVowelStrings.swift)	| Medium| O(n)| O(n)|
+[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | [Swift](./DP/MinimumOperationsToReduceXToZero.swift)	| Medium| O(n)| O(n)|
+[Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [Swift](./DP/BoatsToSavePeople.swift)	| Medium| O(nlogn)| O(n)|
 [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)| [Swift](./DP/NestedListWeightSum.swift)| Easy| O(n)| O(1)|
 [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Swift](./DP/ClimbingStairs.swift)| Easy| O(n)| O(1)|
 [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)| [Swift](./DP/MinCostClimbingStairs.swift)| Easy| O(n)| O(n)|
@@ -271,6 +279,7 @@
 ## Depth-first search
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
+[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)| [Swift](./DFS/BeautifulArrangement.swift)| Medium| O(n)| O(n)|
 [Permutations](https://leetcode.com/problems/permutations/)| [Swift](./DFS/Permutations.swift)| Medium| O(n^n)| O(n)|
 [Permutations II](https://leetcode.com/problems/permutations-ii/)| [Swift](./DFS/PermutationsII.swift)| Medium| O(n^n)| O(n)|
 [Subsets](https://leetcode.com/problems/subsets/)| [Swift](./DFS/Subsets.swift)| Medium| O(n^n)| O(n)|
@@ -305,6 +314,7 @@
 [Word Ladder](https://leetcode.com/problems/word-ladder/)| [Swift](./BFS/WordLadder.swift)| Medium| O(nm)| O(nm)|
 [Evaluate Division](https://leetcode.com/problems/evaluate-division/)| [Swift](./BFS/EvaluateDivision.swift)| Medium| O(n^2)| O(n)|
 [Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)| [Swift](./BFS/ShortestDistanceAllBuildings.swift)| Hard| O((mn)^2)| O(mn)|
+[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)| [Swift](./BFS/JumpGameIV.swift)| Hard| O(n)| O(n)|
 
 ## Math
 | Title | Solution | Difficulty | Time | Space |
@@ -348,6 +358,7 @@
 [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)| [Swift](./Math/PermutationSequence.swift)| Medium| O(n^2)| O(1)|
 [Line Reflection](https://leetcode.com/problems/line-reflection/)| [Swift](./Math/LineReflection.swift)| Medium| O(n)| O(n)|
 [Valid Number](https://leetcode.com/problems/valid-number/)| [Swift](./Math/ValidNumber.swift)| Hard| O(n)| O(1)|
+[Reach a Number](https://leetcode.com/problems/reach-a-number/)| [Swift](./Math/ReachANumber.swift)| Medium| O(logn)| O(1)|
 
 ## Search
 | Title | Solution | Difficulty | Time | Space |
@@ -540,8 +551,19 @@
 ## Problem Status
 | Solution | Number | Title | Difficulty |
 | -------- | ------ | ----- | ---------- |
+| [Swift](./Array/MaxNumberOfK-SumPairs.swift)	|	1679	|	[Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)	| Medium	|
+| [Swift](./DP/MinimumOperationsToReduceXToZero.swift)	|	1658	|	[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)	| Medium	|
+| [Swift](./String/DetermineIfTwoStringsAreClose.swift)	|	1657	|	[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)	| Medium	|
+| [Swift](./DP/CountSortedVowelStrings.swift)	|	1641	|	[Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/)	| Medium	|
+| [Swift](./Array/CheckArrayFormationThroughConcatenation.swift)	|	1640	|	[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)	| Easy	|
+| [Swift](./LinkedList/PseudoPalindromicPathsInABinaryTree.swift)	|	1457	|	[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)	| Medium	|
+| [Swift](./BFS/JumpGameIV.swift)	|	1345	|	[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)	| Hard	|
+| [Swift](./DP/BoatsToSavePeople.swift)	|	881	|	[Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)	| Medium	|
+| [Swift](./Math/ReachANumber.swift)	|	754	|	[Reach a Number](https://leetcode.com/problems/reach-a-number/)	| Medium	|
+| [Swift](./DFS/BeautifulArrangement.swift)	|	526	|	[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)	| Medium	|
 | [Swift](./LinkedList/LFUCache.swift)	|	460	|	[LFU Cache](https://oj.leetcode.com/problems/lfu-cache/)	| Hard	|
 | [Swift](./Array/FindDisappearedNumbers.swift)| 448| [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)| Easy|
+| [Swift](./String/FizzBuzz.swift)	|	412	|	[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)	|	Easy
 | [Swift](./DFS/CombinationSumIV.swift)	|	377	|	[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)	|	Medium
 |		|	376	|	[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)	|	Medium
 |	[Swift](./DP/GuessNumberHigherOrLowerII.swift)	|	375	|	[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)	|	Medium
@@ -818,7 +840,7 @@
 |		|	87	|	[Scramble String](https://oj.leetcode.com/problems/scramble-string/)	| Hard	|
 |	[Swift](./LinkedList/PartitionList.swift)	|	86	|	[Partition List](https://oj.leetcode.com/problems/partition-list/)	| Medium	|
 |		|	85	|	[Maximal Rectangle](https://oj.leetcode.com/problems/maximal-rectangle/)	| Hard	|
-|		|	84	|	[Largest Rectangle in Histogram](https://oj.leetcode.com/problems/largest-rectangle-in-histogram/)	| Hard	|
+|	[Swift](./Stack/LargestRectangleInHistogram.swift)	|	84	|	[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)	| Hard	|
 |	[Swift](./LinkedList/RemoveDuplicatesFromSortedList.swift)	|	83	|	[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)	| Easy	|
 |	[Swift](./LinkedList/RemoveDuplicatesFromSortedListII.swift)	|	82	|	[Remove Duplicates from Sorted List II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)	| Medium	|
 |	[Swift](./Search/SearchInRotatedSortedArrayII.swift)	|	81	|	[Search in Rotated Sorted Array II](https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/)	| Medium	|

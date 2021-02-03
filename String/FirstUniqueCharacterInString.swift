@@ -10,22 +10,33 @@
 
 class FirstUniqueCharacterInString {
     func firstUniqChar(_ s: String) -> Int {
-        var dict = [Character: Bool]()
+        var uniqueCharactersIndex = -1
         
-        for char in s.characters {
-            if let isDup = dict[char] {
-                dict[char] = true
+        guard s.count > 0 else {
+            return uniqueCharactersIndex
+         }
+        
+        var hashTable = [Character:Int]()
+        
+        for eachChar in s {
+            if let countExist = hashTable[eachChar] {
+                hashTable[eachChar] = countExist + 1
             } else {
-                dict[char] = false
+                hashTable[eachChar] = 1
             }
         }
         
-        for (i, char) in Array(s.characters).enumerated() {
-            if !dict[char]! {
-                return i
+        for (index,eachChar) in s.enumerated() {
+           let count = hashTable[eachChar]
+           
+            if count == 1 {
+                uniqueCharactersIndex = index
+                break
             }
-        }
+                
+        } 
         
-        return -1
+        return uniqueCharactersIndex
+        
     }
 }

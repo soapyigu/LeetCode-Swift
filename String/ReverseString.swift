@@ -7,7 +7,10 @@
  */
 
 class ReverseString {
-    func reverseString(s: String) -> String {
-        return String(s.reversed())
+    func reverseString(_ s: inout [Character]) {
+        let string = String(String(s).reversed())
+        for (index, letter) in string.enumerated() {
+            s[index] = letter
+        }
     }
 }

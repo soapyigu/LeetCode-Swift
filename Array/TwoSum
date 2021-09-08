@@ -1,0 +1,21 @@
+
+
+Question Link :- 
+/**
+ * Primary idea: Use hashmap and check the differance if its present in hashmap
+ * Time Complexity: O(n), Space Complexity: O(n)
+ */
+
+
+func twoNumberSum(_ array: inout [Int], _ targetSum: Int) -> [Int] {
+    var map = [Int:Int]()
+    for i in 0...array.count-1 {
+        let sumPresent = targetSum - array[i]
+        if (map[sumPresent] != nil) {
+            return [array[i],sumPresent]
+        } else {
+            map[array[i]] = array[i]
+        }
+    }
+    return []
+}

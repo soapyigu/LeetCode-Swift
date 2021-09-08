@@ -1,0 +1,19 @@
+Question Link :- 
+/**
+ * Question Link: https://www.algoexpert.io/questions/Minimum%20Waiting%20Time
+ * Primary idea: first sort and then sum all the total minimum time.
+ *
+ * Time Complexity: O(nlogn), Space Complexity: O(1)
+ *
+ */
+ 
+func minimumWaitingTime(_ queries: inout [Int]) -> Int {
+    queries.sort()
+    var totalTime = 0
+    for i in 0...queries.count-1 {
+        let remaningItems = queries.count - i - 1
+        totalTime += queries[i] * remaningItems
+    }
+    return totalTime
+}
+

@@ -33,7 +33,7 @@ class ValidPalindrome {
 }
 
 extension Character {
-    var isValid: Bool {
+    var isAlphanumeric: Bool {
         return isLetter || isNumber
     }
 }

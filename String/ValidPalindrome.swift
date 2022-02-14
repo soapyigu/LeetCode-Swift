@@ -19,13 +19,13 @@ class ValidPalindrome {
             while !sChars[j].isAlphanumeric && i < j {
                 j -= 1
             }
-            
-            if sChars[i] != sChars[j] {
+
+            guard sChars[i] == sChars[j] else {
                 return false
-            } else {
-                i += 1
-                j -= 1
             }
+
+            i += 1
+            j -= 1
         }
         
         return true
@@ -34,6 +34,6 @@ class ValidPalindrome {
 
 extension Character {
     var isAlphanumeric: Bool {
-        return isLetter || isNumber
+        isLetter || isNumber
     }
 }

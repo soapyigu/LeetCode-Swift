@@ -1,0 +1,35 @@
+/**
+ * Question Link: https: // leetcode.com/problems/intersection-of-two-linked-lists/
+ * Primary idea: Use double pointer to solve.
+ * Time Complexity Per Action: O(m+n), Space Complexity: O(1)
+ *
+ *
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     public var val: Int
+ *     public var next: ListNode?
+ *     public init(_ val: Int) {
+ *         self.val = val
+ *         self.next = nil
+ *     }
+ * }
+ */
+
+class Solution {
+    func getIntersectionNode(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
+
+        guard let _ = headA, let _ = headB else {
+            return nil
+        }
+
+        var nodeA = headA
+        var nodeB = headB
+
+        while ObjectIdentifier(nodeA) != ObjectIdentifier(nodeB) {
+            nodeA = nodeA != nil ? nodeA?.next : headB
+            nodeB = nodeB != nil ? nodeB?.next : headA
+        }
+
+        return nodeA
+    }
+}

@@ -25,11 +25,17 @@ class Solution {
         var nodeA = headA
         var nodeB = headB
 
-        while ObjectIdentifier(nodeA) != ObjectIdentifier(nodeB) {
+        while nodeA != nodeB {
             nodeA = nodeA != nil ? nodeA?.next : headB
             nodeB = nodeB != nil ? nodeB?.next : headA
         }
 
         return nodeA
+    }
+}
+
+extension ListNode: Equatable {
+    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+        return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }

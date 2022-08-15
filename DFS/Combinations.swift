@@ -2,30 +2,27 @@
  * Question Link: https://leetcode.com/problems/combinations/
  * Primary idea: Classic Depth-first Search, another version of Subsets
  * 
- * Time Complexity: O(n^n), Space Complexity: O(n)
+ * Time Complexity: O(n * 2^n), Space Complexity: O(n * 2^n)
  *
  */
 
 class Combinations {
-    func combine(n: Int, _ k: Int) -> [[Int]] {
-        var res = [[Int]]()
-        var path = [Int]()
-        let nums = [Int](1...n)
+    func combine(_ n: Int, _ k: Int) -> [[Int]] {
+        var res = [[Int]](), path = [Int]()
         
-        _dfs(nums, &res, &path, 0, k)
+        dfs(&res, &path, 0, Array(1...n), k)
         
         return res
     }
     
-    private func _dfs(nums: [Int], inout _ res: [[Int]], inout _ path: [Int], _ index: Int, _ k: Int) {
+    private func dfs(_ res: inout [[Int]], _ path: inout [Int], _ idx: Int, _ nums: [Int],  _ k: Int) {
         if path.count == k {
-            res.append([Int](path))
-            return
+            res.append(path)
         }
         
-        for i in index..<nums.count {
+        for i in idx..<nums.count {
             path.append(nums[i])
-            _dfs(nums, &res, &path, i + 1, k)
+            dfs(&res, &path, i + 1, nums, k)
             path.removeLast()
         }
     }

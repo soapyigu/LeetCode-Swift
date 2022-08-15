@@ -10,41 +10,45 @@
 
 class WordLadder {
     func ladderLength(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int {
-        guard beginWord.count == endWord.count else {
-            return 0
-        }
+        var wordSet = Set(wordList), wordStepQueue = [(beginWord, 1)]
         
-        var queue = [(beginWord, 1)], wordSet = Set<String>(wordList)
-        
-        while !queue.isEmpty {
-            let (word, step) = queue.removeFirst()
+        while !wordStepQueue.isEmpty {
+            let (currentWord, currentStep) = wordStepQueue.removeFirst()
             
-            if word == endWord {
-                return step
+            if currentWord == endWord {
+                return currentStep
             }
             
-            // transform word
-            for i in 0..<word.count {
-                var wordArray = Array(word)
+            for word in neighbors(for: currentWord, in: wordSet) {
                 
-                for char in "abcdefghijklmnopqrstuvwxyz" {
-                    guard char != wordArray[i] else {
-                        continue
-                    }
-                    
-                    wordArray[i] = char
-                    let transformedWord = String(wordArray)
-                    
-                    guard wordSet.contains(transformedWord) else {
-                        continue
-                    }
-                    
-                    wordSet.remove(transformedWord)
-                    queue.append((transformedWord, step + 1))
-                }
+                wordStepQueue.append((word, currentStep + 1))
+                wordSet.remove(word)
             }
         }
         
         return 0
+    }
+    
+    private func neighbors(for word: String, in wordSet: Set<String>) -> [String] {
+        var res = [String]()
+        
+        // change character at every offset of the word
+        for i in 0..<word.count {
+            var tempWord = Array(word)
+            
+            for charToReplace in "abcdefghijklmnopqrstuvwxyz" {
+                guard charToReplace != tempWord[i] else {
+                    continue
+                }
+                
+                tempWord[i] = charToReplace
+                let tempWordStr = String(tempWord)
+                if wordSet.contains(tempWordStr) {
+                    res.append(tempWordStr)
+                }
+            }
+        }
+        
+        return res
     }
 }

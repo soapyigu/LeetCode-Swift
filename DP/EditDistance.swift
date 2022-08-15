@@ -7,27 +7,24 @@
 
 class EditDistance {
     func minDistance(word1: String, _ word2: String) -> Int {
-        let aChars = [Character](word1.characters)
-        let bChars = [Character](word2.characters)
-        let aLen = aChars.count
-        let bLen = bChars.count
+        let word1Chars = Array(word1), word2Chars = Array(word2), m = word1.count, n = word2.count
+        var distances = Array(repeating: Array(repeating: 0, count: n + 1), count: m + 1)
         
-        var dp = Array(count: aLen + 1, repeatedValue:(Array(count: bLen + 1, repeatedValue: 0)))
-        
-        for i in 0...aLen {
-            for j in 0...bLen {
+        for i in 0...m {
+            for j in 0...n {
                 if i == 0 {
-                    dp[i][j] = j
+                    distances[i][j] = j
                 } else if j == 0 {
-                    dp[i][j] = i
-                } else if aChars[i - 1] == bChars[j - 1] {
-                    dp[i][j] = dp[i - 1][j - 1]
+                    distances[i][j] = i
+                } else if word1Chars[i - 1] == word2Chars[j - 1] {
+                    distances[i][j] = distances[i - 1][j - 1]
                 } else {
-                    dp[i][j] = min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]) + 1
+                    distances[i][j] = min(distances[i - 1][j - 1], distances[i - 1][j], distances[i][j - 1]) + 1
                 }
+                
             }
         }
         
-        return dp[aLen][bLen]
+        return distances[m][n]
     }
 }

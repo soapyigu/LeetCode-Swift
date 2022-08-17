@@ -2,7 +2,7 @@
  * Question Link: https://leetcode.com/problems/combination-sum-ii/
  * Primary idea: Classic Depth-first Search
  * 
- * Time Complexity: O(n^n), Space Complexity: O(2^n - 2)
+ * Time Complexity: O(2^n), Space Complexity: O(n)
  *
  */
 

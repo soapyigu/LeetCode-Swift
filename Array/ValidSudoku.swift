@@ -6,55 +6,35 @@
  */
 
 class ValidSudoku {
-    func isValidSudoku(_ board: [[Character]]) -> Bool {
-        return areRowsValid(board) && areColsValid(board) && areSubsquaresValid(board)
-    }
-    
-    private func areRowsValid(_ board: [[Character]]) -> Bool {
-        var existingDigits = Set<Character>()
+    func isValidSudoku(_ board: [[Character]]) -> Bool {          
+        let len = 9
         
-        for i in 0..<board.count {
-            existingDigits.removeAll()
-            
-            for j in 0..<board[0].count {
-                if !isDigitValid(board[i][j], &existingDigits) {
-                    return false
-                }
-            }
-        }
+        var rowSet = Array(repeating: Set<Character>(), count: len)
+        var colSet = Array(repeating: Set<Character>(), count: len)
+        var boxSet = Array(repeating: Set<Character>(), count: len)
         
-        return true
-    }
-    
-    private func areColsValid(_ board: [[Character]]) -> Bool {
-        var existingDigits = Set<Character>()
-        
-        for i in 0..<board[0].count {
-            existingDigits.removeAll()
-            
-            for j in 0..<board.count {
-                if !isDigitValid(board[j][i], &existingDigits) {
-                    return false
-                }
-            }
-        }
-        
-        return true
-    }
-    
-    private func areSubsquaresValid(_ board: [[Character]]) -> Bool {
-        var existingDigits = Set<Character>()
-        
-        for i in stride(from: 0, to: board.count, by: 3) {
-            for j in stride(from: 0, to: board[0].count, by: 3) {
-                existingDigits.removeAll()
+        for i in 0..<len {    
+            for j in 0..<len {
+                let currentChar = board[i][j]
                 
-                for m in i..<i + 3 {
-                    for n in j..<j + 3 {
-                        if !isDigitValid(board[m][n], &existingDigits) {
-                            return false
-                        }
-                    }
+                if currentChar == "." {
+                    continue
+                }
+                
+                // check row
+                if !isValid(&rowSet[i], currentChar) {
+                    return false 
+                }
+                
+                // check column
+                if !isValid(&colSet[j], currentChar) {
+                    return false 
+                }
+                
+                // check sub-box
+                let idx = 3 * (i / 3) + j / 3
+                if !isValid(&boxSet[idx], currentChar) {
+                    return false 
                 }
             }
         }
@@ -62,15 +42,11 @@ class ValidSudoku {
         return true
     }
     
-    private func isDigitValid(_ digit: Character, _ set: inout Set<Character>) -> Bool {
-        if digit == "." {
-            return true
-        }
-        
-        if set.contains(digit) {
+    private func isValid(_ set: inout Set<Character>, _ char: Character) -> Bool {
+        if set.contains(char) {
             return false
         } else {
-            set.insert(digit)
+            set.insert(char)
             return true
         }
     }

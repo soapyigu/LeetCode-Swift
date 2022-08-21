@@ -340,7 +340,8 @@
 [Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/)| [Swift](./Math/SparseMatrixMultiplication.swift)| Medium| O(n^3)| O(n^2)|
 [Rectangle Area](https://leetcode.com/problems/rectangle-area/)| [Swift](./Math/RectangleArea.swift)| Easy| O(1)| O(1)|
 [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)| [Swift](./Math/MinimumMovesEqualArrayElements.swift)| Easy| O(n)| O(1)|
-[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)| [Swift](./Math/TrappingRainWater.swift)| Hard| O(n)| O(n)|
+[Pour Water](https://leetcode.com/problems/pour-water/)| [Swift](./Math/TrappingRainWater.swift)| Hard| O(n)| O(n)|
+[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)| [Swift](./Math/TrappingRainWater.swift)| Medium| O(nk)| O(1)|
 [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)| [Swift](./Math/ContainerMostWater.swift)| Medium| O(n)| O(1)|
 [Counting Bits](https://leetcode.com/problems/counting-bits/)| [Swift](./Math/CountingBits.swift)| Medium| O(n)| O(n)|
 [K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/)| [Swift](./Math/KthSmallestLexicographicalOrder.swift)| Hard| O(n)| O(1)|
@@ -683,7 +684,7 @@
 |	[Swift](./Array/ProductExceptSelf.swift)	|	238	|	[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)	|	Medium	|
 |		|	237	|	[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)	| Easy	|
 |		|	236	|	[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)	|	Medium	|
-|		|	235	|	[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)	| Easy	|
+|	[Swift](./Tree/LowestCommonAncestorBinarySearchTree.swift)	|	235	|	[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)	| Easy	|
 |	[Swift](./LinkedList/PalindromeLinkedList.swift)	|	234	|	[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)	| Easy	|
 |		|	233	|	[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)	|	Hard	|
 |	[Swift](./Queue/ImplementQueueUsingStacks.swift)	|	232	|	[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)	| Easy	|

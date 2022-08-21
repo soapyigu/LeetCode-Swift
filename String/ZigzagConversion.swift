@@ -8,7 +8,7 @@
  *
  */
  
-class Solution {
+class ZigzagConversion {
     func convert(s: String, _ numRows: Int) -> String {
         if numRows == 1 {
             return s

@@ -38,7 +38,7 @@ class AlienDictionary {
     }
     
     private func initGraph(_ words: [String]) -> ([Character: Int], [Character: [Character]]) {
-        var indegrees = [Character: Int](), charToChars = [Character: [Character]]()
+        var indegrees = [Character: Int](), charToChars = [Character: [Character]
         
         // init indegress and charToChars
         words.forEach { word in
@@ -51,15 +51,19 @@ class AlienDictionary {
         // refactor indegress and charToChars based on words
         for i in 0..<words.count - 1 {
             let currentWord = Array(words[i]), nextWord = Array(words[i + 1])
-            var j = 0
 
-            while j < currentWord.count && j < nextWord.count {
+            for j in 0..<min(currentWord.count, nextWord.count) {
                 let currentChar = currentWord[j], nextChar = nextWord[j]
 
                 if nextChar == currentChar {
-                    j += 1
+
+                    if j + 1 == right.count && right.count < left.count {
+                        return ([Character: Int](), [Character: [Character]]())
+                    }
+
                     continue
                 }
+                
                 if let toChars = charToChars[currentChar], toChars.contains(nextChar) {
                     break
                 }

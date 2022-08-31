@@ -9,72 +9,65 @@
 
 class AlienDictionary {
     func alienOrder(_ words: [String]) -> String {
-        var res = "", queueChars = [Character]()
-        var (indegrees, charToChars) = initGraph(words)
+        var (inDegrees, toChars) = buildGraph(words)
         
-        indegrees.keys.filter { indegrees[$0] == 0 }.forEach { queueChars.append($0) }
+        var queue = inDegrees.keys.filter { inDegrees[$0] == 0 }
+        var res = ""
         
-        while !queueChars.isEmpty {
-            let char = queueChars.removeFirst()
+        while !queue.isEmpty {
+            let char = queue.removeFirst()
+            
             res.append(char)
             
-            guard let toChars = charToChars[char] else {
-                fatalError("Init Graph Error")
-            }
-            
-            for toChar in toChars {
-                guard let indegree = indegrees[toChar] else {
-                    fatalError("Init Graph Error")
-                }
+            for nextChar in toChars[char]! {
+                inDegrees[nextChar]! -= 1
                 
-                indegrees[toChar] = indegree - 1
-                if indegree == 1 {
-                    queueChars.append(toChar)
+                if inDegrees[nextChar] == 0 {
+                    queue.append(nextChar)
                 }
             }
         }
         
-        return res.count == indegrees.count ? res : ""
+        return res.count == inDegrees.count ? res : ""
     }
     
-    private func initGraph(_ words: [String]) -> ([Character: Int], [Character: [Character]]) {
-        var indegrees = [Character: Int](), charToChars = [Character: [Character]
+    private func buildGraph(_ words: [String]) -> ([Character: Int], [Character: [Character]]) {
+        // init inDegrees and toChars
+        var inDegrees = [Character: Int](), toChars = [Character: [Character]]()
         
-        // init indegress and charToChars
         words.forEach { word in
             word.forEach { char in
-                indegrees[char] = 0
-                charToChars[char] = [Character]() 
-            } 
+                inDegrees[char] = 0
+                toChars[char] = [Character]()
+            }
         }
         
-        // refactor indegress and charToChars based on words
+        // update based on orders
         for i in 0..<words.count - 1 {
-            let currentWord = Array(words[i]), nextWord = Array(words[i + 1])
-
-            for j in 0..<min(currentWord.count, nextWord.count) {
-                let currentChar = currentWord[j], nextChar = nextWord[j]
-
-                if nextChar == currentChar {
-
+            let left = Array(words[i]), right = Array(words[i + 1])
+            
+            for j in 0..<min(left.count, right.count) {
+                if left[j] == right[j] {
+                    
+                    // invalid use case
                     if j + 1 == right.count && right.count < left.count {
                         return ([Character: Int](), [Character: [Character]]())
                     }
-
+                    
                     continue
                 }
                 
-                if let toChars = charToChars[currentChar], toChars.contains(nextChar) {
+                if toChars[left[j]]!.contains(right[j]) {
                     break
                 }
-
-                indegrees[nextChar, default: 0] += 1
-                charToChars[currentChar, default: [Character]()].append(nextChar)
+                
+                inDegrees[right[j]]! += 1
+                toChars[left[j]]!.append(right[j])
                 break
+                
             }
-
         }
-
-        return (indegrees, charToChars)
+        
+        return (inDegrees, toChars)
     }
 }

@@ -11,7 +11,7 @@
  * func guess(_ num: Int) -> Int
  */
 
-class Solution {
+class GuessNumberHigherOrLower {
     func guessNumber(_ n: Int) -> Int {
         var start = 1
         var end = n

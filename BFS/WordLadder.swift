@@ -10,20 +10,26 @@
 
 class WordLadder {
     func ladderLength(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int {
-        var wordSet = Set(wordList), wordStepQueue = [(beginWord, 1)]
+        var wordSet = Set(wordList), wordQueue = [beginWord], count = 1
         
-        while !wordStepQueue.isEmpty {
-            let (currentWord, currentStep) = wordStepQueue.removeFirst()
+        while !wordQueue.isEmpty {
             
-            if currentWord == endWord {
-                return currentStep
-            }
+            let size = wordQueue.count
             
-            for word in neighbors(for: currentWord, in: wordSet) {
+            for i in 0..<size {
+                let currentWord = wordQueue.removeFirst()
                 
-                wordStepQueue.append((word, currentStep + 1))
-                wordSet.remove(word)
+                if currentWord == endWord {
+                    return count
+                }
+                
+                for word in neighbors(for: currentWord, in: wordSet) {
+                    wordQueue.append(word)
+                    wordSet.remove(word)
+                }
             }
+            
+            count += 1
         }
         
         return 0

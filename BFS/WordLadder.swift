@@ -16,7 +16,7 @@ class WordLadder {
             
             let size = wordQueue.count
             
-            for i in 0..<size {
+            for _ in 0..<size {
                 let currentWord = wordQueue.removeFirst()
                 
                 if currentWord == endWord {

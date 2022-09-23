@@ -13,29 +13,36 @@ class ShortestPathGetFood {
         let start = findStart(grid)
         
         isVisited[start.0][start.1] = true
-        var queue = [Point(i: start.0, j: start.1, len: 0)]
+        var queue = [(start.0, start.1)], count = 0
         
         while !queue.isEmpty {
-            let point = queue.removeFirst()
             
-            if grid[point.i][point.j] == "#" {
-                return point.len
+            let size = queue.count 
+            
+            for _ in 0..<size {
+                let point = queue.removeFirst()
+
+                if grid[point.0][point.1] == "#" {
+                    return count
+                }
+
+                for dir in [(0, 1), (0, -1), (1, 0), (-1, 0)] {
+                    let (x, y) = (point.0 + dir.0, point.1 + dir.1)
+
+                    guard x >= 0 && x < m && y >= 0 && y < n && !isVisited[x][y] else {
+                        continue
+                    }
+
+                    if grid[x][y] == "X" {
+                        continue
+                    }
+
+                    isVisited[x][y] = true
+                    queue.append((x, y))
+                }
             }
             
-            for dir in [(0, 1), (0, -1), (1, 0), (-1, 0)] {
-                let (x, y) = (point.i + dir.0, point.j + dir.1)
-                
-                guard x >= 0 && x < m && y >= 0 && y < n && !isVisited[x][y] else {
-                    continue
-                }
-                
-                if grid[x][y] == "X" {
-                    continue
-                }
-                
-                isVisited[x][y] = true
-                queue.append(Point(i: x, j: y, len: point.len + 1))
-            }
+            count += 1
         }
         
         return -1
@@ -51,11 +58,5 @@ class ShortestPathGetFood {
         }
         
         return (-1, -1)
-    }
-    
-    struct Point {
-        var i: Int
-        var j: Int
-        var len: Int
     }
 }

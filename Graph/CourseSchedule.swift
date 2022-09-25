@@ -8,39 +8,32 @@
 
  class CourseSchedule {
     func canFinish(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool {
-        var inDegrees = Array(repeating: 0, count: numCourses), fromTo = [Int: [Int]]()
-        var coursesCouldTake = [Int](), queue = [Int]()
+        var inDegrees = Array(repeating: 0, count: numCourses), toCourses = [Int: [Int]]()
         
-        // init graph
-        for prerequisite in prerequisites {
-            fromTo[prerequisite[1], default: []].append(prerequisite[0])
-            inDegrees[prerequisite[0]] += 1
+        for courses in prerequisites {
+            inDegrees[courses[0]] += 1
+            toCourses[courses[1], default:[]].append(courses[0])
         }
         
-        // BFS
-        for course in 0..<numCourses {
-            if inDegrees[course] == 0 {
-                queue.append(course)
-            }
-        }
+        var queue = (0..<numCourses).filter { inDegrees[$0] == 0 }, validCourseCount = 0
         
         while !queue.isEmpty {
-            let currentCourse = queue.removeFirst()
-            coursesCouldTake.append(currentCourse)
+            let course = queue.removeFirst()
             
-            guard let toCourses = fromTo[currentCourse] else {
+            validCourseCount += 1
+            
+            guard let toCourses = toCourses[course] else {
                 continue
             }
             
-            toCourses.forEach { 
-                inDegrees[$0] -= 1 
-                
-                if inDegrees[$0] == 0 {
-                    queue.append($0)
+            for toCourse in toCourses {
+                inDegrees[toCourse] -= 1
+                if inDegrees[toCourse] == 0 {
+                    queue.append(toCourse)
                 }
             }
         }
-    
-        return coursesCouldTake.count == numCourses
+        
+        return validCourseCount == numCourses
     }
 }

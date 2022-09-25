@@ -9,7 +9,7 @@
  class CourseScheduleII {
     func findOrder(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
         var inDegrees = Array(repeating: 0, count: numCourses), fromTo = [Int: [Int]]()
-        var coursesCouldTake = [Int](), queue = [Int]()
+        var coursesCouldTake = [Int]()
         
         // init graph
         for prerequisite in prerequisites {
@@ -17,12 +17,7 @@
             inDegrees[prerequisite[0]] += 1
         }
         
-        // BFS
-        for course in 0..<numCourses {
-            if inDegrees[course] == 0 {
-                queue.append(course)
-            }
-        }
+        var queue = (0..<numCourses).filter { inDegrees[$0] == 0 }
         
         while !queue.isEmpty {
             let currentCourse = queue.removeFirst()

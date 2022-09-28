@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 323 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 324 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -369,6 +369,7 @@
 [Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [Swift](./Search/Sqrtx.swift)| Medium| O(logn)| O(1)|
 [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)| [Swift](./Search/MedianTwoSortedArrays.swift)| Hard| O(log(m + n))| O(1)|
 [Minimize Max Distance to Gas Station](https://leetcode.com/problems/minimize-max-distance-to-gas-station/)| [Swift](./Search/MinimizeMaxDistanceGasStation.swift)| Hard| O(nlogm)| O(1)|
+[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)| [Swift](./Search/GuessNumberHigherOrLower.swift)| Easy| O(logn)| O(1)|
 
 ## Sort
 | Title | Solution | Difficulty | Time | Space |
@@ -546,7 +547,7 @@
 | [Swift](./DFS/CombinationSumIV.swift)	|	377	|	[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)	|	Medium
 |		|	376	|	[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)	|	Medium
 |	[Swift](./DP/GuessNumberHigherOrLowerII.swift)	|	375	|	[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)	|	Medium
-|		|	374	|	[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)	| Easy
+|	[Swift](./Search/GuessNumberHigherOrLower.swift)	|	374	|	[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)	| Easy
 |		|	373	|	[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)	|	Medium
 |	[Swift](./Math/SuperPow.swift)	|	372	|	[Super Pow](https://leetcode.com/problems/super-pow/)	|	Medium
 |	[Swift](./Math/SumTwoIntegers.swift)	|	371	|	[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)	| Easy

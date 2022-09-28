@@ -18,12 +18,12 @@ class MultiplyStrings {
         // calculate product for every digit
         for (i, char1) in num1.enumerated() {
             
-            guard let digit1 = Int(String(char1)) else {
+            guard let digit1 = char1.wholeNumberValue else {
                 fatalError("Invalid Input num1")
             }
             
             for (j, char2) in num2.enumerated() {
-                guard let digit2 = Int(String(char2)) else {
+                guard let digit2 = char2.wholeNumberValue else {
                     fatalError("Invalid Input num2")
                 }
                 
@@ -44,7 +44,7 @@ class MultiplyStrings {
         }
         
         // trim starting 0s
-        while !resStr.isEmpty && resStr.first! == "0" {
+        while resStr.first == "0" {
             resStr.removeFirst()
         }
         

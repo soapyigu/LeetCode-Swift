@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 323 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 324 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -330,6 +330,7 @@
 [Pow(x, n)](https://leetcode.com/problems/isomorphic-strings/)| [Swift](./Math/Pow.swift)| Medium| O(logn)| O(1)|
 [Power of Two](https://leetcode.com/problems/power-of-two/)| [Swift](./Math/PowerTwo.swift)| Easy| O(1)| O(1)|
 [Power of Three](https://leetcode.com/problems/power-of-three/)| [Swift](./Math/PowerThree.swift)| Easy| O(1)| O(1)|
+[Power of Four](https://leetcode.com/problems/power-of-four/)| [Swift](./Math/PowerFour.swift)| Easy| O(logn)| O(1)|
 [Super Power](https://leetcode.com/problems/super-pow/)| [Swift](./Math/SuperPow.swift)| Medium| O(n)| O(1)|
 [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)| [Swift](./Math/SumTwoIntegers.swift)| Easy| O(n)| O(1)|
 [Reverse Integer](https://leetcode.com/problems/reverse-integer/)| [Swift](./Math/ReverseInteger.swift)| Easy| O(n)| O(1)|
@@ -578,7 +579,7 @@
 |	[Swift](./String/ReverseVowelsOfAString.swift)	|	345	|	[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)	| Easy
 |	[Swift](./String/ReverseString.swift)	|	344	|	[Reverse String](https://leetcode.com/problems/reverse-string/)	| Easy
 |	[Swift](./Math/IntegerBreak.swift)	|	343	|	[Integer Break](https://leetcode.com/problems/integer-break/)	|	Medium
-|		|	342	|	[Power of Four](https://leetcode.com/problems/power-of-four/)	| Easy
+|	[Swift](./Math/PowerFour.swift)	|	342	|	[Power of Four](https://leetcode.com/problems/power-of-four/)	| Easy
 |	[Swift](./Design/FlattenNestedListIterator.swift)	|	341	|	[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)	|	Medium
 |	[Swift](./String/LongestSubstringMostKDistinctCharacters.swift)	|	340	|	[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)  &hearts;	|	Hard
 |	[Swift](./DP/NestedListWeightSum.swift)	|	339	|	[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)  &hearts;	| Easy

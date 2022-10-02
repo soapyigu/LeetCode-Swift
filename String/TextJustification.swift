@@ -7,72 +7,67 @@
 
 class TextJustification {
     func fullJustify(_ words: [String], _ maxWidth: Int) -> [String] {
-        var res = [String]()
-        var last = 0, currentLineLength = 0
-        
+        var res = [String](), rowStart = 0, currentLen = 0
+
         for (i, word) in words.enumerated() {
-            if currentLineLength + word.count + (i - last) > maxWidth {
-                
-                res.append(buildLine(words, last, i - 1, maxWidth, currentLineLength))
-                
-                last = i
-                currentLineLength = 0   
+
+            if currentLen + word.count + (i - rowStart) > maxWidth {
+                res.append(buildRow(rowStart, i - 1, words, maxWidth, currentLen))
+
+                rowStart = i
+                currentLen = 0
             }
-            
-            currentLineLength += word.count
+
+            currentLen += word.count
         }
-        
-        res.append(buildLastLine(words, last, words.count - 1, maxWidth))
-        
+
+        res.append(buildLastRow(rowStart, words, maxWidth))
+
         return res
     }
-    
-    fileprivate func buildLine(_ words: [String], _ start: Int, _ end: Int, _ maxWidth: Int, _ currentLineLength: Int) -> String {
-        var line = ""
-        var extraSpaceNum = 0, spaceNum = 0
-        
+
+    private func buildRow(_ start: Int, _ end: Int, _ words: [String], _ maxWidth: Int, _ currentLen: Int) -> String {
+        var res = "", spaceNum = 0, extraSpaceNum = 0
+
         if end > start {
-            extraSpaceNum = (maxWidth - currentLineLength) % (end - start)
-            spaceNum = (maxWidth - currentLineLength) / (end - start)
+            spaceNum = (maxWidth - currentLen) / (end - start)
+            extraSpaceNum = (maxWidth - currentLen) % (end - start)
         } else {
-            spaceNum = maxWidth - currentLineLength
+            spaceNum = maxWidth - currentLen
         }
-        
+
         for i in start...end {
-            line.append(words[i])
-            
+            res += words[i]
+
             if start != end && i == end {
                 break
-            } 
-            
-            for _ in 0..<spaceNum {
-                line.append(" ")
             }
-            
+
+            res.append(String(repeating: " ", count: spaceNum))
             if extraSpaceNum > 0 {
-                line.append(" ")
+                res.append(" ")
                 extraSpaceNum -= 1
             }
         }
-        
-        return line
+
+        return res
     }
-    
-    fileprivate func buildLastLine(_ words: [String], _ start: Int, _ end: Int, _ maxWidth: Int) -> String {
-        var line = ""
-        
-        for i in start...end {
-            line.append(words[i])
-            
-            if i < end {
-                line.append(" ")
+
+    private func buildLastRow(_ start: Int, _ words: [String], _ maxWidth: Int) -> String {
+        var res = ""
+
+        for i in start..<words.count {
+            res += words[i]
+
+            if i + 1 < words.count {
+                res.append(" ")
             }
         }
-        
-        while line.count < maxWidth {
-            line.append(" ")
+
+        if res.count < maxWidth {
+            res.append(String(repeating: " ", count: maxWidth - res.count))
         }
-        
-        return line
+
+        return res
     }
 }

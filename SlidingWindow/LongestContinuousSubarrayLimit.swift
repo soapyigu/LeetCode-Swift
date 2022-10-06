@@ -1,5 +1,5 @@
 /**
- * Question Link: https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/description/
+ * Question Link: https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/
  * Primary idea: Slding window, use max and min queues to track largest difference along the way. Move left pointer to get the potential result.
  *
  * Note: k may be invalid, mention that with interviewer
@@ -9,7 +9,7 @@
 
 class LongestContinuousSubarrayLimit {
     func longestSubarray(_ nums: [Int], _ limit: Int) -> Int {
-        var maxQueue = [Int](), minQueue = [Int](), left = 0, size = 0
+        var maxQueue = [Int](), minQueue = [Int](), left = 0, res = 0
 
         for (i, num) in nums.enumerated() {
             while !maxQueue.isEmpty && maxQueue.last! < num {
@@ -33,9 +33,9 @@ class LongestContinuousSubarrayLimit {
                 left += 1
             }
 
-            size = max(size, i - left + 1)
+            res = max(res, i - left + 1)
         }
 
-        return size
+        return res
     }
 }

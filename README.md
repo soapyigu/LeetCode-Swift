@@ -4,7 +4,7 @@
 ![Leetcode](./logo.png?style=centerme)
 
 ## Progress
-[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 323 completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
+[Problem Status](#problem-status) shows the latest progress to all 1000+ questions. Currently we have 400+ completed solutions. Note: questions with &hearts; mark means that you have to **Subscript to premium membership** of LeetCode to unlock them.
 
 ## Contributors
 
@@ -157,6 +157,7 @@
 [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [Swift](./LinkedList/MergeTwoSortedLists.swift)| Easy| O(n)| O(1)|
 [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)| [Swift](./LinkedList/MergeKSortedLists.swift)| Hard| O(mlogn)| O(1)|
 [Partition List](https://leetcode.com/problems/partition-list/)| [Swift](./LinkedList/PartitionList.swift)| Medium| O(n)| O(1)|
+[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)| [Swift](./LinkedList/ReverseNodesInKGroup.swift)| Hard| O(n)| O(1)|
 [LRU Cache](https://leetcode.com/problems/lru-cache/) | [Swift](./LinkedList/LRUCache.swift) | Hard| O(1)| O(1)|
 [LFU Cache](https://leetcode.com/problems/lfu-cache/) | [Swift](./LinkedList/LFUCache.swift) | Hard| O(1)| O(1)|
 
@@ -245,6 +246,7 @@
 [Paint House](https://leetcode.com/problems/paint-house/)| [Swift](./DP/PaintHouse.swift)| Easy| O(n)| O(n)|
 [Paint House II](https://leetcode.com/problems/paint-house-ii/)| [Swift](./DP/PaintHouseII.swift)| Hard| O(n)| O(1)|
 [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)| [Swift](./DP/LongestIncreasingSubsequence.swift)| Medium| O(nlogn)| O(n)|
+[Longest Common Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)| [Swift](./DP/LongestCommonSubsequence.swift)| Medium| O(mn)| O(1)|
 [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)| [Swift](./DP/PalindromicSubstrings.swift)| Medium| O(n^2)| O(n^2)|
 [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)| [Swift](./DP/LongestPalindromicSubstring.swift)| Medium| O(n^2)| O(n^2)|
 [Perfect Squares](https://leetcode.com/problems/perfect-squares/)| [Swift](./DP/PerfectSquares.swift)| Medium| O(n^2)| O(n)|
@@ -253,6 +255,7 @@
 [Paint Fence](https://leetcode.com/problems/paint-fence/)| [Swift](./DP/PaintFence.swift)| Easy| O(n)| O(n)|
 [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)| [Swift](./DP/MaximumSubarray.swift)| Medium| O(n)| O(1)|
 [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)| [Swift](./DP/MaximumProductSubarray.swift)| Medium| O(n)| O(1)|
+[Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/)| [Swift](./DP/MaximumNumberPointsCost.swift)| Medium| O(mn)| O(1)|
 [Maximal Square](https://leetcode.com/problems/maximal-square/)| [Swift](./DP/MaximalSquare.swift)| Medium| O(mn)| O(mn)|
 [Edit Distance](https://leetcode.com/problems/edit-distance/)| [Swift](./DP/EditDistance.swift)| Hard| O(mn)| O(mn)|
 [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)| [Swift](./DP/CombinationSumIV.swift)| Medium| O(2^n)| O(n)|
@@ -415,6 +418,7 @@
 ## Google
 | Title | Solution | Difficulty | Frequency |
 | ----- | -------- | ---------- | --------- |
+[Race Car](https://leetcode.com/problems/race-car/)| [Swift](./BFS/RaceCar.swift)| Hard| ★★★★★★|
 [Plus One](https://leetcode.com/problems/plus-one/)| [Swift](./Math/PlusOne.swift)| Easy| ★★★★★★|
 [Number of Islands](https://leetcode.com/problems/number-of-islands/)| [Swift](./DFS/NumberofIslands.swift)| Medium| ★★★★|
 [Summary Ranges](https://leetcode.com/problems/summary-ranges/)| [Swift](./Array/SummaryRanges.swift)| Medium| ★★★★|
@@ -878,7 +882,7 @@
 |	[Swift](./String/StrStr.swift)	|	28	|	[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)	| Easy	|
 |	[Swfit](./Array/RemoveElement.swift)	|	27	|	[Remove Element](https://oj.leetcode.com/problems/remove-element/)	| Easy	|
 |	[Swift](./Array/RemoveDuplicatesFromSortedArray.swift)	|	26	|	[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)	| Easy	|
-|		|	25	|	[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)	| Hard	|
+|	[Swift](./LinkedList/ReverseNodesInKGroup.swift)	|	25	|	[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)	| Hard	|
 |	[Swift](./LinkedList/SwapNodesInPairs.swift)	|	24	|	[Swap Nodes in Pairs](https://oj.leetcode.com/problems/swap-nodes-in-pairs/)	| Easy	|
 |	[Swift](./LinkedList/MergeKSortedLists.swift)	|	23	|	[Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/)	| Hard	|
 |	[Swift](./Math/GenerateParentheses.swift)	|	22	|	[Generate Parentheses](https://oj.leetcode.com/problems/generate-parentheses/)	| Medium	|

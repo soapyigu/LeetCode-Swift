@@ -476,12 +476,17 @@
 ## Uber
 | Title | Solution | Difficulty | Frequency |
 | ----- | -------- | ---------- | --------- |
-[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| [Swift](./Array/ValidSudoku.swift)| Easy| ★★★★|
-[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)| [Swift](./Array/SpiralMatrix.swift)| Medium| ★★★★|
-[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)| [Swift](./DFS/LetterCombinationsPhoneNumber.swift)| Medium| ★★★★|
-[Group Anagrams](https://leetcode.com/problems/anagrams/)| [Swift](./String/GroupAnagrams.swift)| Medium| ★★★★|
-[Word Pattern](https://leetcode.com/problems/word-pattern/)| [Swift](./String/WordPattern.swift)| Easy| ★★★|
-[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)| [Swift](./Math/RomanToInteger.swift)| Easy| ★★★|
+[Squares of Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)| [Swift](./Array/SquaresSortedArray.swift)| Easy| ★★★★|
+[Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/)| [Swift](./SlidingWindow/FrequencyMostFrequentElement.swift)| Medium| ★★★★|
+[Bus Routes](https://leetcode.com/problems/bus-routes/)| [Swift](./BFS/BusRoutes.swift)| Hard| ★★★★|
+[Employee Free Time](https://leetcode.com/problems/employee-free-time/)| [Swift](./Sort/EmployeeFreeTime.swift)| Hard| ★★★|
+[Group Anagrams](https://leetcode.com/problems/anagrams/)| [Swift](./String/GroupAnagrams.swift)| Medium| ★★★|
+[Next Palindrome Using Same Digits](https://leetcode.com/problems/next-palindrome-using-same-digits/)| [Swift](./Array/NextPalindromeUsingSameDigits.swift)| Hard| ★★★|
+[Word Pattern](https://leetcode.com/problems/word-pattern/)| [Swift](./String/WordPattern.swift)| Easy| ★★|
+[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)| [Swift](./Array/SpiralMatrix.swift)| Medium| ★★|
+[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| [Swift](./Array/ValidSudoku.swift)| Easy| ★★|
+[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)| [Swift](./Math/RomanToInteger.swift)| Easy| ★★|
+[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)| [Swift](./DFS/LetterCombinationsPhoneNumber.swift)| Medium| ★★|
 [Combination Sum](https://leetcode.com/problems/combination-sum/)| [Swift](./DFS/CombinationSum.swift)| Medium| ★★|
 
 ## Airbnb

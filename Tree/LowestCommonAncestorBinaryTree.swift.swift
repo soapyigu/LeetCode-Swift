@@ -16,7 +16,7 @@
  * }
  */
 
-class LowestCommonAncestorOfABinaryTree {
+class LowestCommonAncestorBinaryTree {
     func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         guard let root = root else { return nil }
         if root === p || root === q {

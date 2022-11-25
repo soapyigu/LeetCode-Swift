@@ -683,7 +683,7 @@
 |	[Swift](./Array/SlidingWindowMaximum.swift)	|	239	|	[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)	|	Hard	|
 |	[Swift](./Array/ProductExceptSelf.swift)	|	238	|	[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)	|	Medium	|
 |		|	237	|	[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)	| Easy	|
-|		|	236	|	[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)	|	Medium	|
+|	[Swift](./Tree/LowestCommonAncestorBinaryTree.swift)	|	236	|	[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)	|	Medium	|
 |	[Swift](./Tree/LowestCommonAncestorBinarySearchTree.swift)	|	235	|	[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)	| Easy	|
 |	[Swift](./LinkedList/PalindromeLinkedList.swift)	|	234	|	[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)	| Easy	|
 |		|	233	|	[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)	|	Hard	|

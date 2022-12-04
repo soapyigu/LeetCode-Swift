@@ -5,71 +5,87 @@
  *
  */
 
-class DoublyLinkedList{
-    var key: Int
-    var value: Int
-    var previous: DoublyLinkedList?
-    var next: DoublyLinkedList?
-    var hashValue: Int
+class LRUCache {
     
-    init(_ key: Int, _ value: Int) {
-        self.key = key
-        self.value = value
-        self.hashValue = key
+    private let capacity: Int
+    private let head = Node(0, 0)
+    private let tail = Node(0, 0)
+    
+    private var keyNodeMap = [Int: Node]()
+
+    init(_ capacity: Int) {
+        self.capacity = capacity
+        
+        head.next = tail
+        tail.prev = head
+    }
+    
+    func get(_ key: Int) -> Int {
+        guard let node = keyNodeMap[key] else {
+            return -1
+        }
+        
+        remove(node)
+        moveToHead(node)
+        
+        return node.val
+    }
+    
+    func put(_ key: Int, _ value: Int) {
+        let node = Node(key, value)
+        
+        if let lastNode = keyNodeMap[key] {
+            remove(lastNode)
+        }
+        
+        keyNodeMap[key] = node
+        moveToHead(node)
+        
+        if keyNodeMap.count > capacity {
+            keyNodeMap[tail.prev!.key] = nil
+            remove(tail.prev!)
+        }
+    }
+    
+    private func remove(_ node: Node) {
+        let prev = node.prev
+        let post = node.next
+        
+        prev!.next = post
+        post!.prev = prev
+        
+        node.next = nil
+        node.prev = nil
+    }
+    
+    private func moveToHead(_ node: Node) {
+        let first = head.next
+        
+        head.next = node
+        
+        node.prev = head
+        node.next = first
+        
+        first!.prev = node
+    }
+    
+    class Node {
+        let key: Int
+        var val: Int
+        
+        var prev: Node?
+        var next: Node?
+        
+        init(_ key: Int, _ val: Int) {
+            self.key = key
+            self.val = val
+        }
     }
 }
 
-class LRUCache{
-    var maxCapacity: Int
-    var head: DoublyLinkedList
-    var tail: DoublyLinkedList
-    var cache: [Int: DoublyLinkedList]
-    
-    init(_ maxCapacity: Int) {
-        self.maxCapacity = maxCapacity
-        self.cache = [Int: DoublyLinkedList]()
-        self.head = DoublyLinkedList(Int.min, Int.min)
-        self.tail = DoublyLinkedList(Int.max, Int.max)
-        self.head.next = self.tail
-        self.tail.previous = self.head
-    }
-    
-    func add(_ node: DoublyLinkedList){
-        let next = head.next
-        head.next = node
-        node.previous = head
-        node.next = next
-        next?.previous = node
-    }
-    
-    func remove(_ node: DoublyLinkedList){
-        let previous = node.previous
-        let next = node.next
-        previous?.next = next
-        next?.previous = previous
-    }
-    
-    func get(_ key: Int) -> Int{
-        if let node = cache[key]{
-            remove(node)
-            add(node)
-            return node.value
-        }
-        return -1
-    }
-    
-    func put(_ key: Int, _ value: Int){
-        if let node = cache[key]{
-            remove(node)
-            cache.removeValue(forKey: key)
-        }else if cache.keys.count >= maxCapacity{
-            if let leastNode = tail.previous{
-                remove(leastNode)
-                cache.removeValue(forKey: leastNode.key)
-            }
-        }
-        let newNode = DoublyLinkedList(key, value)
-        cache[key] = newNode
-        add(newNode)
-    }
-}
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * let obj = LRUCache(capacity)
+ * let ret_1: Int = obj.get(key)
+ * obj.put(key, value)
+ */

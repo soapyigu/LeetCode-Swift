@@ -8,14 +8,6 @@
 
 class GroupAnagrams {
     func groupAnagrams(_ strs: [String]) -> [[String]] {
-        var sortedStrToStrs = [String: [String]]()
-  
-        for str in strs {
-            let sortedStr = String(str.sorted())
-            
-            sortedStrToStrs[sortedStr, default: []].append(str)
-        }
-        
-        return Array(sortedStrToStrs.values)
+        return Array(Dictionary(strs.map { (String($0.sorted()), [$0]) }, uniquingKeysWith: +).values)
     }
 }

@@ -2,30 +2,25 @@
  * Question Link: https://leetcode.com/problems/subsets/
  * Primary idea: Classic Depth-first Search
  * 
- * Time Complexity: O(n^n), Space Complexity: O(n)
+ * Time Complexity: O(n * 2^n), Space Complexity: O(n * 2^n)
  *
  */
 
 class Subsets {
-    func subsets(nums: [Int]) -> [[Int]] {
-        var res = [[Int]]()
-        var path = [Int]()
+    func subsets(_ nums: [Int]) -> [[Int]] {
+        var res = [[Int]](), path = [Int]()
         
-        let nums = nums.sorted(by: <)
-        
-        _dfs(&res, &path, nums, 0)
+        dfs(&res, &path, 0, nums)
         
         return res
     }
     
-    private func _dfs(inout res: [[Int]], inout _ path: [Int], _ nums: [Int], _ index: Int) {
-        // termination case
-
+    private func dfs(_ res: inout [[Int]], _ path: inout [Int], _ idx: Int, _ nums: [Int]) {
         res.append(path)
         
-        for i in index..<nums.count {
+        for i in idx..<nums.count {
             path.append(nums[i])
-            _dfs(&res, &path, nums, i + 1)
+            dfs(&res, &path, i + 1, nums)
             path.removeLast()
         }
     }

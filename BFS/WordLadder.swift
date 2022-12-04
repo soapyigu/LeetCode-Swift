@@ -10,41 +10,51 @@
 
 class WordLadder {
     func ladderLength(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int {
-        guard beginWord.count == endWord.count else {
-            return 0
-        }
+        var wordSet = Set(wordList), wordQueue = [beginWord], count = 1
         
-        var queue = [(beginWord, 1)], wordSet = Set<String>(wordList)
-        
-        while !queue.isEmpty {
-            let (word, step) = queue.removeFirst()
+        while !wordQueue.isEmpty {
             
-            if word == endWord {
-                return step
+            let size = wordQueue.count
+            
+            for _ in 0..<size {
+                let currentWord = wordQueue.removeFirst()
+                
+                if currentWord == endWord {
+                    return count
+                }
+                
+                for word in neighbors(for: currentWord, in: wordSet) {
+                    wordQueue.append(word)
+                    wordSet.remove(word)
+                }
             }
             
-            // transform word
-            for i in 0..<word.count {
-                var wordArray = Array(word)
+            count += 1
+        }
+        
+        return 0
+    }
+    
+    private func neighbors(for word: String, in wordSet: Set<String>) -> [String] {
+        var res = [String]()
+        
+        // change character at every offset of the word
+        for i in 0..<word.count {
+            var tempWord = Array(word)
+            
+            for charToReplace in "abcdefghijklmnopqrstuvwxyz" {
+                guard charToReplace != tempWord[i] else {
+                    continue
+                }
                 
-                for char in "abcdefghijklmnopqrstuvwxyz" {
-                    guard char != wordArray[i] else {
-                        continue
-                    }
-                    
-                    wordArray[i] = char
-                    let transformedWord = String(wordArray)
-                    
-                    guard wordSet.contains(transformedWord) else {
-                        continue
-                    }
-                    
-                    wordSet.remove(transformedWord)
-                    queue.append((transformedWord, step + 1))
+                tempWord[i] = charToReplace
+                let tempWordStr = String(tempWord)
+                if wordSet.contains(tempWordStr) {
+                    res.append(tempWordStr)
                 }
             }
         }
         
-        return 0
+        return res
     }
 }

@@ -13,29 +13,33 @@ class LongestSubstringMostKDistinctCharacters {
         guard k > 0 else {
             return 0
         }
-        
+
+        var charFreqMap = [Character: Int](), left = 0, res = 0
         let s = Array(s)
-        var start = 0, longest = 0, charsFreq = [Character: Int]()
-        
+
         for (i, char) in s.enumerated() {
-            if let freq = charsFreq[char] {
-                charsFreq[char] = freq + 1
+            if let freq = charFreqMap[char] {
+                charFreqMap[char] = freq + 1
             } else {
-                while charsFreq.count == k {
-                    longest = max(i - start, longest)
-                    
-                    guard let freq = charsFreq[s[start]] else {
+               
+                // update res
+                res = max(i - left, res)
+
+                // move left and window
+                while charFreqMap.count == k {
+                    if let leftFreq = charFreqMap[s[left]] {
+                        charFreqMap[s[left]] = leftFreq == 1 ? nil : leftFreq - 1
+                        left += 1
+                    } else {
                         fatalError()
                     }
-                    charsFreq[s[start]] = freq == 1 ? nil : freq - 1
-                    
-                    start += 1
                 }
-                
-                charsFreq[char] = 1
+
+                // update window for current char
+                charFreqMap[char] = 1
             }
         }
-        
-        return max(longest, s.count - start)
+
+        return max(res, s.count - left)
     }
 }

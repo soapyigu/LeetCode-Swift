@@ -15,18 +15,14 @@
             toCourses[courses[1], default:[]].append(courses[0])
         }
         
-        var queue = (0..<numCourses).filter { inDegrees[$0] == 0 }, validCourseCount = 0
+        var queue = (0..<numCourses).filter { inDegrees[$0] == 0 }, validCoursesCount = 0
         
         while !queue.isEmpty {
             let course = queue.removeFirst()
             
-            validCourseCount += 1
+            validCoursesCount += 1
             
-            guard let toCourses = toCourses[course] else {
-                continue
-            }
-            
-            for toCourse in toCourses {
+            for toCourse in toCourses[course] ?? [] {
                 inDegrees[toCourse] -= 1
                 if inDegrees[toCourse] == 0 {
                     queue.append(toCourse)
@@ -34,6 +30,6 @@
             }
         }
         
-        return validCourseCount == numCourses
+        return validCoursesCount == numCourses
     }
 }

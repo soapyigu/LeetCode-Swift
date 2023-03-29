@@ -6,18 +6,17 @@
  */
 
 class RemoveDuplicatesFromSortedArray {
-    func removeDuplicates(inout nums: [Int]) -> Int {
-        guard nums.count > 0 else {
-            return 0
+    func removeDuplicates(_ nums: inout [Int]) -> Int {
+        if nums.isEmpty { return 0 }
+        
+        var i = 0
+        for j in 1..<nums.count {
+            if nums[i] != nums[j] {
+                nums[i + 1] = nums[j]
+                i += 1
+            }
         }
         
-        var index = 0
-        
-        for num in nums where num != nums[index] {
-            index += 1
-            nums[index] = num
-        }
-        
-        return index + 1
+        return i + 1
     }
 }

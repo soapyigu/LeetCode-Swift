@@ -7,38 +7,37 @@
  */
 
 class NumberofIslands {
-    func numIslands(grid: [[Character]]) -> Int {
-        guard grid.count > 0 && grid[0].count > 0 else {
-            return 0
-        }
-        
-        var grid = grid
-        let m = grid.count
-        let n = grid[0].count
-        var count = 0
-        
+    func numIslands(_ grid: [[Character]]) -> Int {
+        let (m, n) = (grid.count, grid[0].count)
+        var isVisited = Array(repeating: Array(repeating: false, count: n), count: m), result = 0
+
         for i in 0..<m {
             for j in 0..<n {
-                if String(grid[i][j]) == "1" {
-                    count += 1
-                    _dfs(&grid, m, n, i, j)
+                if grid[i][j] == "1" && !isVisited[i][j] {
+                    result += 1
+
+                    dfs(grid, i, j, m, n, &isVisited)
                 }
             }
         }
-        
-        return count
+
+        return result
     }
-    
-    private func _dfs(inout grid: [[Character]], _ m: Int, _ n: Int, _ i: Int, _ j: Int) {
-        guard i >= 0 && i < m && j >= 0 && j < n && String(grid[i][j]) == "1" else {
+
+    private func dfs(_ grid: [[Character]], _ i: Int, _ j: Int, _ m: Int, _ n: Int, _ isVisited: inout [[Bool]]) {
+        guard i >= 0 && i < m && j >= 0 && j < n else {
             return
         }
-        
-        grid[i][j] = Character("0")
-        
-        _dfs(&grid, m, n, i + 1, j)
-        _dfs(&grid, m, n, i - 1, j)
-        _dfs(&grid, m, n, i, j + 1)
-        _dfs(&grid, m, n, i, j - 1)
+
+        if isVisited[i][j] || grid[i][j] == "0" {
+            return
+        }
+
+        isVisited[i][j] = true
+
+        dfs(grid, i + 1, j, m, n, &isVisited)
+        dfs(grid, i - 1, j, m, n, &isVisited)
+        dfs(grid, i, j + 1, m, n, &isVisited)
+        dfs(grid, i, j - 1, m, n, &isVisited)
     }
 }

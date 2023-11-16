@@ -1,44 +1,29 @@
 /**
  * Question Link: https://leetcode.com/problems/merge-intervals/
- * Primary idea: Sort the original intervals and then append them one by one
+ * Primary idea: Sort intervals by leading integer in ascending order and append based on their leading and trailing integers.
  * Time Complexity: O(nlogn), Space Complexity: O(n)
- *
- * Definition for an interval.
- * public class Interval {
- *   public var start: Int
- *   public var end: Int
- *   public init(_ start: Int, _ end: Int) {
- *     self.start = start
- *     self.end = end
- *   }
- * }
  */
 
 class MergeIntervals {
-    func merge(intervals: [Interval]) -> [Interval] {
-        var result = [Interval]()
-        
-        let intervals = intervals.sorted {
-            if $0.start != $1.start {
-                return $0.start < $1.start
+    func merge(_ intervals: [[Int]]) -> [[Int]] {
+        guard intervals.count > 1 else { return intervals }
+        let intervals = intervals.sorted { $0[0] < $1[0] }
+        var ret: [[Int]] = []
+        var i = 1
+        var last = intervals[0]
+        while i < intervals.endIndex {
+            let curr = intervals[i]
+            if curr[0] <= last[1] {
+                if curr[1] > last[1] {
+                    last[1] = curr[1]
+                }
             } else {
-                return $0.end < $1.end
+                ret.append(last)
+                last = curr
             }
+            guard i != intervals.endIndex - 1 else { ret.append(last); break }
+            i += 1
         }
-        
-        for interval in intervals {
-            guard let last = result.last else {
-                result.append(interval)
-                continue
-            }
-            
-            if last.end < interval.start {
-                result.append(interval)
-            } else {
-                last.end = max(last.end, interval.end)
-            }
-        }
-        
-        return result
+        return ret
     }
 }

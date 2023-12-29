@@ -6,36 +6,30 @@
  *
  */
 
- class CourseScheduleII {
+class CourseScheduleII {
     func findOrder(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
-        var inDegrees = Array(repeating: 0, count: numCourses), fromTo = [Int: [Int]]()
-        var coursesCouldTake = [Int]()
-        
-        // init graph
-        for prerequisite in prerequisites {
-            fromTo[prerequisite[1], default: []].append(prerequisite[0])
-            inDegrees[prerequisite[0]] += 1
+        var indegrees = Array(repeating: 0, count: numCourses), toCourses = [Int: [Int]]()
+
+        for pres in prerequisites {
+            indegrees[pres[0]] += 1
+            toCourses[pres[1], default: []].append(pres[0])
         }
-        
-        var queue = (0..<numCourses).filter { inDegrees[$0] == 0 }
-        
+
+        var queue = (0..<numCourses).filter { indegrees[$0] == 0 }, result = [Int]()
+
         while !queue.isEmpty {
-            let currentCourse = queue.removeFirst()
-            coursesCouldTake.append(currentCourse)
-            
-            guard let toCourses = fromTo[currentCourse] else {
-                continue
-            }
-            
-            toCourses.forEach { 
-                inDegrees[$0] -= 1 
-                
-                if inDegrees[$0] == 0 {
-                    queue.append($0)
+            let course = queue.removeFirst()
+
+            result.append(course)
+
+            for toCourse in toCourses[course] ?? [] {
+                indegrees[toCourse] -= 1
+                if indegrees[toCourse] == 0 {
+                    queue.append(toCourse)
                 }
             }
         }
-    
-        return coursesCouldTake.count == numCourses ? coursesCouldTake : [Int]()
+
+        return result.count == numCourses ? result : [Int]()
     }
 }

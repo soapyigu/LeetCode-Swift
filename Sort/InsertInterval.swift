@@ -21,27 +21,29 @@
 
 class InsertInterval {
     func insert(_ intervals: [Interval], _ newInterval: Interval) -> [Interval] {
-        var index = 0
-        var result: [Interval] = []
-        var tempInterval = Interval(newInterval.start, newInterval.end)
-        
-        while index < intervals.count && newInterval.start > intervals[index].end {
-            result.append(intervals[index])
-            index += 1
+        var res = [Interval](), insertIdx = 0
+
+        for (i, interval) in intervals.enumerated() {
+            if interval.isOverlap(with: newInterval) {
+                newInterval.start = min(newInterval.start, interval.start)
+                newInterval.end = max(newInterval.end, interval.end)
+            } else {
+                if interval.end < newInterval.start {
+                    insertIdx += 1
+                }
+
+                res.append(interval)
+            }
         }
-        
-        while index < intervals.count && newInterval.end >= intervals[index].start {
-            let minStart = min(tempInterval.start, intervals[index].start)
-            let maxEnd = max(tempInterval.end, intervals[index].end)
-            tempInterval = Interval(minStart, maxEnd)
-            index += 1
+
+        res.insert(newInterval, at: insertIdx)
+
+        return res
+    }
+
+    extension Interval {
+        func isOverlap(with interval: Interval) -> Bool {
+            return start <= interval.end && end >= interval.start
         }
-        result.append(tempInterval)
-        
-        for i in index ..< intervals.count {
-            result.append(intervals[i])
-        }
-        
-        return result
     }
 }

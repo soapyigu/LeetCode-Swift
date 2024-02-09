@@ -7,25 +7,28 @@
 class ValidParentheses {
     func isValid(_ s: String) -> Bool {
         var stack = [Character]()
-        
+
         for char in s {
-            if char == "(" || char == "[" || char == "{" {
+            switch char {
+            case "(", "[", "{":
                 stack.append(char)
-            } else if char == ")" {
-                guard stack.count != 0 && stack.removeLast() == "(" else {
+            case ")":
+                if stack.popLast() != "(" {
                     return false
                 }
-            } else if char == "]" {
-                guard stack.count != 0 && stack.removeLast() == "[" else {
+            case "]":
+                if stack.popLast() != "[" {
                     return false
                 }
-            } else if char == "}" {
-                guard stack.count != 0 && stack.removeLast() == "{" else {
+            case "}":
+                if stack.popLast() != "{" {
                     return false
                 }
+            default:
+                continue
             }
         }
-        
+
         return stack.isEmpty
     }
 }

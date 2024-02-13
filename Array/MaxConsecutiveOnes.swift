@@ -7,17 +7,26 @@
 
 class MaxConsecutiveOnes {
     func findMaxConsecutiveOnes(_ nums: [Int]) -> Int {
-        var globalMax = 0, localMax = 0
+        // Output
+        var maximumConsecutiveSum = 0 
         
-        for num in nums {
-            if num == 1 {
-                localMax += 1
-                globalMax = max(globalMax, localMax)
+        guard !nums.isEmpty else {
+            return maximumConsecutiveSum
+        }
+        
+        var currentRunningSum = 0 
+        for eachNumber in nums {
+            if eachNumber == 1 {
+                currentRunningSum += 1
             } else {
-                localMax = 0
+                currentRunningSum = 0
+            }
+            
+            if currentRunningSum > maximumConsecutiveSum {
+              maximumConsecutiveSum = currentRunningSum
             }
         }
         
-        return globalMax
+        return maximumConsecutiveSum
     }
 }

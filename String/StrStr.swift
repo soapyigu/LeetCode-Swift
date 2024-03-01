@@ -6,7 +6,7 @@
 
 class StrStr {
     func strStr(_ haystack: String, _ needle: String) -> Int {
-        let hChars = Array(haystack.characters), nChars = Array(needle.characters)
+        let hChars = Array(haystack), nChars = Array(needle)
         let hLen = hChars.count, nLen = nChars.count
     
         guard hLen >= nLen else {
@@ -27,6 +27,34 @@ class StrStr {
                     }
                 }
             } 
+        }
+        
+        return -1
+    }
+}
+
+
+
+class StrStrWithSubstring {
+    func strStr(_ haystack: String, _ needle: String) -> Int {
+        guard needle.count > 0 else {
+            return 0
+        }
+        
+        guard haystack.count >= needle.count else {
+            return -1
+        }
+        
+        let shiftIndex = needle.count - 1
+        let maxLowerIndex = haystack.count - needle.count
+        
+        for lowerIndex in 0...maxLowerIndex {
+            let lowerBound: String.Index = haystack.index(haystack.startIndex, offsetBy: lowerIndex)
+            let upperBound: String.Index = haystack.index(haystack.startIndex, offsetBy: lowerIndex + shiftIndex)
+            
+            if haystack[lowerBound...upperBound] == needle {
+                return lowerIndex
+            }
         }
         
         return -1

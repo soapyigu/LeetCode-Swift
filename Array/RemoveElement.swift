@@ -6,8 +6,16 @@
  */
 
 class RemoveElement {
-    func removeElement(inout nums: [Int], _ val: Int) -> Int {
+    func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
         nums = nums.filter { (num) in num != val }
+        return nums.count
+    }
+}
+
+
+class RemoveElementUseTheRemoveAllMethod {
+    func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
+        nums.removeAll { (num) in num == val }
         return nums.count
     }
 }

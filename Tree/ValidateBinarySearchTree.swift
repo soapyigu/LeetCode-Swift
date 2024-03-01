@@ -17,7 +17,7 @@
  */
 
 class ValidateBinarySearchTree {
-    func isValidBST(root: TreeNode?) -> Bool {
+    func isValidBST(_ root: TreeNode?) -> Bool {
         return _helper(root, nil, nil)
     }
     

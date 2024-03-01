@@ -20,7 +20,7 @@ class PlusOne {
             index -= 1
         }
         
-        digits.insert(1, atIndex: 0)
+        digits.insert(1, at: 0)
         return digits
     }
 }
